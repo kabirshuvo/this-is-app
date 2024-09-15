@@ -1,37 +1,33 @@
 import mongoose from "mongoose";
 
+type ConnectionObject = {
+  isConnected?: number;
+};
+
+const connection: ConnectionObject = {};
 const MONGODB_URI = process.env.MONGODB_URI || "";
 
 if (!MONGODB_URI) {
-  throw new Error("Please define the MONGODB_URI environment variable");
+  throw new Error(
+    "Please define the MONGODB_URI environment variable inside .env.local"
+  );
 }
 
-// Extend the NodeJS global object to include mongoose
-declare global {
-  let mongoose: {
-    conn: mongoose.Connection | null;
-    promise: Promise<mongoose.Connection> | null;
-  };
-}
-
-let cached = global.mongoose;
-
-if (!cached) {
-  cached = global.mongoose = { conn: null, promise: null };
-}
-
-async function connectToDatabase() {
-  if (cached.conn) {
-    return cached.conn;
+async function dbConnect(): Promise<void> {
+  if (connection.isConnected) {
+    console.log("Database is Already Connected: -_-");
+    return;
   }
-
-  if (!cached.promise) {
-    cached.promise = mongoose.connect(MONGODB_URI).then((mongoose) => {
-      return mongoose.connection;
+  try {
+    const db = await mongoose.connect(MONGODB_URI, {
+      //   useNewUrlParser: true,
+      //   useUnifiedTopology: true,
     });
+    connection.isConnected = db.connections[0].readyState;
+    console.log("Database connected successfully!");
+  } catch (error) {
+    console.error("Promotopea Database connection failed: ", error);
+    process.exit(1);
   }
-  cached.conn = await cached.promise;
-  return cached.conn;
 }
-
-export default connectToDatabase;
+export default dbConnect;
