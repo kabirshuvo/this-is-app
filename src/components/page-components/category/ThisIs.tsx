@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import { fetchRelatedData } from "@/hooks/useCategoryData";
 import { Category } from "@/types/category";
+import Image from "next/image";
 
 interface Params {
   category: string;
@@ -36,9 +37,11 @@ const ThisIs: React.FC<{ params: Params }> = ({ params }) => {
             className="space-y-4"
           >
             <div className="flex justify-center items-center bg-white rounded-lg shadow-lg hover:shadow-xl transform transition hover:scale-105 h-64 p-6 cursor-pointer">
-              <img
+              <Image
                 src={item.image}
                 alt={item.name}
+                width={200}
+                height={200}
                 className="w-full object-cover rounded-t-lg"
               />
             </div>

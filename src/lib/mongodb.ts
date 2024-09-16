@@ -1,24 +1,19 @@
 import mongoose from "mongoose";
 
-const MONGODB_URI = process.env.MONGODB_URI || "";
+const MONGODB_URI = process.env.MONGODB_URI || "your_mongodb_uri_here";
 
-if (!MONGODB_URI) {
-  throw new Error("Please define the MONGODB_URI environment variable");
+interface Cached {
+  conn: mongoose.Connection | null;
+  promise: Promise<mongoose.Connection> | null;
 }
 
-// Extend the NodeJS global object to include mongoose
-declare global {
-  let mongoose: {
-    conn: mongoose.Connection | null;
-    promise: Promise<mongoose.Connection> | null;
-  };
+const globalWithCached = global as typeof global & { _mongooseCached: Cached };
+
+if (!globalWithCached._mongooseCached) {
+  globalWithCached._mongooseCached = { conn: null, promise: null };
 }
 
-let cached = global.mongoose;
-
-if (!cached) {
-  cached = global.mongoose = { conn: null, promise: null };
-}
+const cached = globalWithCached._mongooseCached;
 
 async function connectToDatabase() {
   if (cached.conn) {

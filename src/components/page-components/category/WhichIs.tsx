@@ -3,6 +3,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper as SwiperCore } from "swiper/types";
 import { Navigation } from "swiper/modules";
 import { Category } from "@/types/category";
 import { fetchRelatedData } from "@/hooks/useCategoryData";
@@ -18,7 +19,7 @@ interface Params {
 const WhichIs: React.FC<{ params: Params }> = ({ params }) => {
   const [relatedData, setRelatedData] = useState<Category[]>([]);
   const [randomItemName, setRandomItemName] = useState<string | null>(null);
-  const swiperRef = useRef<any>(null);
+  const swiperRef = useRef<SwiperCore | null>(null);
 
   useEffect(() => {
     async function loadRelatedData() {

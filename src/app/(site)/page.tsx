@@ -6,11 +6,7 @@ import { Category } from "@/types/category";
 import { fetchCategories } from "@/lib/getCatgories";
 import Link from "next/link";
 
-interface Props {
-  categories: Category[];
-}
-
-const Home: React.FC<Props> = () => {
+const Home: React.FC = () => {
   const [categories, setCategories] = useState<Category[]>([]);
 
   useEffect(() => {
