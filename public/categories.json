@@ -1,0 +1,14 @@
+[
+  { "id": 1, "name": "Animals", "image": "/animal.png" },
+  { "id": 2, "name": "Transport", "image": "/transport.png" },
+  { "id": 3, "name": "Clothing", "image": "/clothing.png" },
+  { "id": 4, "name": "Food", "image": "/food.png" },
+  { "id": 5, "name": "Treats", "image": "/treats.png" },
+  { "id": 6, "name": "Fun Things", "image": "/fun-things.png" },
+  { "id": 7, "name": "Vegetables", "image": "/vegetables.png" },
+  { "id": 8, "name": "Fruits", "image": "/fruits.png" },
+  { "id": 9, "name": "Toys", "image": "/toys.png" },
+  { "id": 10, "name": "Home", "image": "/home.png" },
+  { "id": 11, "name": "Tools", "image": "/tools.png" },
+  { "id": 12, "name": "Fun Activities", "image": "/fun-activities.png" }
+]

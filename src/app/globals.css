@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+body {
+    color: #FFFF1A;
+    background-color: #005286;
+    font-family: var(--font-luckiest-guy), sans-serif;
+}

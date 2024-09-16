@@ -13,6 +13,11 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+const luckiestGuy = localFont({
+  src: "./fonts/LuckiestGuy-Regular.ttf",
+  variable: "--font-luckiest-guy",
+  weight: "400",
+});
 
 export const metadata: Metadata = {
   title: "This Is App",
@@ -27,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${luckiestGuy.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ReduxProvider>{children}</ReduxProvider>
       </body>
