@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import ClientProvider from "@/app/context/ReduxProvider";
+import Header from "@/app/components/shared/Header";
+import Footer from "@/app/components/shared/Footer";
 import "./globals.css";
-import ReduxProvider from "@/context/ReduxProvider";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -24,18 +28,28 @@ export const metadata: Metadata = {
   description: "TJ&PALS initiative",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
-}: Readonly<{
+  params: { locale },
+}: {
   children: React.ReactNode;
-}>) {
+  params: { locale: string };
+}) {
+  const messages = await getMessages();
+
   return (
-    <html lang="en">
-      <body
-        className={`${luckiestGuy.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <ReduxProvider>{children}</ReduxProvider>
-      </body>
-    </html>
+    <NextIntlClientProvider messages={messages}>
+      <html lang={locale}>
+        <body
+          className={`${luckiestGuy.variable} ${geistSans.variable} ${geistMono.variable} antialiased bg-tjblue-500 text-tjyellow-500 flex flex-col min-h-screen justify-between`}
+        >
+          <ClientProvider>
+            <Header />
+            {children}
+            <Footer />
+          </ClientProvider>
+        </body>
+      </html>
+    </NextIntlClientProvider>
   );
 }

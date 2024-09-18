@@ -6,11 +6,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Swiper as SwiperCore } from "swiper/types";
 import { Navigation } from "swiper/modules";
 import { Category } from "@/types/category";
-import { fetchRelatedData } from "@/hooks/useCategoryData";
+import { Volume2 } from "lucide-react";
+import { fetchRelatedData } from "@/app/hooks/useCategoryData";
 
 import "swiper/css";
 import "swiper/css/navigation";
-import { Volume2 } from "lucide-react";
 
 interface Params {
   category: string;

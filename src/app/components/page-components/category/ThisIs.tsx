@@ -1,9 +1,9 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { fetchRelatedData } from "@/hooks/useCategoryData";
 import { Category } from "@/types/category";
 import Image from "next/image";
+import { fetchRelatedData } from "@/app/hooks/useCategoryData";
 
 interface Params {
   category: string;
