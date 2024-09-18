@@ -2,15 +2,14 @@
 
 import Link from "next/link";
 import { Undo2 } from "lucide-react";
-import ThisIs from "@/app/components/page-components/category/ThisIs";
-import WhichIs from "@/app/components/page-components/category/WhichIs";
+import ThisIs from "@/components/page-components/category/ThisIs";
+import WhichIs from "@/components/page-components/category/WhichIs";
 
 export default function CategoryPage({
   params,
 }: {
   params: { category: string };
 }) {
-  console.log("From CategoryPage:", params);
   const category = decodeURIComponent(params.category);
 
   return (

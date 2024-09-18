@@ -9,18 +9,17 @@ import {
   DialogClose,
   DialogContent,
   DialogTrigger,
-} from "@/app/components/ui/dialog";
-import { useLocale } from "../../hooks/useLocale";
+} from "@/components/ui/dialog";
+import { useLocale } from "@/app/hooks/useLocale";
 
 export default function Header() {
   const locale = useLocale();
 
   const navItems = [
     { label: "Home", href: `/${locale}` },
-    { label: "Dashboard", href: `/${locale}/dashboard` },
+    { label: "About Us", href: `/${locale}/about` },
     { label: "Settings", href: `/${locale}/settings` },
     { label: "Help", href: `/${locale}/help` },
-    { label: "Logout", href: `/${locale}/logout` },
   ];
 
   return (
