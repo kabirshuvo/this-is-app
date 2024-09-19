@@ -20,6 +20,7 @@ const WhichIs: React.FC<{ params: Params }> = ({ params }) => {
   const [relatedData, setRelatedData] = useState<Category[]>([]);
   const [randomItemName, setRandomItemName] = useState<string | null>(null);
   const swiperRef = useRef<SwiperCore | null>(null);
+  console.log(randomItemName);
 
   useEffect(() => {
     async function loadRelatedData() {
