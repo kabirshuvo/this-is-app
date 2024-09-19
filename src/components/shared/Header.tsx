@@ -30,7 +30,7 @@ export default function Header() {
           className="flex flex-col items-center justify-start gap-2"
         >
           <Image
-            src="/tj-logo-header.webp"
+            src="/images/tj-logo-header.webp"
             alt="TJ Logo"
             width={250}
             height={250}
