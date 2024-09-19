@@ -33,9 +33,9 @@ export default function Footer() {
     onChange: () => void;
     label: string;
   }) => (
-    <div className="flex items-end space-x-2 gap-2">
+    <div className="flex items-start space-x-2 gap-2">
       <div
-        className={`w-8 h-8 border-4 ${
+        className={`w-6 h-6 md:w-8 md:h-8 border-4 ${
           checked ? "bg-yellow-400 border-yellow-400" : "border-white"
         } rounded-md cursor-pointer flex items-center justify-center`}
         onClick={onChange}
@@ -44,7 +44,7 @@ export default function Footer() {
       </div>
       <label
         htmlFor={id}
-        className="text-4xl font-medium leading-none cursor-pointer"
+        className="text-2xl md:text-3xl font-medium leading-none cursor-pointer"
         onClick={onChange}
       >
         {label}
