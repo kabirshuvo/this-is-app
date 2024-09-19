@@ -19,7 +19,9 @@ export default function CategoryPage({
           <Undo2 size={22} /> <span className="">Back</span>
         </Link>
         <h2 className="capitalize text-5xl text-center">{category}</h2>
-        <div />
+        <div>
+          <Link href="see-all">See All</Link>
+        </div>
       </div>
 
       <ThisIs params={params} />

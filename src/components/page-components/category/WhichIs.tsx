@@ -160,7 +160,7 @@ const WhichIs: React.FC<{ params: Params }> = ({ params }) => {
           className="p-2 rounded-full shadow"
         >
           <Image
-            src="/arrow.png"
+            src="/images/arrow.png"
             alt="arrow"
             width={32}
             height={32}
@@ -174,7 +174,7 @@ const WhichIs: React.FC<{ params: Params }> = ({ params }) => {
           className="p-2 rounded-full shadow"
         >
           <Image
-            src="/arrow.png"
+            src="/images/arrow.png"
             alt="arrow"
             width={32}
             height={32}
