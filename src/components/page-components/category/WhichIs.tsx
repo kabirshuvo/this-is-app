@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Swiper as SwiperCore } from "swiper/types";
@@ -10,10 +10,8 @@ import { Volume2 } from "lucide-react";
 import { fetchRelatedData } from "@/app/hooks/useCategoryData";
 import Confetti from "react-confetti";
 import { useWindowSize } from "react-use";
-
 import "swiper/css";
 import "swiper/css/navigation";
-import CorrectModal from "@/components/shared/CorrectModal";
 
 interface Params {
   category: string;
@@ -25,8 +23,15 @@ const WhichIs: React.FC<{ params: Params }> = ({ params }) => {
   const [showConfetti, setShowConfetti] = useState(false);
   const swiperRef = useRef<SwiperCore | null>(null);
   const { width, height } = useWindowSize();
-  const [showModal, setShowModal] = useState(false);
+  // const [showModal, setShowModal] = useState(false);
   const [shakeItemId, setShakeItemId] = useState<number | null>(null);
+  const [correctAudio, setCorrectAudio] = useState<HTMLAudioElement | null>(
+    null
+  );
+  const [incorrectAudio, setIncorrectAudio] = useState<HTMLAudioElement | null>(
+    null
+  );
+  const [voices, setVoices] = useState<SpeechSynthesisVoice[]>([]);
 
   useEffect(() => {
     async function loadRelatedData() {
@@ -42,52 +47,57 @@ const WhichIs: React.FC<{ params: Params }> = ({ params }) => {
     loadRelatedData();
   }, [params.category]);
 
-  const playCorrectAudio = () => {
-    const correctAudio = new Audio("/audio/congrats.mp3");
-    correctAudio.play();
-  };
+  useEffect(() => {
+    if (typeof window !== "undefined" && "speechSynthesis" in window) {
+      setCorrectAudio(new Audio("/audio/congrats.mp3"));
+      setIncorrectAudio(new Audio("/audio/error.mp3"));
+      setVoices(window.speechSynthesis.getVoices());
+    }
+  }, []);
 
-  const playIncorrectAudio = () => {
-    const incorrectAudio = new Audio("/audio/error.mp3");
-    incorrectAudio.play();
-  };
+  const playAudio = useCallback((audio: HTMLAudioElement | null) => {
+    if (audio) {
+      audio.play();
+    }
+  }, []);
 
-  const speakText = (text: string) => {
-    if ("speechSynthesis" in window) {
-      const utterance = new SpeechSynthesisUtterance(text);
-
-      const voices = window.speechSynthesis.getVoices();
+  const speakText = useCallback(
+    (text: string) => {
       if (voices.length > 0) {
+        const utterance = new SpeechSynthesisUtterance(text);
         utterance.voice = voices[0];
+        window.speechSynthesis.speak(utterance);
+      } else {
+        console.error("Text-to-speech is not supported in this browser.");
       }
+    },
+    [voices]
+  );
 
-      window.speechSynthesis.speak(utterance);
-    } else {
-      console.error("Text-to-speech is not supported in this browser.");
-    }
-  };
+  const handleCardClick = useCallback(
+    (itemId: number, itemName: string) => {
+      if (itemName === randomItemName) {
+        console.log("Correct!");
+        setShowConfetti(true);
+        // setShowModal(true);
+        playAudio(correctAudio);
 
-  const handleCardClick = (itemId: number, itemName: string) => {
-    if (itemName === randomItemName) {
-      console.log("Correct!");
-      setShowConfetti(true);
-      setShowModal(true);
-      playCorrectAudio();
+        setTimeout(() => {
+          setShowConfetti(false);
+        }, 5000);
 
-      setTimeout(() => {
-        setShowConfetti(false);
-      }, 5000);
-
-      setTimeout(() => {
-        setShowModal(false);
-      }, 3000);
-    } else {
-      console.log("Incorrect!");
-      setShakeItemId(itemId);
-      playIncorrectAudio();
-      setTimeout(() => setShakeItemId(null), 500);
-    }
-  };
+        setTimeout(() => {
+          // setShowModal(false);
+        }, 3000);
+      } else {
+        console.log("Incorrect!");
+        setShakeItemId(itemId);
+        playAudio(incorrectAudio);
+        setTimeout(() => setShakeItemId(null), 500);
+      }
+    },
+    [randomItemName, correctAudio, incorrectAudio, playAudio]
+  );
 
   return (
     <div className="relative">
@@ -98,14 +108,12 @@ const WhichIs: React.FC<{ params: Params }> = ({ params }) => {
           style={{ position: "fixed", top: 0, left: 0, zIndex: 9999 }}
         />
       )}
-      <CorrectModal isOpen={showModal} randomItemName={randomItemName} />
+      {/* <CorrectModal isOpen={showModal} randomItemName={randomItemName} /> */}
       <div className="flex items-start justify-center gap-2 mt-20">
         <h3 className="text-4xl text-center uppercase">
           Which one is the {randomItemName}?
         </h3>
         <Volume2
-          size={32}
-          className="cursor-pointer"
           onClick={() => {
             speakText(`Which one is the ${randomItemName}?`);
           }}
@@ -116,15 +124,9 @@ const WhichIs: React.FC<{ params: Params }> = ({ params }) => {
         slidesPerView={1}
         modules={[Navigation]}
         breakpoints={{
-          640: {
-            slidesPerView: 2,
-          },
-          768: {
-            slidesPerView: 3,
-          },
-          1024: {
-            slidesPerView: 4,
-          },
+          640: { slidesPerView: 2 },
+          768: { slidesPerView: 3 },
+          1024: { slidesPerView: 4 },
         }}
         onBeforeInit={(swiper) => {
           swiperRef.current = swiper;
@@ -138,11 +140,8 @@ const WhichIs: React.FC<{ params: Params }> = ({ params }) => {
               shakeItemId === item.id ? "animate-shake" : ""
             }`}
           >
-            <div
-              onClick={() => handleCardClick(item.id, item.name)}
-              className="space-y-4 cursor-pointer"
-            >
-              <div className="flex justify-center items-center bg-white rounded-lg hover:rounded-lg shadow-lg hover:shadow-xl transform transition h-64 p-6">
+            <div onClick={() => handleCardClick(item.id, item.name)}>
+              <div className="flex justify-center items-center bg-white rounded-lg shadow-lg transform transition h-64 p-6 hover:shadow-xl hover:rounded-lg">
                 <Image
                   src={item.image}
                   alt={item.name}
