@@ -8,9 +8,12 @@ import { Navigation } from "swiper/modules";
 import { Category } from "@/types/category";
 import { Volume2 } from "lucide-react";
 import { fetchRelatedData } from "@/app/hooks/useCategoryData";
+import Confetti from "react-confetti";
+import { useWindowSize } from "react-use";
 
 import "swiper/css";
 import "swiper/css/navigation";
+import CorrectModal from "@/components/shared/CorrectModal";
 
 interface Params {
   category: string;
@@ -19,8 +22,11 @@ interface Params {
 const WhichIs: React.FC<{ params: Params }> = ({ params }) => {
   const [relatedData, setRelatedData] = useState<Category[]>([]);
   const [randomItemName, setRandomItemName] = useState<string | null>(null);
+  const [showConfetti, setShowConfetti] = useState(false);
   const swiperRef = useRef<SwiperCore | null>(null);
-  console.log(randomItemName);
+  const { width, height } = useWindowSize();
+  const [showModal, setShowModal] = useState(false);
+  const [shakeItemId, setShakeItemId] = useState<number | null>(null);
 
   useEffect(() => {
     async function loadRelatedData() {
@@ -29,7 +35,6 @@ const WhichIs: React.FC<{ params: Params }> = ({ params }) => {
 
       if (data.length > 0) {
         const randomIndex = Math.floor(Math.random() * data.length);
-
         setRandomItemName(data[randomIndex].name);
       }
     }
@@ -37,9 +42,14 @@ const WhichIs: React.FC<{ params: Params }> = ({ params }) => {
     loadRelatedData();
   }, [params.category]);
 
-  const playAudio = (audio: string) => {
-    const audioEl = new Audio(audio);
-    audioEl.play();
+  const playCorrectAudio = () => {
+    const correctAudio = new Audio("/audio/congrats.mp3");
+    correctAudio.play();
+  };
+
+  const playIncorrectAudio = () => {
+    const incorrectAudio = new Audio("/audio/error.mp3");
+    incorrectAudio.play();
   };
 
   const speakText = (text: string) => {
@@ -57,8 +67,38 @@ const WhichIs: React.FC<{ params: Params }> = ({ params }) => {
     }
   };
 
+  const handleCardClick = (itemId: number, itemName: string) => {
+    if (itemName === randomItemName) {
+      console.log("Correct!");
+      setShowConfetti(true);
+      setShowModal(true);
+      playCorrectAudio();
+
+      setTimeout(() => {
+        setShowConfetti(false);
+      }, 5000);
+
+      setTimeout(() => {
+        setShowModal(false);
+      }, 3000);
+    } else {
+      console.log("Incorrect!");
+      setShakeItemId(itemId);
+      playIncorrectAudio();
+      setTimeout(() => setShakeItemId(null), 500);
+    }
+  };
+
   return (
     <div className="relative">
+      {showConfetti && (
+        <Confetti
+          width={width}
+          height={height}
+          style={{ position: "fixed", top: 0, left: 0, zIndex: 9999 }}
+        />
+      )}
+      <CorrectModal isOpen={showModal} randomItemName={randomItemName} />
       <div className="flex items-start justify-center gap-2 mt-20">
         <h3 className="text-4xl text-center uppercase">
           Which one is the {randomItemName}?
@@ -71,7 +111,6 @@ const WhichIs: React.FC<{ params: Params }> = ({ params }) => {
           }}
         />
       </div>
-
       <Swiper
         spaceBetween={15}
         slidesPerView={1}
@@ -93,9 +132,14 @@ const WhichIs: React.FC<{ params: Params }> = ({ params }) => {
         className="mt-4"
       >
         {relatedData.map((item) => (
-          <SwiperSlide key={item.id} className="rounded-lg hover:rounded-lg">
+          <SwiperSlide
+            key={item.id}
+            className={`space-y-4 cursor-pointer ${
+              shakeItemId === item.id ? "animate-shake" : ""
+            }`}
+          >
             <div
-              onClick={() => playAudio(item.audio)}
+              onClick={() => handleCardClick(item.id, item.name)}
               className="space-y-4 cursor-pointer"
             >
               <div className="flex justify-center items-center bg-white rounded-lg hover:rounded-lg shadow-lg hover:shadow-xl transform transition h-64 p-6">
@@ -111,7 +155,6 @@ const WhichIs: React.FC<{ params: Params }> = ({ params }) => {
           </SwiperSlide>
         ))}
       </Swiper>
-
       <div className="absolute top-2/3 -left-20 transform -translate-y-1/2">
         <button
           onClick={() => swiperRef.current?.slidePrev()}
