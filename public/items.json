@@ -3,10 +3,10 @@
     {
       "id": 1,
       "name": "Lion",
-      "image": "/lion.png",
+      "image": "/images/lion.png",
       "description": "The lion is a species in the family Felidae and a member of the genus Panthera.",
       "audio": {
-        "itemAudio": "/audio/this/lion.mp3",
+        "itemAudio": "lion.mp3",
         "question": "q-lion.mp3",
         "success": "c-lion.mp3",
         "error": "e-lion.mp3",
@@ -16,10 +16,10 @@
     {
       "id": 2,
       "name": "Elephant",
-      "image": "/elephant.png",
+      "image": "/images/elephant.png",
       "description": "Elephants are large mammals of the family Elephantidae and the order Proboscidea.",
       "audio": {
-        "itemAudio": "/audio/this/elephant.mp3",
+        "itemAudio": "elephant.mp3",
         "question": "q-elephant.mp3",
         "success": "c-elephant.mp3",
         "error": "e-elephant.mp3",
@@ -29,10 +29,10 @@
     {
       "id": 3,
       "name": "Zebra",
-      "image": "/zebra.png",
+      "image": "/images/zebra.png",
       "description": "Zebras are African equids with distinctive black-and-white striped coats.",
       "audio": {
-        "itemAudio": "/audio/this/zebra.mp3",
+        "itemAudio": "zebra.mp3",
         "question": "q-zebra.mp3",
         "success": "c-zebra.mp3",
         "error": "e-zebra.mp3",
@@ -42,10 +42,10 @@
     {
       "id": 4,
       "name": "Rat",
-      "image": "/rat.png",
+      "image": "/images/rat.png",
       "description": "Rats are medium-sized, long-tailed rodents belonging to the genus Rattus.",
       "audio": {
-        "itemAudio": "/audio/this/rat.mp3",
+        "itemAudio": "rat.mp3",
         "question": "q-rat.mp3",
         "success": "c-rat.mp3",
         "error": "e-rat.mp3",
@@ -55,10 +55,10 @@
     {
       "id": 5,
       "name": "Dog",
-      "image": "/dog.png",
+      "image": "/images/dog.png",
       "description": "The domestic dog is a domesticated descendant of the wolf.",
       "audio": {
-        "itemAudio": "/audio/this/dog.mp3",
+        "itemAudio": "dog.mp3",
         "question": "q-dog.mp3",
         "success": "c-dog.mp3",
         "error": "e-dog.mp3",
@@ -68,10 +68,10 @@
     {
       "id": 6,
       "name": "Tiger",
-      "image": "/tiger.png",
+      "image": "/images/tiger.png",
       "description": "The tiger is the largest living cat species and a member of the genus Panthera.",
       "audio": {
-        "itemAudio": "/audio/this/tiger.mp3",
+        "itemAudio": "tiger.mp3",
         "question": "q-tiger.mp3",
         "success": "c-tiger.mp3",
         "error": "e-tiger.mp3",
@@ -83,10 +83,10 @@
     {
       "id": 1,
       "name": "Car",
-      "image": "/car.png",
+      "image": "/images/car.png",
       "description": "A car is a wheeled motor vehicle used for transportation.",
       "audio": {
-        "itemAudio": "/audio/this/car.mp3",
+        "itemAudio": "car.mp3",
         "question": "q-car.mp3",
         "success": "c-car.mp3",
         "error": "e-car.mp3",
@@ -96,10 +96,10 @@
     {
       "id": 2,
       "name": "Train",
-      "image": "/train.png",
+      "image": "/images/train.png",
       "description": "A train is a series of connected vehicles that run on railways to transport goods or passengers.",
       "audio": {
-        "itemAudio": "/audio/this/train.mp3",
+        "itemAudio": "train.mp3",
         "question": "q-train.mp3",
         "success": "c-train.mp3",
         "error": "e-train.mp3",
@@ -109,10 +109,10 @@
     {
       "id": 3,
       "name": "Motorcycle",
-      "image": "/motorcycle.png",
+      "image": "/images/motorcycle.png",
       "description": "A motorcycle is a two-wheeled motor vehicle that is powered by an engine.",
       "audio": {
-        "itemAudio": "/audio/this/motorcycle.mp3",
+        "itemAudio": "motorcycle.mp3",
         "question": "q-motorcycle.mp3",
         "success": "c-train.mp3",
         "error": "e-train.mp3",
@@ -122,10 +122,10 @@
     {
       "id": 4,
       "name": "Van",
-      "image": "/van.png",
+      "image": "/images/van.png",
       "description": "A van is a type of vehicle used for transporting goods or passengers, often with a larger cargo area.",
       "audio": {
-        "itemAudio": "/audio/this/van.mp3",
+        "itemAudio": "van.mp3",
         "question": "q-van.mp3",
         "success": "c-van.mp3",
         "error": "e-van.mp3",
@@ -135,10 +135,10 @@
     {
       "id": 5,
       "name": "Ambulance",
-      "image": "/ambulance.png",
+      "image": "/images/ambulance.png",
       "description": "An ambulance is a vehicle equipped to transport sick or injured people to medical facilities.",
       "audio": {
-        "itemAudio": "/audio/this/ambulance.mp3",
+        "itemAudio": "ambulance.mp3",
         "question": "q-ambulance.mp3",
         "success": "c-ambulance.mp3",
         "error": "e-ambulance.mp3",
@@ -148,10 +148,10 @@
     {
       "id": 6,
       "name": "Helicopter",
-      "image": "/helicopter.png",
+      "image": "/images/helicopter.png",
       "description": "A helicopter is a type of aircraft that derives lift from rotating blades and is used for various purposes.",
       "audio": {
-        "itemAudio": "/audio/this/helicopter.mp3",
+        "itemAudio": "helicopter.mp3",
         "question": "q-helicopter.mp3",
         "success": "c-helicopter.mp3",
         "error": "e-helicopter.mp3",
@@ -163,10 +163,10 @@
     {
       "id": 1,
       "name": "Cap",
-      "image": "/cap.png",
+      "image": "/images/cap.png",
       "description": "A cap is a type of headwear with a visor, often worn for casual or sports purposes.",
       "audio": {
-        "itemAudio": "/audio/this/cap.mp3",
+        "itemAudio": "cap.mp3",
         "question": "q-cap.mp3",
         "success": "c-cap.mp3",
         "error": "e-cap.mp3",
@@ -176,10 +176,10 @@
     {
       "id": 2,
       "name": "Socks",
-      "image": "/socks.png",
+      "image": "/images/socks.png",
       "description": "Socks are garments worn on the feet, usually under shoes.",
       "audio": {
-        "itemAudio": "/audio/this/socks.mp3",
+        "itemAudio": "socks.mp3",
         "question": "q-socks.mp3",
         "success": "c-socks.mp3",
         "error": "e-socks.mp3",
@@ -189,10 +189,10 @@
     {
       "id": 3,
       "name": "Shoes",
-      "image": "/shoes.png",
+      "image": "/images/shoes.png",
       "description": "A shoe is a type of footwear worn to protect and comfort the foot.",
       "audio": {
-        "itemAudio": "/audio/this/shoes.mp3",
+        "itemAudio": "shoes.mp3",
         "question": "q-shoes.mp3",
         "success": "c-shoes.mp3",
         "error": "e-shoes.mp3",
@@ -202,10 +202,10 @@
     {
       "id": 4,
       "name": "Shorts",
-      "image": "/shorts.png",
+      "image": "/images/shorts.png",
       "description": "Shorts are garments worn on the lower body, covering only part of the thigh.",
       "audio": {
-        "itemAudio": "/audio/this/shorts.mp3",
+        "itemAudio": "shorts.mp3",
         "question": "q-shorts.mp3",
         "success": "c-shoes.mp3",
         "error": "e-shoes.mp3",
@@ -215,10 +215,10 @@
     {
       "id": 5,
       "name": "Jacket",
-      "image": "/jacket.png",
+      "image": "/images/jacket.png",
       "description": "A jacket is a mid-length garment for the upper body.",
       "audio": {
-        "itemAudio": "/audio/this/jacket.mp3",
+        "itemAudio": "jacket.mp3",
         "question": "q-jacket.mp3",
         "success": "c-jacket.mp3",
         "error": "e-jacket.mp3",
@@ -228,10 +228,10 @@
     {
       "id": 6,
       "name": "Sweater",
-      "image": "/sweater.png",
+      "image": "/images/sweater.png",
       "description": "Sweater includes garments like sweatshirts and sweatpants, typically made from soft, comfortable fabric.",
       "audio": {
-        "itemAudio": "/audio/this/sweater.mp3",
+        "itemAudio": "sweater.mp3",
         "question": "q-sweater.mp3",
         "success": "c-sweater.mp3",
         "error": "e-sweater.mp3",
@@ -243,10 +243,10 @@
     {
       "id": 1,
       "name": "Tacos",
-      "image": "/tacos.png",
+      "image": "/images/tacos.png",
       "description": "Tacos are a traditional Mexican dish consisting of a folded or rolled tortilla filled with various ingredients like meat, beans, and vegetables.",
       "audio": {
-        "itemAudio": "/audio/this/tacos.mp3",
+        "itemAudio": "tacos.mp3",
         "question": "q-tacos.mp3",
         "success": "c-tacos.mp3",
         "error": "e-tacos.mp3",
@@ -256,10 +256,10 @@
     {
       "id": 2,
       "name": "Salad",
-      "image": "/salad.png",
+      "image": "/images/salad.png",
       "description": "Salad is a dish consisting of a mixture of various ingredients such as vegetables, fruits, nuts, and dressings, often served cold.",
       "audio": {
-        "itemAudio": "/audio/this/salad.mp3",
+        "itemAudio": "salad.mp3",
         "question": "q-salad.mp3",
         "success": "c-salad.mp3",
         "error": "e-salad.mp3",
@@ -269,10 +269,10 @@
     {
       "id": 3,
       "name": "Noodles",
-      "image": "/noodles.png",
+      "image": "/images/noodles.png",
       "description": "Noodles are a type of staple food made from unleavened dough, often boiled or stir-fried, and can be served in a variety of dishes.",
       "audio": {
-        "itemAudio": "/audio/this/noodles.mp3",
+        "itemAudio": "noodles.mp3",
         "question": "q-noodles.mp3",
         "success": "c-noodles.mp3",
         "error": "e-noodles.mp3",
@@ -282,10 +282,10 @@
     {
       "id": 4,
       "name": "Burger",
-      "image": "/burger.png",
+      "image": "/images/burger.png",
       "description": "A hamburger is a sandwich consisting of a cooked patty of ground meat, usually beef, placed inside a sliced bread roll or bun.",
       "audio": {
-        "itemAudio": "/audio/this/burger.mp3",
+        "itemAudio": "burger.mp3",
         "question": "q-burger.mp3",
         "success": "c-burger.mp3",
         "error": "e-burger.mp3",
@@ -295,10 +295,10 @@
     {
       "id": 5,
       "name": "Pizza",
-      "image": "/pizza.png",
+      "image": "/images/pizza.png",
       "description": "Pizza is an Italian dish consisting of a usually round, flat base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients.",
       "audio": {
-        "itemAudio": "/audio/this/pizza.mp3",
+        "itemAudio": "pizza.mp3",
         "question": "q-pizza.mp3",
         "success": "c-pizza.mp3",
         "error": "e-pizza.mp3",
@@ -308,10 +308,10 @@
     {
       "id": 6,
       "name": "Sushi",
-      "image": "/sushi.png",
+      "image": "/images/sushi.png",
       "description": "Sushi is a Japanese dish consisting of vinegared rice accompanied by various ingredients, such as seafood, vegetables, and sometimes tropical fruits.",
       "audio": {
-        "itemAudio": "/audio/this/sushi.mp3",
+        "itemAudio": "sushi.mp3",
         "question": "q-sushi.mp3",
         "success": "c-sushi.mp3",
         "error": "e-sushi.mp3",
@@ -323,10 +323,10 @@
     {
       "id": 1,
       "name": "Chocolate",
-      "image": "/chocolate.png",
+      "image": "/images/chocolate.png",
       "description": "Chocolate is a sweet, brown food made from roasted and ground cacao seeds.",
       "audio": {
-        "itemAudio": "/audio/this/chocolate.mp3",
+        "itemAudio": "chocolate.mp3",
         "question": "q-chocolate.mp3",
         "success": "c-chocolate.mp3",
         "error": "e-chocolate.mp3",
@@ -336,10 +336,10 @@
     {
       "id": 2,
       "name": "Candy",
-      "image": "/candy.png",
+      "image": "/images/candy.png",
       "description": "Candy is a sweet treat made with sugar or other sweeteners.",
       "audio": {
-        "itemAudio": "/audio/this/candy.mp3",
+        "itemAudio": "candy.mp3",
         "question": "q-candy.mp3",
         "success": "c-candy.mp3",
         "error": "e-candy.mp3",
@@ -349,10 +349,10 @@
     {
       "id": 3,
       "name": "Cookies",
-      "image": "/cookies.png",
+      "image": "/images/cookies.png",
       "description": "Cookies are small, sweet, baked treats often containing ingredients like chocolate chips, nuts, or dried fruit.",
       "audio": {
-        "itemAudio": "/audio/this/cookies.mp3",
+        "itemAudio": "cookies.mp3",
         "question": "q-cookies.mp3",
         "success": "c-cookies.mp3",
         "error": "e-cookies.mp3",
@@ -362,10 +362,10 @@
     {
       "id": 4,
       "name": "Waffle",
-      "image": "/waffle.png",
+      "image": "/images/waffle.png",
       "description": "Waffle is a light, crisp, batter-based cake cooked between two patterned plates.",
       "audio": {
-        "itemAudio": "/audio/this/waffle.mp3",
+        "itemAudio": "waffle.mp3",
         "question": "q-waffle.mp3",
         "success": "c-waffle.mp3",
         "error": "e-waffle.mp3",
@@ -375,10 +375,10 @@
     {
       "id": 5,
       "name": "Cake",
-      "image": "/cake.png",
+      "image": "/images/cake.png",
       "description": "Cake is a sweet baked dessert, usually made with flour, sugar, eggs, and butter.",
       "audio": {
-        "itemAudio": "/audio/this/cake.mp3",
+        "itemAudio": "cake.mp3",
         "question": "q-cake.mp3",
         "success": "c-cake.mp3",
         "error": "e-cake.mp3",
@@ -388,10 +388,10 @@
     {
       "id": 6,
       "name": "Ice Cream",
-      "image": "/icecream.png",
+      "image": "/images/icecream.png",
       "description": "Ice cream is a frozen dessert made from dairy products and often flavored with fruits or other ingredients.",
       "audio": {
-        "itemAudio": "/audio/this/icecream.mp3",
+        "itemAudio": "icecream.mp3",
         "question": "q-icecream.mp3",
         "success": "c-icecream.mp3",
         "error": "e-icecream.mp3",
@@ -403,10 +403,10 @@
     {
       "id": 1,
       "name": "Puzzle",
-      "image": "/puzzle.png",
+      "image": "/images/puzzle.png",
       "description": "A puzzle is a game, toy, or problem designed to test ingenuity or knowledge.",
       "audio": {
-        "itemAudio": "/audio/this/puzzle.mp3",
+        "itemAudio": "puzzle.mp3",
         "question": "q-puzzle.mp3",
         "success": "c-puzzle.mp3",
         "error": "e-puzzle.mp3",
@@ -416,10 +416,10 @@
     {
       "id": 2,
       "name": "Board Game",
-      "image": "/boardgame.png",
+      "image": "/images/boardgame.png",
       "description": "A board game is a game that involves counters or pieces moved or placed on a pre-marked surface according to a set of rules.",
       "audio": {
-        "itemAudio": "/audio/this/boardgame.mp3",
+        "itemAudio": "boardgame.mp3",
         "question": "q-boardgame.mp3",
         "success": "c-boardgame.mp3",
         "error": "e-boardgame.mp3",
@@ -429,10 +429,10 @@
     {
       "id": 3,
       "name": "Kite",
-      "image": "/kite.png",
+      "image": "/images/kite.png",
       "description": "A kite is a tethered flying object with a light frame and thin material, flown for recreation or sport.",
       "audio": {
-        "itemAudio": "/audio/this/kite.mp3",
+        "itemAudio": "kite.mp3",
         "question": "q-kite.mp3",
         "success": "c-kite.mp3",
         "error": "e-kite.mp3",
@@ -442,10 +442,10 @@
     {
       "id": 4,
       "name": "Ball",
-      "image": "/ball.png",
+      "image": "/images/ball.png",
       "description": "A ball is a spherical object used in various games and sports.",
       "audio": {
-        "itemAudio": "/audio/this/ball.mp3",
+        "itemAudio": "ball.mp3",
         "question": "q-ball.mp3",
         "success": "c-ball.mp3",
         "error": "e-ball.mp3",
@@ -455,10 +455,10 @@
     {
       "id": 5,
       "name": "Color",
-      "image": "/color.png",
+      "image": "/images/color.png",
       "description": "Color refers to the characteristic of visual perception described through color names such as red, blue, green, etc.",
       "audio": {
-        "itemAudio": "/audio/this/color.mp3",
+        "itemAudio": "color.mp3",
         "question": "q-color.mp3",
         "success": "c-color.mp3",
         "error": "e-color.mp3",
@@ -468,10 +468,10 @@
     {
       "id": 6,
       "name": "Pencil",
-      "image": "/pencil.png",
+      "image": "/images/pencil.png",
       "description": "A pencil is a writing instrument made of a thin stick of graphite encased in wood.",
       "audio": {
-        "itemAudio": "/audio/this/pencil.mp3",
+        "itemAudio": "pencil.mp3",
         "question": "q-pencil.mp3",
         "success": "c-pencil.mp3",
         "error": "e-pencil.mp3",
@@ -483,10 +483,10 @@
     {
       "id": 1,
       "name": "Carrot",
-      "image": "/carrot.png",
+      "image": "/images/carrot.png",
       "description": "The carrot is a root vegetable often claimed to be the perfect health food.",
       "audio": {
-        "itemAudio": "/audio/this/carrot.mp3",
+        "itemAudio": "carrot.mp3",
         "question": "q-carrot.mp3",
         "success": "c-carrot.mp3",
         "error": "e-carrot.mp3",
@@ -496,10 +496,10 @@
     {
       "id": 2,
       "name": "Broccoli",
-      "image": "/broccoli.png",
+      "image": "/images/broccoli.png",
       "description": "Broccoli is an edible green plant in the cabbage family.",
       "audio": {
-        "itemAudio": "/audio/this/broccoli.mp3",
+        "itemAudio": "broccoli.mp3",
         "question": "q-broccoli.mp3",
         "success": "c-broccoli.mp3",
         "error": "e-broccoli.mp3",
@@ -509,10 +509,10 @@
     {
       "id": 3,
       "name": "Spinach",
-      "image": "/spinach.png",
+      "image": "/images/spinach.png",
       "description": "Spinach is a leafy green flowering plant native to central and Western Asia.",
       "audio": {
-        "itemAudio": "/audio/this/spinach.mp3",
+        "itemAudio": "spinach.mp3",
         "question": "q-spinach.mp3",
         "success": "c-spinach.mp3",
         "error": "e-spinach.mp3",
@@ -522,10 +522,10 @@
     {
       "id": 4,
       "name": "Tomato",
-      "image": "/tomato.png",
+      "image": "/images/tomato.png",
       "description": "The tomato is an edible red fruit commonly used as a vegetable in cooking.",
       "audio": {
-        "itemAudio": "/audio/this/tomato.mp3",
+        "itemAudio": "tomato.mp3",
         "question": "q-tomato.mp3",
         "success": "c-tomato.mp3",
         "error": "e-tomato.mp3",
@@ -535,10 +535,10 @@
     {
       "id": 5,
       "name": "Cucumber",
-      "image": "/cucumber.png",
+      "image": "/images/cucumber.png",
       "description": "Cucumber is a widely cultivated creeping vine plant that bears cylindrical fruits used as culinary vegetables.",
       "audio": {
-        "itemAudio": "/audio/this/cucumber.mp3",
+        "itemAudio": "cucumber.mp3",
         "question": "q-cucumber.mp3",
         "success": "c-cucumber.mp3",
         "error": "e-cucumber.mp3",
@@ -548,10 +548,10 @@
     {
       "id": 6,
       "name": "Pepper",
-      "image": "/pepper.png",
+      "image": "/images/pepper.png",
       "description": "Peppers are fruits of plants in the Capsicum genus, commonly referred to as vegetables in culinary contexts.",
       "audio": {
-        "itemAudio": "/audio/this/pepper.mp3",
+        "itemAudio": "pepper.mp3",
         "question": "q-pepper.mp3",
         "success": "c-pepper.mp3",
         "error": "e-pepper.mp3",
@@ -563,10 +563,10 @@
     {
       "id": 1,
       "name": "Apple",
-      "image": "/apple.png",
+      "image": "/images/apple.png",
       "description": "An apple is an edible fruit produced by an apple tree.",
       "audio": {
-        "itemAudio": "/audio/this/apple.mp3",
+        "itemAudio": "apple.mp3",
         "question": "q-apple.mp3",
         "success": "c-apple.mp3",
         "error": "e-apple.mp3",
@@ -576,10 +576,10 @@
     {
       "id": 2,
       "name": "Banana",
-      "image": "/banana.png",
+      "image": "/images/banana.png",
       "description": "A banana is an elongated, edible fruit produced by several kinds of large herbaceous flowering plants.",
       "audio": {
-        "itemAudio": "/audio/this/banana.mp3",
+        "itemAudio": "banana.mp3",
         "question": "q-banana.mp3",
         "success": "c-banana.mp3",
         "error": "e-banana.mp3",
@@ -589,10 +589,10 @@
     {
       "id": 3,
       "name": "Orange",
-      "image": "/orange.png",
+      "image": "/images/orange.png",
       "description": "An orange is a type of citrus fruit that is commonly eaten as food.",
       "audio": {
-        "itemAudio": "/audio/this/orange.mp3",
+        "itemAudio": "orange.mp3",
         "question": "q-orange.mp3",
         "success": "c-orange.mp3",
         "error": "e-orange.mp3",
@@ -602,10 +602,10 @@
     {
       "id": 4,
       "name": "Strawberry",
-      "image": "/strawberry.png",
+      "image": "/images/strawberry.png",
       "description": "A strawberry is a bright red, juicy, and sweet fruit with seeds on the outside.",
       "audio": {
-        "itemAudio": "/audio/this/strawberry.mp3",
+        "itemAudio": "strawberry.mp3",
         "question": "q-strawberry.mp3",
         "success": "c-strawberry.mp3",
         "error": "e-strawberry.mp3",
@@ -615,10 +615,10 @@
     {
       "id": 5,
       "name": "Grapes",
-      "image": "/grapes.png",
+      "image": "/images/grapes.png",
       "description": "Grapes are small, round fruits that grow in bunches and can be eaten fresh or used to make wine.",
       "audio": {
-        "itemAudio": "/audio/this/grapes.mp3",
+        "itemAudio": "grapes.mp3",
         "question": "q-grapes.mp3",
         "success": "c-grapes.mp3",
         "error": "e-grapes.mp3",
@@ -628,10 +628,10 @@
     {
       "id": 6,
       "name": "Pineapple",
-      "image": "/pineapple.png",
+      "image": "/images/pineapple.png",
       "description": "A pineapple is a tropical fruit with a tough, spiky exterior and sweet, yellow flesh inside.",
       "audio": {
-        "itemAudio": "/audio/this/pineapple.mp3",
+        "itemAudio": "pineapple.mp3",
         "question": "q-pineapple.mp3",
         "success": "c-pineapple.mp3",
         "error": "e-pineapple.mp3",
@@ -643,10 +643,10 @@
     {
       "id": 1,
       "name": "Doll",
-      "image": "/doll.png",
+      "image": "/images/doll.png",
       "description": "A doll is a model of a human figure, typically of a baby or girl, used as a child's toy.",
       "audio": {
-        "itemAudio": "/audio/this/doll.mp3",
+        "itemAudio": "doll.mp3",
         "question": "q-doll.mp3",
         "success": "c-doll.mp3",
         "error": "e-doll.mp3",
@@ -656,10 +656,10 @@
     {
       "id": 2,
       "name": "Action Figure",
-      "image": "/action-figure.png",
+      "image": "/images/action-figure.png",
       "description": "An action figure is a doll or toy that represents a character from film, comic books, or other media.",
       "audio": {
-        "itemAudio": "/audio/this/action-figure.mp3",
+        "itemAudio": "action-figure.mp3",
         "question": "q-action-figure.mp3",
         "success": "c-action-figure.mp3",
         "error": "e-action-figure.mp3",
@@ -669,10 +669,10 @@
     {
       "id": 3,
       "name": "Building Blocks",
-      "image": "/building-blocks.png",
+      "image": "/images/building-blocks.png",
       "description": "Building blocks are toy components that can be assembled to build various structures.",
       "audio": {
-        "itemAudio": "/audio/this/building-blocks.mp3",
+        "itemAudio": "building-blocks.mp3",
         "question": "q-building-blocks.mp3",
         "success": "c-building-blocks.mp3",
         "error": "e-building-blocks.mp3",
@@ -682,10 +682,10 @@
     {
       "id": 4,
       "name": "Toy Car",
-      "image": "/toy-car.png",
+      "image": "/images/toy-car.png",
       "description": "A toy car is a small model vehicle, typically for children to play with.",
       "audio": {
-        "itemAudio": "/audio/this/toy-car.mp3",
+        "itemAudio": "toy-car.mp3",
         "question": "q-toy-car.mp3",
         "success": "c-toy-car.mp3",
         "error": "e-toy-car.mp3",
@@ -695,10 +695,10 @@
     {
       "id": 5,
       "name": "Stuffed Animal",
-      "image": "/stuffed-animal.png",
+      "image": "/images/stuffed-animal.png",
       "description": "A stuffed animal is a soft toy in the shape of an animal, often used for cuddling.",
       "audio": {
-        "itemAudio": "/audio/this/stuffed-animal.mp3",
+        "itemAudio": "stuffed-animal.mp3",
         "question": "q-stuffed-animal.mp3",
         "success": "c-stuffed-animal.mp3",
         "error": "e-stuffed-animal.mp3",
@@ -708,10 +708,10 @@
     {
       "id": 6,
       "name": "Toy Robot",
-      "image": "/toy-robot.png",
+      "image": "/images/toy-robot.png",
       "description": "A toy robot is a mechanical or electronic toy that mimics a robot's appearance or actions.",
       "audio": {
-        "itemAudio": "/audio/this/toy-robot.mp3",
+        "itemAudio": "toy-robot.mp3",
         "question": "q-toy-robot.mp3",
         "success": "c-toy-robot.mp3",
         "error": "e-toy-robot.mp3",
@@ -723,10 +723,10 @@
     {
       "id": 1,
       "name": "Lamp",
-      "image": "/lamp.png",
+      "image": "/images/lamp.png",
       "description": "A lamp is a device for giving light.",
       "audio": {
-        "itemAudio": "/audio/this/lamp.mp3",
+        "itemAudio": "lamp.mp3",
         "question": "q-lamp.mp3",
         "success": "c-lamp.mp3",
         "error": "e-lamp.mp3",
@@ -736,10 +736,10 @@
     {
       "id": 2,
       "name": "Sofa",
-      "image": "/sofa.png",
+      "image": "/images/sofa.png",
       "description": "A sofa is a long upholstered seat with a back and arms, for two or more people.",
       "audio": {
-        "itemAudio": "/audio/this/sofa.mp3",
+        "itemAudio": "sofa.mp3",
         "question": "q-sofa.mp3",
         "success": "c-sofa.mp3",
         "error": "e-sofa.mp3",
@@ -749,10 +749,10 @@
     {
       "id": 3,
       "name": "Table",
-      "image": "/table.png",
+      "image": "/images/table.png",
       "description": "A table is an item of furniture with a flat top and one or more legs.",
       "audio": {
-        "itemAudio": "/audio/this/table.mp3",
+        "itemAudio": "table.mp3",
         "question": "q-table.mp3",
         "success": "c-table.mp3",
         "error": "e-table.mp3",
@@ -762,10 +762,10 @@
     {
       "id": 4,
       "name": "Chair",
-      "image": "/chair.png",
+      "image": "/images/chair.png",
       "description": "A chair is a piece of furniture for one person to sit on, typically having a back and four legs.",
       "audio": {
-        "itemAudio": "/audio/this/chair.mp3",
+        "itemAudio": "chair.mp3",
         "question": "q-chair.mp3",
         "success": "c-chair.mp3",
         "error": "e-chair.mp3",
@@ -775,10 +775,10 @@
     {
       "id": 5,
       "name": "Bed",
-      "image": "/bed.png",
+      "image": "/images/bed.png",
       "description": "A bed is a piece of furniture used for sleeping or resting.",
       "audio": {
-        "itemAudio": "/audio/this/bed.mp3",
+        "itemAudio": "bed.mp3",
         "question": "q-bed.mp3",
         "success": "c-bed.mp3",
         "error": "e-bed.mp3",
@@ -788,10 +788,10 @@
     {
       "id": 6,
       "name": "Curtains",
-      "image": "/curtains.png",
+      "image": "/images/curtains.png",
       "description": "Curtains are pieces of cloth that are hung to cover windows.",
       "audio": {
-        "itemAudio": "/audio/this/curtains.mp3",
+        "itemAudio": "curtains.mp3",
         "question": "q-curtains.mp3",
         "success": "c-curtains.mp3",
         "error": "e-curtains.mp3",
@@ -803,10 +803,10 @@
     {
       "id": 1,
       "name": "Hammer",
-      "image": "/hammer.png",
+      "image": "/images/hammer.png",
       "description": "A hammer is a tool consisting of a heavy 'head' fixed to a long handle, used for jobs such as breaking things or driving in nails.",
       "audio": {
-        "itemAudio": "/audio/this/hammer.mp3",
+        "itemAudio": "hammer.mp3",
         "question": "q-hammer.mp3",
         "success": "c-hammer.mp3",
         "error": "e-hammer.mp3",
@@ -816,10 +816,10 @@
     {
       "id": 2,
       "name": "Screwdriver",
-      "image": "/screwdriver.png",
+      "image": "/images/screwdriver.png",
       "description": "A screwdriver is a tool used to turn screws.",
       "audio": {
-        "itemAudio": "/audio/this/screwdriver.mp3",
+        "itemAudio": "screwdriver.mp3",
         "question": "q-screwdriver.mp3",
         "success": "c-screwdriver.mp3",
         "error": "e-screwdriver.mp3",
@@ -829,10 +829,10 @@
     {
       "id": 3,
       "name": "Wrench",
-      "image": "/wrench.png",
+      "image": "/images/wrench.png",
       "description": "A wrench is a tool used for gripping and turning objects.",
       "audio": {
-        "itemAudio": "/audio/this/wrench.mp3",
+        "itemAudio": "wrench.mp3",
         "question": "q-wrench.mp3",
         "success": "c-wrench.mp3",
         "error": "e-wrench.mp3",
@@ -842,10 +842,10 @@
     {
       "id": 4,
       "name": "Pliers",
-      "image": "/pliers.png",
+      "image": "/images/pliers.png",
       "description": "Pliers are a hand tool used to hold objects firmly, bend, or compress.",
       "audio": {
-        "itemAudio": "/audio/this/pliers.mp3",
+        "itemAudio": "pliers.mp3",
         "question": "q-pliers.mp3",
         "success": "c-pliers.mp3",
         "error": "e-pliers.mp3",
@@ -855,10 +855,10 @@
     {
       "id": 5,
       "name": "Saw",
-      "image": "/saw.png",
+      "image": "/images/saw.png",
       "description": "A saw is a tool consisting of a tough blade or wire used to cut through material, most often wood.",
       "audio": {
-        "itemAudio": "/audio/this/saw.mp3",
+        "itemAudio": "saw.mp3",
         "question": "q-saw.mp3",
         "success": "c-saw.mp3",
         "error": "e-saw.mp3",
@@ -868,10 +868,10 @@
     {
       "id": 6,
       "name": "Tape Measure",
-      "image": "/tape-measure.png",
+      "image": "/images/tape-measure.png",
       "description": "A tape measure is a flexible ruler used to measure size or distance.",
       "audio": {
-        "itemAudio": "/audio/this/tape-measure.mp3",
+        "itemAudio": "tape-measure.mp3",
         "question": "q-tape-measure.mp3",
         "success": "c-tape-measure.mp3",
         "error": "e-tape-measure.mp3",
@@ -883,10 +883,10 @@
     {
       "id": 1,
       "name": "Painting",
-      "image": "/painting.png",
+      "image": "/images/painting.png",
       "description": "Painting is a fun activity that allows you to express creativity through colors and strokes.",
       "audio": {
-        "itemAudio": "/audio/this/painting.mp3",
+        "itemAudio": "painting.mp3",
         "question": "q-painting.mp3",
         "success": "c-painting.mp3",
         "error": "e-painting.mp3",
@@ -896,10 +896,10 @@
     {
       "id": 2,
       "name": "Cycling",
-      "image": "/cycling.png",
+      "image": "/images/cycling.png",
       "description": "Cycling is an outdoor activity that strengthens the body and helps explore nature.",
       "audio": {
-        "itemAudio": "/audio/this/cycling.mp3",
+        "itemAudio": "cycling.mp3",
         "question": "q-cycling.mp3",
         "success": "c-cycling.mp3",
         "error": "e-cycling.mp3",
@@ -909,10 +909,10 @@
     {
       "id": 3,
       "name": "Reading",
-      "image": "/reading.png",
+      "image": "/images/reading.png",
       "description": "Reading is a calming activity that stimulates the mind with stories and knowledge.",
       "audio": {
-        "itemAudio": "/audio/this/reading.mp3",
+        "itemAudio": "reading.mp3",
         "question": "q-reading.mp3",
         "success": "c-reading.mp3",
         "error": "e-reading.mp3",
@@ -922,10 +922,10 @@
     {
       "id": 4,
       "name": "Gardening",
-      "image": "/gardening.png",
+      "image": "/images/gardening.png",
       "description": "Gardening is a relaxing activity that involves growing and nurturing plants.",
       "audio": {
-        "itemAudio": "/audio/this/gardening.mp3",
+        "itemAudio": "gardening.mp3",
         "question": "q-gardening.mp3",
         "success": "c-gardening.mp3",
         "error": "e-gardening.mp3",
@@ -935,10 +935,10 @@
     {
       "id": 5,
       "name": "Cooking",
-      "image": "/cooking.png",
+      "image": "/images/cooking.png",
       "description": "Cooking is a rewarding activity that involves preparing meals and experimenting with recipes.",
       "audio": {
-        "itemAudio": "/audio/this/w-.mp3",
+        "itemAudio": "w-.mp3",
         "question": "q-cooking.mp3",
         "success": "c-cooking.mp3",
         "error": "e-cooking.mp3",
@@ -948,10 +948,10 @@
     {
       "id": 6,
       "name": "Photography",
-      "image": "/photography.png",
+      "image": "/images/photography.png",
       "description": "Photography is an artistic activity that captures moments and scenes through a camera lens.",
       "audio": {
-        "itemAudio": "/audio/this/photography.mp3",
+        "itemAudio": "photography.mp3",
         "question": "q-photography.mp3",
         "success": "c-photography.mp3",
         "error": "e-photography.mp3",
