@@ -1,0 +1,548 @@
+________________________TRANSPORT________________________
+Car;
+    itemAudio: "this is a car";
+    question: "Which one is the car?";
+    fallback: "car";
+    error: "No, this is a car.";
+    success: "YES! This is a car. Well done!";
+    warning: "car";
+
+Train;
+    itemAudio: "this is a train";
+    question: "Which one is the train?";
+    fallback: "train";
+    error: "No, this is a train.";
+    success: "YES! This is a train. Well done!";
+    warning: "train";
+
+Motorcycle;
+    itemAudio: "this is a motorcycle";
+    question: "Which one is the motorcycle?";
+    fallback: "motorcycle";
+    error: "No, this is a motorcycle.";
+    success: "YES! This is a motorcycle. Well done!";
+    warning: "motorcycle";
+
+Van;
+    itemAudio: "this is a van";
+    question: "Which one is the van?";
+    fallback: "van";
+    error: "No, this is a van.";
+    success: "YES! This is a van. Well done!";
+    warning: "van";
+
+Ambulance;
+    itemAudio: "this is an ambulance";
+    question: "Which one is the ambulance?";
+    fallback: "ambulance";
+    error: "No, this is an ambulance.";
+    success: "YES! This is an ambulance. Well done!";
+    warning: "ambulance";
+
+Helicopter;
+    itemAudio: "this is a helicopter";
+    question: "Which one is the helicopter?";
+    fallback: "helicopter";
+    error: "No, this is a helicopter.";
+    success: "YES! This is a helicopter. Well done!";
+    warning: "helicopter";
+
+________________________CLOTHING________________________
+
+Cap
+    itemAudio: "this is a cap"
+    question: "Which one is the cap?"
+    fallback: "cap"
+    error: "No, this is a cap."
+    success: "YES! This is a cap. Well done!"
+    warning: "cap"
+
+Socks
+    itemAudio: "these are socks"
+    question: "Which one are the socks?"
+    fallback: "socks"
+    error: "No, these are socks."
+    success: "YES! These are socks. Well done!"
+    warning: "socks"
+
+Shoes
+    itemAudio: "these are shoes"
+    question: "Which one are the shoes?"
+    fallback: "shoes"
+    error: "No, these are shoes."
+    success: "YES! These are shoes. Well done!"
+    warning: "shoes"
+
+Shorts
+    itemAudio: "these are shorts"
+    question: "Which one are the shorts?"
+    fallback: "shorts"
+    error: "No, these are shorts."
+    success: "YES! These are shorts. Well done!"
+    warning: "shorts"
+
+Jacket
+    itemAudio: "this is a jacket"
+    question: "Which one is the jacket?"
+    fallback: "jacket"
+    error: "No, this is a jacket."
+    success: "YES! This is a jacket. Well done!"
+    warning: "jacket"
+
+Sweater
+    itemAudio: "this is a sweater"
+    question: "Which one is the sweater?"
+    fallback: "sweater"
+    error: "No, this is a sweater."
+    success: "YES! This is a sweater. Well done!"
+    warning: "sweater"
+
+________________________FOOD________________________
+
+Tacos
+    itemAudio: "these are tacos"
+    question: "Which one are the tacos?"
+    fallback: "tacos"
+    error: "No, these are tacos."
+    success: "YES! These are tacos. Well done!"
+    warning: "tacos"
+
+Salad
+    itemAudio: "this is a salad"
+    question: "Which one is the salad?"
+    fallback: "salad"
+    error: "No, this is a salad."
+    success: "YES! This is a salad. Well done!"
+    warning: "salad"
+
+Noodles
+    itemAudio: "these are noodles"
+    question: "Which one are the noodles?"
+    fallback: "noodles"
+    error: "No, these are noodles."
+    success: "YES! These are noodles. Well done!"
+    warning: "noodles"
+
+Burger
+    itemAudio: "this is a burger"
+    question: "Which one is the burger?"
+    fallback: "burger"
+    error: "No, this is a burger."
+    success: "YES! This is a burger. Well done!"
+    warning: "burger"
+
+Pizza
+    itemAudio: "this is a pizza"
+    question: "Which one is the pizza?"
+    fallback: "pizza"
+    error: "No, this is a pizza."
+    success: "YES! This is a pizza. Well done!"
+    warning: "pizza"
+
+Sushi
+    itemAudio: "this is sushi"
+    question: "Which one is sushi?"
+    fallback: "sushi"
+    error: "No, this is sushi."
+    success: "YES! This is sushi. Well done!"
+    warning: "sushi"
+
+________________________TREATS________________________
+
+Chocolate
+    itemAudio: "this is chocolate"
+    question: "Which one is the chocolate?"
+    fallback: "chocolate"
+    error: "No, this is chocolate."
+    success: "YES! This is chocolate. Well done!"
+    warning: "chocolate"
+
+Candy
+    itemAudio: "this is candy"
+    question: "Which one is the candy?"
+    fallback: "candy"
+    error: "No, this is candy."
+    success: "YES! This is candy. Well done!"
+    warning: "candy"
+
+Cookies
+    itemAudio: "these are cookies"
+    question: "Which one are the cookies?"
+    fallback: "cookies"
+    error: "No, these are cookies."
+    success: "YES! These are cookies. Well done!"
+    warning: "cookies"
+
+Waffle
+    itemAudio: "this is a waffle"
+    question: "Which one is the waffle?"
+    fallback: "waffle"
+    error: "No, this is a waffle."
+    success: "YES! This is a waffle. Well done!"
+    warning: "waffle"
+
+Cake
+    itemAudio: "this is a cake"
+    question: "Which one is the cake?"
+    fallback: "cake"
+    error: "No, this is a cake."
+    success: "YES! This is a cake. Well done!"
+    warning: "cake"
+
+Ice Cream
+    itemAudio: "this is ice cream"
+    question: "Which one is the ice cream?"
+    fallback: "ice cream"
+    error: "No, this is ice cream."
+    success: "YES! This is ice cream. Well done!"
+    warning: "ice cream"
+
+________________________FUN THINGS________________________
+
+Puzzle
+    itemAudio: "this is a puzzle"
+    question: "Which one is the puzzle?"
+    fallback: "puzzle"
+    error: "No, this is a puzzle."
+    success: "YES! This is a puzzle. Well done!"
+    warning: "puzzle"
+
+Board Game
+    itemAudio: "this is a board game"
+    question: "Which one is the board game?"
+    fallback: "board game"
+    error: "No, this is a board game."
+    success: "YES! This is a board game. Well done!"
+    warning: "board game"
+
+Kite
+    itemAudio: "this is a kite"
+    question: "Which one is the kite?"
+    fallback: "kite"
+    error: "No, this is a kite."
+    success: "YES! This is a kite. Well done!"
+    warning: "kite"
+
+Ball
+    itemAudio: "this is a ball"
+    question: "Which one is the ball?"
+    fallback: "ball"
+    error: "No, this is a ball."
+    success: "YES! This is a ball. Well done!"
+    warning: "ball"
+
+Color
+    itemAudio: "this is a color"
+    question: "Which one is the color?"
+    fallback: "color"
+    error: "No, this is a color."
+    success: "YES! This is a color. Well done!"
+    warning: "color"
+
+Pencil
+    itemAudio: "this is a pencil"
+    question: "Which one is the pencil?"
+    fallback: "pencil"
+    error: "No, this is a pencil."
+    success: "YES! This is a pencil. Well done!"
+    warning: "pencil"
+
+________________________VEGETABLES________________________
+
+Carrot
+    itemAudio: "this is a carrot"
+    question: "Which one is the carrot?"
+    fallback: "carrot"
+    error: "No, this is a carrot."
+    success: "YES! This is a carrot. Well done!"
+    warning: "carrot"
+
+Broccoli
+    itemAudio: "this is broccoli"
+    question: "Which one is broccoli?"
+    fallback: "broccoli"
+    error: "No, this is broccoli."
+    success: "YES! This is broccoli. Well done!"
+    warning: "broccoli"
+
+Spinach
+    itemAudio: "this is spinach"
+    question: "Which one is spinach?"
+    fallback: "spinach"
+    error: "No, this is spinach."
+    success: "YES! This is spinach. Well done!"
+    warning: "spinach"
+
+Tomato
+    itemAudio: "this is a tomato"
+    question: "Which one is the tomato?"
+    fallback: "tomato"
+    error: "No, this is a tomato."
+    success: "YES! This is a tomato. Well done!"
+    warning: "tomato"
+
+Cucumber
+    itemAudio: "this is a cucumber"
+    question: "Which one is the cucumber?"
+    fallback: "cucumber"
+    error: "No, this is a cucumber."
+    success: "YES! This is a cucumber. Well done!"
+    warning: "cucumber"
+
+Pepper
+    itemAudio: "this is a pepper"
+    question: "Which one is the pepper?"
+    fallback: "pepper"
+    error: "No, this is a pepper."
+    success: "YES! This is a pepper. Well done!"
+    warning: "pepper"
+
+________________________FRUITS________________________
+
+Apple
+    itemAudio: "this is an apple"
+    question: "Which one is the apple?"
+    fallback: "apple"
+    error: "No, this is an apple."
+    success: "YES! This is an apple. Well done!"
+    warning: "apple"
+
+Banana
+    itemAudio: "this is a banana"
+    question: "Which one is the banana?"
+    fallback: "banana"
+    error: "No, this is a banana."
+    success: "YES! This is a banana. Well done!"
+    warning: "banana"
+
+Orange
+    itemAudio: "this is an orange"
+    question: "Which one is the orange?"
+    fallback: "orange"
+    error: "No, this is an orange."
+    success: "YES! This is an orange. Well done!"
+    warning: "orange"
+
+Strawberry
+    itemAudio: "this is a strawberry"
+    question: "Which one is the strawberry?"
+    fallback: "strawberry"
+    error: "No, this is a strawberry."
+    success: "YES! This is a strawberry. Well done!"
+    warning: "strawberry"
+
+Grapes
+    itemAudio: "these are grapes"
+    question: "Which one are the grapes?"
+    fallback: "grapes"
+    error: "No, these are grapes."
+    success: "YES! These are grapes. Well done!"
+    warning: "grapes"
+
+Pineapple
+    itemAudio: "this is a pineapple"
+    question: "Which one is the pineapple?"
+    fallback: "pineapple"
+    error: "No, this is a pineapple."
+    success: "YES! This is a pineapple. Well done!"
+    warning: "pineapple"
+
+________________________TOYS________________________
+
+Doll
+    itemAudio: "this is a doll"
+    question: "Which one is the doll?"
+    fallback: "doll"
+    error: "No, this is a doll."
+    success: "YES! This is a doll. Well done!"
+    warning: "doll"
+
+Action Figure
+    itemAudio: "this is an action figure"
+    question: "Which one is the action figure?"
+    fallback: "action figure"
+    error: "No, this is an action figure."
+    success: "YES! This is an action figure. Well done!"
+    warning: "action figure"
+
+Building Blocks
+    itemAudio: "these are building blocks"
+    question: "Which one are the building blocks?"
+    fallback: "building blocks"
+    error: "No, these are building blocks."
+    success: "YES! These are building blocks. Well done!"
+    warning: "building blocks"
+
+Toy Car
+    itemAudio: "this is a toy car"
+    question: "Which one is the toy car?"
+    fallback: "toy car"
+    error: "No, this is a toy car."
+    success: "YES! This is a toy car. Well done!"
+    warning: "toy car"
+
+Stuffed Animal
+    itemAudio: "this is a stuffed animal"
+    question: "Which one is the stuffed animal?"
+    fallback: "stuffed animal"
+    error: "No, this is a stuffed animal."
+    success: "YES! This is a stuffed animal. Well done!"
+    warning: "stuffed animal"
+
+Toy Robot
+    itemAudio: "this is a toy robot"
+    question: "Which one is the toy robot?"
+    fallback: "toy robot"
+    error: "No, this is a toy robot."
+    success: "YES! This is a toy robot. Well done!"
+    warning: "toy robot"
+
+________________________HOME________________________
+
+Lamp
+    itemAudio: "this is a lamp"
+    question: "Which one is the lamp?"
+    fallback: "lamp"
+    error: "No, this is a lamp."
+    success: "YES! This is a lamp. Well done!"
+    warning: "lamp"
+
+Sofa
+    itemAudio: "this is a sofa"
+    question: "Which one is the sofa?"
+    fallback: "sofa"
+    error: "No, this is a sofa."
+    success: "YES! This is a sofa. Well done!"
+    warning: "sofa"
+
+Table
+    itemAudio: "this is a table"
+    question: "Which one is the table?"
+    fallback: "table"
+    error: "No, this is a table."
+    success: "YES! This is a table. Well done!"
+    warning: "table"
+
+Chair
+    itemAudio: "this is a chair"
+    question: "Which one is the chair?"
+    fallback: "chair"
+    error: "No, this is a chair."
+    success: "YES! This is a chair. Well done!"
+    warning: "chair"
+
+Bed
+    itemAudio: "this is a bed"
+    question: "Which one is the bed?"
+    fallback: "bed"
+    error: "No, this is a bed."
+    success: "YES! This is a bed. Well done!"
+    warning: "bed"
+
+Curtains
+    itemAudio: "these are curtains"
+    question: "Which one are the curtains?"
+    fallback: "curtains"
+    error: "No, these are curtains."
+    success: "YES! These are curtains. Well done!"
+    warning: "curtains"
+
+________________________TOOLS________________________
+
+Hammer
+    itemAudio: "this is a hammer"
+    question: "Which one is the hammer?"
+    fallback: "hammer"
+    error: "No, this is a hammer."
+    success: "YES! This is a hammer. Well done!"
+    warning: "hammer"
+
+Screwdriver
+    itemAudio: "this is a screwdriver"
+    question: "Which one is the screwdriver?"
+    fallback: "screwdriver"
+    error: "No, this is a screwdriver."
+    success: "YES! This is a screwdriver. Well done!"
+    warning: "screwdriver"
+
+Wrench
+    itemAudio: "this is a wrench"
+    question: "Which one is the wrench?"
+    fallback: "wrench"
+    error: "No, this is a wrench."
+    success: "YES! This is a wrench. Well done!"
+    warning: "wrench"
+
+Pliers
+    itemAudio: "this is a pair of pliers"
+    question: "Which one is the pair of pliers?"
+    fallback: "pliers"
+    error: "No, this is a pair of pliers."
+    success: "YES! This is a pair of pliers. Well done!"
+    warning: "pliers"
+
+Saw
+    itemAudio: "this is a saw"
+    question: "Which one is the saw?"
+    fallback: "saw"
+    error: "No, this is a saw."
+    success: "YES! This is a saw. Well done!"
+    warning: "saw"
+
+Tape Measure
+    itemAudio: "this is a tape measure"
+    question: "Which one is the tape measure?"
+    fallback: "tape measure"
+    error: "No, this is a tape measure."
+    success: "YES! This is a tape measure. Well done!"
+    warning: "tape measure"
+
+________________________FUN ACTIVITIES________________________
+
+Painting
+    itemAudio: "this is painting"
+    question: "Which one is painting?"
+    fallback: "painting"
+    error: "No, this is painting."
+    success: "YES! This is painting. Well done!"
+    warning: "painting"
+
+Cycling
+    itemAudio: "this is cycling"
+    question: "Which one is cycling?"
+    fallback: "cycling"
+    error: "No, this is cycling."
+    success: "YES! This is cycling. Well done!"
+    warning: "cycling"
+
+Reading
+    itemAudio: "this is reading"
+    question: "Which one is reading?"
+    fallback: "reading"
+    error: "No, this is reading."
+    success: "YES! This is reading. Well done!"
+    warning: "reading"
+
+Gardening
+    itemAudio: "this is gardening"
+    question: "Which one is gardening?"
+    fallback: "gardening"
+    error: "No, this is gardening."
+    success: "YES! This is gardening. Well done!"
+    warning: "gardening"
+
+Cooking
+    itemAudio: "this is cooking"
+    question: "Which one is cooking?"
+    fallback: "cooking"
+    error: "No, this is cooking."
+    success: "YES! This is cooking. Well done!"
+    warning: "cooking"
+
+Photography
+    itemAudio: "this is photography"
+    question: "Which one is photography?"
+    fallback: "photography"
+    error: "No, this is photography."
+    success: "YES! This is photography. Well done!"
+    warning: "photography"

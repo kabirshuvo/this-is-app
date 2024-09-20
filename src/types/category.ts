@@ -3,5 +3,11 @@ export interface Category {
   name: string;
   image: string;
   description: string;
-  audio: string;
+  audio: {
+    itemAudio: string;
+    question: string;
+    success: string;
+    error: string;
+    warning: string;
+  };
 }

@@ -12,6 +12,11 @@ interface Params {
 const ThisIs: React.FC<{ params: Params }> = ({ params }) => {
   const [relatedData, setRelatedData] = useState<Category[]>([]);
 
+  const playAudio = (audio: string) => {
+    const audioEl = new Audio(audio);
+    audioEl.play();
+  };
+
   useEffect(() => {
     async function loadRelatedData() {
       const data = await fetchRelatedData(params.category);
@@ -21,11 +26,6 @@ const ThisIs: React.FC<{ params: Params }> = ({ params }) => {
     loadRelatedData();
   }, [params.category]);
 
-  const playAudio = (audio: string) => {
-    const audioEl = new Audio(audio);
-    audioEl.play();
-  };
-
   return (
     <div>
       <h3 className="text-4xl text-center uppercase mt-20">This is</h3>
@@ -33,7 +33,7 @@ const ThisIs: React.FC<{ params: Params }> = ({ params }) => {
         {relatedData.map((item) => (
           <div
             key={item.id}
-            onClick={() => playAudio(item.audio)}
+            onClick={() => playAudio(item.audio.itemAudio)}
             className="space-y-4"
           >
             <div className="flex justify-center items-center bg-white rounded-lg shadow-lg hover:shadow-xl transform transition hover:scale-105 h-64 p-6 cursor-pointer">

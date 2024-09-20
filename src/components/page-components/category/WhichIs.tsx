@@ -1,29 +1,35 @@
 "use client";
 
-import React, { useCallback, useEffect, useRef, useState } from "react";
+import React, {
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react";
 import { Swiper as SwiperCore } from "swiper/types";
-import { Navigation } from "swiper/modules";
 import { Category } from "@/types/category";
 import { Volume2 } from "lucide-react";
 import { fetchRelatedData } from "@/app/hooks/useCategoryData";
-import Confetti from "react-confetti";
-import { useWindowSize } from "react-use";
-import "swiper/css";
-import "swiper/css/navigation";
+import { Button } from "@/components/ui/button";
+import useItemAudio from "@/app/hooks/useItemAudio";
+import useItemQueryAudio from "@/app/hooks/useItemQueryAudio";
+import useErrorAudio from "@/app/hooks/useErrorAudio";
+import useItemData from "@/app/hooks/useItemData";
+import ConfettiComponent from "./ConfettiComponent";
+import SwiperComponent from "./SwiperComponent";
 
 interface Params {
   category: string;
 }
 
 const WhichIs: React.FC<{ params: Params }> = ({ params }) => {
-  const [relatedData, setRelatedData] = useState<Category[]>([]);
-  const [randomItemName, setRandomItemName] = useState<string | null>(null);
-  const [showConfetti, setShowConfetti] = useState(false);
   const swiperRef = useRef<SwiperCore | null>(null);
-  const { width, height } = useWindowSize();
-  // const [showModal, setShowModal] = useState(false);
+  const [relatedData, setRelatedData] = useState<Category[]>([]);
+  const [randomItemName, setRandomItemName] = useState<string>("");
+  const [randomItemId, setRandomItemId] = useState<number | null>(null);
+  const [showConfetti, setShowConfetti] = useState(false);
   const [shakeItemId, setShakeItemId] = useState<number | null>(null);
   const [correctAudio, setCorrectAudio] = useState<HTMLAudioElement | null>(
     null
@@ -31,29 +37,35 @@ const WhichIs: React.FC<{ params: Params }> = ({ params }) => {
   const [incorrectAudio, setIncorrectAudio] = useState<HTMLAudioElement | null>(
     null
   );
-  const [voices, setVoices] = useState<SpeechSynthesisVoice[]>([]);
+
+  const clickedItemData = useItemData({
+    itemId: shakeItemId,
+    category: params.category,
+  });
 
   useEffect(() => {
-    async function loadRelatedData() {
-      const data = await fetchRelatedData(params.category);
-      setRelatedData(data);
-
-      if (data.length > 0) {
-        const randomIndex = Math.floor(Math.random() * data.length);
-        setRandomItemName(data[randomIndex].name);
+    if (clickedItemData) {
+      const matchedItem = relatedData.find(
+        (item) => item.id === clickedItemData.id
+      );
+      if (!matchedItem) {
+        console.log("No matching item found in relatedData");
       }
     }
+  }, [clickedItemData, relatedData]);
 
-    loadRelatedData();
-  }, [params.category]);
-
-  useEffect(() => {
-    if (typeof window !== "undefined" && "speechSynthesis" in window) {
-      setCorrectAudio(new Audio("/audio/congrats.mp3"));
-      setIncorrectAudio(new Audio("/audio/error.mp3"));
-      setVoices(window.speechSynthesis.getVoices());
-    }
-  }, []);
+  const itemAudio = useItemAudio(randomItemName ?? "");
+  const playWhichAudio = useItemQueryAudio(
+    randomItemName ? randomItemName.toLowerCase() : "",
+    "q"
+  );
+  const playSuccessAudio = useItemQueryAudio(
+    randomItemName ? randomItemName.toLowerCase() : "",
+    "c"
+  );
+  const playErrorAudio = useErrorAudio(
+    clickedItemData?.name.toLowerCase() ?? ""
+  );
 
   const playAudio = useCallback((audio: HTMLAudioElement | null) => {
     if (audio) {
@@ -61,99 +73,94 @@ const WhichIs: React.FC<{ params: Params }> = ({ params }) => {
     }
   }, []);
 
-  const speakText = useCallback(
-    (text: string) => {
-      if (voices.length > 0) {
-        const utterance = new SpeechSynthesisUtterance(text);
-        utterance.voice = voices[0];
-        window.speechSynthesis.speak(utterance);
-      } else {
-        console.error("Text-to-speech is not supported in this browser.");
+  useEffect(() => {
+    const loadRelatedData = async () => {
+      const data = await fetchRelatedData(params.category);
+      setRelatedData(data);
+
+      if (data.length > 0) {
+        const randomIndex = Math.floor(Math.random() * data.length);
+        setRandomItemName(data[randomIndex].name);
+        setRandomItemId(data[randomIndex].id);
       }
-    },
-    [voices]
-  );
+    };
+
+    loadRelatedData();
+  }, [params.category]);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setCorrectAudio(new Audio("/audio/congrats.mp3"));
+      setIncorrectAudio(new Audio("/audio/error.mp3"));
+      const whichOneAudio = new Audio("/audio/whichone.mp3");
+      const questionAudio = new Audio(`/audio/${itemAudio?.question}.mp3`);
+
+      whichOneAudio.preload = "auto";
+      questionAudio.preload = "auto";
+
+      whichOneAudio.addEventListener("ended", () => {
+        questionAudio.play();
+      });
+
+      return () => {
+        whichOneAudio.removeEventListener("ended", () => {
+          questionAudio.play();
+        });
+      };
+    }
+  }, [itemAudio]);
+
+  const speakText = useCallback(() => {
+    playWhichAudio();
+  }, [playWhichAudio]);
 
   const handleCardClick = useCallback(
     (itemId: number, itemName: string) => {
       if (itemName === randomItemName) {
-        console.log("Correct!");
         setShowConfetti(true);
-        // setShowModal(true);
-        playAudio(correctAudio);
+        playSuccessAudio();
 
-        setTimeout(() => {
+        const confettiTimeout = setTimeout(() => {
           setShowConfetti(false);
         }, 5000);
 
-        setTimeout(() => {
-          // setShowModal(false);
-        }, 3000);
+        if (relatedData.length > 0) {
+          const randomIndex = Math.floor(Math.random() * relatedData.length);
+          setRandomItemName(relatedData[randomIndex].name);
+        }
+        return () => clearTimeout(confettiTimeout);
       } else {
-        console.log("Incorrect!");
         setShakeItemId(itemId);
-        playAudio(incorrectAudio);
         setTimeout(() => setShakeItemId(null), 500);
       }
     },
-    [randomItemName, correctAudio, incorrectAudio, playAudio]
+    [randomItemName, correctAudio, incorrectAudio, playAudio, relatedData]
   );
+
+  useEffect(() => {
+    if (shakeItemId !== randomItemId) {
+      playErrorAudio(clickedItemData?.name);
+    }
+  }, [shakeItemId, randomItemId, clickedItemData]);
+
+  const memoizedRelatedData = useMemo(() => relatedData, [relatedData]);
 
   return (
     <div className="relative">
-      {showConfetti && (
-        <Confetti
-          width={width}
-          height={height}
-          style={{ position: "fixed", top: 0, left: 0, zIndex: 9999 }}
-        />
-      )}
-      {/* <CorrectModal isOpen={showModal} randomItemName={randomItemName} /> */}
+      {showConfetti && <ConfettiComponent showConfetti={showConfetti} />}
       <div className="flex items-start justify-center gap-2 mt-20">
-        <h3 className="text-4xl text-center uppercase">
+        <h3 className="text-4xl text-center uppercase mt-1">
           Which one is the {randomItemName}?
         </h3>
-        <Volume2
-          onClick={() => {
-            speakText(`Which one is the ${randomItemName}?`);
-          }}
-        />
+        <Button variant="ghost" size="icon" onClick={speakText} title="Speak">
+          <Volume2 size={24} />
+        </Button>
       </div>
-      <Swiper
-        spaceBetween={15}
-        slidesPerView={1}
-        modules={[Navigation]}
-        breakpoints={{
-          640: { slidesPerView: 2 },
-          768: { slidesPerView: 3 },
-          1024: { slidesPerView: 4 },
-        }}
-        onBeforeInit={(swiper) => {
-          swiperRef.current = swiper;
-        }}
-        className="mt-4"
-      >
-        {relatedData.map((item) => (
-          <SwiperSlide
-            key={item.id}
-            className={`space-y-4 cursor-pointer ${
-              shakeItemId === item.id ? "animate-shake" : ""
-            }`}
-          >
-            <div onClick={() => handleCardClick(item.id, item.name)}>
-              <div className="flex justify-center items-center bg-white rounded-lg shadow-lg transform transition h-64 p-6 hover:shadow-xl hover:rounded-lg">
-                <Image
-                  src={item.image}
-                  alt={item.name}
-                  width={200}
-                  height={200}
-                  className="w-full object-cover hover:rounded-lg"
-                />
-              </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      <SwiperComponent
+        relatedData={memoizedRelatedData}
+        handleCardClick={handleCardClick}
+        shakeItemId={shakeItemId}
+      />
       <div className="absolute top-2/3 -left-20 transform -translate-y-1/2">
         <button
           onClick={() => swiperRef.current?.slidePrev()}

@@ -16,6 +16,7 @@ const Home: React.FC = () => {
         <Link
           key={category.id}
           href={`${locale}/categories/${category.name.toLowerCase()}`}
+          passHref
           className="space-y-4"
         >
           <h3 className="text-2xl text-center uppercase">{category.name}</h3>
