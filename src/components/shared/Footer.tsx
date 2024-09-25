@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
-import { ArrowLeft, Check, Home } from "lucide-react";
+import { Check } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 

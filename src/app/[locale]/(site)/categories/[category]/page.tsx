@@ -8,7 +8,7 @@ export default function CategoryPage({
 }: {
   params: { category: string };
 }) {
-  const category = decodeURIComponent(params.category);
+  // const category = decodeURIComponent(params.category);
 
   return (
     <div className="container mx-auto">

@@ -19,7 +19,6 @@ import useErrorAudio from "@/app/hooks/useErrorAudio";
 import useItemData from "@/app/hooks/useItemData";
 import ConfettiComponent from "./ConfettiComponent";
 import SwiperComponent from "./SwiperComponent";
-import Link from "next/link";
 
 interface Params {
   category: string;

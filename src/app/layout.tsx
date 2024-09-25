@@ -5,10 +5,8 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import Header from "@/components/shared/header/Header";
 import Footer from "@/components/shared/Footer";
-import Image from "next/image";
-import Link from "next/link";
-import "./globals.css";
 import BackToHomeArrow from "@/components/buttons/BackToHomeArrow";
+import "./globals.css";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
