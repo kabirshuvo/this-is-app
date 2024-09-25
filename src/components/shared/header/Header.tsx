@@ -11,6 +11,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { useLocale } from "@/app/hooks/useLocale";
+import "./header.css";
 
 export default function Header() {
   const locale = useLocale();
@@ -23,7 +24,7 @@ export default function Header() {
   ];
 
   return (
-    <div className="py-6 bg-tjgreen-500 text-tjyellow flex items-center justify-between px-4">
+    <div className="relative py-10 bg-tjgreen-500 text-tjyellow flex items-center justify-between px-4 header-with-curve flex-1">
       <div className="flex justify-start flex-1">
         <Link
           href="/"
@@ -34,22 +35,22 @@ export default function Header() {
             alt="TJ Logo"
             width={250}
             height={250}
-            className="w-28 h-16 md:w-36 md:h-20 lg:w-64 lg:h-32"
+            className="w-28 h-16 md:w-36 md:h-20"
           />
-          <p className="hidden md:block text-lg">Where Learning is Fun</p>
+          <p className="hidden md:block font-light">Where Learning is Fun</p>
         </Link>
       </div>
 
       <div className="hidden md:flex justify-center flex-1">
         <Link href="/">
-          <h1 className="text-5xl md:text-6xl xl:text-8xl">TJ & PALS</h1>
+          <h1 className="text-5xl md:text-6xl xl:text-7xl">TJ & PALS</h1>
         </Link>
       </div>
 
       <Dialog>
         <div className="flex flex-1 justify-end">
           <DialogTrigger asChild>
-            <Menu className="w-12 h-12 md:w-16 md:h-16 cursor-pointer" />
+            <Menu className="w-12 h-12 md:w-14 md:h-14 cursor-pointer" />
           </DialogTrigger>
         </div>
         <DialogContent className="bg-tjgreen-500 text-tjyellow-500 border-none max-w-[90%] md:max-w-lg rounded-lg">

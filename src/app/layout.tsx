@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import ClientProvider from "@/app/context/ReduxProvider";
-import "./globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
-import Header from "@/components/shared/Header";
+import Header from "@/components/shared/header/Header";
 import Footer from "@/components/shared/Footer";
+import Image from "next/image";
+import Link from "next/link";
+import "./globals.css";
+import BackToHomeArrow from "@/components/buttons/BackToHomeArrow";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -39,17 +42,23 @@ export default async function RootLayout({
 
   return (
     <NextIntlClientProvider messages={messages}>
-      <html lang={locale}>
-        <body
-          className={`${luckiestGuy.variable} ${geistSans.variable} ${geistMono.variable} antialiased bg-tjblue-500 text-tjyellow-500 flex flex-col min-h-screen justify-between`}
-        >
-          <ClientProvider>
+      <ClientProvider>
+        <html lang={locale}>
+          <body
+            className={`${luckiestGuy.variable} ${geistSans.variable} ${geistMono.variable} antialiased bg-tjblue-500 text-tjyellow-500 flex flex-col h-screen justify-between`}
+          >
             <Header />
-            {children}
+            <div className="flex justify-center items-center flex-grow gap-4">
+              <div className="flex-1"></div>
+              <main>{children}</main>
+              <div className="flex-1">
+                <BackToHomeArrow />
+              </div>
+            </div>
             <Footer />
-          </ClientProvider>
-        </body>
-      </html>
+          </body>
+        </html>
+      </ClientProvider>
     </NextIntlClientProvider>
   );
 }

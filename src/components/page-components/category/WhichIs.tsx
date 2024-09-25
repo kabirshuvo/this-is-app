@@ -19,6 +19,7 @@ import useErrorAudio from "@/app/hooks/useErrorAudio";
 import useItemData from "@/app/hooks/useItemData";
 import ConfettiComponent from "./ConfettiComponent";
 import SwiperComponent from "./SwiperComponent";
+import Link from "next/link";
 
 interface Params {
   category: string;
@@ -148,12 +149,21 @@ const WhichIs: React.FC<{ params: Params }> = ({ params }) => {
   return (
     <div className="relative">
       {showConfetti && <ConfettiComponent showConfetti={showConfetti} />}
-      <div className="flex items-start justify-center gap-2 mt-20">
+      <div className="flex items-start justify-center gap-4 mt-20">
         <h3 className="text-4xl text-center uppercase mt-1">
           Which one is the {randomItemName}?
         </h3>
+        <div>
+          <Volume2 size={32} />
+        </div>
         <Button variant="ghost" size="icon" onClick={speakText} title="Speak">
-          <Volume2 size={24} />
+          <Image
+            src="/svg/arrow.svg"
+            alt="home"
+            width={200}
+            height={200}
+            className="w-8 h-8"
+          />
         </Button>
       </div>
       <SwiperComponent
