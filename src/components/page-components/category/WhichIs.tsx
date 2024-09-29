@@ -8,6 +8,7 @@ import { fetchRelatedData } from "@/app/hooks/useCategoryData";
 import { Button } from "@/components/ui/button";
 import useItemAudio from "@/app/hooks/useItemAudio";
 import useItemQueryAudio from "@/app/hooks/useItemQueryAudio";
+import useErrorAudio from "@/app/hooks/useErrorAudio";
 import useItemData from "@/app/hooks/useItemData";
 import ConfettiComponent from "./ConfettiComponent";
 import WhichIsCard from "@/components/cards/WhichIsCard";
@@ -25,6 +26,12 @@ const WhichIs: React.FC<{ params: Params }> = ({ params }) => {
   const [randomItemId, setRandomItemId] = useState<number | null>(null);
   const [showConfetti, setShowConfetti] = useState(false);
   const [shakeItemId, setShakeItemId] = useState<number | null>(null);
+  const [correctAudio, setCorrectAudio] = useState<HTMLAudioElement | null>(
+    null
+  );
+  const [incorrectAudio, setIncorrectAudio] = useState<HTMLAudioElement | null>(
+    null
+  );
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedItem, setSelectedItem] = useState<{
     src: string;
@@ -56,6 +63,15 @@ const WhichIs: React.FC<{ params: Params }> = ({ params }) => {
     randomItemName ? randomItemName.toLowerCase() : "",
     "c"
   );
+  const playErrorAudio = useErrorAudio(
+    clickedItemData?.name.toLowerCase() ?? ""
+  );
+
+  const playAudio = useCallback((audio: HTMLAudioElement | null) => {
+    if (audio) {
+      audio.play();
+    }
+  }, []);
 
   useEffect(() => {
     const loadRelatedData = async () => {
@@ -74,6 +90,8 @@ const WhichIs: React.FC<{ params: Params }> = ({ params }) => {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
+      setCorrectAudio(new Audio("/audio/congrats.mp3"));
+      setIncorrectAudio(new Audio("/audio/error.mp3"));
       const whichOneAudio = new Audio("/audio/whichone.mp3");
       const questionAudio = new Audio(`/audio/${itemAudio?.question}.mp3`);
 
@@ -120,8 +138,14 @@ const WhichIs: React.FC<{ params: Params }> = ({ params }) => {
         setTimeout(() => setShakeItemId(null), 500);
       }
     },
-    [randomItemName, playSuccessAudio, relatedData]
+    [randomItemName, correctAudio, incorrectAudio, playAudio, relatedData]
   );
+
+  useEffect(() => {
+    if (shakeItemId !== randomItemId) {
+      playErrorAudio(clickedItemData?.name);
+    }
+  }, [shakeItemId, randomItemId, clickedItemData]);
 
   const memoizedRelatedData = useMemo(() => {
     if (randomItemId === null) return [];
