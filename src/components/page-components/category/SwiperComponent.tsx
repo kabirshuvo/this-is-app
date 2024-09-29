@@ -11,12 +11,14 @@ interface SwiperComponentProps {
   relatedData: Category[];
   handleCardClick: (itemId: number, itemName: string) => void;
   shakeItemId: number | null;
+  className?: string;
 }
 
 const SwiperComponent: React.FC<SwiperComponentProps> = ({
   relatedData,
   handleCardClick,
   shakeItemId,
+  className,
 }) => {
   const swiperRef = useRef<SwiperCore | null>(null);
 
@@ -27,32 +29,31 @@ const SwiperComponent: React.FC<SwiperComponentProps> = ({
       modules={[Navigation]}
       breakpoints={{
         640: { slidesPerView: 2 },
-        768: { slidesPerView: 3 },
+        768: { slidesPerView: 4 },
         1024: { slidesPerView: 4 },
       }}
       onBeforeInit={(swiper) => {
         swiperRef.current = swiper;
       }}
-      className="mt-4"
+      className={`${className}`}
     >
       {relatedData.map((item) => (
         <SwiperSlide
           key={item.id}
-          className={`space-y-4 cursor-pointer ${
+          onClick={() => handleCardClick(item.id, item.name)}
+          className={`h-full space-y-4 cursor-pointer flex justify-center items-center bg-white rounded-lg shadow-lg hover:shadow-xl transform transition hover:scale-105 ${
             shakeItemId === item.id ? "animate-shake" : ""
           }`}
         >
-          <div onClick={() => handleCardClick(item.id, item.name)}>
-            <div className="flex justify-center items-center bg-white rounded-lg shadow-lg transform transition h-64 p-6 hover:shadow-xl hover:rounded-lg">
-              <Image
-                src={item.image}
-                alt={item.name}
-                width={200}
-                height={200}
-                className="w-full object-cover hover:rounded-lg"
-              />
-            </div>
-          </div>
+          <Image
+            src={item.image}
+            alt={item.name}
+            width={400}
+            height={400}
+            layout="responsive"
+            objectFit="cover"
+            className="w-full h-full object-cover flex-grow flex-1 flex"
+          />
         </SwiperSlide>
       ))}
     </Swiper>

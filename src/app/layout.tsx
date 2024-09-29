@@ -43,16 +43,17 @@ export default async function RootLayout({
       <ClientProvider>
         <html lang={locale}>
           <body
-            className={`${luckiestGuy.variable} ${geistSans.variable} ${geistMono.variable} antialiased bg-tjblue-500 text-tjyellow-500 flex flex-col h-screen justify-between`}
+            className={`${luckiestGuy.variable} ${geistSans.variable} ${geistMono.variable} antialiased bg-tjblue-500 text-tjyellow-500 min-h-screen flex flex-col justify-between gap-6`}
           >
             <Header />
-            <div className="flex justify-center items-center flex-grow gap-4">
+            <div className="flex justify-center items-center gap-4 py-2">
               <div className="flex-1"></div>
               <main>{children}</main>
               <div className="flex-1">
                 <BackToHomeArrow />
               </div>
             </div>
+
             <Footer />
           </body>
         </html>

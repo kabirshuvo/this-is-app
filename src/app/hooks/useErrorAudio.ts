@@ -9,7 +9,7 @@ const useErrorAudio = (errorItem: string | null) => {
       audioRef.current.currentTime = 0;
     }
     if (errorItem) {
-      audioRef.current = new Audio(`/audio/error/e-${errorItem}.mp3`);
+      audioRef.current = new Audio(`/audio/error/n-${errorItem}.mp3`);
     }
   }, [errorItem]);
 

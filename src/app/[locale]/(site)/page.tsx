@@ -11,7 +11,7 @@ const Home: React.FC = () => {
   const categories = useCategories();
 
   return (
-    <div className="container mx-auto px-2 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-2 md:gap-4 flex-1 flex-grow">
+    <div className="container mx-auto px-2 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-6 gap-2 md:gap-4 flex-1 flex-grow h-full">
       {categories.map((category) => (
         <Link
           key={category.id}
@@ -20,11 +20,11 @@ const Home: React.FC = () => {
         >
           <div className="h-full flex flex-col gap-2">
             <div className="flex-1">
-              <h3 className="text-2xl text-center uppercase">
+              <h3 className="lg:text-xl xl:text-2xl text-center uppercase">
                 {category.name}
               </h3>
             </div>
-            <div className="flex justify-center items-center bg-white rounded-lg shadow-lg hover:shadow-xl transform transition hover:scale-105 h-full p-6 cursor-pointer">
+            <div className="flex justify-center items-center bg-white rounded-lg shadow-lg hover:shadow-xl transform transition duration-200 h-full p-6 cursor-pointer border-4 border-transparent hover:border-4 hover:border-red-500">
               <Image
                 src={category.image}
                 alt={category.name}

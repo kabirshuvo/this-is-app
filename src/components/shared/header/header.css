@@ -1,3 +1,9 @@
+.header{
+  background-image: url('/images/tj-head.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .header-with-curve {
     position: relative;
     overflow: hidden;
