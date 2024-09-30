@@ -46,11 +46,7 @@ export default function Header() {
 
       <div className="hidden md:flex justify-center flex-1">
         <Link href="/">
-<<<<<<< HEAD:src/components/shared/Header.tsx
           <h1 className="text-4xl md:text-5xl xl:text-6xl">LEARN WORD GAMES</h1>
-=======
-          <h1 className="text-4xl md:text-5xl">TJ & PALS</h1>
->>>>>>> b96f1ce53fea6d283d1869c0b997611ebbf42712:src/components/shared/header/Header.tsx
         </Link>
       </div>
 
