@@ -1,0 +1,22 @@
+.header{
+  background-image: url('/images/tj-head.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header-with-curve {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .header-with-curve::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120%;
+    height: 35%;
+    background-color: #005286;
+    border-radius: 90% 90% 0 0;
+  }

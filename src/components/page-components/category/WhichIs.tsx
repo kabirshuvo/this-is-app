@@ -1,29 +1,30 @@
 "use client";
 
-import React, { useCallback, useEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Swiper as SwiperCore } from "swiper/types";
-import { Navigation } from "swiper/modules";
 import { Category } from "@/types/category";
 import { Volume2 } from "lucide-react";
 import { fetchRelatedData } from "@/app/hooks/useCategoryData";
-import Confetti from "react-confetti";
-import { useWindowSize } from "react-use";
-import "swiper/css";
-import "swiper/css/navigation";
+import { Button } from "@/components/ui/button";
+import useItemAudio from "@/app/hooks/useItemAudio";
+import useItemQueryAudio from "@/app/hooks/useItemQueryAudio";
+import useErrorAudio from "@/app/hooks/useErrorAudio";
+import useItemData from "@/app/hooks/useItemData";
+import ConfettiComponent from "./ConfettiComponent";
+import WhichIsCard from "@/components/cards/WhichIsCard";
+import { useRouter } from "next/navigation";
+import CorrectCardModal from "@/components/modals/CorrectCardModal";
 
 interface Params {
   category: string;
 }
 
 const WhichIs: React.FC<{ params: Params }> = ({ params }) => {
+  const router = useRouter();
   const [relatedData, setRelatedData] = useState<Category[]>([]);
-  const [randomItemName, setRandomItemName] = useState<string | null>(null);
+  const [randomItemName, setRandomItemName] = useState<string>("");
+  const [randomItemId, setRandomItemId] = useState<number | null>(null);
   const [showConfetti, setShowConfetti] = useState(false);
-  const swiperRef = useRef<SwiperCore | null>(null);
-  const { width, height } = useWindowSize();
-  // const [showModal, setShowModal] = useState(false);
   const [shakeItemId, setShakeItemId] = useState<number | null>(null);
   const [correctAudio, setCorrectAudio] = useState<HTMLAudioElement | null>(
     null
@@ -31,29 +32,40 @@ const WhichIs: React.FC<{ params: Params }> = ({ params }) => {
   const [incorrectAudio, setIncorrectAudio] = useState<HTMLAudioElement | null>(
     null
   );
-  const [voices, setVoices] = useState<SpeechSynthesisVoice[]>([]);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedItem, setSelectedItem] = useState<{
+    src: string;
+    name: string;
+  } | null>(null);
+
+  const clickedItemData = useItemData({
+    itemId: shakeItemId,
+    category: params.category,
+  });
 
   useEffect(() => {
-    async function loadRelatedData() {
-      const data = await fetchRelatedData(params.category);
-      setRelatedData(data);
-
-      if (data.length > 0) {
-        const randomIndex = Math.floor(Math.random() * data.length);
-        setRandomItemName(data[randomIndex].name);
+    if (clickedItemData) {
+      const matchedItem = relatedData.find(
+        (item) => item.id === clickedItemData.id
+      );
+      if (!matchedItem) {
+        console.log("No matching item found in relatedData");
       }
     }
+  }, [clickedItemData, relatedData]);
 
-    loadRelatedData();
-  }, [params.category]);
-
-  useEffect(() => {
-    if (typeof window !== "undefined" && "speechSynthesis" in window) {
-      setCorrectAudio(new Audio("/audio/congrats.mp3"));
-      setIncorrectAudio(new Audio("/audio/error.mp3"));
-      setVoices(window.speechSynthesis.getVoices());
-    }
-  }, []);
+  const itemAudio = useItemAudio(randomItemName ?? "");
+  const playWhichAudio = useItemQueryAudio(
+    randomItemName ? randomItemName.toLowerCase() : "",
+    "q"
+  );
+  const playSuccessAudio = useItemQueryAudio(
+    randomItemName ? randomItemName.toLowerCase() : "",
+    "c"
+  );
+  const playErrorAudio = useErrorAudio(
+    clickedItemData?.name.toLowerCase() ?? ""
+  );
 
   const playAudio = useCallback((audio: HTMLAudioElement | null) => {
     if (audio) {
@@ -61,127 +73,181 @@ const WhichIs: React.FC<{ params: Params }> = ({ params }) => {
     }
   }, []);
 
-  const speakText = useCallback(
-    (text: string) => {
-      if (voices.length > 0) {
-        const utterance = new SpeechSynthesisUtterance(text);
-        utterance.voice = voices[0];
-        window.speechSynthesis.speak(utterance);
-      } else {
-        console.error("Text-to-speech is not supported in this browser.");
+  useEffect(() => {
+    const loadRelatedData = async () => {
+      const data = await fetchRelatedData(params.category);
+      setRelatedData(data);
+
+      if (data.length > 0) {
+        const randomIndex = Math.floor(Math.random() * data.length);
+        setRandomItemName(data[randomIndex].name);
+        setRandomItemId(data[randomIndex].id);
       }
-    },
-    [voices]
-  );
+    };
+
+    loadRelatedData();
+  }, [params.category]);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setCorrectAudio(new Audio("/audio/congrats.mp3"));
+      setIncorrectAudio(new Audio("/audio/error.mp3"));
+      const whichOneAudio = new Audio("/audio/whichone.mp3");
+      const questionAudio = new Audio(`/audio/${itemAudio?.question}.mp3`);
+
+      whichOneAudio.preload = "auto";
+      questionAudio.preload = "auto";
+
+      whichOneAudio.addEventListener("ended", () => {
+        questionAudio.play();
+      });
+
+      return () => {
+        whichOneAudio.removeEventListener("ended", () => {
+          questionAudio.play();
+        });
+      };
+    }
+  }, [itemAudio]);
+
+  const speakText = useCallback(() => {
+    playWhichAudio();
+  }, [playWhichAudio]);
 
   const handleCardClick = useCallback(
-    (itemId: number, itemName: string) => {
+    (itemId: number, itemName: string, itemSrc: string) => {
       if (itemName === randomItemName) {
-        console.log("Correct!");
         setShowConfetti(true);
-        // setShowModal(true);
-        playAudio(correctAudio);
+        playSuccessAudio();
 
-        setTimeout(() => {
+        const confettiTimeout = setTimeout(() => {
           setShowConfetti(false);
         }, 5000);
 
-        setTimeout(() => {
-          // setShowModal(false);
-        }, 3000);
+        // Show the modal with the correct image details
+        setSelectedItem({ src: itemSrc, name: itemName });
+        setModalOpen(true);
+
+        if (relatedData.length > 0) {
+          const randomIndex = Math.floor(Math.random() * relatedData.length);
+          setRandomItemName(relatedData[randomIndex].name);
+        }
+        return () => clearTimeout(confettiTimeout);
       } else {
-        console.log("Incorrect!");
         setShakeItemId(itemId);
-        playAudio(incorrectAudio);
         setTimeout(() => setShakeItemId(null), 500);
       }
     },
-    [randomItemName, correctAudio, incorrectAudio, playAudio]
+    [randomItemName, correctAudio, incorrectAudio, playAudio, relatedData]
   );
 
+  useEffect(() => {
+    if (shakeItemId !== randomItemId) {
+      playErrorAudio(clickedItemData?.name);
+    }
+  }, [shakeItemId, randomItemId, clickedItemData]);
+
+  const memoizedRelatedData = useMemo(() => {
+    if (randomItemId === null) return [];
+
+    // Filter out the correct item
+    const filteredData = relatedData.filter((item) => item.id !== randomItemId);
+
+    // Randomly select 3 items from the filtered data
+    const randomItems = [];
+    while (randomItems.length < 3 && filteredData.length > 0) {
+      const randomIndex = Math.floor(Math.random() * filteredData.length);
+      randomItems.push(filteredData.splice(randomIndex, 1)[0]);
+    }
+
+    // Find the correct item
+    const correctItem = relatedData.find((item) => item.id === randomItemId);
+
+    // If correctItem is undefined, return the randomItems array
+    if (!correctItem) return randomItems;
+
+    // Combine the correct item with the 3 randomly selected items
+    const combinedData = [...randomItems, correctItem];
+
+    // Shuffle the combined array
+    for (let i = combinedData.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [combinedData[i], combinedData[j]] = [combinedData[j], combinedData[i]];
+    }
+
+    return combinedData;
+  }, [randomItemId, relatedData]);
+
   return (
-    <div className="relative">
-      {showConfetti && (
-        <Confetti
-          width={width}
-          height={height}
-          style={{ position: "fixed", top: 0, left: 0, zIndex: 9999 }}
-        />
-      )}
-      {/* <CorrectModal isOpen={showModal} randomItemName={randomItemName} /> */}
-      <div className="flex items-start justify-center gap-2 mt-20">
-        <h3 className="text-4xl text-center uppercase">
+    <div className="">
+      {showConfetti && <ConfettiComponent showConfetti={showConfetti} />}
+      <div className="flex items-center justify-center gap-3 lg:gap-4 mt-4">
+        <h3 className="md:text-2xl lg:text-4xl text-center uppercase mt-1">
           Which one is the {randomItemName}?
         </h3>
-        <Volume2
+        <div>
+          <Volume2 size={28} />
+        </div>
+        <Button variant="ghost" size="icon" onClick={speakText} title="Speak">
+          <Image
+            src="/svg/arrow.svg"
+            alt="home"
+            width={50}
+            height={50}
+            className="w-5 h-5 md:w-7 md:h-7"
+          />
+        </Button>
+      </div>
+      <section className="relative gap-2">
+        <button
+          className="absolute left-0 top-1/2 transform -translate-y-1/2 rounded-full shadow"
+          onClick={() => router.back()}
+        >
+          <Image
+            src="/images/arrow.png"
+            alt=""
+            width={28}
+            height={28}
+            className="transition duration-200 ease-in-out rotate-180"
+          />
+        </button>
+        <div className="grid grid-cols-4 gap-2 md:gap-4 mt-4 max-w-[80%] lg:max-w-[70%] mx-auto justify-center">
+          {memoizedRelatedData.map((item) => (
+            <WhichIsCard
+              key={item.id}
+              id={item.id}
+              src={item.image}
+              alt={item.name}
+              audio={item.audio.itemAudio}
+              relatedData={memoizedRelatedData}
+              handleCardClick={handleCardClick}
+              shakeItemId={shakeItemId}
+            />
+          ))}
+        </div>
+        <button
+          className="absolute right-0 top-1/2 transform -translate-y-1/2 rounded-full shadow"
           onClick={() => {
-            speakText(`Which one is the ${randomItemName}?`);
+            // Logic to handle right arrow click
           }}
+        >
+          <Image
+            src="/images/arrow.png"
+            alt=""
+            width={28}
+            height={28}
+            className="transition duration-200 ease-in-out"
+          />
+        </button>
+      </section>
+      {selectedItem && (
+        <CorrectCardModal
+          open={modalOpen}
+          onClose={() => setModalOpen(false)}
+          itemImage={selectedItem.src}
+          itemName={selectedItem.name}
         />
-      </div>
-      <Swiper
-        spaceBetween={15}
-        slidesPerView={1}
-        modules={[Navigation]}
-        breakpoints={{
-          640: { slidesPerView: 2 },
-          768: { slidesPerView: 3 },
-          1024: { slidesPerView: 4 },
-        }}
-        onBeforeInit={(swiper) => {
-          swiperRef.current = swiper;
-        }}
-        className="mt-4"
-      >
-        {relatedData.map((item) => (
-          <SwiperSlide
-            key={item.id}
-            className={`space-y-4 cursor-pointer ${
-              shakeItemId === item.id ? "animate-shake" : ""
-            }`}
-          >
-            <div onClick={() => handleCardClick(item.id, item.name)}>
-              <div className="flex justify-center items-center bg-white rounded-lg shadow-lg transform transition h-64 p-6 hover:shadow-xl hover:rounded-lg">
-                <Image
-                  src={item.image}
-                  alt={item.name}
-                  width={200}
-                  height={200}
-                  className="w-full object-cover hover:rounded-lg"
-                />
-              </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-      <div className="absolute top-2/3 -left-20 transform -translate-y-1/2">
-        <button
-          onClick={() => swiperRef.current?.slidePrev()}
-          className="p-2 rounded-full shadow"
-        >
-          <Image
-            src="/arrow.png"
-            alt="arrow"
-            width={32}
-            height={32}
-            className="rotate-180 hover:scale-110 transition duration-200 ease-in-out"
-          />
-        </button>
-      </div>
-      <div className="absolute top-2/3 -right-20 transform -translate-y-1/2">
-        <button
-          onClick={() => swiperRef.current?.slideNext()}
-          className="p-2 rounded-full shadow"
-        >
-          <Image
-            src="/arrow.png"
-            alt="arrow"
-            width={32}
-            height={32}
-            className="hover:scale-110 transition duration-200 ease-in-out"
-          />
-        </button>
-      </div>
+      )}
     </div>
   );
 };

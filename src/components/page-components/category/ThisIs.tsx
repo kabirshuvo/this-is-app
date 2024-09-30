@@ -2,8 +2,8 @@
 
 import React, { useEffect, useState } from "react";
 import { Category } from "@/types/category";
-import Image from "next/image";
 import { fetchRelatedData } from "@/app/hooks/useCategoryData";
+import ItemImageCard from "@/components/cards/ItemImageCard";
 
 interface Params {
   category: string;
@@ -21,31 +21,17 @@ const ThisIs: React.FC<{ params: Params }> = ({ params }) => {
     loadRelatedData();
   }, [params.category]);
 
-  const playAudio = (audio: string) => {
-    const audioEl = new Audio(audio);
-    audioEl.play();
-  };
-
   return (
-    <div>
-      <h3 className="text-4xl text-center uppercase mt-20">This is</h3>
-      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 md:gap-4 mt-10">
+    <div className="">
+      <h3 className="md:text-2xl lg:text-4xl text-center uppercase">This is</h3>
+      <div className="grid grid-cols-3 md:grid-cols-6 gap-2 md:gap-4 mt-4">
         {relatedData.map((item) => (
-          <div
+          <ItemImageCard
             key={item.id}
-            onClick={() => playAudio(item.audio)}
-            className="space-y-4"
-          >
-            <div className="flex justify-center items-center bg-white rounded-lg shadow-lg hover:shadow-xl transform transition hover:scale-105 h-64 p-6 cursor-pointer">
-              <Image
-                src={item.image}
-                alt={item.name}
-                width={200}
-                height={200}
-                className="w-full object-cover rounded-t-lg"
-              />
-            </div>
-          </div>
+            src={item.image}
+            alt={item.name}
+            audio={item.audio.itemAudio}
+          />
         ))}
       </div>
     </div>
