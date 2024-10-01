@@ -1,14 +1,18 @@
 [
-  { "id": 1, "name": "Animals", "image": "/images/animal.png" },
-  { "id": 2, "name": "Transport", "image": "/images/transport.png" },
-  { "id": 3, "name": "Clothing", "image": "/images/clothing.png" },
-  { "id": 4, "name": "Food", "image": "/images/food.png" },
-  { "id": 5, "name": "Treats", "image": "/images/treats.png" },
-  { "id": 6, "name": "Fun Things", "image": "/images/fun-things.png" },
-  { "id": 7, "name": "Vegetables", "image": "/images/vegetables.png" },
-  { "id": 8, "name": "Fruits", "image": "/images/fruits.png" },
-  { "id": 9, "name": "Toys", "image": "/images/toys.png" },
-  { "id": 10, "name": "Home", "image": "/images/home.png" },
-  { "id": 11, "name": "Tools", "image": "/images/tools.png" },
-  { "id": 12, "name": "Fun Activities", "image": "/images/fun-activities.png" }
+  { "id": 1, "name": "Animals", "image": "/categories/animal.png" },
+  { "id": 2, "name": "Transport", "image": "/categories/transport.png" },
+  { "id": 3, "name": "Clothing", "image": "/categories/clothing.png" },
+  { "id": 4, "name": "Food", "image": "/categories/food.png" },
+  { "id": 5, "name": "Treats", "image": "/categories/treat.png" },
+  { "id": 6, "name": "Fun Things", "image": "/categories/funThingsO.png" },
+  { "id": 7, "name": "Vegetables", "image": "/categories/vegetables.png" },
+  { "id": 8, "name": "Fruits", "image": "/categories/fruits.png" },
+  { "id": 11, "name": "Tools", "image": "/categories/tools.png" },
+  { "id": 9, "name": "Toys", "image": "/categories/toys.png" },
+  { "id": 10, "name": "Nature", "image": "/categories/home.png" },
+  {
+    "id": 12,
+    "name": "Fun Activities",
+    "image": "/categories/funActivities.png"
+  }
 ]
