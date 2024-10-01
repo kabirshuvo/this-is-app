@@ -3,7 +3,8 @@ import localFont from "next/font/local";
 import ClientProvider from "@/app/context/ReduxProvider";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
-import Header from "@/components/shared/header/Header";
+// import Header from "@/components/shared/header/Header";
+import HeaderOne from "@/components/shared/header/headerOne";
 import Footer from "@/components/shared/Footer";
 import BackToHomeArrow from "@/components/buttons/BackToHomeArrow";
 import "./globals.css";
@@ -26,7 +27,7 @@ const luckiestGuy = localFont({
 
 export const metadata: Metadata = {
   title: "This Is App",
-  description: "TJ&PALS initiative",
+  description: "Learn word games",
 };
 
 export default async function RootLayout({
@@ -45,8 +46,11 @@ export default async function RootLayout({
           <body
             className={`${luckiestGuy.variable} ${geistSans.variable} ${geistMono.variable} antialiased bg-tjblue-500 text-tjyellow-500 min-h-screen flex flex-col justify-between gap-6`}
           >
-            <Header />
-            <div className="flex justify-center items-center gap-4 py-2">
+            {/* <Header /> */}
+            <div className="-mt-6">
+              <HeaderOne />
+            </div>
+            <div className="flex justify-center items-center gap-4 py-2 -mt-16">
               <div className="flex-1"></div>
               <main>{children}</main>
               <div className="flex-1">
