@@ -56,7 +56,7 @@ export default function Footer() {
   );
 
   return (
-    <footer className="py-2 flex items-center justify-around md:justify-between bg-green-800 text-white px-4 lg:px-10">
+    <footer className="py-2 flex items-center justify-around md:justify-between bg-tjgreen-500 text-white px-4 lg:px-10">
       <div className="flex items-center gap-2 md:gap-6 lg:gap-10">
         <Link href="/" onClick={() => router.back()}>
           <Image
@@ -78,25 +78,25 @@ export default function Footer() {
         </Link>
       </div>
 
-      <div className="flex items-center justify-around gap-2 sm:gap-4 lg:gap-10 xl:gap-16">
+      <div className="flex items-center justify-around gap-2 sm:gap-4 lg:gap-16 xl:gap-32">
         <CustomCheckbox
           id="english"
           checked={currentLang === "en"}
           onChange={() => changeLanguage("en")}
-          label="English"
+          label="E n g l i s h"
         />
         <Image
           src="/images/tj-logo-header.webp"
           alt="TJ Logo"
           width={100}
           height={100}
-          className="w-12 md:w-24 md:h-12"
+          className="w-120 md:w-24 md:h-120"
         />
         <CustomCheckbox
           id="zulu"
           checked={currentLang === "zu"}
           onChange={() => changeLanguage("zu")}
-          label="Zulu"
+          label="Z u l u"
         />
       </div>
 

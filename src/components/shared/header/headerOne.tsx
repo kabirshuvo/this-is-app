@@ -37,8 +37,8 @@ export default function HeaderOne() {
           <Image
             src="/menupages/app_logo.svg"
             alt="Logo"
-            width={260}
-            height={260}
+            width={280}
+            height={280}
             className="rounded-full"
           />
         </Link>

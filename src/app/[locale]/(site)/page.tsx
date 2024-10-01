@@ -24,7 +24,7 @@ const Home: React.FC = () => {
                 {category.name}
               </h3>
             </div>
-            <div className="flex justify-center items-center bg-white rounded-lg shadow-lg hover:shadow-xl transform transition duration-200 h-full p-6 cursor-pointer border-4 border-transparent hover:border-4 hover:border-red-500">
+            <div className="flex justify-center items-center bg-white rounded-lg shadow-lg hover:shadow-xl transform transition duration-200 h-full cursor-pointer border-4 border-transparent hover:border-4 hover:border-red-500">
               <Image
                 src={category.image}
                 alt={category.name}

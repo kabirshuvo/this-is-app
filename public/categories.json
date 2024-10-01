@@ -7,9 +7,9 @@
   { "id": 6, "name": "Fun Things", "image": "/categories/funThingsO.png" },
   { "id": 7, "name": "Vegetables", "image": "/categories/vegetables.png" },
   { "id": 8, "name": "Fruits", "image": "/categories/fruits.png" },
-  { "id": 11, "name": "Tools", "image": "/categories/tools.png" },
-  { "id": 9, "name": "Toys", "image": "/categories/toys.png" },
-  { "id": 10, "name": "Nature", "image": "/categories/home.png" },
+  { "id": 9, "name": "Tools", "image": "/categories/tools.png" },
+  { "id": 10, "name": "Toys", "image": "/categories/toys.png" },
+  { "id": 11, "name": "Nature", "image": "/categories/home.png" },
   {
     "id": 12,
     "name": "Fun Activities",

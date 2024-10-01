@@ -16,7 +16,7 @@ const CardComponent: React.FC<CardComponentProps> = ({
   return (
     <div onClick={() => handleCardClick(item.id, item.name)}>
       <div
-        className={`flex justify-center items-center bg-white rounded-lg shadow-lg transform transition h-64 p-6 hover:shadow-xl hover:rounded-lg ${
+        className={`flex justify-center items-center bg-black rounded-lg shadow-lg transform transition h-64 p-6 hover:shadow-xl hover:rounded-lg ${
           shakeItemId === item.id ? "animate-shake" : ""
         }`}
       >
