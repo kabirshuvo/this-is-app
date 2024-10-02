@@ -24,7 +24,7 @@ export default function Header() {
   ];
 
   return (
-    <div className="relative py-4 bg-tjgreen-500 text-tjyellow flex items-center justify-between px-4 header-with-curv">
+    <div className="relative py-4 bg-[#049c2c] text-tjyellow flex items-center justify-between px-4 header-with-curv">
       <div className="flex justify-start flex-1">
         <Link
           href="/"

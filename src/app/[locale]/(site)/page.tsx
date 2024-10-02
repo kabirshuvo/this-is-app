@@ -32,7 +32,7 @@ const Home: React.FC = () => {
                 height={240}
                 priority
                 // layout="responsive"
-                className="h-full w-full object-contain flex-grow flex-1 flex hover:scale-125 transform transition duration-200"
+                className="h-full w-full object-contain flex-grow flex-1 flex hover:scale-110 transform transition duration-200"
               />
             </div>
           </div>

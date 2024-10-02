@@ -56,58 +56,72 @@ export default function Footer() {
   );
 
   return (
-    <footer className="py-2 flex items-center justify-around md:justify-between bg-tjgreen-500 text-white px-4 lg:px-10">
+    <footer className=" flex items-center justify-around md:justify-between bg-[#049c2c] text-white px-4 lg:px-10">
       <div className="flex items-center gap-2 md:gap-6 lg:gap-10">
         <Link href="/" onClick={() => router.back()}>
           <Image
-            src="/svg/back.svg"
+            src="/footerAssets/Left_Arrow_Icon.svg"
             alt="TJ Logo"
             width={230}
             height={230}
-            className="w-8 h-6 md:w-10 md:h-10 max-w-20 max-h-20"
+            className="w-12 h-8 md:w-16 md:h-12 max-w-28 max-h-28"
           />
         </Link>
         <Link href="/">
           <Image
-            src="/svg/home.svg"
+            src="/footerAssets/Home_Icon.svg"
             alt="TJ Logo"
             width={200}
             height={200}
-            className="w-8 h-6 md:w-10 md:h-10 max-w-20 max-h-20"
+            className="w-12 h-8 md:w-16 md:h-12 max-w-28 max-h-28"
           />
         </Link>
       </div>
 
-      <div className="flex items-center justify-around gap-2 sm:gap-4 lg:gap-16 xl:gap-32">
-        <CustomCheckbox
+      <div className="flex items-center justify-around gap-2 sm:gap-4 lg:gap-16 xl:gap-32 relative">
+        {/* <CustomCheckbox
           id="english"
           checked={currentLang === "en"}
           onChange={() => changeLanguage("en")}
           label="E n g l i s h"
+        /> */}
+        <Image
+          src="/footerAssets/EnglishWithRightArrow.png"
+          alt="TJ Logo"
+          width={200}
+          height={200}
+          className="w-120 h-8 md:w-120 md:h-12 max-w-120 max-h-28"
         />
         <Image
-          src="/images/tj-logo-header.webp"
+          src="/footerAssets/TJandPals_Footer_Logo.png"
           alt="TJ Logo"
           width={100}
           height={100}
-          className="w-120 md:w-24 md:h-120"
+          className="w-120 md:w-40 md:h-120"
         />
-        <CustomCheckbox
+        {/* <CustomCheckbox
           id="zulu"
           checked={currentLang === "zu"}
           onChange={() => changeLanguage("zu")}
           label="Z u l u"
+        /> */}
+        <Image
+          src="/footerAssets/zuluWithNoA.png"
+          alt="TJ Logo"
+          width={200}
+          height={200}
+          className="w-120 h-8 md:w-120 md:h-12 max-w-120 max-h-28"
         />
       </div>
 
       <div className="h-full flex items-center">
         <Link href="/">
           <Image
-            src="/images/pals-club-button.webp"
-            alt="pals club"
-            width={100}
-            height={100}
-            className="w-14 md:w-24 md:h-8"
+            src="/footerAssets/PalsClub_Logo.png"
+            alt="TJ Logo"
+            width={200}
+            height={200}
+            className="w-160 h-8 md:w-160 md:h-12 max-w-160 max-h-28"
           />
         </Link>
       </div>
