@@ -24,15 +24,15 @@ const Home: React.FC = () => {
                 {category.name}
               </h3>
             </div>
-            <div className="flex justify-center items-center bg-white  hover:shadow-xl transform transition duration-200 h-full cursor-pointer  ">
+            <div className="flex justify-center items-center bg-white  hover:shadow-xl transform transition duration-200 h-full cursor-pointer gap-4 ">
               <Image
                 src={category.image}
                 alt={category.name}
                 width={240}
                 height={240}
                 priority
-                // layout="responsive"
-                className="h-full w-full object-contain flex-grow flex-1 flex hover:scale-110 transform transition duration-200"
+                layout="responsive"
+                className=" h-44 w-44 object-contain flex-grow flex-1 flex hover:scale-110 transform transition duration-200 max-w-44 max-h-44"
               />
             </div>
           </div>

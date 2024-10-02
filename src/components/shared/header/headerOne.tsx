@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Menu } from "lucide-react";
-import { usePathname } from "next/navigation"; // Alternative to useRouter
+import { usePathname } from "next/navigation";
 import {
   Dialog,
   DialogClose,
@@ -15,7 +15,7 @@ import { useLocale } from "@/app/hooks/useLocale";
 
 export default function HeaderOne() {
   const locale = useLocale();
-  const pathname = usePathname(); // Using usePathname instead of useRouter
+  const pathname = usePathname();
   const [category, setCategory] = useState("LEARN WORD GAMES");
 
   useEffect(() => {
