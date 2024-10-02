@@ -1,9 +1,10 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Menu } from "lucide-react";
+import { usePathname } from "next/navigation"; // Alternative to useRouter
 import {
   Dialog,
   DialogClose,
@@ -14,6 +15,19 @@ import { useLocale } from "@/app/hooks/useLocale";
 
 export default function HeaderOne() {
   const locale = useLocale();
+  const pathname = usePathname(); // Using usePathname instead of useRouter
+  const [category, setCategory] = useState("LEARN WORD GAMES");
+
+  useEffect(() => {
+    // Extract category from pathname once the component is mounted
+    const pathParts = pathname.split("/");
+    const currentCategory = pathParts[pathParts.length - 1];
+    setCategory(
+      currentCategory !== locale && currentCategory !== ""
+        ? currentCategory
+        : "LEARN WORD GAMES"
+    );
+  }, [pathname, locale]);
 
   const navItems = [
     { label: "Home", href: `/${locale}` },
@@ -52,15 +66,13 @@ export default function HeaderOne() {
             alt="Magnifying Glass"
             width={200} // Adjusted width
             height={200} // Adjusted height
-            // layout="responsive"
           />
-          <h1 className="text-3xl md:text-4xl xl:text-5xl -mt-16">
-            LEARN WORD GAMES
+          <h1 className="text-3xl md:text-4xl xl:text-4xl -mt-16">
+            {category} {/* Dynamic category text */}
           </h1>
         </Link>
       </div>
 
-      {/* Dialog / Menu on the right */}
       <Dialog>
         <div className="flex flex-1 justify-end">
           <DialogTrigger asChild>
