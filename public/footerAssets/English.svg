@@ -1,0 +1,11 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 51" width="252" height="51">
+	<title>New Project</title>
+	<defs>
+		<image  width="252" height="51" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPwAAAAzAQMAAACJ2/dFAAAAAXNSR0IB2cksfwAAAANQTFRF////p8QbyAAAABxJREFUeJxjZCAAGEcVjCoYVTCqYFTBqAK6KAAAsYEANCoLPTgAAAAASUVORK5CYII="/>
+		<image  width="252" height="51" id="img2" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPwAAAAzBAMAAABBO3g1AAAAAXNSR0IB2cksfwAAADBQTFRFAJktQ7EsdsMrmM4rutoq2+Yq/fIpIqUsM6ssqdQqZb0rEZ8tyuAqh8gr7OwpVLcsjoRyOAAABLVJREFUeJzt2F1oFEccAPDZJN6ed36cwUjqUUkjFBGsqVgtbZEopQ8K4fChxa/m6kcfRDQq9qG0dg2oINWeX7GeH1GxoUoriaDUPJQTpYgPmqfWXItJK9YoEvdBC63xtjOz8/Hfu73ZuX2pSOchmZud/f/udmfmP7sG+k+L8T//PPNGYoLxSu1Z8dlMNtaOG7h7i32KGYlNPckT4vDGExPMpOjefr62Ydge3tBKPsQjRqK2vq4TV3vSOGj7QpvwxhqAHcZ/PqbVqq/J35qV9EOWd/i8P+H+n2HLU/8R/KQU6G7OncaaR46LsE8xH0nT6tkSvqZD9Csc9eEnLuY9C9/ZAbw5s4k36/LmftEPvZUu4S99L7sWxmTU/LkfRF9dPnJA8tvrivnxv1iyK4mp4mPLPV21eLQwJXh6JTz8q82gJwmk4v9qC8HvSggeH/by1augjtY2qXhzwArB9w5Kfmmzl/f+eGdRSsV7vqs2n89JnpwEeHgzWRwFf7E7DE8icT5alYH81iEPj6+9iu/KheHJUc6j6W2Qf68B6tEFKSXf0ReGJx0Fj7tKfvwHnh8/ei9S8j+5bYX1qcZTlgb/lN4scwjwzhHAj/qItS6faZzuI1dGybtBIu/ihvi9vnmBvIwheDwPJM/n8e+XcMCpzeTaB/ME84athDcOS57dzGfH6EW69jrS4d3eYfnCUcHHl7lNa9080p0K4N93M+PjriIeFA8/ksP3t7+o366JnGcjjyYFURQ8nyc791taPCnurQL9npzh/NgltEIzsg4vlsjI7HRo3jzEeXYXHnTLKZBV8Z/YvM15Ox2WR1P+YPEYim+9CKzkwZofOW2H5W83snhstOI9SFdOh4//aokgdNUJxQtJTBY0p0k06ub7630V85YFekKeTakgPvabDAAWXV3+zsv+vNkqG5V7vS/z8vzJVqX83SPy28uR3zso034Aj157U5wPtxF6fP7PZsiPXkEr09vkkA7i49nLvJ08NFTIX10J+arVtLK9Tkz7QB6h3Usst0K2rWq+eM3PX/sQ8nxpPl7VgKrna/Io9k4D/U+eWSpLOfkc2FrKlEMGkchDgTy/aNF9lfMXegDPE257fUU83/VkK+fBoJB7x+isdAnvbpRQ5D7g2zK0Fl+U0ONH3PDDtuDBdhGf/eO3btXZMvfAZS/PCt7+gYx3bN39IWR+0+t+6cCLzwp+zBE8F2k8dhdBKeZHHfRLuLQEDz1W8EOe4KVYlEP8efxUVI6XE0/Nk92M4OXWnowlb0AfHieWcjzZluvwZG8o+R2DgK8By5Avj5NxOR7vUrR4spmSvLj6hOeDuCwfy5Tl5ZOrmicvdyQvRDqR99xS8mR0l+HBWws1L68S4Xk4l4/etlR89aGy/LaXNHny7AR4lufYMvbZAxVP9hT+vJO0NHl5kyjPZxvLoEn4k/AoLXk49uffoN10eLktoTyPwhZx8K4MPZyS8Z5KVm1f/u+TSJfPIi9f9F7PvLHXrTibpxWfSk7web0QvXITqfiSsmZg2H7k2H6HcMZb/Gn91taH21K+Ryed+2LAsTvJwa+yUyej6M8dXZYI25J5hNMS5lue9Dt2a+b5f6X8IvP/AucytFJueQTAAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="0" y="0"/>
+	<use id="Layer 1" href="#img2" x="0" y="0"/>
+</svg>

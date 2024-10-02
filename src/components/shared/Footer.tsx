@@ -62,8 +62,8 @@ export default function Footer() {
           <Image
             src="/svg/back.svg"
             alt="TJ Logo"
-            width={100}
-            height={100}
+            width={230}
+            height={230}
             className="w-8 h-6 md:w-10 md:h-10 max-w-20 max-h-20"
           />
         </Link>
@@ -71,8 +71,8 @@ export default function Footer() {
           <Image
             src="/svg/home.svg"
             alt="TJ Logo"
-            width={100}
-            height={100}
+            width={200}
+            height={200}
             className="w-8 h-6 md:w-10 md:h-10 max-w-20 max-h-20"
           />
         </Link>
