@@ -9,7 +9,7 @@
   { "id": 8, "name": "Fruits", "image": "/categories/fruits.png" },
   { "id": 9, "name": "Tools", "image": "/categories/tools.png" },
   { "id": 10, "name": "Toys", "image": "/categories/toys.png" },
-  { "id": 11, "name": "Nature", "image": "/categories/home.png" },
+  { "id": 11, "name": "Nature", "image": "/categories/nature.png" },
   {
     "id": 12,
     "name": "Fun Activities",

@@ -56,7 +56,7 @@ export default function Footer() {
   );
 
   return (
-    <footer className=" flex items-center justify-around md:justify-between bg-[#049c2c] text-white px-4 lg:px-10">
+    <footer className="py-1 flex items-center justify-around md:justify-between bg-[#049c2c] text-white px-16 lg:px-24">
       <div className="flex items-center gap-2 md:gap-6 lg:gap-10">
         <Link href="/" onClick={() => router.back()}>
           <Image
@@ -78,7 +78,7 @@ export default function Footer() {
         </Link>
       </div>
 
-      <div className="flex items-center justify-around gap-2 sm:gap-4 lg:gap-16 xl:gap-32 relative">
+      <div className="flex items-center justify-center gap-2 sm:gap-4 lg:gap-16 xl:gap-24 relative">
         {/* <CustomCheckbox
           id="english"
           checked={currentLang === "en"}
