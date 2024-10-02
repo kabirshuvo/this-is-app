@@ -20,7 +20,7 @@ const Home: React.FC = () => {
         >
           <div className="h-full flex flex-col gap-2">
             <div className="flex-1">
-              <h3 className="lg:text-xl xl:text-2xl text-center uppercase text-pretty ">
+              <h3 className="lg:text-xl xl:text-2xl text-center uppercase text-pretty tracking-widest">
                 {category.name}
               </h3>
             </div>
@@ -32,7 +32,7 @@ const Home: React.FC = () => {
                 height={240}
                 priority
                 layout="responsive"
-                className=" object-cover flex-grow flex-1 flex"
+                className="h-full w-full object-cover flex-grow flex-1 flex hover:scale-125 transform transition duration-200"
               />
             </div>
           </div>
