@@ -28,11 +28,11 @@ const Home: React.FC = () => {
               <Image
                 src={category.image}
                 alt={category.name}
-                width={380}
-                height={380}
+                width={240}
+                height={240}
                 priority
                 layout="responsive"
-                className="w-full h-full object-cover flex-grow flex-1 flex"
+                className=" object-cover flex-grow flex-1 flex"
               />
             </div>
           </div>
