@@ -10,17 +10,20 @@ import BackToHomeArrow from "@/components/buttons/BackToHomeArrow";
 import "./globals.css";
 
 const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
+  // src: "./fonts/GeistVF.woff",
+  src: "./fonts/ITCKabelStd-Ultra.otf",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
 const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
+  // src: "./fonts/GeistMonoVF.woff",
+  src: "./fonts/KABELU.ttf",
   variable: "--font-geist-mono",
   weight: "100 900",
 });
 const luckiestGuy = localFont({
-  src: "./fonts/LuckiestGuy-Regular.ttf",
+  // src: "./fonts/LuckiestGuy-Regular.ttf",
+  src: "./fonts/Marker_felt_wide_bold.ttf",
   variable: "--font-luckiest-guy",
   weight: "400",
 });

@@ -20,7 +20,7 @@ export default function ItemImageCard({
     <Card className="w-full mx-auto">
       <CardContent
         onClick={() => playAudio(audio)}
-        className="flex justify-center items-center shadow-lg transform transition  h-full cursor-pointer"
+        className="flex justify-center items-center shadow-lg transform transition h-full cursor-pointer"
       >
         <Image
           src={src}
@@ -29,7 +29,7 @@ export default function ItemImageCard({
           height={200}
           priority
           layout="responsive"
-          className="max-w-40 max-h-48 object-cover flex-grow flex-1 flex"
+          className="max-w-40 max-h-48 object-cover flex-grow flex-1 flex "
         />
       </CardContent>
     </Card>
