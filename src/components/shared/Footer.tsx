@@ -61,7 +61,7 @@ export default function Footer() {
             alt="English"
             width={200}
             height={200}
-            className="w-24 h-8 md:w-48 md:h-12 hover:scale-110 transform transition duration-200"
+            className="w-120 h-8 md:w-48 md:h-12 hover:scale-110 transform transition duration-200"
           />
         </div>
 
@@ -70,7 +70,7 @@ export default function Footer() {
           alt="TJ Logo"
           width={100}
           height={100}
-          className="w-120 md:w-40 md:h-120 hover:scale-110 transform transition duration-200 max-w-full max-h-full"
+          className="w-120 md:w-40 md:h-120 hover:scale-110 transform transition duration-200 max-w-full max-h-full mt-1"
         />
 
         {/* Language selector for Zulu */}
@@ -87,7 +87,7 @@ export default function Footer() {
             alt="Zulu"
             width={200}
             height={200}
-            className="w-24 h-8 md:w-36 md:h-12 hover:scale-110 transform transition duration-200"
+            className="w-40 h-8 md:w-36 md:h-12 hover:scale-110 transform transition duration-200"
           />
         </div>
       </div>
@@ -99,7 +99,7 @@ export default function Footer() {
             alt="TJ Logo"
             width={200}
             height={200}
-            className="w-160 h-8 md:w-160 md:h-12 max-w-full max-h-full hover:scale-110 transform transition duration-200"
+            className="w-40 h-8 md:w-160 md:h-12 max-w-full max-h-full hover:scale-110 transform transition duration-200"
           />
         </Link>
       </div>

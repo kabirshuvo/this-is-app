@@ -41,7 +41,7 @@ const WhichIsCard: React.FC<WhichIsCardProps> = ({
         height={400}
         layout="responsive"
         objectFit="cover"
-        className="w-full h-full object-cover flex-grow flex-1 flex"
+        className="max-w-40 max-h-48 object-cover flex-grow flex-1 flex"
       />
     </div>
   );
