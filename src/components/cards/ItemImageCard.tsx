@@ -29,7 +29,7 @@ export default function ItemImageCard({
           height={200}
           priority
           layout="responsive"
-          className="max-w-40 max-h-48 object-cover flex-grow flex-1 flex "
+          className="max-w-40 max-h-48 object-cover flex-grow flex-1 flex hover:scale-110 transform transition duration-200"
         />
       </CardContent>
     </Card>
