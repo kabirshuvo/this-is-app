@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Lion",
-      "image": "/images/lion.png",
+      "image": "/categories/animals/Zebra.svg",
       "description": "The lion is a species in the family Felidae and a member of the genus Panthera.",
       "audio": {
         "itemAudio": "/audio/this/lion.mp3",
@@ -16,7 +16,7 @@
     {
       "id": 2,
       "name": "Elephant",
-      "image": "/images/elephant.png",
+      "image": "/categories/animals/mouse.svg",
       "description": "Elephants are large mammals of the family Elephantidae and the order Proboscidea.",
       "audio": {
         "itemAudio": "/audio/this/elephant.mp3",
@@ -29,7 +29,7 @@
     {
       "id": 3,
       "name": "Zebra",
-      "image": "/images/zebra.png",
+      "image": "/categories/animals/lizard.svg",
       "description": "Zebras are African equids with distinctive black-and-white striped coats.",
       "audio": {
         "itemAudio": "/audio/this/zebra.mp3",
@@ -42,7 +42,7 @@
     {
       "id": 4,
       "name": "Mouse",
-      "image": "/images/mouse.png",
+      "image": "/categories/animals/dog.svg",
       "description": "Mouse are medium-sized, long-tailed rodents belonging to the genus Rattus.",
       "audio": {
         "itemAudio": "/audio/this/mouse.mp3",
@@ -55,7 +55,7 @@
     {
       "id": 5,
       "name": "Dog",
-      "image": "/images/dog.png",
+      "image": "/categories/animals/elephant.svg",
       "description": "The domestic dog is a domesticated descendant of the wolf.",
       "audio": {
         "itemAudio": "/audio/this/dog.mp3",
@@ -68,7 +68,7 @@
     {
       "id": 6,
       "name": "Tiger",
-      "image": "/images/tiger.png",
+      "image": "/categories/animals/Lion.svg",
       "description": "The tiger is the largest living cat species and a member of the genus Panthera.",
       "audio": {
         "itemAudio": "/audio/this/tiger.mp3",
@@ -163,7 +163,7 @@
     {
       "id": 1,
       "name": "Cap",
-      "image": "/images/cap.png",
+      "image": "/categories/clothing/cap.png",
       "description": "A cap is a type of headwear with a visor, often worn for casual or sports purposes.",
       "audio": {
         "itemAudio": "/audio/this/cap.mp3",
@@ -176,7 +176,7 @@
     {
       "id": 2,
       "name": "Socks",
-      "image": "/images/socks.png",
+      "image": "/categories/clothing/Sock.png",
       "description": "Socks are garments worn on the feet, usually under shoes.",
       "audio": {
         "itemAudio": "/audio/this/socks.mp3",
@@ -189,7 +189,7 @@
     {
       "id": 3,
       "name": "Shoes",
-      "image": "/images/shoes.png",
+      "image": "/categories/clothing/Shoe.png",
       "description": "A shoe is a type of footwear worn to protect and comfort the foot.",
       "audio": {
         "itemAudio": "/audio/this/shoes.mp3",
@@ -202,7 +202,7 @@
     {
       "id": 4,
       "name": "Underpants",
-      "image": "/images/underpants.png",
+      "image": "/categories/clothing/underpants.png",
       "description": "Underpants are garments worn on the lower body, covering only part of the thigh.",
       "audio": {
         "itemAudio": "/audio/this/underpants.mp3",
@@ -215,7 +215,7 @@
     {
       "id": 5,
       "name": "Jacket",
-      "image": "/images/jacket.png",
+      "image": "/categories/clothing/jacket.png",
       "description": "A jacket is a mid-length garment for the upper body.",
       "audio": {
         "itemAudio": "/audio/this/jacket.mp3",
@@ -228,7 +228,7 @@
     {
       "id": 6,
       "name": "Sweater",
-      "image": "/images/sweater.png",
+      "image": "/categories/clothing/sweater.png",
       "description": "Sweater includes garments like sweatshirts and sweatpants, typically made from soft, comfortable fabric.",
       "audio": {
         "itemAudio": "/audio/this/sweater.mp3",

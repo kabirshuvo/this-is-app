@@ -19,12 +19,12 @@ export default function HeaderOne() {
   const [category, setCategory] = useState("LEARN WORD GAMES");
 
   useEffect(() => {
-    // Extract category from pathname once the component is mounted
+    // I need to display the pathParts all in uppercase
     const pathParts = pathname.split("/");
     const currentCategory = pathParts[pathParts.length - 1];
     setCategory(
       currentCategory !== locale && currentCategory !== ""
-        ? currentCategory
+        ? currentCategory.toUpperCase()
         : "LEARN WORD GAMES"
     );
   }, [pathname, locale]);
