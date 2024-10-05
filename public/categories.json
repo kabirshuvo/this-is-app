@@ -4,7 +4,7 @@
   { "id": 3, "name": "Clothing", "image": "/categories/clothing.png" },
   { "id": 4, "name": "Food", "image": "/categories/food.png" },
   { "id": 5, "name": "Treats", "image": "/categories/treat.png" },
-  { "id": 6, "name": "Fun-Things", "image": "/categories/funThingsO.png" },
+  { "id": 6, "name": "Fun Things", "image": "/categories/funThingsO.png" },
   { "id": 7, "name": "Vegetables", "image": "/categories/vegetables.png" },
   { "id": 8, "name": "Fruits", "image": "/categories/fruits.png" },
   { "id": 9, "name": "Tools", "image": "/categories/tools.png" },
@@ -12,7 +12,7 @@
   { "id": 11, "name": "Nature", "image": "/categories/nature.png" },
   {
     "id": 12,
-    "name": "Fun-Activities",
+    "name": "Fun Activities",
     "image": "/categories/funActivities.png"
   }
 ]

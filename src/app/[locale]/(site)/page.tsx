@@ -48,11 +48,11 @@ const Home: React.FC = () => {
   }, [categories]);
 
   return (
-    <div className="flex justify-center flex-wrap items-start h-[120vh]">
+    <div className="flex justify-center flex-wrap items-start h-[150vh]">
       {categories.map((category, index) => (
         <motion.div
           key={category.id}
-          initial={{ opacity: 1, x: -150, y: 0 }} // Start slightly from the left
+          initial={{ opacity: 1, x: -160, y: 0 }} // Start slightly from the left
           animate={
             isLoaded
               ? {
@@ -69,7 +69,7 @@ const Home: React.FC = () => {
             href={`${locale}/categories/${category.name.toLowerCase()}`}
             passHref
           >
-            <div className="flex flex-col items-center justify-center hover:shadow-xl h-full cursor-pointer">
+            <div className="flex flex-col items-center justify-center bg-tjblue-500 hover:shadow-xl h-full cursor-pointer pt-4">
               <h3 className="lg:text-xl xl:text-2xl text-center uppercase text-pretty tracking-widest mb-2">
                 {category.name}
               </h3>
