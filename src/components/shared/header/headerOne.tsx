@@ -113,9 +113,9 @@ export default function HeaderOne() {
           {/* Hand */}
           <motion.div
             key={`${animatedKey}-hand`} 
-            initial={{ rotate: -35, x: 14 }} 
-            animate={{ rotate: 0, x: 0 }} 
-            transition={{ duration: 1.5, ease: "easeOut" }} 
+            initial={{ rotate: -45, x: 24, scale:0 }} 
+            animate={{ rotate: 0, x: 0, scale: [0, 1.5, 1] }} 
+            transition={{ duration: 1.8, ease: "easeOut" }} 
             className="absolute top-2/3 left-6"
           >
             <Image
