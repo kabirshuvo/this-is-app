@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Menu } from "lucide-react";
 import { usePathname } from "next/navigation";
+import { motion } from "framer-motion";
 import {
   Dialog,
   DialogClose,
@@ -19,7 +20,6 @@ export default function HeaderOne() {
   const [category, setCategory] = useState("LEARN WORD GAMES");
 
   useEffect(() => {
-    // I need to display the pathParts all in uppercase
     const pathParts = pathname.split("/");
     const currentCategory = pathParts[pathParts.length - 1];
     setCategory(
@@ -28,6 +28,24 @@ export default function HeaderOne() {
         : "LEARN WORD GAMES"
     );
   }, [pathname, locale]);
+
+ 
+  const categoryLetters = category.split("");
+
+  // Animation variants for each letter
+  const letterVariants = {
+    hidden: { opacity: 0, x: 50 }, 
+    visible: (i: number) => ({
+      opacity: 1,
+      x: 0,
+      transition: {
+        delay: i * 0.08, 
+        duration: 0.6,
+      },
+    }),
+  };
+
+  const animatedKey = `${category}-${pathname}`;
 
   const navItems = [
     { label: "Home", href: `/${locale}` },
@@ -38,7 +56,7 @@ export default function HeaderOne() {
 
   return (
     <div
-      className="relative py-4 text-tjyellow flex items-center justify-between px-4 header header-with-curve"
+      className="relative text-tjyellow flex items-center justify-between mb-20 px-4 pb-8 header header-with-curve"
       style={{
         backgroundImage: "url('/menupages/header_banner.svg')",
         backgroundSize: "cover",
@@ -59,18 +77,72 @@ export default function HeaderOne() {
       </div>
 
       {/* Magnifying Glass and Text in the middle */}
-      <div className="hidden md:flex justify-center items-center ">
-        <Link href="/" className="flex items-center gap-4">
+      <div className="hidden md:flex justify-center items-center gap-8 ">
+        <motion.div
+          key={`${animatedKey}-pencil`} 
+          className="relative w-[150px] h-[120px]"
+          initial={{ scale: 0 }} 
+          animate={{ scale: 1 }} 
+          transition={{ type: "spring", stiffness: 100, damping: 8, duration: 1 }}
+        >
+          {/* Pencil */}
           <Image
-            src="/menupages/TJ_magnifying-GLASS.svg"
-            alt="Magnifying Glass"
-            width={200} // Adjusted width
-            height={200} // Adjusted height
+            src="/menupages/tj-pancil/pancil.svg"
+            alt="TJ Pencil"
+            width={90}
+            height={100}
+            className="absolute top-0 left-16 z-10"
           />
-          <h1 className="text-3xl md:text-4xl xl:text-4xl -mt-16">
-            {category} {/* Dynamic category text */}
-          </h1>
-        </Link>
+
+          {/* Magnifying Glass */}
+          <motion.div
+            key={`${animatedKey}-glass`} 
+            initial={{ scale: 0, y: 0 }} 
+            animate={{ scale: [0, 1.5, 1], y: [0, -10, 0] }} 
+            transition={{ duration: 2 }}
+            className="absolute top-10 -right-2 z-20"
+          >
+            <Image
+              src="/menupages/tj-pancil/glass.svg"
+              alt="Magnifying Glass"
+              width={35}
+              height={40}
+            />
+          </motion.div>
+
+          {/* Hand */}
+          <motion.div
+            key={`${animatedKey}-hand`} 
+            initial={{ rotate: -35, x: 14 }} 
+            animate={{ rotate: 0, x: 0 }} 
+            transition={{ duration: 1.5, ease: "easeOut" }} 
+            className="absolute top-2/3 left-6"
+          >
+            <Image
+              src="/menupages/tj-pancil/hand.svg"
+              alt="Hand"
+              width={60}
+              height={72}
+            />
+          </motion.div>
+        </motion.div>
+
+        <h1 className="text-3xl md:text-4xl xl:text-5xl pb-4 flex page-title">
+          
+          {categoryLetters.map((letter, index) => (
+            <motion.span
+              key={`${animatedKey}-${index}`} 
+              custom={index}
+              initial="hidden"
+              animate="visible"
+              variants={letterVariants}
+              className="inline-block"
+              style={{ whiteSpace: letter === " " ? "pre" : "normal" }} 
+            >
+              {letter}
+            </motion.span>
+          ))}
+        </h1>
       </div>
 
       <Dialog>

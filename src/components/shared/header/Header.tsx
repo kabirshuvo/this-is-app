@@ -46,7 +46,7 @@ export default function Header() {
 
       <div className="hidden md:flex justify-center flex-1">
         <Link href="/">
-          <h1 className="text-4xl md:text-5xl xl:text-6xl">LEARN WORD GAMES</h1>
+          <h1 className="text-4xl md:text-5xl xl:text-6xl"> LEARN WORD GAMES</h1>
         </Link>
       </div>
 

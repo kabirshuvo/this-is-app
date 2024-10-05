@@ -50,7 +50,7 @@ export default async function RootLayout({
             className={`${luckiestGuy.variable} ${geistSans.variable} ${geistMono.variable} antialiased bg-tjblue-500 text-tjyellow-500 min-h-screen flex flex-col justify-between gap-6`}
           >
             {/* <Header /> */}
-            <div className="-mt-6">
+            <div className="">
               <HeaderOne />
             </div>
             <div className="flex justify-center items-center gap-4 py-2 -mt-16">

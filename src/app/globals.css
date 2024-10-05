@@ -71,3 +71,11 @@ body {
     @apply bg-background text-foreground;
     }
 }
+.page-title {
+  font-size: calc(120px* var(--scale));
+  cursor: default;
+  color: #ff0;
+  -webkit-text-stroke: 1px #090;
+  text-shadow: 2px 2px #090;
+  line-height: 0;
+}
