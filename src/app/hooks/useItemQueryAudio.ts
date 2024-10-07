@@ -24,12 +24,20 @@ const useItemQueryAudio = (itemName: string, type: AudioType = "default") => {
           break;
       }
       audioRef.current = new Audio(audioSrc);
+
+      audioRef.current.onerror = () => {
+        console.error(`Failed to load audio: ${audioSrc}`);
+        audioRef.current = null;
+      };
     }
   }, [itemName, type]);
 
   const playAudio = () => {
     if (audioRef.current) {
-      audioRef.current.play();
+      audioRef.current.play().catch((error) => {
+        console.error("Error playing audio:", error);
+        audioRef.current = null;
+      });
     }
   };
 

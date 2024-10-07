@@ -3,36 +3,10 @@
     {
       "id": 1,
       "name": "Zebra",
-      "image": "/categories/animals/Zebra.svg",
+      "image": "/images/animals/zebra.svg",
       "description": "The lion is a species in the family Felidae and a member of the genus Panthera.",
       "audio": {
         "itemAudio": "/audio/this/animals/zebra.mp3",
-        "question": "q-lion.mp3",
-        "success": "c-lion.mp3",
-        "error": "n-lion.mp3",
-        "warning": "w-lion.mp3"
-      }
-    },
-    {
-      "id": 2,
-      "name": "Mouse",
-      "image": "/categories/animals/mouse.svg",
-      "description": "Elephants are large mammals of the family Elephantidae and the order Proboscidea.",
-      "audio": {
-        "itemAudio": "/audio/this/animals/mouse.mp3",
-        "question": "q-elephant.mp3",
-        "success": "c-elephant.mp3",
-        "error": "n-elephant.mp3",
-        "warning": "w-elephant.mp3"
-      }
-    },
-    {
-      "id": 3,
-      "name": "Lizard",
-      "image": "/categories/animals/lizard.svg",
-      "description": "Zebras are African equids with distinctive black-and-white striped coats.",
-      "audio": {
-        "itemAudio": "/audio/this/animals/Lizard.mp3",
         "question": "q-zebra.mp3",
         "success": "c-zebra.mp3",
         "error": "n-zebra.mp3",
@@ -40,12 +14,12 @@
       }
     },
     {
-      "id": 4,
-      "name": "Dog",
-      "image": "/categories/animals/dog.svg",
-      "description": "Mouse are medium-sized, long-tailed rodents belonging to the genus Rattus.",
+      "id": 2,
+      "name": "Mouse",
+      "image": "/images/animals/mouse.svg",
+      "description": "Elephants are large mammals of the family Elephantidae and the order Proboscidea.",
       "audio": {
-        "itemAudio": "/audio/this/animals/dog.mp3",
+        "itemAudio": "/audio/this/animals/mouse.mp3",
         "question": "q-mouse.mp3",
         "success": "c-mouse.mp3",
         "error": "n-mouse.mp3",
@@ -53,12 +27,25 @@
       }
     },
     {
-      "id": 5,
-      "name": "Elephant",
-      "image": "/categories/animals/elephant.svg",
-      "description": "The domestic dog is a domesticated descendant of the wolf.",
+      "id": 3,
+      "name": "Lizard",
+      "image": "/images/animals/lizard.svg",
+      "description": "Zebras are African equids with distinctive black-and-white striped coats.",
       "audio": {
-        "itemAudio": "/audio/this/animals/elephant.mp3",
+        "itemAudio": "/audio/this/animals/lizard.mp3",
+        "question": "q-lizard.mp3",
+        "success": "c-lizard.mp3",
+        "error": "n-lizard.mp3",
+        "warning": "w-lizard.mp3"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Dog",
+      "image": "/images/animals/dog.svg",
+      "description": "Mouse are medium-sized, long-tailed rodents belonging to the genus Rattus.",
+      "audio": {
+        "itemAudio": "/audio/this/animals/dog.mp3",
         "question": "q-dog.mp3",
         "success": "c-dog.mp3",
         "error": "n-dog.mp3",
@@ -66,16 +53,29 @@
       }
     },
     {
+      "id": 5,
+      "name": "Elephant",
+      "image": "/images/animals/elephant.svg",
+      "description": "The domestic dog is a domesticated descendant of the wolf.",
+      "audio": {
+        "itemAudio": "/audio/this/animals/elephant.mp3",
+        "question": "q-elephant.mp3",
+        "success": "c-elephant.mp3",
+        "error": "n-elephant.mp3",
+        "warning": "w-elephant.mp3"
+      }
+    },
+    {
       "id": 6,
       "name": "Lion",
-      "image": "/categories/animals/Lion.svg",
+      "image": "/images/animals/lion.svg",
       "description": "The tiger is the largest living cat species and a member of the genus Panthera.",
       "audio": {
         "itemAudio": "/audio/this/animals/lion.mp3",
-        "question": "q-tiger.mp3",
-        "success": "c-tiger.mp3",
-        "error": "n-tiger.mp3",
-        "warning": "w-tiger.mp3"
+        "question": "q-lion.mp3",
+        "success": "c-lion.mp3",
+        "error": "n-lion.mp3",
+        "warning": "w-lion.mp3"
       }
     }
   ],

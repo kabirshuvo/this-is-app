@@ -39,7 +39,7 @@ const CorrectCardModal: React.FC<CorrectCardModalProps> = ({
               onClick={() => router.push("/")}
             />
           </div>
-          <div className="w-auto h-auto max-w-full max-h-full px-20 pt-20 pb-10 space-y-8 bg-white rounded-lg">
+          <div className="w-auto h-auto max-w-full max-h-full space-y-8 bg-white rounded-lg overflow-hidden">
             <Image
               src={itemImage}
               alt={itemName}

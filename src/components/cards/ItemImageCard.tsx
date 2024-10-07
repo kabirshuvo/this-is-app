@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Card, CardContent } from "@/components/ui/card";
 
 interface ResponsiveItemImageCardProps {
   src: string;
@@ -17,21 +16,19 @@ export default function ItemImageCard({
     audioEl.play();
   };
   return (
-    <Card className="w-full mx-auto">
-      <CardContent
-        onClick={() => playAudio(audio)}
-        className="flex justify-center items-center shadow-lg transform transition h-full cursor-pointer"
-      >
-        <Image
-          src={src}
-          alt={alt}
-          width={200}
-          height={200}
-          priority
-          layout="responsive"
-          className="max-w-40 max-h-48 object-cover flex-grow flex-1 flex hover:scale-110 transform transition duration-200"
-        />
-      </CardContent>
-    </Card>
+    <div
+      onClick={() => playAudio(audio)}
+      className="bg-white hover:shadow-xl duration-200 rounded w-full md:min-w-28 lg:min-w-52 max-w-52 md:min-h-28 lg:min-h-52 max-h-52 mx-auto flex justify-center items-center shadow-lg transform transition h-full cursor-pointer overflow-hidden border-4 border-transparent hover:border-4 hover:border-red-500 hover:scale-105"
+    >
+      <Image
+        src={src}
+        alt={alt}
+        width={200}
+        height={200}
+        priority
+        layout="responsive"
+        className="max-w-40 max-h-48 object-cover flex-grow flex-1 flex transform transition duration-200"
+      />
+    </div>
   );
 }

@@ -24,15 +24,15 @@ export default function Footer() {
   };
 
   return (
-    <footer className="py-1 flex items-center justify-around md:justify-between bg-[#049c2c] text-white px-12 lg:px-24">
+    <footer className="py-1 flex items-center justify-around md:justify-between bg-[#049c2c] text-white px-4 md:px-12 lg:px-24 gap-2">
       <div className="flex items-center justify-center gap-2 md:gap-6 lg:gap-10">
         <Link href="/" onClick={() => router.back()}>
           <Image
             src="/footerAssets/LeftArrow.svg"
             alt="TJ Logo"
-            width={230}
-            height={230}
-            className="w-12 h-8 md:w-16 md:h-12 max-w-28 max-h-28 hover:scale-110 transform transition duration-200 mt-2"
+            width={200}
+            height={200}
+            className="w-6 h-8 md:w-12 md:h-12 max-w-28 max-h-28 hover:scale-110 transform transition duration-200 md:mt-2"
           />
         </Link>
         <Link href="/">
@@ -41,7 +41,7 @@ export default function Footer() {
             alt="TJ Logo"
             width={200}
             height={200}
-            className="w-12 h-8 md:w-16 md:h-12 max-w-28 max-h-28 hover:scale-110 transform transition duration-200"
+            className="w-6 h-8 md:w-12 md:h-12 max-w-28 max-h-28 hover:scale-110 transform transition duration-200"
           />
         </Link>
       </div>
@@ -61,7 +61,9 @@ export default function Footer() {
             alt="English"
             width={200}
             height={200}
-            className="w-120 h-8 md:w-48 md:h-12 hover:scale-110 transform transition duration-200"
+            className={`w-120 h-8 md:w-44 md:h-12 hover:scale-110 transform transition duration-200 ${
+              currentLang === "en" ? "" : "mt-1.5"
+            }`}
           />
         </div>
 
@@ -70,7 +72,7 @@ export default function Footer() {
           alt="TJ Logo"
           width={100}
           height={100}
-          className="w-120 md:w-40 md:h-120 hover:scale-110 transform transition duration-200 max-w-full max-h-full mt-1"
+          className="w-120 md:w-44 md:h-12 hover:scale-110 transform transition duration-200 max-w-full max-h-full mt-1.5"
         />
 
         {/* Language selector for Zulu */}
@@ -87,7 +89,9 @@ export default function Footer() {
             alt="Zulu"
             width={200}
             height={200}
-            className="w-40 h-8 md:w-36 md:h-12 hover:scale-110 transform transition duration-200"
+            className={`w-40 h-8 md:w-32 md:h-12 hover:scale-110 transform transition duration-200 ${
+              currentLang === "zu" ? "" : "mt-1"
+            }`}
           />
         </div>
       </div>

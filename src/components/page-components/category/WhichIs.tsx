@@ -1,6 +1,12 @@
 "use client";
 
-import React, { useCallback, useEffect, useMemo, useState } from "react";
+import React, {
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 import Image from "next/image";
 import { Category } from "@/types/category";
 import { Volume2 } from "lucide-react";
@@ -11,32 +17,27 @@ import useItemQueryAudio from "@/app/hooks/useItemQueryAudio";
 import useErrorAudio from "@/app/hooks/useErrorAudio";
 import useItemData from "@/app/hooks/useItemData";
 import ConfettiComponent from "./ConfettiComponent";
-import WhichIsCard from "@/components/cards/WhichIsCard";
-import { useRouter } from "next/navigation";
+// import WhichIsCard from "@/components/cards/WhichIsCard";
 import CorrectCardModal from "@/components/modals/CorrectCardModal";
+import SwiperComponent from "./SwiperComponent";
 
 interface Params {
   category: string;
 }
 
 const WhichIs: React.FC<{ params: Params }> = ({ params }) => {
-  const router = useRouter();
   const [relatedData, setRelatedData] = useState<Category[]>([]);
   const [randomItemName, setRandomItemName] = useState<string>("");
   const [randomItemId, setRandomItemId] = useState<number | null>(null);
   const [showConfetti, setShowConfetti] = useState(false);
   const [shakeItemId, setShakeItemId] = useState<number | null>(null);
-  const [correctAudio, setCorrectAudio] = useState<HTMLAudioElement | null>(
-    null
-  );
-  const [incorrectAudio, setIncorrectAudio] = useState<HTMLAudioElement | null>(
-    null
-  );
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedItem, setSelectedItem] = useState<{
     src: string;
     name: string;
   } | null>(null);
+  // const [correctClicked, setCorrectClicked] = useState(false);
+  const errorAudioRef = useRef<HTMLAudioElement | null>(null);
 
   const clickedItemData = useItemData({
     itemId: shakeItemId,
@@ -63,48 +64,46 @@ const WhichIs: React.FC<{ params: Params }> = ({ params }) => {
     randomItemName ? randomItemName.toLowerCase() : "",
     "c"
   );
-  const playErrorAudio = useErrorAudio(
-    clickedItemData?.name.toLowerCase() ?? ""
-  );
+  useErrorAudio(clickedItemData?.name.toLowerCase() ?? "");
 
-  const playAudio = useCallback((audio: HTMLAudioElement | null) => {
-    if (audio) {
-      audio.play();
-    }
-  }, []);
-
-  useEffect(() => {
-    const loadRelatedData = async () => {
+  const loadRelatedData = useCallback(async () => {
+    try {
       const data = await fetchRelatedData(params.category);
-      setRelatedData(data);
+      const shuffledData = shuffleArray(data);
+      setRelatedData(shuffledData);
 
-      if (data.length > 0) {
-        const randomIndex = Math.floor(Math.random() * data.length);
-        setRandomItemName(data[randomIndex].name);
-        setRandomItemId(data[randomIndex].id);
+      if (shuffledData.length > 0) {
+        const randomIndex = Math.floor(Math.random() * shuffledData.length);
+        setRandomItemName(shuffledData[randomIndex].name);
+        setRandomItemId(shuffledData[randomIndex].id);
       }
-    };
-
-    loadRelatedData();
+    } catch (error) {
+      console.error("Failed to load related data:", error);
+    }
   }, [params.category]);
 
   useEffect(() => {
+    loadRelatedData();
+  }, [loadRelatedData]);
+
+  useEffect(() => {
+    let whichOneAudio: HTMLAudioElement | null = null;
+    let questionAudio: HTMLAudioElement | null = null;
+
     if (typeof window !== "undefined") {
-      setCorrectAudio(new Audio("/audio/congrats.mp3"));
-      setIncorrectAudio(new Audio("/audio/error.mp3"));
-      const whichOneAudio = new Audio("/audio/whichone.mp3");
-      const questionAudio = new Audio(`/audio/${itemAudio?.question}.mp3`);
+      whichOneAudio = new Audio("/audio/whichone.mp3");
+      questionAudio = new Audio(`/audio/${itemAudio?.question}.mp3`);
 
       whichOneAudio.preload = "auto";
       questionAudio.preload = "auto";
 
       whichOneAudio.addEventListener("ended", () => {
-        questionAudio.play();
+        questionAudio?.play();
       });
 
       return () => {
-        whichOneAudio.removeEventListener("ended", () => {
-          questionAudio.play();
+        whichOneAudio?.removeEventListener("ended", () => {
+          questionAudio?.play();
         });
       };
     }
@@ -117,11 +116,18 @@ const WhichIs: React.FC<{ params: Params }> = ({ params }) => {
   const handleCardClick = useCallback(
     (itemId: number, itemName: string, itemSrc: string) => {
       if (itemName === randomItemName) {
+        // setCorrectClicked(true);
         setShowConfetti(true);
         playSuccessAudio();
 
+        if (errorAudioRef.current) {
+          errorAudioRef.current.pause();
+          errorAudioRef.current.currentTime = 0;
+        }
+
         const confettiTimeout = setTimeout(() => {
           setShowConfetti(false);
+          // setCorrectClicked(false);
         }, 5000);
 
         // Show the modal with the correct image details
@@ -131,40 +137,62 @@ const WhichIs: React.FC<{ params: Params }> = ({ params }) => {
         if (relatedData.length > 0) {
           const randomIndex = Math.floor(Math.random() * relatedData.length);
           setRandomItemName(relatedData[randomIndex].name);
+          setRandomItemId(relatedData[randomIndex].id);
+          setRelatedData((prevData) => shuffleArray([...prevData]));
         }
         return () => clearTimeout(confettiTimeout);
       } else {
         setShakeItemId(itemId);
         setTimeout(() => setShakeItemId(null), 500);
+        // setCorrectClicked(false);
       }
     },
-    [randomItemName, correctAudio, incorrectAudio, playAudio, relatedData]
+    [randomItemName, relatedData, playSuccessAudio]
   );
 
-  useEffect(() => {
-    if (shakeItemId !== randomItemId) {
-      playErrorAudio(clickedItemData?.name);
-    }
-  }, [shakeItemId, randomItemId, clickedItemData]);
+  const shuffleArray = (array: Category[]) => {
+    return array.sort(() => Math.random() - 0.5);
+  };
+
+  // useEffect(() => {
+  //   if (shakeItemId !== randomItemId && clickedItemData && !correctClicked) {
+  //     playErrorAudio(clickedItemData.name);
+  //   }
+  // }, [
+  //   shakeItemId,
+  //   randomItemId,
+  //   clickedItemData,
+  //   playErrorAudio,
+  //   correctClicked,
+  // ]);
 
   const memoizedRelatedData = useMemo(() => {
     if (randomItemId === null) return [];
 
+    // Create a shallow copy of relatedData to avoid external mutation
+    const dataCopy = [...relatedData];
+
     // Filter out the correct item
-    const filteredData = relatedData.filter((item) => item.id !== randomItemId);
+    const filteredData = dataCopy.filter((item) => item.id !== randomItemId);
 
     // Randomly select 3 items from the filtered data
     const randomItems = [];
-    while (randomItems.length < 3 && filteredData.length > 0) {
-      const randomIndex = Math.floor(Math.random() * filteredData.length);
-      randomItems.push(filteredData.splice(randomIndex, 1)[0]);
+    const tempFilteredData = [...filteredData]; // Copy to avoid mutation in splice
+    while (randomItems.length < 6 && tempFilteredData.length > 0) {
+      const randomIndex = Math.floor(Math.random() * tempFilteredData.length);
+      randomItems.push(tempFilteredData.splice(randomIndex, 1)[0]);
     }
 
     // Find the correct item
-    const correctItem = relatedData.find((item) => item.id === randomItemId);
+    const correctItem = dataCopy.find((item) => item.id === randomItemId);
 
-    // If correctItem is undefined, return the randomItems array
-    if (!correctItem) return randomItems;
+    // Return only randomItems if correctItem is not found
+    if (!correctItem) {
+      console.warn(
+        `correctItem with id ${randomItemId} not found in relatedData`
+      );
+      return randomItems;
+    }
 
     // Combine the correct item with the 3 randomly selected items
     const combinedData = [...randomItems, correctItem];
@@ -179,11 +207,11 @@ const WhichIs: React.FC<{ params: Params }> = ({ params }) => {
   }, [randomItemId, relatedData]);
 
   return (
-    <div className="">
+    <div className="mt-4">
       {showConfetti && <ConfettiComponent showConfetti={showConfetti} />}
       <div className="flex items-center justify-center gap-3 lg:gap-4 mt-4">
         <h3 className="md:text-2xl lg:text-4xl text-center uppercase mt-1">
-          Which one is the {randomItemName}?
+          Which is the {randomItemName}?
         </h3>
         <div>
           <Volume2 size={28} />
@@ -198,20 +226,8 @@ const WhichIs: React.FC<{ params: Params }> = ({ params }) => {
           />
         </Button>
       </div>
-      <section className="relative gap-2">
-        <button
-          className="absolute left-0 top-1/2 transform -translate-y-1/2 rounded-full shadow"
-          onClick={() => router.back()}
-        >
-          <Image
-            src="/images/arrow.png"
-            alt=""
-            width={28}
-            height={28}
-            className="transition duration-200 ease-in-out rotate-180"
-          />
-        </button>
-        <div className="grid grid-cols-4 gap-2 md:gap-4 mt-4 max-w-[80%] lg:max-w-[70%] mx-auto justify-center">
+      <section className="relative gap-2 flex justify-center w-[70%] px-0 mx-auto mt-2">
+        {/* <div className="grid grid-cols-4 gap-2 md:gap-4 mt-4 max-w-[80%] lg:max-w-[70%] mx-auto justify-center">
           {memoizedRelatedData.map((item) => (
             <WhichIsCard
               key={item.id}
@@ -224,21 +240,13 @@ const WhichIs: React.FC<{ params: Params }> = ({ params }) => {
               shakeItemId={shakeItemId}
             />
           ))}
-        </div>
-        <button
-          className="absolute right-0 top-1/2 transform -translate-y-1/2 rounded-full shadow"
-          onClick={() => {
-            // Logic to handle right arrow click
-          }}
-        >
-          <Image
-            src="/images/arrow.png"
-            alt=""
-            width={28}
-            height={28}
-            className="transition duration-200 ease-in-out"
-          />
-        </button>
+        </div> */}
+
+        <SwiperComponent
+          relatedData={memoizedRelatedData}
+          handleCardClick={handleCardClick}
+          shakeItemId={shakeItemId}
+        />
       </section>
       {selectedItem && (
         <CorrectCardModal

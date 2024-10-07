@@ -10,12 +10,32 @@ const useErrorAudio = (errorItem: string | null) => {
     }
     if (errorItem) {
       audioRef.current = new Audio(`/audio/error/n-${errorItem}.mp3`);
+
+      audioRef.current.onerror = () => {
+        console.error(`Failed to load audio: ${errorItem}.mp3`);
+        audioRef.current = null;
+      };
+
+      audioRef.current.play().catch((error) => {
+        console.error("Error playing audio:", error);
+        audioRef.current = null;
+      })
     }
+
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current = null;
+      }
+    };
   }, [errorItem]);
 
   const playErrorAudio = (name: string | undefined) => {
     if (audioRef.current) {
-      audioRef.current.play();
+      audioRef.current.play().catch((error) => {
+        console.error("Error playing audio:", error);
+        audioRef.current = null;
+      });
     } else {
       console.log(`Error audio for ${name} not found`);
     }

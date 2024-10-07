@@ -6,7 +6,6 @@ import { getMessages } from "next-intl/server";
 // import Header from "@/components/shared/header/Header";
 import HeaderOne from "@/components/shared/header/headerOne";
 import Footer from "@/components/shared/Footer";
-import BackToHomeArrow from "@/components/buttons/BackToHomeArrow";
 import "./globals.css";
 
 const geistSans = localFont({
@@ -53,14 +52,9 @@ export default async function RootLayout({
             <div className="-mt-6">
               <HeaderOne />
             </div>
-            <div className="flex justify-center items-center gap-4 py-2 -mt-16">
-              <div className="flex-1"></div>
-              <main>{children}</main>
-              <div className="flex-1">
-                <BackToHomeArrow />
-              </div>
-            </div>
-
+            <main className="flex items-center gap-4 py-2 -mt-16 w-[90%] mx-auto">
+              {children}
+            </main>
             <Footer />
           </body>
         </html>
