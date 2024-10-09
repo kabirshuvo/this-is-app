@@ -176,7 +176,7 @@
     {
       "id": 2,
       "name": "Socks",
-      "image": "/images/clothing/Sock.png",
+      "image": "/images/clothing/sock.png",
       "description": "Socks are garments worn on the feet, usually under shoes.",
       "audio": {
         "itemAudio": "/audio/this/clothings/socks.mp3",
@@ -189,7 +189,7 @@
     {
       "id": 3,
       "name": "Shoes",
-      "image": "/images/clothing/Shoe.png",
+      "image": "/images/clothing/shoe.png",
       "description": "A shoe is a type of footwear worn to protect and comfort the foot.",
       "audio": {
         "itemAudio": "/audio/this/clothings/shoes.mp3",
