@@ -163,7 +163,7 @@
     {
       "id": 1,
       "name": "Cap",
-      "image": "/categories/clothing/cap.png",
+      "image": "/images/clothing/cap.png",
       "description": "A cap is a type of headwear with a visor, often worn for casual or sports purposes.",
       "audio": {
         "itemAudio": "/audio/this/clothings/cap.mp3",
@@ -176,7 +176,7 @@
     {
       "id": 2,
       "name": "Socks",
-      "image": "/categories/clothing/Sock.png",
+      "image": "/images/clothing/Sock.png",
       "description": "Socks are garments worn on the feet, usually under shoes.",
       "audio": {
         "itemAudio": "/audio/this/clothings/socks.mp3",
@@ -189,7 +189,7 @@
     {
       "id": 3,
       "name": "Shoes",
-      "image": "/categories/clothing/Shoe.png",
+      "image": "/images/clothing/Shoe.png",
       "description": "A shoe is a type of footwear worn to protect and comfort the foot.",
       "audio": {
         "itemAudio": "/audio/this/clothings/shoes.mp3",
@@ -202,7 +202,7 @@
     {
       "id": 4,
       "name": "Underpants",
-      "image": "/categories/clothing/underpants.png",
+      "image": "/images/clothing/underpants.png",
       "description": "Underpants are garments worn on the lower body, covering only part of the thigh.",
       "audio": {
         "itemAudio": "/audio/this/clothings/underpants.mp3",
@@ -215,7 +215,7 @@
     {
       "id": 5,
       "name": "Jacket",
-      "image": "/categories/clothing/jacket.png",
+      "image": "/images/clothing/jacket.png",
       "description": "A jacket is a mid-length garment for the upper body.",
       "audio": {
         "itemAudio": "/audio/this/clothings/jacket.mp3",
@@ -228,7 +228,7 @@
     {
       "id": 6,
       "name": "Sweater",
-      "image": "/categories/clothing/sweater.png",
+      "image": "/images/clothing/sweater.png",
       "description": "Sweater includes garments like sweatshirts and sweatpants, typically made from soft, comfortable fabric.",
       "audio": {
         "itemAudio": "/audio/this/clothings/sweater.mp3",
