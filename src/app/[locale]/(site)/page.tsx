@@ -20,11 +20,11 @@ const Home: React.FC = () => {
         >
           <div className="h-full flex flex-col gap-2">
             <div className="flex-1">
-              <h3 className="text-sm lg:text-xl xl:text-2xl text-center uppercase lg:text-pretty tracking-widest text-nowrap">
+              <h3 className="text-sm xl:text-xl text-center uppercase lg:text-pretty tracking-widest text-nowrap">
                 {category.name}
               </h3>
             </div>
-            <div className="flex justify-center items-center bg-white hover:shadow-xl transform transition duration-200 cursor-pointer rounded w-full h-full min-w-20 max-w-60 min-h-20 max-h-60 mx-auto border-4 border-transparent hover:border-4 hover:border-red-500 hover:scale-105">
+            <div className="flex justify-center items-center bg-white hover:shadow-xl transform transition duration-200 rounded w-full h-full min-w-20 max-w-60 min-h-20 max-h-60 mx-auto border-4 border-transparent hover:border-4 hover:border-red-500">
               <Image
                 src={category.image}
                 alt={category.name}
@@ -37,7 +37,7 @@ const Home: React.FC = () => {
             </div>
           </div>
         </Link>
-      ))}
+      ))}  
     </div>
   );
 };

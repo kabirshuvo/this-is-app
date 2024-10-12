@@ -24,7 +24,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="py-1 flex items-center justify-around md:justify-between bg-[#049c2c] text-white px-4 md:px-12 lg:px-24 gap-2">
+    <footer className="py-1 flex items-center justify-around md:justify-between bg-[#049c2c] text-white px-4 md:px-12 gap-2">
       <div className="flex items-center justify-center gap-2 md:gap-6 lg:gap-10">
         <Link href="/" onClick={() => router.back()}>
           <Image
@@ -61,9 +61,8 @@ export default function Footer() {
             alt="English"
             width={200}
             height={200}
-            className={`w-120 h-8 md:w-44 md:h-12 hover:scale-110 transform transition duration-200 ${
-              currentLang === "en" ? "" : "mt-1.5"
-            }`}
+            className={`w-120 h-8 md:w-44 md:h-12 hover:scale-110 transform transition duration-200 ${currentLang === "en" ? "" : "mt-1.5"
+              }`}
           />
         </div>
 
@@ -89,9 +88,8 @@ export default function Footer() {
             alt="Zulu"
             width={200}
             height={200}
-            className={`w-40 h-8 md:w-32 md:h-12 hover:scale-110 transform transition duration-200 ${
-              currentLang === "zu" ? "" : "mt-1"
-            }`}
+            className={`w-40 h-8 md:w-32 md:h-12 hover:scale-110 transform transition duration-200 ${currentLang === "zu" ? "" : "mt-1"
+              }`}
           />
         </div>
       </div>

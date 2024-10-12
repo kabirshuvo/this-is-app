@@ -8,22 +8,9 @@ import HeaderOne from "@/components/shared/header/headerOne";
 import Footer from "@/components/shared/Footer";
 import "./globals.css";
 
-const geistSans = localFont({
-  // src: "./fonts/GeistVF.woff",
-  src: "./fonts/ITCKabelStd-Ultra.otf",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  // src: "./fonts/GeistMonoVF.woff",
-  src: "./fonts/KABELU.ttf",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
 const luckiestGuy = localFont({
-  // src: "./fonts/LuckiestGuy-Regular.ttf",
-  src: "./fonts/Marker_felt_wide_bold.ttf",
-  variable: "--font-luckiest-guy",
+  src: "./fonts/HelveticaNeueBlack.otf",
+  variable: "--font-helvetica-neue",
   weight: "400",
 });
 
@@ -46,7 +33,7 @@ export default async function RootLayout({
       <ClientProvider>
         <html lang={locale}>
           <body
-            className={`${luckiestGuy.variable} ${geistSans.variable} ${geistMono.variable} antialiased bg-tjblue-500 text-tjyellow-500 min-h-screen flex flex-col justify-between gap-6`}
+            className={`${luckiestGuy.variable} antialiased bg-tjblue-500 text-tjyellow-500 min-h-screen flex flex-col justify-between gap-6`}
           >
             {/* <Header /> */}
             <div className="-mt-6">

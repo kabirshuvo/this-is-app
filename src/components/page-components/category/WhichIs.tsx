@@ -16,27 +16,20 @@ import useItemAudio from "@/app/hooks/useItemAudio";
 import useItemQueryAudio from "@/app/hooks/useItemQueryAudio";
 import useErrorAudio from "@/app/hooks/useErrorAudio";
 import useItemData from "@/app/hooks/useItemData";
-import ConfettiComponent from "./ConfettiComponent";
-// import WhichIsCard from "@/components/cards/WhichIsCard";
-import CorrectCardModal from "@/components/modals/CorrectCardModal";
 import SwiperComponent from "./SwiperComponent";
+import { useRouter } from "next/navigation";
+import WhichIsCard from "@/components/cards/WhichIsCard";
 
 interface Params {
   category: string;
 }
 
 const WhichIs: React.FC<{ params: Params }> = ({ params }) => {
+  const router = useRouter();
   const [relatedData, setRelatedData] = useState<Category[]>([]);
   const [randomItemName, setRandomItemName] = useState<string>("");
   const [randomItemId, setRandomItemId] = useState<number | null>(null);
-  const [showConfetti, setShowConfetti] = useState(false);
   const [shakeItemId, setShakeItemId] = useState<number | null>(null);
-  const [modalOpen, setModalOpen] = useState(false);
-  const [selectedItem, setSelectedItem] = useState<{
-    src: string;
-    name: string;
-  } | null>(null);
-  // const [correctClicked, setCorrectClicked] = useState(false);
   const errorAudioRef = useRef<HTMLAudioElement | null>(null);
 
   const clickedItemData = useItemData({
@@ -116,8 +109,6 @@ const WhichIs: React.FC<{ params: Params }> = ({ params }) => {
   const handleCardClick = useCallback(
     (itemId: number, itemName: string, itemSrc: string) => {
       if (itemName === randomItemName) {
-        // setCorrectClicked(true);
-        setShowConfetti(true);
         playSuccessAudio();
 
         if (errorAudioRef.current) {
@@ -125,14 +116,8 @@ const WhichIs: React.FC<{ params: Params }> = ({ params }) => {
           errorAudioRef.current.currentTime = 0;
         }
 
-        const confettiTimeout = setTimeout(() => {
-          setShowConfetti(false);
-          // setCorrectClicked(false);
-        }, 5000);
-
-        // Show the modal with the correct image details
-        setSelectedItem({ src: itemSrc, name: itemName });
-        setModalOpen(true);
+        const url = `${params.category}/${itemName.toLowerCase()}?src=${encodeURIComponent(itemSrc)}&name=${encodeURIComponent(itemName)}`;
+        router.push(url);
 
         if (relatedData.length > 0) {
           const randomIndex = Math.floor(Math.random() * relatedData.length);
@@ -140,53 +125,34 @@ const WhichIs: React.FC<{ params: Params }> = ({ params }) => {
           setRandomItemId(relatedData[randomIndex].id);
           setRelatedData((prevData) => shuffleArray([...prevData]));
         }
-        return () => clearTimeout(confettiTimeout);
       } else {
         setShakeItemId(itemId);
         setTimeout(() => setShakeItemId(null), 500);
-        // setCorrectClicked(false);
       }
     },
-    [randomItemName, relatedData, playSuccessAudio]
+    [randomItemName, relatedData, playSuccessAudio, params.category, router]
   );
 
   const shuffleArray = (array: Category[]) => {
     return array.sort(() => Math.random() - 0.5);
   };
 
-  // useEffect(() => {
-  //   if (shakeItemId !== randomItemId && clickedItemData && !correctClicked) {
-  //     playErrorAudio(clickedItemData.name);
-  //   }
-  // }, [
-  //   shakeItemId,
-  //   randomItemId,
-  //   clickedItemData,
-  //   playErrorAudio,
-  //   correctClicked,
-  // ]);
-
   const memoizedRelatedData = useMemo(() => {
     if (randomItemId === null) return [];
 
-    // Create a shallow copy of relatedData to avoid external mutation
     const dataCopy = [...relatedData];
 
-    // Filter out the correct item
     const filteredData = dataCopy.filter((item) => item.id !== randomItemId);
 
-    // Randomly select 3 items from the filtered data
     const randomItems = [];
-    const tempFilteredData = [...filteredData]; // Copy to avoid mutation in splice
+    const tempFilteredData = [...filteredData];
     while (randomItems.length < 6 && tempFilteredData.length > 0) {
       const randomIndex = Math.floor(Math.random() * tempFilteredData.length);
       randomItems.push(tempFilteredData.splice(randomIndex, 1)[0]);
     }
 
-    // Find the correct item
     const correctItem = dataCopy.find((item) => item.id === randomItemId);
 
-    // Return only randomItems if correctItem is not found
     if (!correctItem) {
       console.warn(
         `correctItem with id ${randomItemId} not found in relatedData`
@@ -194,7 +160,6 @@ const WhichIs: React.FC<{ params: Params }> = ({ params }) => {
       return randomItems;
     }
 
-    // Combine the correct item with the 3 randomly selected items
     const combinedData = [...randomItems, correctItem];
 
     // Shuffle the combined array
@@ -208,9 +173,8 @@ const WhichIs: React.FC<{ params: Params }> = ({ params }) => {
 
   return (
     <div className="mt-4">
-      {showConfetti && <ConfettiComponent showConfetti={showConfetti} />}
       <div className="flex items-center justify-center gap-3 lg:gap-4 mt-4">
-        <h3 className="md:text-2xl lg:text-4xl text-center uppercase mt-1">
+        <h3 className="md:text-2xl xl:text-3xl text-center uppercase mt-1">
           Which is the {randomItemName}?
         </h3>
         <div>
@@ -222,12 +186,13 @@ const WhichIs: React.FC<{ params: Params }> = ({ params }) => {
             alt="home"
             width={50}
             height={50}
-            className="w-5 h-5 md:w-7 md:h-7"
+            className="w-5 h-5 md:w-6 md:h-6"
           />
         </Button>
       </div>
-      <section className="relative gap-2 flex justify-center w-[70%] px-0 mx-auto mt-2">
-        {/* <div className="grid grid-cols-4 gap-2 md:gap-4 mt-4 max-w-[80%] lg:max-w-[70%] mx-auto justify-center">
+
+      <section>
+        <div className="md:hidden grid grid-cols-3 md:grid-cols-6 gap-2 md:gap-4 mt-4">
           {memoizedRelatedData.map((item) => (
             <WhichIsCard
               key={item.id}
@@ -240,22 +205,18 @@ const WhichIs: React.FC<{ params: Params }> = ({ params }) => {
               shakeItemId={shakeItemId}
             />
           ))}
-        </div> */}
+        </div>
 
-        <SwiperComponent
-          relatedData={memoizedRelatedData}
-          handleCardClick={handleCardClick}
-          shakeItemId={shakeItemId}
-        />
+        <div
+          className="relative hidden md:block"
+        >
+          <SwiperComponent
+            relatedData={memoizedRelatedData}
+            handleCardClick={handleCardClick}
+            shakeItemId={shakeItemId}
+          />
+        </div>
       </section>
-      {selectedItem && (
-        <CorrectCardModal
-          open={modalOpen}
-          onClose={() => setModalOpen(false)}
-          itemImage={selectedItem.src}
-          itemName={selectedItem.name}
-        />
-      )}
     </div>
   );
 };
