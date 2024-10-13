@@ -11,7 +11,7 @@ const Home: React.FC = () => {
   const categories = useCategories();
 
   return (
-    <div className="w-full grid grid-cols-2 sm:grid-cols-2 md:grid-cols-6 gap-2 md:gap-4 flex-1 flex-grow h-full -mt-8">
+    <div className="w-full grid grid-cols-2 sm:grid-cols-2 md:grid-cols-6 gap-2 md:gap-4 flex-1 flex-grow h-full mt-16 md:-mt-8">
       {categories.map((category) => (
         <Link
           key={category.id}

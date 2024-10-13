@@ -75,7 +75,7 @@ export default function HeaderOne() {
             alt="Logo"
             width={300}
             height={300}
-            className=" -mt-8 w-fit-content h-fit-content ml-0"
+            className="mt-4 lg:-mt-8 w-fit-content h-fit-content ml-0"
           />
         </Link>
       </div>
@@ -88,7 +88,7 @@ export default function HeaderOne() {
             alt="Magnifying Glass"
             width={150}
             height={200}
-            className=" h-64 w-full z-10"
+            className="h-64 w-full z-10"
           />
         </div>
 
