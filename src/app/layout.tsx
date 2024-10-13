@@ -39,7 +39,7 @@ export default async function RootLayout({
             <div className="-mt-6">
               <HeaderOne />
             </div>
-            <main className="flex items-center gap-4 py-2 -mt-16 w-[90%] mx-auto">
+            <main className="flex items-center gap-4 py-2 -mt-16 container mx-auto">
               {children}
             </main>
             <Footer />
