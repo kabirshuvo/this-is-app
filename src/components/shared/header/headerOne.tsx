@@ -88,7 +88,7 @@ export default function HeaderOne() {
             alt="Magnifying Glass"
             width={150}
             height={200}
-            className="h-14 md:h-44 xl:h-64"
+            className="h-14 md:h-44 xl:h-56"
           />
         </div>
 
@@ -147,6 +147,6 @@ export default function HeaderOne() {
           </nav>
         </DialogContent>
       </Dialog>
-    </div >
+    </div>
   );
 }
