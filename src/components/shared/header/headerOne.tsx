@@ -60,7 +60,7 @@ export default function HeaderOne() {
 
   return (
     <div
-      className="relative pt-8 pb-14 md:pb-8 lg:pb-4 md:pt-2 lg:pt-2 text-tjyellow flex items-center justify-between px-4 header header-with-curve mb-10 md:mb-0"
+      className="relative text-tjyellow flex items-center justify-between px-4 header header-with-curve mb-10 md:mb-0"
       style={{
         backgroundImage: "url('/menupages/header_banner.svg')",
         backgroundSize: "cover",
@@ -75,27 +75,27 @@ export default function HeaderOne() {
             alt="Logo"
             width={300}
             height={300}
-            className="max-w-[85%] max-h-[85%] xl:max-w-[85%] w-fit-content h-fit-content ml-0"
+            className=" -mt-8 w-fit-content h-fit-content ml-0"
           />
         </Link>
       </div>
 
       {/* Magnifying Glass and Text in the middle */}
-      <div className="hidden md:flex justify-center items-center py-6 xl:py-4 ml-24">
-        <div className="flex items-center">
+      <div className="hidden md:flex justify-center items-center py-6 xl:py-4 ">
+        <div className="flex items-center relative">
           <Image
             src="/menupages/TJ_magnifying-GLASS.svg"
             alt="Magnifying Glass"
             width={150}
             height={200}
-            className="h-14 md:h-44 xl:h-56"
+            className=" h-64 w-full z-10"
           />
         </div>
 
         {/* <PencilAnimation animatedKey={animatedKey} /> */}
 
         <h1
-          className={`${kabelu.variable} kabelu-font text-3xl md:text-4xl lg:text-5xl xl:text-7xl pb-10 flex page-title tracking-wide`}
+          className={`${kabelu.variable} kabelu-font text-3xl md:text-4xl lg:text-5xl xl:text-7xl pb-10 -mt-20 flex page-title `}
           style={{
             textShadow: `
       1.5px 1.5px 0 #228B22,
@@ -127,7 +127,7 @@ export default function HeaderOne() {
       </div>
 
       <Dialog>
-        <div className="flex flex-1 justify-end md:mb-6">
+        <div className="flex flex-1 justify-end md:mb-6 -mt-8">
           <DialogTrigger asChild>
             <Menu className="w-12 h-12 lg:w-14 lg:h-14 xl:w-16 xl:h-16 cursor-pointer" />
           </DialogTrigger>

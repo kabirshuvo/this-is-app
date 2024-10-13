@@ -11,7 +11,7 @@ const Home: React.FC = () => {
   const categories = useCategories();
 
   return (
-    <div className="w-fulls grid grid-cols-2 sm:grid-cols-2 md:grid-cols-6 gap-2 md:gap-4 flex-1 flex-grow h-full">
+    <div className="w-full grid grid-cols-2 sm:grid-cols-2 md:grid-cols-6 gap-2 md:gap-4 flex-1 flex-grow h-full -mt-8">
       {categories.map((category) => (
         <Link
           key={category.id}
@@ -32,7 +32,7 @@ const Home: React.FC = () => {
                 height={240}
                 priority
                 layout="responsive"
-                className="object-contain flex-grow flex-1 flex transform transition duration-200"
+                className="object-contain hover:scale-110 flex-grow flex-1 flex transform transition duration-200"
               />
             </div>
           </div>
