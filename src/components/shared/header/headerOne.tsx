@@ -33,7 +33,7 @@ export default function HeaderOne() {
     setCategory(
       currentCategory !== locale && currentCategory !== ""
         ? decodeURIComponent(currentCategory).toUpperCase()
-        : "LEARN WORD GAMES"
+        : "LEARN WORDS GAME"
     );
   }, [pathname, locale]);
 
@@ -81,7 +81,7 @@ export default function HeaderOne() {
       </div>
 
       {/* Magnifying Glass and Text in the middle */}
-      <div className="hidden md:flex justify-center items-center py-6 xl:py-4">
+      <div className="hidden md:flex justify-center items-center py-6 xl:py-4 ml-24">
         <div className="flex items-center">
           <Image
             src="/menupages/TJ_magnifying-GLASS.svg"
@@ -95,7 +95,7 @@ export default function HeaderOne() {
         {/* <PencilAnimation animatedKey={animatedKey} /> */}
 
         <h1
-          className={`${kabelu.variable} kabelu-font text-3xl md:text-4xl lg:text-5xl xl:text-7xl pb-10 flex page-title`}
+          className={`${kabelu.variable} kabelu-font text-3xl md:text-4xl lg:text-5xl xl:text-7xl pb-10 flex page-title tracking-wide`}
           style={{
             textShadow: `
       1.5px 1.5px 0 #228B22,
