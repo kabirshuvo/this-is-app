@@ -95,7 +95,7 @@ export default function HeaderOne() {
         {/* <PencilAnimation animatedKey={animatedKey} /> */}
 
         <h1
-          className={`${kabelu.variable} kabelu-font text-3xl md:text-4xl lg:text-5xl xl:text-7xl pb-10 -mt-20 flex page-title `}
+          className={`${kabelu.variable} kabelu-font text-3xl md:text-4xl lg:text-5xl xl:text-7xl pb-10 -mt-8 flex page-title `}
           style={{
             textShadow: `
       1.5px 1.5px 0 #228B22,
