@@ -35,7 +35,6 @@ export default async function RootLayout({
           <body
             className={` ${merkerFelt.variable} antialiased bg-tjblue-500 text-tjyellow-500 min-h-screen flex flex-col justify-between gap-6`}
           >
-            {/* <Header /> */}
             <div className="-mt-6">
               <HeaderOne />
             </div>
