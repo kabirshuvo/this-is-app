@@ -30,7 +30,7 @@ const WhichIsCard: React.FC<WhichIsCardProps> = ({
     <div
       key={src}
       onClick={() => handleCardClick(id, alt, src, alt)}
-      className={`md:min-w-28 lg:min-w-52 max-w-52 md:min-h-28 lg:min-h-52 max-h-52 mx-auto h-full space-y-4 flex justify-center items-center rounded-lg transform transition duration-200 border-4 border-transparent hover:border-4 hover:border-red-500 overflow-hidden ${shakeItemId === id ? "animate-shake" : ""
+      className={`md:min-w-28 lg:min-w-52 max-w-52 md:min-h-28 lg:min-h-52 max-h-52 mx-auto h-full space-y-4 flex justify-center items-center transform transition duration-200 border-4 border-transparent hover:border-4 hover:border-red-500 overflow-hidden ${shakeItemId === id ? "animate-shake" : ""
         } ${className}`}
     >
       <Image

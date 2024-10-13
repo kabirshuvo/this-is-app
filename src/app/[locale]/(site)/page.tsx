@@ -32,7 +32,7 @@ const Home: React.FC = () => {
                 height={240}
                 priority
                 layout="responsive"
-                className="object-contain flex-grow flex-1 flex transform transition duration-200 rounded"
+                className="object-contain flex-grow flex-1 flex transform transition duration-200"
               />
             </div>
           </div>
