@@ -81,7 +81,7 @@ export default function HeaderOne() {
       </div>
 
       {/* Magnifying Glass and Text in the middle */}
-      <div className="hidden md:flex justify-center items-center py-6 xl:py-4 ">
+      <div className="hidden md:flex justify-center items-center py-6 xl:py-4 ml-16">
         <div className="flex items-center relative">
           <Image
             src="/menupages/TJ_magnifying-GLASS.svg"
