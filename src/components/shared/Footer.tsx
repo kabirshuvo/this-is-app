@@ -25,7 +25,7 @@ export default function Footer() {
 
   return (
     <footer className="py-1 flex items-center justify-around md:justify-between bg-[#049c2c] text-white px-4 md:px-12 gap-2">
-      <div className="flex items-center justify-center gap-2 md:gap-6 lg:gap-10">
+      <div className="flex items-center justify-center gap-2 md:gap-6 lg:gap-10 lg:ml-28">
         <Link href="/" onClick={() => router.back()}>
           <Image
             src="/footerAssets/LeftArrow.svg"
@@ -61,8 +61,9 @@ export default function Footer() {
             alt="English"
             width={200}
             height={200}
-            className={`w-120 h-8 md:w-44 md:h-12 hover:scale-110 transform transition duration-200 ${currentLang === "en" ? "" : "mt-1.5"
-              }`}
+            className={`w-120 h-8 md:w-44 md:h-12 hover:scale-110 transform transition duration-200 ${
+              currentLang === "en" ? "" : "mt-1.5"
+            }`}
           />
         </div>
 
@@ -77,9 +78,9 @@ export default function Footer() {
         {/* Language selector for Zulu */}
         <div
           className="relative flex cursor-pointer"
-          onClick={() => changeLanguage("zu")}
+          // onClick={() => changeLanguage("zu")}
         >
-          <Image
+          {/* <Image
             src={
               currentLang === "zu"
                 ? "/footerAssets/ZuluWithRightTickMark.svg"
@@ -88,14 +89,24 @@ export default function Footer() {
             alt="Zulu"
             width={200}
             height={200}
-            className={`w-40 h-8 md:w-32 md:h-12 hover:scale-110 transform transition duration-200 ${currentLang === "zu" ? "" : "mt-1"
-              }`}
-          />
+            className={`w-40 h-8 md:w-32 md:h-12 hover:scale-110 transform transition duration-200 ${
+              currentLang === "zu" ? "" : "mt-1"
+            }`}
+          /> */}
+          <Link href="/en/under-construction">
+            <Image
+              src="/footerAssets/ZuluWithNoRightTickMark.svg"
+              alt="ZuluWithNoRightTickMark"
+              width={200}
+              height={200}
+              className={`w-40 h-8 md:w-32 md:h-12 hover:scale-110 transform transition duration-200 `}
+            />
+          </Link>
         </div>
       </div>
 
-      <div className="h-full flex items-center">
-        <Link href="/">
+      <div className="h-full flex items-center lg:mr-28">
+        <Link href="/en/under-construction">
           <Image
             src="/footerAssets/palsClubLogo.svg"
             alt="TJ Logo"
