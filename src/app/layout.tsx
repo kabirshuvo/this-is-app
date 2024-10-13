@@ -8,10 +8,10 @@ import HeaderOne from "@/components/shared/header/headerOne";
 import Footer from "@/components/shared/Footer";
 import "./globals.css";
 
-const luckiestGuy = localFont({
-  src: "./fonts/HelveticaNeueBlack.otf",
-  variable: "--font-helvetica-neue",
-  weight: "400",
+const merkerFelt = localFont({
+  src: "./fonts/Marker_felt_wide_bold.ttf",
+  variable: "--font-marker-felt",
+  weight: "100 900",
 });
 
 export const metadata: Metadata = {
@@ -33,7 +33,7 @@ export default async function RootLayout({
       <ClientProvider>
         <html lang={locale}>
           <body
-            className={`${luckiestGuy.variable} antialiased bg-tjblue-500 text-tjyellow-500 min-h-screen flex flex-col justify-between gap-6`}
+            className={` ${merkerFelt.variable} antialiased bg-tjblue-500 text-tjyellow-500 min-h-screen flex flex-col justify-between gap-6`}
           >
             {/* <Header /> */}
             <div className="-mt-6">

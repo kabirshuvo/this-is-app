@@ -3,7 +3,19 @@
 @tailwind utilities;
 
 body {
-    font-family: var(--font-helvetica-neue), sans-serif;
+  font-family: var(--font-marker-felt), sans-serif;
+}
+
+.kabelu-font {
+  font-family: var(--font-kabelu), sans-serif;
+}
+
+.marker-felt-font {
+  font-family: var(--font-marker-felt), sans-serif;
+}
+
+.helevetica-neue-font {
+  font-family: var(--font-helevetica-neue), sans-serif;
 }
 
 @layer base {

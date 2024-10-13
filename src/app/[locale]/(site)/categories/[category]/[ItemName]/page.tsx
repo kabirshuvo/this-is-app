@@ -5,6 +5,13 @@ import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import ConfettiComponent from '@/components/page-components/category/ConfettiComponent';
 import Link from 'next/link';
+import localFont from 'next/font/local';
+
+const helveticaNeue = localFont({
+  src: "./HelveticaNeueBlack.otf",
+  variable: "--font-helevetica-neue",
+  weight: "400",
+});
 
 export default function ItemPage() {
   const router = useRouter();
@@ -55,7 +62,7 @@ export default function ItemPage() {
             height={400}
             className="object-contain mx-auto rounded"
           />
-          <h2 className="text-3xl xl:text-5xl tracking-wide mt-4">
+          <h2 className={`${helveticaNeue.variable} helevetica-neue-font text-3xl xl:text-5xl tracking-wide mt-4`}>
             {name && (
               <>
                 <span className="text-red-500">{name.charAt(0)}</span>

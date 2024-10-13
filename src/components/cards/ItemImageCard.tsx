@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useRef } from "react";
 
 interface ResponsiveItemImageCardProps {
   src: string;
@@ -11,10 +12,17 @@ export default function ItemImageCard({
   alt,
   audio,
 }: ResponsiveItemImageCardProps) {
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+
   const playAudio = (audio: string) => {
-    const audioEl = new Audio(audio);
-    audioEl.play();
+    if (audioRef.current) {
+      audioRef.current.pause();
+      audioRef.current.currentTime = 0;
+    }
+    audioRef.current = new Audio(audio);
+    audioRef.current.play();
   };
+
   return (
     <div
       onClick={() => playAudio(audio)}

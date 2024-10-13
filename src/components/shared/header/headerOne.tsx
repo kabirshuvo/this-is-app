@@ -13,7 +13,14 @@ import {
   DialogContent,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import PencilAnimation from "./PencilAnimation";
+// import PencilAnimation from "./PencilAnimation";
+import localFont from "next/font/local";
+
+const kabelu = localFont({
+  src: "./KABELU.ttf",
+  variable: "--font-kabelu",
+  weight: "100 900",
+});
 
 export default function HeaderOne() {
   const locale = useLocale();
@@ -68,14 +75,14 @@ export default function HeaderOne() {
             alt="Logo"
             width={300}
             height={300}
-            className="max-w-[80%] max-h-[80%] xl:max-w-[85%] w-fit-content h-fit-content ml-0"
+            className="max-w-[85%] max-h-[85%] xl:max-w-[85%] w-fit-content h-fit-content ml-0"
           />
         </Link>
       </div>
 
       {/* Magnifying Glass and Text in the middle */}
-      <div className="hidden md:flex justify-center items-center py-4 lg:py-6 xl:pb-20 xl:py-14 space-x-4">
-        {/* <div className="flex items-center gap-4">
+      <div className="hidden md:flex justify-center items-center py-6 xl:py-4">
+        <div className="flex items-center">
           <Image
             src="/menupages/TJ_magnifying-GLASS.svg"
             alt="Magnifying Glass"
@@ -83,14 +90,26 @@ export default function HeaderOne() {
             height={200}
             className="h-14 md:h-44 xl:h-64"
           />
-          <h1 className="text-3xl md:text-3xl lg:text-5xl xl:text-6xl -mt-10">
-            {category}
-          </h1>
-        </div> */}
+        </div>
 
-        <PencilAnimation animatedKey={animatedKey} />
+        {/* <PencilAnimation animatedKey={animatedKey} /> */}
 
-        <h1 className="text-3xl md:text-4xl xl:text-6xl pb-4 flex page-title">
+        <h1
+          className={`${kabelu.variable} kabelu-font text-3xl md:text-4xl lg:text-5xl xl:text-7xl pb-10 flex page-title`}
+          style={{
+            textShadow: `
+      1.5px 1.5px 0 #228B22,
+      -1.5px -1.5px 0 #228B22,
+      1.5px -1.5px 0 #228B22,
+      -1.5px 1.5px 0 #228B22,
+      1.5px 0px 0 #228B22,
+      -1.5px 0px 0 #228B22,
+      0px 1.5px 0 #228B22,
+      0px -1.5px 0 #228B22,
+       3px 3px 5px rgba(0, 0, 0, 0.3)
+    `,
+          }}
+        >
           {categoryLetters.map((letter, index) => (
             <motion.span
               key={`${animatedKey}-${index}`}
