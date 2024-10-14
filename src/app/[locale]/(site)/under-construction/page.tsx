@@ -1,9 +1,15 @@
+import Image from "next/image";
 import React from "react";
 
 const page = () => {
   return (
     <div className="flex items-center w-full justify-center">
-      <h1 className="text-5xl">Under Construction</h1>
+      <Image
+        src="/images/misc/under-construction.png"
+        alt="under-construction"
+        width={400}
+        height={400}
+      />
     </div>
   );
 };

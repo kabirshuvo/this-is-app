@@ -60,14 +60,14 @@ export default function HeaderOne() {
 
   return (
     <div
-      className="relative text-tjyellow flex items-center justify-between px-4 header header-with-curve mb-10 md:mb-0"
+      className="relative text-tjyellow flex items-center justify-between px-6 header header-with-curve mb-10 md:mb-0"
       style={{
         backgroundImage: "url('/menupages/header_banner.svg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
-      {/* Logo on the left */}
+      {/* TJ&PALS Logo */}
       <div className="flex justify-start flex-1">
         <Link href="/" className="xl:h-fit">
           <Image
@@ -129,7 +129,13 @@ export default function HeaderOne() {
       <Dialog>
         <div className="flex flex-1 justify-end md:mb-6 -mt-8">
           <DialogTrigger asChild>
-            <Menu className="w-12 h-12 lg:w-14 lg:h-14 xl:w-16 xl:h-16 cursor-pointer" />
+            <Image
+              src="/images/menu/menu.webp"
+              alt="Menu"
+              width={200}
+              height={200}
+              className="w-8 h-4 md:w-12 lg:w-14 md:h-full cursor-pointer"
+            />
           </DialogTrigger>
         </div>
         <DialogContent className="bg-tjgreen-500 text-tjyellow-500 border-none max-w-[90%] md:max-w-lg rounded-lg">
