@@ -6,14 +6,14 @@ import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Menu } from "lucide-react";
+// import { Menu } from "lucide-react";
 import {
   Dialog,
   DialogClose,
   DialogContent,
   DialogTrigger,
 } from "@/components/ui/dialog";
-// import PencilAnimation from "./PencilAnimation";
+import PencilAnimation from "./PencilAnimation";
 import localFont from "next/font/local";
 
 const kabelu = localFont({
@@ -81,21 +81,22 @@ export default function HeaderOne() {
       </div>
 
       {/* Magnifying Glass and Text in the middle */}
-      <div className="hidden md:flex justify-center items-center py-6 xl:py-4 ml-16">
-        <div className="flex items-center relative">
-          <Image
+      <div className="hidden md:flex justify-center items-center 2xl:py-4 py-2 ml-16 mb-16 md:gap-6">
+
+          {/* <Image
             src="/menupages/TJ_magnifying-GLASS.svg"
             alt="Magnifying Glass"
             width={150}
             height={200}
-            className="h-64 w-full z-10"
-          />
-        </div>
+            className="h-64 w-full z-10 grayscale"
+          /> */}
+          <PencilAnimation animatedKey={animatedKey} />
+        {/* </div> */}
 
-        {/* <PencilAnimation animatedKey={animatedKey} /> */}
+        
 
         <h1
-          className={`${kabelu.variable} kabelu-font text-3xl md:text-4xl lg:text-5xl xl:text-7xl pb-10 md:-mt-8 flex page-title `}
+          className={`${kabelu.variable} kabelu-font text-3xl md:text-4xl lg:text-5xl 2xl:text-7xl pb-10 mt-4 flex`}
           style={{
             textShadow: `
       1.5px 1.5px 0 #228B22,

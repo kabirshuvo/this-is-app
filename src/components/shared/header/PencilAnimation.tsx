@@ -4,10 +4,10 @@ import Image from "next/image";
 
 export default function PencilAnimation({ animatedKey }: { animatedKey: string }) {
   return (
-    <div>
+    <div className="relative w-[120px] 2xl:w-[200px] h-[200px]">
       <motion.div
         key={`${animatedKey}-pencil`}
-        className="relative w-[150px] h-[120px]"
+        className="w-full h-full"
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{
@@ -21,9 +21,9 @@ export default function PencilAnimation({ animatedKey }: { animatedKey: string }
         <Image
           src="/menupages/tj-pancil/pancil.svg"
           alt="TJ Pencil"
-          width={90}
-          height={100}
-          className="absolute top-0 left-16 z-10"
+          width={200}
+          height={200}
+          className="absolute top-6 left-4 2xl:left-10 z-10 h-full"
         />
 
         {/* Magnifying Glass */}
@@ -32,23 +32,23 @@ export default function PencilAnimation({ animatedKey }: { animatedKey: string }
           initial={{ scale: 0, y: 0 }}
           animate={{ scale: [0, 1.5, 1], y: [0, -10, 0] }}
           transition={{ duration: 2 }}
-          className="absolute top-10 -right-2 z-20"
+          className="absolute top-16 -right-3 2xl:right-1 z-20"
         >
           <Image
             src="/menupages/tj-pancil/glass.svg"
             alt="Magnifying Glass"
-            width={35}
-            height={40}
+            width={44}
+            height={50}
           />
         </motion.div>
 
         {/* Hand */}
         <motion.div
           key={`${animatedKey}-hand`}
-          initial={{ rotate: -45, x: 24, scale: 0 }}
-          animate={{ rotate: 0, x: 0, scale: [0, 1.5, 1] }}
+          initial={{ rotate: -35, x: 20, scale: 0 }}
+          animate={{ rotate: 0, x: 0, scale: [1, 1.5, 1] }}
           transition={{ duration: 1.8, ease: "easeOut" }}
-          className="absolute top-2/3 left-6"
+          className="absolute top-32 -left-2 2xl:left-14"
         >
           <Image
             src="/menupages/tj-pancil/hand.svg"
