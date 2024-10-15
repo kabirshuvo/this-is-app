@@ -19,12 +19,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "framer-motion": "^11.5.4",
-<<<<<<< HEAD
     "mongodb": "^6.9.0",
-=======
-    "i18next": "^23.15.1",
-    "lucide-react": "^0.441.0",
->>>>>>> 37f1ef79e635a1546dcf71ebd20efbd29a0b4e33
     "mongoose": "^8.6.2",
     "next": "14.2.11",
     "next-i18next": "^15.3.1",
