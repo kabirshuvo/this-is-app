@@ -6,7 +6,6 @@ import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Menu } from "lucide-react";
 import {
   Dialog,
   DialogClose,
@@ -75,7 +74,7 @@ export default function HeaderOne() {
             alt="Logo"
             width={300}
             height={300}
-            className="mt-4 md:-mt-8 w-fit-content h-fit-content ml-0"
+            className="w-20 md:w-36 lg:w-48 xl:w-60 pt-6 pb-16 mt-4 md:-mt-6 w-fit-content h-fit-content ml-0"
           />
         </Link>
       </div>
