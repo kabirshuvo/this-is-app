@@ -59,7 +59,7 @@ export default function HeaderOne() {
 
   return (
     <div
-      className="relative text-tjyellow flex items-center justify-between px-6 header header-with-curve mb-10 md:mb-0"
+      className="relative text-tjyellow flex items-center justify-between px-2 md:px-6 header header-with-curve h-32 md:h-full md:mb-0"
       style={{
         backgroundImage: "url('/menupages/header_banner.svg')",
         backgroundSize: "cover",
@@ -80,12 +80,12 @@ export default function HeaderOne() {
       </div>
 
       {/* Magnifying Glass and Text in the middle */}
-      <div className="flex justify-center items-center 2xl:py-4 py-2 ml-16 mb-16 gap-8">
+      <div className="flex justify-center items-center 2xl:py-4 py-2 md:ml-16 mb-16 gap-8">
 
           <PencilAnimation animatedKey={animatedKey} />
 
         <h1
-          className={`${kabelu.variable} kabelu-font text-2xl md:text-4xl lg:text-5xl 2xl:text-7xl pb-10 mt-10 md:mt-4 flex`}
+          className={`${kabelu.variable} kabelu-font text-md md:text-4xl lg:text-5xl 2xl:text-7xl pb-10 mt-20 md:mt-4 flex`}
           style={{
             textShadow: `
       1.5px 1.5px 0 #228B22,
@@ -124,7 +124,7 @@ export default function HeaderOne() {
               alt="Menu"
               width={200}
               height={200}
-              className="w-8 h-4 md:w-12 lg:w-14 md:h-full cursor-pointer"
+              className="w-4 h-2 md:w-12 lg:w-14 md:h-full cursor-pointer"
             />
           </DialogTrigger>
         </div>
