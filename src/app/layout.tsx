@@ -33,12 +33,12 @@ export default async function RootLayout({
       <ClientProvider>
         <html lang={locale}>
           <body
-            className={` ${merkerFelt.variable} antialiased bg-tjblue-500 text-tjyellow-500 min-h-screen flex flex-col justify-between gap-6`}
+            className={` ${merkerFelt.variable} antialiased bg-tjblue-500 text-tjyellow-500 min-h-screen flex flex-col justify-between `}
           >
             <div className="-mt-6">
               <HeaderOne />
             </div>
-            <main className="flex items-center gap-4 py-2 -mt-16 container mx-auto">
+            <main className="flex items-center gap-4 py-2 -mt-24 md:-mt-8 2xl:-mt-12 container mx-auto">
               {children}
             </main>
             <Footer />
