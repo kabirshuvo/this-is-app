@@ -68,34 +68,24 @@ export default function HeaderOne() {
     >
       {/* TJ&PALS Logo */}
       <div className="flex justify-start flex-1">
-        <Link href="/" className="xl:h-fit">
+        <Link href="/" className="h-fit">
           <Image
             src="/menupages/app_logo.svg"
             alt="Logo"
             width={300}
             height={300}
-            className="w-20 md:w-36 lg:w-48 xl:w-60 pt-6 pb-16 mt-4 md:-mt-6 w-fit-content h-fit-content ml-0"
+            className="w-36 lg:w-48 xl:w-60 pt-6 pb-16 mt-4 md:-mt-6 w-fit-content h-fit-content ml-0"
           />
         </Link>
       </div>
 
       {/* Magnifying Glass and Text in the middle */}
-      <div className="hidden md:flex justify-center items-center 2xl:py-4 py-2 ml-16 mb-16 md:gap-6">
+      <div className="flex justify-center items-center 2xl:py-4 py-2 ml-16 mb-16 gap-8">
 
-          {/* <Image
-            src="/menupages/TJ_magnifying-GLASS.svg"
-            alt="Magnifying Glass"
-            width={150}
-            height={200}
-            className="h-64 w-full z-10 grayscale"
-          /> */}
           <PencilAnimation animatedKey={animatedKey} />
-        {/* </div> */}
-
-        
 
         <h1
-          className={`${kabelu.variable} kabelu-font text-3xl md:text-4xl lg:text-5xl 2xl:text-7xl pb-10 mt-4 flex`}
+          className={`${kabelu.variable} kabelu-font text-2xl md:text-4xl lg:text-5xl 2xl:text-7xl pb-10 mt-10 md:mt-4 flex`}
           style={{
             textShadow: `
       1.5px 1.5px 0 #228B22,

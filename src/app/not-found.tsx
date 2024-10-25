@@ -4,8 +4,9 @@ import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <div className="w-full h-full flex flex-col justify-center items-center gap-4">
-      <h1 className="text-3xl">This page is under construction</h1>
+    <div className="w-full h-full flex flex-col justify-center items-center">
+      <h1 className="text-3xl text-center">This page is under construction</h1>
+      <p className="text-center">Please come back later.</p>
        <Image
         src="/images/under-construction.gif"
         alt="under-construction"

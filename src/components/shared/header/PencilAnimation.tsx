@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function PencilAnimation({ animatedKey }: { animatedKey: string }) {
   return (
-    <div className="relative w-[120px] 2xl:w-[200px] h-[200px]">
+    <div className="relative w-[60px] lg:w-[120px] 2xl:w-[200px] h-[200px]">
       <motion.div
         key={`${animatedKey}-pencil`}
         className="w-full h-full"
@@ -30,15 +30,16 @@ export default function PencilAnimation({ animatedKey }: { animatedKey: string }
         <motion.div
           key={`${animatedKey}-glass`}
           initial={{ scale: 0, y: 0 }}
-          animate={{ scale: [0, 1.5, 1], y: [0, -10, 0] }}
-          transition={{ duration: 2 }}
-          className="absolute top-16 -right-3 2xl:right-1 z-20"
+          animate={{ scale: [0.8, 1.2, 1], y: [0, -4, 0] }}
+          transition={{ duration: 1.7 }}
+          className="absolute top-20 md:top-16 -right-5  md:-right-3 2xl:right-1 z-20"
         >
           <Image
             src="/menupages/tj-pancil/glass.svg"
             alt="Magnifying Glass"
             width={44}
             height={50}
+            className="w-[30px] md:w-[44px]"
           />
         </motion.div>
 
@@ -55,6 +56,7 @@ export default function PencilAnimation({ animatedKey }: { animatedKey: string }
             alt="Hand"
             width={60}
             height={72}
+            className="w-[40px] md:w-[60px]"
           />
         </motion.div>
       </motion.div>
