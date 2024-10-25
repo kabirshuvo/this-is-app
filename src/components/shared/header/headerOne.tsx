@@ -74,13 +74,13 @@ export default function HeaderOne() {
             alt="Logo"
             width={300}
             height={300}
-            className="w-36 lg:w-48 xl:w-60 pt-6 pb-16 mt-4 md:-mt-6 w-fit-content h-fit-content ml-0"
+            className="w-32 md:w-48 xl:w-60 pt-6 pb-16 mt-8 md:-mt-6 w-fit-content h-fit-content ml-0"
           />
         </Link>
       </div>
 
       {/* Magnifying Glass and Text in the middle */}
-      <div className="flex justify-center items-center 2xl:py-4 py-2 md:ml-16 mb-16 gap-8">
+      <div className="flex justify-center items-center 2xl:py-4 py-2 md:ml-16 mb-16 gap-6 md:gap-8">
 
           <PencilAnimation animatedKey={animatedKey} />
 
@@ -117,14 +117,14 @@ export default function HeaderOne() {
       </div>
 
       <Dialog>
-        <div className="flex flex-1 justify-end md:mb-6 -mt-8">
+        <div className="flex flex-1 justify-end md:mb-6 -mt-6 md:-mt-8">
           <DialogTrigger asChild>
             <Image
               src="/images/menu/menu.webp"
               alt="Menu"
               width={200}
               height={200}
-              className="w-4 h-2 md:w-12 lg:w-14 md:h-full cursor-pointer"
+              className="w-6 h-3 md:w-12 lg:w-14 md:h-full cursor-pointer"
             />
           </DialogTrigger>
         </div>

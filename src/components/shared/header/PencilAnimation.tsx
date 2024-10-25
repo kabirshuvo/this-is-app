@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function PencilAnimation({ animatedKey }: { animatedKey: string }) {
   return (
-    <div className="relative w-[34px] lg:w-[120px] 2xl:w-[200px] h-[200px]">
+    <div className="relative w-[34px] md:w-[120px] 2xl:w-[200px] h-[200px]">
       <motion.div
         key={`${animatedKey}-pencil`}
         className="w-full h-full"
