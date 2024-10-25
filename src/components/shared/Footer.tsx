@@ -24,7 +24,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="py-1 flex items-center justify-around md:justify-between bg-[#049c2c] text-white px-4 md:px-12 gap-2">
+    <footer className="py-1 flex items-center justify-around md:justify-between bg-[#049c2c] text-white px-4 md:px-12 gap-2 mt-8">
       <div className="flex items-center justify-center gap-2 md:gap-6 lg:gap-10 lg:ml-28">
         <Link href="/" onClick={() => router.back()}>
           <Image

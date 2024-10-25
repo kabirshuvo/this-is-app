@@ -4,10 +4,10 @@ import Image from "next/image";
 
 export default function PencilAnimation({ animatedKey }: { animatedKey: string }) {
   return (
-    <div>
+    <div className="relative w-[34px] md:w-[120px] 2xl:w-[200px] h-[200px]">
       <motion.div
         key={`${animatedKey}-pencil`}
-        className="relative w-[150px] h-[120px]"
+        className="w-full h-full"
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{
@@ -21,40 +21,42 @@ export default function PencilAnimation({ animatedKey }: { animatedKey: string }
         <Image
           src="/menupages/tj-pancil/pancil.svg"
           alt="TJ Pencil"
-          width={90}
-          height={100}
-          className="absolute top-0 left-16 z-10"
+          width={200}
+          height={200}
+          className="absolute top-9 md:top-6 left-4 2xl:left-10 z-10 h-full"
         />
 
         {/* Magnifying Glass */}
         <motion.div
           key={`${animatedKey}-glass`}
           initial={{ scale: 0, y: 0 }}
-          animate={{ scale: [0, 1.5, 1], y: [0, -10, 0] }}
-          transition={{ duration: 2 }}
-          className="absolute top-10 -right-2 z-20"
+          animate={{ scale: [0.8, 1.2, 1], y: [0, -4, 0] }}
+          transition={{ duration: 1.7 }}
+          className="absolute top-28 md:top-16 right-[-18px] md:-right-3 2xl:right-1 z-20"
         >
           <Image
             src="/menupages/tj-pancil/glass.svg"
             alt="Magnifying Glass"
-            width={35}
-            height={40}
+            width={44}
+            height={50}
+            className="w-[16px] md:w-[44px]"
           />
         </motion.div>
 
         {/* Hand */}
         <motion.div
           key={`${animatedKey}-hand`}
-          initial={{ rotate: -45, x: 24, scale: 0 }}
-          animate={{ rotate: 0, x: 0, scale: [0, 1.5, 1] }}
+          initial={{ rotate: -35, x: 20, scale: 0 }}
+          animate={{ rotate: 0, x: 0, scale: [1, 1.5, 1] }}
           transition={{ duration: 1.8, ease: "easeOut" }}
-          className="absolute top-2/3 left-6"
+          className="absolute top-[133px] md:top-32 left-[4px] md:-left-2 2xl:left-14"
         >
           <Image
             src="/menupages/tj-pancil/hand.svg"
             alt="Hand"
             width={60}
             height={72}
+            className="w-[20px] md:w-[60px]"
           />
         </motion.div>
       </motion.div>
