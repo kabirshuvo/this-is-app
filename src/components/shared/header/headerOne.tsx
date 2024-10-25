@@ -74,7 +74,7 @@ export default function HeaderOne() {
             alt="Logo"
             width={300}
             height={300}
-            className="w-12 md:w-48 xl:w-60 pt-6 pb-16 mt-8 md:-mt-6 w-fit-content h-fit-content ml-0"
+            className="w-16 md:w-48 xl:w-60 pt-6 pb-16 mt-8 md:-mt-6 w-fit-content h-fit-content ml-0"
           />
         </Link>
       </div>
