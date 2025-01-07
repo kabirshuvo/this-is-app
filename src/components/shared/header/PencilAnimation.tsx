@@ -47,8 +47,8 @@ export default function PencilAnimation({ animatedKey }: { animatedKey: string }
         <motion.div
           key={`${animatedKey}-hand`}
           initial={{ rotate: -35, x: 20, scale: 0 }}
-          animate={{ rotate: 0, x: 0, scale: [1, 1.5, 1] }}
-          transition={{ duration: 1.8, ease: "easeOut" }}
+          animate={{ rotate: 0, x: 0, scale: [1, 1.5, 1]}}
+          transition={{ duration: 1.8, delay: 0.5, ease: "easeOut" }}
           className="absolute top-[133px] md:top-32 left-[4px] md:-left-2 2xl:left-14"
         >
           <Image
