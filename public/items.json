@@ -803,7 +803,7 @@
     {
       "id": 1,
       "name": "Hammer",
-      "image": "/images/hammer.png",
+      "image": "/images/tools/hammer.jpg",
       "description": "A hammer is a tool consisting of a heavy 'head' fixed to a long handle, used for jobs such as breaking things or driving in nails.",
       "audio": {
         "itemAudio": "/audio/this/hammer.mp3",
@@ -816,7 +816,7 @@
     {
       "id": 2,
       "name": "Screwdriver",
-      "image": "/images/screwdriver.png",
+      "image": "/images/tools/screw-drivers.jpg",
       "description": "A screwdriver is a tool used to turn screws.",
       "audio": {
         "itemAudio": "/audio/this/screwdriver.mp3",
@@ -829,7 +829,7 @@
     {
       "id": 3,
       "name": "Wrench",
-      "image": "/images/wrench.png",
+      "image": "/images/tools/wrench.jpg",
       "description": "A wrench is a tool used for gripping and turning objects.",
       "audio": {
         "itemAudio": "/audio/this/wrench.mp3",
@@ -841,41 +841,80 @@
     },
     {
       "id": 4,
-      "name": "Pliers",
-      "image": "/images/pliers.png",
-      "description": "Pliers are a hand tool used to hold objects firmly, bend, or compress.",
+      "name": "Chainsaw",
+      "image": "/images/tools/chainsaw.jpg",
+      "description": "A chainsaw is a power tool used for cutting trees and wood.",
       "audio": {
-        "itemAudio": "/audio/this/pliers.mp3",
-        "question": "q-pliers.mp3",
-        "success": "c-pliers.mp3",
-        "error": "n-pliers.mp3",
-        "warning": "w-pliers.mp3"
+        "itemAudio": "/audio/this/chainsaw.mp3",
+        "question": "q-chainsaw.mp3",
+        "success": "c-chainsaw.mp3",
+        "error": "n-chainsaw.mp3",
+        "warning": "w-chainsaw.mp3"
       }
     },
     {
       "id": 5,
-      "name": "Saw",
-      "image": "/images/saw.png",
-      "description": "A saw is a tool consisting of a tough blade or wire used to cut through material, most often wood.",
+      "name": "Electric Screw Drill",
+      "image": "/images/tools/electric-screw-drill.jpg",
+      "description": "An electric screw drill is a tool used for driving screws and drilling holes.",
       "audio": {
-        "itemAudio": "/audio/this/saw.mp3",
-        "question": "q-saw.mp3",
-        "success": "c-saw.mp3",
-        "error": "n-saw.mp3",
-        "warning": "w-saw.mp3"
+        "itemAudio": "/audio/this/electric-screw-drill.mp3",
+        "question": "q-electric-screw-drill.mp3",
+        "success": "c-electric-screw-drill.mp3",
+        "error": "n-electric-screw-drill.mp3",
+        "warning": "w-electric-screw-drill.mp3"
       }
     },
     {
       "id": 6,
-      "name": "Tape Measure",
-      "image": "/images/tape-measure.png",
-      "description": "A tape measure is a flexible ruler used to measure size or distance.",
+      "name": "Helmet",
+      "image": "/images/tools/helmet.jpg",
+      "description": "A helmet is a form of protective gear to safeguard the head.",
       "audio": {
-        "itemAudio": "/audio/this/tape-measure.mp3",
-        "question": "q-tape-measure.mp3",
-        "success": "c-tape-measure.mp3",
-        "error": "n-tape-measure.mp3",
-        "warning": "w-tape-measure.mp3"
+        "itemAudio": "/audio/this/helmet.mp3",
+        "question": "q-helmet.mp3",
+        "success": "c-helmet.mp3",
+        "error": "n-helmet.mp3",
+        "warning": "w-helmet.mp3"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Measurement Tape",
+      "image": "/images/tools/measurement-tape.jpg",
+      "description": "A measurement tape is used to measure size or distance.",
+      "audio": {
+        "itemAudio": "/audio/this/measurement-tape.mp3",
+        "question": "q-measurement-tape.mp3",
+        "success": "c-measurement-tape.mp3",
+        "error": "n-measurement-tape.mp3",
+        "warning": "w-measurement-tape.mp3"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Toolbelt",
+      "image": "/images/tools/toolbelt.jpg",
+      "description": "A toolbelt is used to carry tools conveniently while working.",
+      "audio": {
+        "itemAudio": "/audio/this/toolbelt.mp3",
+        "question": "q-toolbelt.mp3",
+        "success": "c-toolbelt.mp3",
+        "error": "n-toolbelt.mp3",
+        "warning": "w-toolbelt.mp3"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Toolbox",
+      "image": "/images/tools/toolbox.jpg",
+      "description": "A toolbox is a container to organize and transport tools.",
+      "audio": {
+        "itemAudio": "/audio/this/toolbox.mp3",
+        "question": "q-toolbox.mp3",
+        "success": "c-toolbox.mp3",
+        "error": "n-toolbox.mp3",
+        "warning": "w-toolbox.mp3"
       }
     }
   ],
@@ -883,7 +922,7 @@
     {
       "id": 1,
       "name": "Painting",
-      "image": "/images/painting.png",
+      "image": "/images/painting.jpg",
       "description": "Painting is a fun activity that allows you to express creativity through colors and strokes.",
       "audio": {
         "itemAudio": "/audio/this/painting.mp3",
@@ -956,6 +995,218 @@
         "success": "c-photography.mp3",
         "error": "n-photography.mp3",
         "warning": "w-photography.mp3"
+      }
+    }
+  ],
+  "nature": [
+    {
+      "id": 1,
+      "name": "Arctic",
+      "image": "/images/nature/arctic.png",
+      "description": "The Arctic is a cold, icy region at the northernmost part of Earth, home to polar bears and stunning ice landscapes.",
+      "audio": {
+        "itemAudio": "/audio/this/arctic.mp3",
+        "question": "q-arctic.mp3",
+        "success": "c-arctic.mp3",
+        "error": "n-arctic.mp3",
+        "warning": "w-arctic.mp3"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Mountain",
+      "image": "/images/nature/mountain.png",
+      "description": "Mountains are large landforms that rise prominently above the surrounding land, offering breathtaking views and challenging hikes.",
+      "audio": {
+        "itemAudio": "/audio/this/mountain.mp3",
+        "question": "q-mountain.mp3",
+        "success": "c-mountain.mp3",
+        "error": "n-mountain.mp3",
+        "warning": "w-mountain.mp3"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Desert",
+      "image": "/images/nature/desert.png",
+      "description": "A desert is a barren area of landscape with little rainfall, known for its dunes, cacti, and extreme temperatures.",
+      "audio": {
+        "itemAudio": "/audio/this/desert.mp3",
+        "question": "q-desert.mp3",
+        "success": "c-desert.mp3",
+        "error": "n-desert.mp3",
+        "warning": "w-desert.mp3"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Ocean",
+      "image": "/images/nature/ocean.png",
+      "description": "The ocean is a vast body of salt water that covers the majority of Earth's surface, teeming with marine life.",
+      "audio": {
+        "itemAudio": "/audio/this/ocean.mp3",
+        "question": "q-ocean.mp3",
+        "success": "c-ocean.mp3",
+        "error": "n-ocean.mp3",
+        "warning": "w-ocean.mp3"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Jungle",
+      "image": "/images/nature/jungle.png",
+      "description": "A jungle is a dense, tropical forest rich in biodiversity, filled with exotic plants and animals.",
+      "audio": {
+        "itemAudio": "/audio/this/jungle.mp3",
+        "question": "q-jungle.mp3",
+        "success": "c-jungle.mp3",
+        "error": "n-jungle.mp3",
+        "warning": "w-jungle.mp3"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Volcano",
+      "image": "/images/nature/volcano.png",
+      "description": "A volcano is a mountain that erupts with molten rock, ash, and gases from Earth's mantle.",
+      "audio": {
+        "itemAudio": "/audio/this/volcano.mp3",
+        "question": "q-volcano.mp3",
+        "success": "c-volcano.mp3",
+        "error": "n-volcano.mp3",
+        "warning": "w-volcano.mp3"
+      }
+    }
+  ],
+  "treats-and-food": [
+    {
+      "id": 1,
+      "name": "Biscuits",
+      "image": "/images/treats-and-food/biscuits.jpg",
+      "description": "Biscuits are baked bread products, often sweet and crunchy, perfect for a snack.",
+      "audio": {
+        "itemAudio": "/audio/this/biscuits.mp3",
+        "question": "q-biscuits.mp3",
+        "success": "c-biscuits.mp3",
+        "error": "n-biscuits.mp3",
+        "warning": "w-biscuits.mp3"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Burger",
+      "image": "/images/treats-and-food/burger.jpg",
+      "description": "A burger is a sandwich consisting of a cooked patty of ground meat or veggies placed inside a bun.",
+      "audio": {
+        "itemAudio": "/audio/this/burger.mp3",
+        "question": "q-burger.mp3",
+        "success": "c-burger.mp3",
+        "error": "n-burger.mp3",
+        "warning": "w-burger.mp3"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Cake",
+      "image": "/images/treats-and-food/cake-sizes01.jpg",
+      "description": "Cake is a sweet baked dessert often made with flour, sugar, eggs, and butter.",
+      "audio": {
+        "itemAudio": "/audio/this/cake.mp3",
+        "question": "q-cake.mp3",
+        "success": "c-cake.mp3",
+        "error": "n-cake.mp3",
+        "warning": "w-cake.mp3"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Candy",
+      "image": "/images/treats-and-food/colorful-candy.jpg",
+      "description": "Candy is a sweet confection made with sugar, often colorful and fun to eat.",
+      "audio": {
+        "itemAudio": "/audio/this/candy.mp3",
+        "question": "q-candy.mp3",
+        "success": "c-candy.mp3",
+        "error": "n-candy.mp3",
+        "warning": "w-candy.mp3"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Pizza",
+      "image": "/images/treats-and-food/pizza.jpg",
+      "description": "Pizza is a savory dish made of a flat, round dough base topped with cheese, sauce, and other ingredients.",
+      "audio": {
+        "itemAudio": "/audio/this/pizza.mp3",
+        "question": "q-pizza.mp3",
+        "success": "c-pizza.mp3",
+        "error": "n-pizza.mp3",
+        "warning": "w-pizza.mp3"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Ice Cream",
+      "image": "/images/treats-and-food/ice-cream01.jpg",
+      "description": "Ice cream is a frozen dessert made from sweetened milk or cream, often flavored.",
+      "audio": {
+        "itemAudio": "/audio/this/ice-cream.mp3",
+        "question": "q-ice-cream.mp3",
+        "success": "c-ice-cream.mp3",
+        "error": "n-ice-cream.mp3",
+        "warning": "w-ice-cream.mp3"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Chocolate",
+      "image": "/images/treats-and-food/chocolate.jpg",
+      "description": "Chocolate is a sweet treat made from roasted and ground cacao beans.",
+      "audio": {
+        "itemAudio": "/audio/this/chocolate.mp3",
+        "question": "q-chocolate.mp3",
+        "success": "c-chocolate.mp3",
+        "error": "n-chocolate.mp3",
+        "warning": "w-chocolate.mp3"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Donuts",
+      "image": "/images/treats-and-food/donuts.jpg",
+      "description": "Donuts are fried dough confections, often sweet and round with a hole in the center.",
+      "audio": {
+        "itemAudio": "/audio/this/donuts.mp3",
+        "question": "q-donuts.mp3",
+        "success": "c-donuts.mp3",
+        "error": "n-donuts.mp3",
+        "warning": "w-donuts.mp3"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Soup",
+      "image": "/images/treats-and-food/soup.jpg",
+      "description": "Soup is a liquid dish made with vegetables, meat, or fish, served hot or cold.",
+      "audio": {
+        "itemAudio": "/audio/this/soup.mp3",
+        "question": "q-soup.mp3",
+        "success": "c-soup.mp3",
+        "error": "n-soup.mp3",
+        "warning": "w-soup.mp3"
+      }
+    },
+    {
+      "id": 10,
+      "name": "French Fries",
+      "image": "/images/treats-and-food/french-fries.jpg",
+      "description": "French fries are thin strips of deep-fried potatoes, often served with salt or ketchup.",
+      "audio": {
+        "itemAudio": "/audio/this/french-fries.mp3",
+        "question": "q-french-fries.mp3",
+        "success": "c-french-fries.mp3",
+        "error": "n-french-fries.mp3",
+        "warning": "w-french-fries.mp3"
       }
     }
   ]

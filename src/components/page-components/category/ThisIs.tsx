@@ -23,7 +23,9 @@ const ThisIs: React.FC<{ params: Params }> = ({ params }) => {
 
   return (
     <div className="">
-      <h3 className="md:text-2xl xl:text-3xl text-center uppercase">This is!</h3>
+      <h3 className="md:text-2xl xl:text-3xl text-center uppercase">
+        This is!
+      </h3>
       <div className="grid grid-cols-3 md:grid-cols-6 gap-2 md:gap-4 mt-4">
         {relatedData.map((item) => (
           <ItemImageCard
