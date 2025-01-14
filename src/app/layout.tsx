@@ -3,7 +3,6 @@ import localFont from "next/font/local";
 import ClientProvider from "@/app/context/ReduxProvider";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
-// import Header from "@/components/shared/header/Header";
 import HeaderOne from "@/components/shared/header/headerOne";
 import Footer from "@/components/shared/Footer";
 import "./globals.css";

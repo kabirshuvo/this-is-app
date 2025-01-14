@@ -1082,7 +1082,7 @@
     {
       "id": 1,
       "name": "Biscuits",
-      "image": "/images/treats-and-food/biscuits.jpg",
+      "image": "/images/treats-and-food/biscuits.png",
       "description": "Biscuits are baked bread products, often sweet and crunchy, perfect for a snack.",
       "audio": {
         "itemAudio": "/audio/this/biscuits.mp3",
@@ -1095,7 +1095,7 @@
     {
       "id": 2,
       "name": "Burger",
-      "image": "/images/treats-and-food/burger.jpg",
+      "image": "/images/treats-and-food/burger.png",
       "description": "A burger is a sandwich consisting of a cooked patty of ground meat or veggies placed inside a bun.",
       "audio": {
         "itemAudio": "/audio/this/burger.mp3",
@@ -1108,7 +1108,7 @@
     {
       "id": 3,
       "name": "Cake",
-      "image": "/images/treats-and-food/cake-sizes01.jpg",
+      "image": "/images/treats-and-food/cake-sizes01.png",
       "description": "Cake is a sweet baked dessert often made with flour, sugar, eggs, and butter.",
       "audio": {
         "itemAudio": "/audio/this/cake.mp3",
@@ -1121,7 +1121,7 @@
     {
       "id": 4,
       "name": "Candy",
-      "image": "/images/treats-and-food/colorful-candy.jpg",
+      "image": "/images/treats-and-food/colorful-candy.png",
       "description": "Candy is a sweet confection made with sugar, often colorful and fun to eat.",
       "audio": {
         "itemAudio": "/audio/this/candy.mp3",
@@ -1134,7 +1134,7 @@
     {
       "id": 5,
       "name": "Pizza",
-      "image": "/images/treats-and-food/pizza.jpg",
+      "image": "/images/treats-and-food/pizza.png",
       "description": "Pizza is a savory dish made of a flat, round dough base topped with cheese, sauce, and other ingredients.",
       "audio": {
         "itemAudio": "/audio/this/pizza.mp3",
@@ -1147,7 +1147,7 @@
     {
       "id": 6,
       "name": "Ice Cream",
-      "image": "/images/treats-and-food/ice-cream01.jpg",
+      "image": "/images/treats-and-food/ice-cream01.png",
       "description": "Ice cream is a frozen dessert made from sweetened milk or cream, often flavored.",
       "audio": {
         "itemAudio": "/audio/this/ice-cream.mp3",
@@ -1160,7 +1160,7 @@
     {
       "id": 7,
       "name": "Chocolate",
-      "image": "/images/treats-and-food/chocolate.jpg",
+      "image": "/images/treats-and-food/chocolate.png",
       "description": "Chocolate is a sweet treat made from roasted and ground cacao beans.",
       "audio": {
         "itemAudio": "/audio/this/chocolate.mp3",
@@ -1173,7 +1173,7 @@
     {
       "id": 8,
       "name": "Donuts",
-      "image": "/images/treats-and-food/donuts.jpg",
+      "image": "/images/treats-and-food/donuts.png",
       "description": "Donuts are fried dough confections, often sweet and round with a hole in the center.",
       "audio": {
         "itemAudio": "/audio/this/donuts.mp3",
@@ -1186,7 +1186,7 @@
     {
       "id": 9,
       "name": "Soup",
-      "image": "/images/treats-and-food/soup.jpg",
+      "image": "/images/treats-and-food/soup.png",
       "description": "Soup is a liquid dish made with vegetables, meat, or fish, served hot or cold.",
       "audio": {
         "itemAudio": "/audio/this/soup.mp3",
@@ -1199,7 +1199,7 @@
     {
       "id": 10,
       "name": "French Fries",
-      "image": "/images/treats-and-food/french-fries.jpg",
+      "image": "/images/treats-and-food/french-fries.png",
       "description": "French fries are thin strips of deep-fried potatoes, often served with salt or ketchup.",
       "audio": {
         "itemAudio": "/audio/this/french-fries.mp3",
@@ -1207,6 +1207,86 @@
         "success": "c-french-fries.mp3",
         "error": "n-french-fries.mp3",
         "warning": "w-french-fries.mp3"
+      }
+    }
+  ],
+  "nuts": [
+    {
+      "id": 1,
+      "name": "Almonds",
+      "image": "/images/nuts/almonds-nuts.png",
+      "description": "Almonds are nutritious nuts rich in healthy fats, vitamins, and minerals.",
+      "audio": {
+        "itemAudio": "/audio/this/almonds.mp3",
+        "question": "q-almonds.mp3",
+        "success": "c-almonds.mp3",
+        "error": "n-almonds.mp3",
+        "warning": "w-almonds.mp3"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Cashews",
+      "image": "/images/nuts/cashew-nuts.png",
+      "description": "Cashews are creamy and rich nuts that are a great source of energy and nutrients.",
+      "audio": {
+        "itemAudio": "/audio/this/cashews.mp3",
+        "question": "q-cashews.mp3",
+        "success": "c-cashews.mp3",
+        "error": "n-cashews.mp3",
+        "warning": "w-cashews.mp3"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Peanuts",
+      "image": "/images/nuts/peanut.png",
+      "description": "Peanuts are popular legumes often enjoyed roasted, salted, or as peanut butter.",
+      "audio": {
+        "itemAudio": "/audio/this/peanuts.mp3",
+        "question": "q-peanuts.mp3",
+        "success": "c-peanuts.mp3",
+        "error": "n-peanuts.mp3",
+        "warning": "w-peanuts.mp3"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Pistachios",
+      "image": "/images/nuts/pistachio.png",
+      "description": "Pistachios are delicious green nuts known for their unique flavor and health benefits.",
+      "audio": {
+        "itemAudio": "/audio/this/pistachios.mp3",
+        "question": "q-pistachios.mp3",
+        "success": "c-pistachios.mp3",
+        "error": "n-pistachios.mp3",
+        "warning": "w-pistachios.mp3"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Hazelnuts",
+      "image": "/images/nuts/hazelnut.png",
+      "description": "Hazelnuts are sweet-tasting nuts often used in chocolates and desserts.",
+      "audio": {
+        "itemAudio": "/audio/this/hazelnuts.mp3",
+        "question": "q-hazelnuts.mp3",
+        "success": "c-hazelnuts.mp3",
+        "error": "n-hazelnuts.mp3",
+        "warning": "w-hazelnuts.mp3"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Walnuts",
+      "image": "/images/nuts/walnut.png",
+      "description": "Walnuts are brain-shaped nuts rich in omega-3 fatty acids and antioxidants.",
+      "audio": {
+        "itemAudio": "/audio/this/walnuts.mp3",
+        "question": "q-walnuts.mp3",
+        "success": "c-walnuts.mp3",
+        "error": "n-walnuts.mp3",
+        "warning": "w-walnuts.mp3"
       }
     }
   ]

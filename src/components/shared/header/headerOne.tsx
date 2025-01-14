@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/dialog";
 import PencilAnimation from "./PencilAnimation";
 import localFont from "next/font/local";
+import Pagination from "@/components/pagination/Pagination";
 
 const kabelu = localFont({
   src: "./KABELU.ttf",
@@ -80,12 +81,11 @@ export default function HeaderOne() {
       </div>
 
       {/* Magnifying Glass and Text in the middle */}
-      <div className="flex justify-center items-center 2xl:py-4 py-2 md:ml-16 mb-16 gap-6 md:gap-8">
-
-          <PencilAnimation animatedKey={animatedKey} />
+      <div className="flex justify-between items-center 2xl:py-4 py-2 md:ml-16 mb-16 gap-6 md:gap-8">
+        <PencilAnimation animatedKey={animatedKey} />
 
         <h1
-          className={`${kabelu.variable} kabelu-font text-md md:text-4xl lg:text-5xl 2xl:text-7xl pb-10 mt-20 md:mt-4 flex`}
+          className={`${kabelu.variable} kabelu-font text-md md:text-4xl lg:text-5xl 2xl:text-7xl pb-6 mt-20 md:mt-4 flex`}
           style={{
             textShadow: `
       1.5px 1.5px 0 #228B22,
@@ -114,6 +114,8 @@ export default function HeaderOne() {
             </motion.span>
           ))}
         </h1>
+
+        <Pagination />
       </div>
 
       <Dialog>
