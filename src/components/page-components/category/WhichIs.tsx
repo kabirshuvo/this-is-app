@@ -34,7 +34,7 @@ const ITEMS_PER_PAGE = 6;
 const WhichIs: React.FC<WhichIsProps> = ({ relatedData, params }) => {
   const router = useRouter();
   const [randomItemName, setRandomItemName] = useState<string>("");
-  const [randomItemId, setRandomItemId] = useState<number | null>(null);
+  // const [randomItemId, setRandomItemId] = useState<number | null>(null);
   const [shakeItemId, setShakeItemId] = useState<number | null>(null);
   const errorAudioRef = useRef<HTMLAudioElement | null>(null);
   const page = useAppSelector((state) => state.pagination.currentPage - 1);
@@ -70,7 +70,7 @@ const WhichIs: React.FC<WhichIsProps> = ({ relatedData, params }) => {
     if (relatedData.length > 0) {
       const randomIndex = Math.floor(Math.random() * relatedData.length);
       setRandomItemName(relatedData[randomIndex].name);
-      setRandomItemId(relatedData[randomIndex].id);
+      // setRandomItemId(relatedData[randomIndex].id);
     }
   }, [relatedData]);
 
@@ -121,7 +121,7 @@ const WhichIs: React.FC<WhichIsProps> = ({ relatedData, params }) => {
         if (relatedData.length > 0) {
           const randomIndex = Math.floor(Math.random() * relatedData.length);
           setRandomItemName(relatedData[randomIndex].name);
-          setRandomItemId(relatedData[randomIndex].id);
+          // setRandomItemId(relatedData[randomIndex].id);
         }
       } else {
         setShakeItemId(itemId);
