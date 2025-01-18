@@ -1,43 +1,23 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useMemo } from "react";
 import { Category } from "@/types/category";
-import { fetchRelatedData } from "@/app/hooks/useCategoryData";
 import ItemImageCard from "@/components/cards/ItemImageCard";
-import { useAppDispatch, useAppSelector } from "@/store/hooks";
-import { setTotalPages } from "@/store/pagination-slice";
-import { useMemo } from "react";
+import { useAppSelector } from "@/store/hooks";
 
-interface Params {
-  category: string;
+interface ThisIsProps {
+  relatedData: Category[];
 }
 
 const ITEMS_PER_PAGE = 6;
 
-const ThisIs: React.FC<{ params: Params }> = ({ params }) => {
-  const [relatedData, setRelatedData] = useState<Category[]>([]);
-  const dispatch = useAppDispatch();
+const ThisIs: React.FC<ThisIsProps> = ({ relatedData }) => {
   const page = useAppSelector((state) => state.pagination.currentPage - 1);
-  // const totalPages = useAppSelector((state) => state.pagination.totalPages);
-
-  console.log("Related data", relatedData);
-
-  useEffect(() => {
-    async function loadRelatedData() {
-      const data = await fetchRelatedData(params.category);
-      setRelatedData(data);
-      dispatch(setTotalPages(Math.ceil(data.length / ITEMS_PER_PAGE)));
-    }
-
-    loadRelatedData();
-  }, [params.category, dispatch]);
 
   const paginatedData = useMemo(
     () => relatedData.slice(page * ITEMS_PER_PAGE, (page + 1) * ITEMS_PER_PAGE),
     [relatedData, page]
   );
-
-  console.log("Paginated data", paginatedData);
 
   return (
     <div className="">
