@@ -3,14 +3,10 @@
 import React, { useEffect, useState, useCallback } from "react";
 import { Category } from "@/types/category";
 import { fetchRelatedData } from "@/app/hooks/useCategoryData";
-import { useAppDispatch, useAppSelector } from "@/store/hooks";
+import { useAppDispatch } from "@/store/hooks";
 import { setTotalPages } from "@/store/pagination-slice";
 import ThisIs from "@/components/page-components/category/ThisIs";
 import WhichIs from "@/components/page-components/category/WhichIs";
-
-interface Params {
-  category: string;
-}
 
 const ITEMS_PER_PAGE = 6;
 
