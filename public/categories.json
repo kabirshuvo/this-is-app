@@ -10,29 +10,7 @@
   { "id": 9, "name": "Tools", "image": "/images/categories/tools.webp" },
   { "id": 10, "name": "Toys", "image": "/images/categories/toys.webp" },
   { "id": 11, "name": "Nature", "image": "/images/categories/nature.webp" },
-  {
-    "id": 12,
-    "name": "Fun Activities",
-    "image": "/images/categories/fun-activities.webp"
-  },
-
-  
-
-  { "id": 13,   "name":  "Clothing", "image": "/images/categories/clothing.webp" },
-  { "id": 14, "name": "Transport", "image": "/images/categories/transport.webp" },
-  { "id": 15, "name": "Animals", "image": "/images/categories/animals.webp"},
-  { "id": 16, "name": "Food", "image": "/images/categories/food.webp" },
-  { "id": 17,
-  "name": "Fun Activities",
-    "image": "/images/categories/fun-activities.webp"  },
-  { "id": 18, "name": "Fun Things", "image": "/images/categories/fun-things.webp" },
-  { "id": 19, "name": "Vegetables", "image": "/images/categories/vegetables.webp" },
-  { "id": 20, "name": "Nature", "image": "/images/categories/nature.webp"   },
-  { "id": 21, "name": "Tools", "image": "/images/categories/tools.webp" },
-  { "id": 22, "name": "Toys", "image": "/images/categories/toys.webp" },
-  { "id": 23, "name": "Fruits", "image": "/images/categories/fruits.webp"},
-  {
-    "id": 24,
-    "name": "Treats", "image": "/images/categories/treats.webp"
-  }
+  { "id": 12, "name": "Fun Activities", "image": "/images/categories/fun-activities.webp" },
+  { "id": 13, "name": "Treats and Food", "image": "/images/categories/treats-and-food.jpg" },
+  { "id": 14, "name": "Nuts", "image": "/images/categories/nuts.jpg" }
 ]
