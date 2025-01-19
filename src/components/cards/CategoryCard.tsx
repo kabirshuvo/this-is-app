@@ -9,12 +9,13 @@ interface CategoryCardProps {
     image: string;
   };
   locale: string;
+  className?: string;
 }
 
 export const CategoryCard: React.FC<CategoryCardProps> = React.memo(
-  ({ category, locale }) => (
+  ({ category, locale, className }) => (
     <Link href={`${locale}/categories/${category.name.toLowerCase()}`} passHref>
-      <div className="h-full flex flex-col gap-1">
+      <div className={`h-full flex flex-col gap-1 ${className}`}>
         <div className="flex-1">
           <h3 className="marker-felt-font text-sm xl:text-xl text-center uppercase lg:text-pretty tracking-widest text-nowrap pt-6">
             {category.name}
