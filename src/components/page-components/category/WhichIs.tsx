@@ -34,7 +34,6 @@ const ITEMS_PER_PAGE = 6;
 const WhichIs: React.FC<WhichIsProps> = ({ relatedData, params }) => {
   const router = useRouter();
   const [randomItemName, setRandomItemName] = useState<string>("");
-  // const [randomItemId, setRandomItemId] = useState<number | null>(null);
   const [shakeItemId, setShakeItemId] = useState<number | null>(null);
   const errorAudioRef = useRef<HTMLAudioElement | null>(null);
   const page = useAppSelector((state) => state.pagination.currentPage - 1);
@@ -66,13 +65,24 @@ const WhichIs: React.FC<WhichIsProps> = ({ relatedData, params }) => {
   );
   useErrorAudio(clickedItemData?.name.toLowerCase() ?? "");
 
+  const shuffleArray = (array: Category[]) => {
+    return array.sort(() => Math.random() - 0.5);
+  };
+
+  const paginatedData = useMemo(
+    () =>
+      shuffleArray(
+        relatedData.slice(page * ITEMS_PER_PAGE, (page + 1) * ITEMS_PER_PAGE)
+      ),
+    [relatedData, page]
+  );
+
   useEffect(() => {
-    if (relatedData.length > 0) {
-      const randomIndex = Math.floor(Math.random() * relatedData.length);
-      setRandomItemName(relatedData[randomIndex].name);
-      // setRandomItemId(relatedData[randomIndex].id);
+    if (paginatedData.length > 0) {
+      const randomIndex = Math.floor(Math.random() * paginatedData.length);
+      setRandomItemName(paginatedData[randomIndex].name);
     }
-  }, [relatedData]);
+  }, [paginatedData]);
 
   useEffect(() => {
     let whichOneAudio: HTMLAudioElement | null = null;
@@ -121,7 +131,6 @@ const WhichIs: React.FC<WhichIsProps> = ({ relatedData, params }) => {
         if (relatedData.length > 0) {
           const randomIndex = Math.floor(Math.random() * relatedData.length);
           setRandomItemName(relatedData[randomIndex].name);
-          // setRandomItemId(relatedData[randomIndex].id);
         }
       } else {
         setShakeItemId(itemId);
@@ -129,18 +138,6 @@ const WhichIs: React.FC<WhichIsProps> = ({ relatedData, params }) => {
       }
     },
     [randomItemName, relatedData, playSuccessAudio, params.category, router]
-  );
-
-  const shuffleArray = (array: Category[]) => {
-    return array.sort(() => Math.random() - 0.5);
-  };
-
-  const paginatedData = useMemo(
-    () =>
-      shuffleArray(
-        relatedData.slice(page * ITEMS_PER_PAGE, (page + 1) * ITEMS_PER_PAGE)
-      ),
-    [relatedData, page]
   );
 
   return (
