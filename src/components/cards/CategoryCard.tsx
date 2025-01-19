@@ -16,7 +16,7 @@ export const CategoryCard: React.FC<CategoryCardProps> = React.memo(
     <Link href={`${locale}/categories/${category.name.toLowerCase()}`} passHref>
       <div className="h-full flex flex-col gap-1">
         <div className="flex-1">
-          <h3 className="marker-felt-font text-sm xl:text-2xl text-center uppercase lg:text-pretty tracking-widest text-nowrap pt-6">
+          <h3 className="marker-felt-font text-sm xl:text-xl text-center uppercase lg:text-pretty tracking-widest text-nowrap pt-6">
             {category.name}
           </h3>
         </div>
