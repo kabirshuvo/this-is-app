@@ -65,7 +65,7 @@ const Home: React.FC = () => {
       const screenWidth = window.innerWidth;
 
       // Determine columns and card size based on screen width
-      const cols = screenWidth < 640 ? 1 : screenWidth < 1024 ? 2 : screenWidth < 1920 ? 4 : 6;
+      const cols = screenWidth < 640 ? 2 : screenWidth < 1024 ? 3 : screenWidth < 1920 ? 4 : 6;
       const gap = 20; // Space between cards
       const cardWidth = screenWidth < 640 ? 200 : 240;
       const cardHeight = cardWidth; // Square cards
@@ -75,7 +75,10 @@ const Home: React.FC = () => {
         const col = i % cols;
 
         positions.push({
-          x: col * (cardWidth + gap) - (cols * (cardWidth + gap)) / 2 + cardWidth / 2,
+          x:
+          col * (cardWidth + gap) -
+          (cols * (cardWidth + gap)) / 2, // Center the cards horizontally
+          // x: col * (cardWidth + gap) - (cols * (cardWidth + gap)) / 2 + cardWidth / 2,
           y: row * (cardHeight + gap),
         });
       }
