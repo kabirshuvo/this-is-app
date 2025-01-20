@@ -2,22 +2,18 @@
 
 import React, { useEffect, useMemo } from "react";
 import { useAppDispatch, useAppSelector } from "@/store/hooks";
-import {
-  setPage,
-  setTotalPages,
-  prevPage,
-  nextPage,
-} from "@/store/pagination-slice";
+import { setPage, setTotalPages } from "@/store/pagination-slice";
 import { useLocale } from "next-intl";
 import useCategories from "@/app/hooks/useCategories";
 import { CategoryCard } from "@/components/cards/CategoryCard";
-import Image from "next/image";
 import {
   Pagination,
   PaginationContent,
   PaginationItem,
   PaginationLink,
 } from "@/components/ui/pagination";
+import PrevButton from "@/components/pagination/PrevButton";
+import NextButton from "@/components/pagination/NextButton";
 
 const ITEMS_PER_PAGE = 12;
 
@@ -56,21 +52,7 @@ const Home: React.FC = () => {
   return (
     <div className="flex flex-col justify-between items-center w-full h-full mt-12 px-4 gap-4">
       <div className="flex gap-10 items-center w-full">
-        {/* Previous Page */}
-        <button
-          onClick={() => dispatch(prevPage())}
-          disabled={currentPage === 1}
-          className="p-2 text-white rounded disabled:opacity-50 hover:opacity-80 transition-opacity"
-          aria-label="Previous page"
-        >
-          <Image
-            src="/images/arrow.png"
-            alt="Previous page"
-            width={100}
-            height={100}
-            className="rotate-180"
-          />
-        </button>
+        <PrevButton size={100} />
 
         {/* Categories */}
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-4 h-full grid-rows-2">
@@ -90,20 +72,7 @@ const Home: React.FC = () => {
           )}
         </div>
 
-        {/* Next Page */}
-        <button
-          onClick={() => dispatch(nextPage())}
-          disabled={currentPage === totalPages}
-          className="p-2 text-white rounded disabled:opacity-50 hover:opacity-80 transition-opacity"
-          aria-label="Next page"
-        >
-          <Image
-            src="/images/arrow.png"
-            alt="Next page"
-            width={100}
-            height={100}
-          />
-        </button>
+        <NextButton size={100} />
       </div>
 
       {/* Pagination Bar */}
