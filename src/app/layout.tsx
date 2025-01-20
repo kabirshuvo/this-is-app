@@ -3,7 +3,6 @@ import localFont from "next/font/local";
 import ClientProvider from "@/app/context/ReduxProvider";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
-// import Header from "@/components/shared/header/Header";
 import HeaderOne from "@/components/shared/header/headerOne";
 import Footer from "@/components/shared/Footer";
 import "./globals.css";
@@ -38,7 +37,7 @@ export default async function RootLayout({
             <div className="-mt-6">
               <HeaderOne />
             </div>
-            <main className="flex items-center gap-4 py-2 -mt-24 md:-mt-8 2xl:-mt-12 container mx-auto">
+            <main className="flex items-center gap-4 py-2 -mt-24 md:-mt-8 container mx-auto">
               {children}
             </main>
             <Footer />

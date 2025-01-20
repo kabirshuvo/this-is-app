@@ -2,37 +2,14 @@
   { "id": 1, "name": "Animals", "image": "/images/categories/animals.webp" },
   { "id": 2, "name": "Transport", "image": "/images/categories/transport.webp" },
   { "id": 3, "name": "Clothing", "image": "/images/categories/clothing.webp" },
-  { "id": 4, "name": "Food", "image": "/images/categories/food.webp" },
-  { "id": 5, "name": "Treats", "image": "/images/categories/treats.webp" },
-  { "id": 6, "name": "Fun Things", "image": "/images/categories/fun-things.webp" },
-  { "id": 7, "name": "Vegetables", "image": "/images/categories/vegetables.webp" },
-  { "id": 8, "name": "Fruits", "image": "/images/categories/fruits.webp" },
-  { "id": 9, "name": "Tools", "image": "/images/categories/tools.webp" },
-  { "id": 10, "name": "Toys", "image": "/images/categories/toys.webp" },
-  { "id": 11, "name": "Nature", "image": "/images/categories/nature.webp" },
-  {
-    "id": 12,
-    "name": "Fun Activities",
-    "image": "/images/categories/fun-activities.webp"
-  },
-
-  
-
-  { "id": 13,   "name":  "Clothing", "image": "/images/categories/clothing.webp" },
-  { "id": 14, "name": "Transport", "image": "/images/categories/transport.webp" },
-  { "id": 15, "name": "Animals", "image": "/images/categories/animals.webp"},
-  { "id": 16, "name": "Food", "image": "/images/categories/food.webp" },
-  { "id": 17,
-  "name": "Fun Activities",
-    "image": "/images/categories/fun-activities.webp"  },
-  { "id": 18, "name": "Fun Things", "image": "/images/categories/fun-things.webp" },
-  { "id": 19, "name": "Vegetables", "image": "/images/categories/vegetables.webp" },
-  { "id": 20, "name": "Nature", "image": "/images/categories/nature.webp"   },
-  { "id": 21, "name": "Tools", "image": "/images/categories/tools.webp" },
-  { "id": 22, "name": "Toys", "image": "/images/categories/toys.webp" },
-  { "id": 23, "name": "Fruits", "image": "/images/categories/fruits.webp"},
-  {
-    "id": 24,
-    "name": "Treats", "image": "/images/categories/treats.webp"
-  }
+  { "id": 4, "name": "Fun Things", "image": "/images/categories/fun-things.webp" },
+  { "id": 5, "name": "Vegetables", "image": "/images/categories/vegetables.webp" },
+  { "id": 6, "name": "Fruits", "image": "/images/categories/fruits.webp" },
+  { "id": 7, "name": "Tools", "image": "/images/categories/tools.webp" },
+  { "id": 8, "name": "Toys", "image": "/images/categories/toys.webp" },
+  { "id": 9, "name": "Nature", "image": "/images/categories/nature.webp" },
+  { "id": 10, "name": "Activities", "image": "/images/categories/activities.webp" },
+  { "id": 11, "name": "Treats and Food", "image": "/images/categories/treats-and-food.jpg" },
+  { "id": 12, "name": "Nuts", "image": "/images/categories/nuts.jpg" },
+  { "id": 13, "name": "Home", "image": "/images/categories/home.webp" }
 ]
