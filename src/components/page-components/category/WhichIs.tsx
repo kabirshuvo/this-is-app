@@ -11,7 +11,7 @@ import Image from "next/image";
 import { Category } from "@/types/category";
 import { Volume2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import useItemAudio from "@/app/hooks/useItemAudio";
+// import useItemAudio from "@/app/hooks/useItemAudio";
 import useItemQueryAudio from "@/app/hooks/useItemQueryAudio";
 import useErrorAudio from "@/app/hooks/useErrorAudio";
 import useItemData from "@/app/hooks/useItemData";
@@ -54,15 +54,19 @@ const WhichIs: React.FC<WhichIsProps> = ({ relatedData, params }) => {
     }
   }, [clickedItemData, relatedData]);
 
-  const itemAudio = useItemAudio(randomItemName ?? "");
+  // const itemAudio = useItemAudio(randomItemName ?? "");
   const playWhichAudio = useItemQueryAudio(
     randomItemName ? randomItemName.toLowerCase() : "",
-    "q"
+    "q",
+    params.category
   );
+  
   const playSuccessAudio = useItemQueryAudio(
     randomItemName ? randomItemName.toLowerCase() : "",
-    "c"
+    "c", 
+    params.category
   );
+  
   useErrorAudio(clickedItemData?.name.toLowerCase() ?? "");
 
   const shuffleArray = (array: Category[]) => {
@@ -90,7 +94,8 @@ const WhichIs: React.FC<WhichIsProps> = ({ relatedData, params }) => {
 
     if (typeof window !== "undefined") {
       whichOneAudio = new Audio("/audio/whichone.mp3");
-      questionAudio = new Audio(`/audio/${itemAudio?.question}.mp3`);
+      questionAudio = new Audio(`/audio/which/${params.category}/q-${randomItemName.toLowerCase()}.mp3`);
+      console.log("Quuestion Audio", `/audio/which/${params.category}/q-${randomItemName.toLowerCase()}.mp3`)
 
       whichOneAudio.preload = "auto";
       questionAudio.preload = "auto";
@@ -105,7 +110,7 @@ const WhichIs: React.FC<WhichIsProps> = ({ relatedData, params }) => {
         });
       };
     }
-  }, [itemAudio]);
+  }, [params.category, randomItemName]);
 
   const speakText = useCallback(() => {
     playWhichAudio();

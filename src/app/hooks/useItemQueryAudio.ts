@@ -2,25 +2,26 @@ import { useEffect, useRef } from "react";
 
 type AudioType = "default" | "q" | "c" | "w";
 
-const useItemQueryAudio = (itemName: string, type: AudioType = "default") => {
+const useItemQueryAudio = (itemName: string, type: AudioType = "default", category: string) => {
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  const formattedName = itemName.replace(/\s+/g, '-');
 
   useEffect(() => {
     if (itemName) {
       let audioSrc = "";
       switch (type) {
         case "q":
-          audioSrc = `/audio/which/q-${itemName}.mp3`;
+          audioSrc = `/audio/which/${category}/q-${formattedName}.mp3`;
           break;
         case "c":
-          audioSrc = `/audio/correct/c-${itemName}.mp3`;
+          audioSrc = `/audio/success/${category}/c-${formattedName}.mp3`;
           break;
         case "w":
-          audioSrc = `/audio/warning/w-${itemName}.mp3`;
+          audioSrc = `/audio/warning/${category}/w-${formattedName}.mp3`;
           break;
         case "default":
         default:
-          audioSrc = `/audio/this/${itemName}.mp3`;
+          audioSrc = `/audio/this/${category}/${formattedName}.mp3`;
           break;
       }
       audioRef.current = new Audio(audioSrc);
@@ -30,7 +31,7 @@ const useItemQueryAudio = (itemName: string, type: AudioType = "default") => {
         audioRef.current = null;
       };
     }
-  }, [itemName, type]);
+  }, [itemName, type, category, formattedName]);
 
   const playAudio = () => {
     if (audioRef.current) {

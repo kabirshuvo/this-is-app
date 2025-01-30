@@ -54,15 +54,15 @@
     },
     {
       "id": 5,
-      "name": "Black Leopard",
-      "image": "/images/animals/black-leopard.webp",
-      "description": "Black leopards are big cats with a distinctive dark coat.",
+      "name": "Black Jaguar",
+      "image": "/images/animals/black-jaguar.webp",
+      "description": "Black jaguars are big cats with a distinctive dark coat.",
       "audio": {
-        "itemAudio": "/audio/this/animals/black-leopard.mp3",
-        "question": "q-black-leopard.mp3",
-        "success": "c-black-leopard.mp3",
-        "error": "n-black-leopard.mp3",
-        "warning": "w-black-leopard.mp3"
+        "itemAudio": "/audio/this/animals/black-jaguar.mp3",
+        "question": "q-black-jaguar.mp3",
+        "success": "c-black-jaguar.mp3",
+        "error": "n-black-jaguar.mp3",
+        "warning": "w-black-jaguar.mp3"
       }
     },
     {
@@ -145,15 +145,15 @@
     },
     {
       "id": 12,
-      "name": "Springbock",
-      "image": "/images/animals/springbock.webp",
-      "description": "Springbocks are antelopes known for their leaping behavior.",
+      "name": "Springbok",
+      "image": "/images/animals/springbok.webp",
+      "description": "Springboks are antelopes known for their leaping behavior.",
       "audio": {
-        "itemAudio": "/audio/this/animals/springbock.mp3",
-        "question": "q-springbock.mp3",
-        "success": "c-springbock.mp3",
-        "error": "n-springbock.mp3",
-        "warning": "w-springbock.mp3"
+        "itemAudio": "/audio/this/animals/springbok.mp3",
+        "question": "q-springbok.mp3",
+        "success": "c-springbok.mp3",
+        "error": "n-springbok.mp3",
+        "warning": "w-springbok.mp3"
       }
     },
     {
@@ -172,14 +172,14 @@
     {
       "id": 14,
       "name": "Hippopotamus",
-      "image": "/images/animals/hippopo.webp",
+      "image": "/images/animals/hippo.webp",
       "description": "Hippos are large, semi-aquatic mammals known for their aggressive nature.",
       "audio": {
-        "itemAudio": "/audio/this/animals/hippopo.mp3",
-        "question": "q-hippopo.mp3",
-        "success": "c-hippopo.mp3",
-        "error": "n-hippopo.mp3",
-        "warning": "w-hippopo.mp3"
+        "itemAudio": "/audio/this/animals/hippo.mp3",
+        "question": "q-hippo.mp3",
+        "success": "c-hippo.mp3",
+        "error": "n-hippo.mp3",
+        "warning": "w-hippo.mp3"
       }
     },
     {
@@ -188,11 +188,11 @@
       "image": "/images/animals/panda.webp",
       "description": "Pandas are bears native to China, known for their black-and-white fur.",
       "audio": {
-        "itemAudio": "/audio/this/animals/panda.mp3",
-        "question": "q-panda.mp3",
-        "success": "c-panda.mp3",
-        "error": "n-panda.mp3",
-        "warning": "w-panda.mp3"
+        "itemAudio": "/audio/this/animals/panda-bear.mp3",
+        "question": "q-panda-bear.mp3",
+        "success": "c-panda-bear.mp3",
+        "error": "n-panda-bear.mp3",
+        "warning": "w-panda-bear.mp3"
       }
     },
     {
@@ -201,11 +201,11 @@
       "image": "/images/animals/squirrel.webp",
       "description": "Squirrels are rodents known for their bushy tails and agility.",
       "audio": {
-        "itemAudio": "/audio/this/animals/squirrel.mp3",
-        "question": "q-squirrel.mp3",
-        "success": "c-squirrel.mp3",
-        "error": "n-squirrel.mp3",
-        "warning": "w-squirrel.mp3"
+        "itemAudio": "/audio/this/animals/squarrel.mp3",
+        "question": "q-squarrel.mp3",
+        "success": "c-squarrel.mp3",
+        "error": "n-squarrel.mp3",
+        "warning": "w-squarrel.mp3"
       }
     },
     {
@@ -279,11 +279,11 @@
       "image": "/images/animals/kangaroo.webp",
       "description": "Kangaroos are marsupials native to Australia, known for their hopping movement.",
       "audio": {
-        "itemAudio": "/audio/this/animals/kangaroo.mp3",
-        "question": "q-kangaroo.mp3",
-        "success": "c-kangaroo.mp3",
-        "error": "n-kangaroo.mp3",
-        "warning": "w-kangaroo.mp3"
+        "itemAudio": "/audio/this/animals/cangaroo.mp3",
+        "question": "q-cangaroo.mp3",
+        "success": "c-cangaroo.mp3",
+        "error": "n-cangaroo.mp3",
+        "warning": "w-cangaroo.mp3"
       }
     },
     {
@@ -318,11 +318,11 @@
       "image": "/images/animals/koala.webp",
       "description": "Koalas are marsupials native to Australia, known for their eucalyptus diet.",
       "audio": {
-        "itemAudio": "/audio/this/animals/koala.mp3",
-        "question": "q-koala.mp3",
-        "success": "c-koala.mp3",
-        "error": "n-koala.mp3",
-        "warning": "w-koala.mp3"
+        "itemAudio": "/audio/this/animals/koalabear-and-baby-koalabear.mp3",
+        "question": "q-koalabear-and-baby-koalabear.mp3",
+        "success": "c-koalabear-and-baby-koalabear.mp3",
+        "error": "n-koalabear-and-baby-koalabear.mp3",
+        "warning": "w-koalabear-and-baby-koalabear.mp3"
       }
     },
     {
@@ -396,11 +396,11 @@
       "image": "/images/animals/lizard.webp",
       "description": "Lizards are reptiles with scaly skin, commonly found in various habitats.",
       "audio": {
-        "itemAudio": "/audio/this/animals/lizard.mp3",
-        "question": "q-lizard.mp3",
-        "success": "c-lizard.mp3",
-        "error": "n-lizard.mp3",
-        "warning": "w-lizard.mp3"
+        "itemAudio": "/audio/this/animals/lezard.mp3",
+        "question": "q-lezard.mp3",
+        "success": "c-lezard.mp3",
+        "error": "n-lezard.mp3",
+        "warning": "w-lezard.mp3"
       }
     },
     {
@@ -415,306 +415,397 @@
         "error": "n-rabbit.mp3",
         "warning": "w-rabbit.mp3"
       }
-    },
-    {
-      "id": 33,
-      "name": "Dog",
-      "image": "/images/animals/dog.webp",
-      "description": "Dogs are domesticated mammals known for their loyalty and companionship.",
-      "audio": {
-        "itemAudio": "/audio/this/animals/dog.mp3",
-        "question": "q-dog.mp3",
-        "success": "c-dog.mp3",
-        "error": "n-dog.mp3",
-        "warning": "w-dog.mp3"
-      }
-    },
-    {
-      "id": 34,
-      "name": "Meerkat",
-      "image": "/images/animals/meerkat.webp",
-      "description": "Meerkats are small mongoose known for their upright posture.",
-      "audio": {
-        "itemAudio": "/audio/this/animals/meerkat.mp3",
-        "question": "q-meerkat.mp3",
-        "success": "c-meerkat.mp3",
-        "error": "n-meerkat.mp3",
-        "warning": "w-meerkat.mp3"
-      }
-    },
-    {
-      "id": 35,
-      "name": "Rhino",
-      "image": "/images/animals/rhino.webp",
-      "description": "Rhinoceroses are large mammals with distinctive horns on their snouts.",
-      "audio": {
-        "itemAudio": "/audio/this/animals/rhino.mp3",
-        "question": "q-rhino.mp3",
-        "success": "c-rhino.mp3",
-        "error": "n-rhino.mp3",
-        "warning": "w-rhino.mp3"
-      }
     }
   ],
   "transport": [
     {
       "id": 1,
+      "name": "Airplane",
+      "image": "/images/transport/airplane.webp",
+      "description": "An airplane is a powered flying vehicle with fixed wings and a weight greater than that of the air it displaces.",
+      "audio": {
+        "itemAudio": "/audio/this/transport/airplane.mp3",
+        "question": "/audio/which/transport/q-airplane.mp3",
+        "success": "/audio/success/transport/c-airplane.mp3",
+        "error": "/audio/error/transport/n-airplane.mp3",
+        "warning": "/audio/error/transport/w-airplane.mp3"
+      }
+    },
+    {
+      "id": 2,
       "name": "Ambulance",
       "image": "/images/transport/ambulance.webp",
       "description": "An ambulance is a vehicle equipped to transport sick or injured people to medical facilities.",
       "audio": {
         "itemAudio": "/audio/this/transport/ambulance.mp3",
-        "question": "q-ambulance.mp3",
-        "success": "c-ambulance.mp3",
-        "error": "n-ambulance.mp3",
-        "warning": "w-ambulance.mp3"
-      }
-    },
-    {
-      "id": 2,
-      "name": "Fire Engine",
-      "image": "/images/transport/fire-engine.webp",
-      "description": "A fire engine is a vehicle designed to assist in fighting fires.",
-      "audio": {
-        "itemAudio": "/audio/this/transport/fire-engine.mp3",
-        "question": "q-fire-engine.mp3",
-        "success": "c-fire-engine.mp3",
-        "error": "n-fire-engine.mp3",
-        "warning": "w-fire-engine.mp3"
+        "question": "/audio/which/transport/q-ambulance.mp3",
+        "success": "/audio/success/transport/c-ambulance.mp3",
+        "error": "/audio/error/transport/n-ambulance.mp3",
+        "warning": "/audio/error/transport/w-ambulance.mp3"
       }
     },
     {
       "id": 3,
-      "name": "Rickshaw",
-      "image": "/images/transport/rickshaw.webp",
-      "description": "A rickshaw is a three-wheeled vehicle, often pulled manually or motorized.",
+      "name": "Bicycle",
+      "image": "/images/transport/bicycle.webp",
+      "description": "A bicycle is a human-powered vehicle with two wheels, used for transportation or recreation.",
       "audio": {
-        "itemAudio": "/audio/this/transport/rickshaw.mp3",
-        "question": "q-rickshaw.mp3",
-        "success": "c-rickshaw.mp3",
-        "error": "n-rickshaw.mp3",
-        "warning": "w-rickshaw.mp3"
+        "itemAudio": "/audio/this/transport/bicycle.mp3",
+        "question": "/audio/which/transport/q-bicycle.mp3",
+        "success": "/audio/success/transport/c-bicycle.mp3",
+        "error": "/audio/error/transport/n-bicycle.mp3",
+        "warning": "/audio/error/transport/w-bicycle.mp3"
       }
     },
     {
       "id": 4,
-      "name": "Helicopter",
-      "image": "/images/transport/helicopter.webp",
-      "description": "A helicopter is an aircraft with rotating blades that can take off and land vertically.",
+      "name": "Boat",
+      "image": "/images/transport/boat.webp",
+      "description": "A boat is a watercraft used for transportation, fishing, or recreation.",
       "audio": {
-        "itemAudio": "/audio/this/transport/helicopter.mp3",
-        "question": "q-helicopter.mp3",
-        "success": "c-helicopter.mp3",
-        "error": "n-helicopter.mp3",
-        "warning": "w-helicopter.mp3"
+        "itemAudio": "/audio/this/transport/boat.mp3",
+        "question": "/audio/which/transport/q-boat.mp3",
+        "success": "/audio/success/transport/c-boat.mp3",
+        "error": "/audio/error/transport/n-boat.mp3",
+        "warning": "/audio/error/transport/w-boat.mp3"
       }
     },
     {
       "id": 5,
-      "name": "School Bus",
-      "image": "/images/transport/school-bus.webp",
-      "description": "A school bus is a vehicle used to transport students to and from school.",
-      "audio": {
-        "itemAudio": "/audio/this/transport/school-bus.mp3",
-        "question": "q-school-bus.mp3",
-        "success": "c-school-bus.mp3",
-        "error": "n-school-bus.mp3",
-        "warning": "w-school-bus.mp3"
-      }
-    },
-    {
-      "id": 6,
-      "name": "Auto Rickshaw",
-      "image": "/images/transport/auto-rikshaw.webp",
-      "description": "An auto rickshaw is a small three-wheeled motorized vehicle for public transport.",
-      "audio": {
-        "itemAudio": "/audio/this/transport/auto-rikshaw.mp3",
-        "question": "q-auto-rikshaw.mp3",
-        "success": "c-auto-rikshaw.mp3",
-        "error": "n-auto-rikshaw.mp3",
-        "warning": "w-auto-rikshaw.mp3"
-      }
-    },
-    {
-      "id": 7,
-      "name": "Horse",
-      "image": "/images/transport/horse.webp",
-      "description": "Horses have been used historically for transportation and pulling carriages.",
-      "audio": {
-        "itemAudio": "/audio/this/transport/horse.mp3",
-        "question": "q-horse.mp3",
-        "success": "c-horse.mp3",
-        "error": "n-horse.mp3",
-        "warning": "w-horse.mp3"
-      }
-    },
-    {
-      "id": 8,
-      "name": "Scooty",
-      "image": "/images/transport/scooty.webp",
-      "description": "A scooty is a lightweight, two-wheeled motorized vehicle.",
-      "audio": {
-        "itemAudio": "/audio/this/transport/scooty.mp3",
-        "question": "q-scooty.mp3",
-        "success": "c-scooty.mp3",
-        "error": "n-scooty.mp3",
-        "warning": "w-scooty.mp3"
-      }
-    },
-    {
-      "id": 9,
       "name": "Bus",
       "image": "/images/transport/bus.webp",
       "description": "A bus is a large vehicle used for public transport of passengers.",
       "audio": {
         "itemAudio": "/audio/this/transport/bus.mp3",
-        "question": "q-bus.mp3",
-        "success": "c-bus.mp3",
-        "error": "n-bus.mp3",
-        "warning": "w-bus.mp3"
+        "question": "/audio/which/transport/q-bus.mp3",
+        "success": "/audio/success/transport/c-bus.mp3",
+        "error": "/audio/error/transport/n-bus.mp3",
+        "warning": "/audio/error/transport/w-bus.mp3"
       }
     },
     {
-      "id": 10,
-      "name": "Ice Cream Van",
-      "image": "/images/transport/icecreaem-van.webp",
-      "description": "An ice cream van is a vehicle used to sell ice cream.",
-      "audio": {
-        "itemAudio": "/audio/this/transport/icecreaem-van.mp3",
-        "question": "q-icecreaem-van.mp3",
-        "success": "c-icecreaem-van.mp3",
-        "error": "n-icecreaem-van.mp3",
-        "warning": "w-icecreaem-van.mp3"
-      }
-    },
-    {
-      "id": 11,
-      "name": "Ship",
-      "image": "/images/transport/ship.webp",
-      "description": "A ship is a large watercraft used for transporting goods or people.",
-      "audio": {
-        "itemAudio": "/audio/this/transport/ship.mp3",
-        "question": "q-ship.mp3",
-        "success": "c-ship.mp3",
-        "error": "n-ship.mp3",
-        "warning": "w-ship.mp3"
-      }
-    },
-    {
-      "id": 12,
-      "name": "Car Carrying Truck",
-      "image": "/images/transport/car-carring-truck.webp",
+      "id": 6,
+      "name": "Car Transporter Truck",
+      "image": "/images/transport/car-transporter-truck.webp",
       "description": "A truck designed for carrying multiple cars.",
       "audio": {
-        "itemAudio": "/audio/this/transport/car-carring-truck.mp3",
-        "question": "q-car-carring-truck.mp3",
-        "success": "c-car-carring-truck.mp3",
-        "error": "n-car-carring-truck.mp3",
-        "warning": "w-car-carring-truck.mp3"
+        "itemAudio": "/audio/this/transport/car-transporter-truck.mp3",
+        "question": "/audio/which/transport/q-car-transporter-truck.mp3",
+        "success": "/audio/success/transport/c-car-transporter-truck.mp3",
+        "error": "/audio/error/transport/n-car-transporter-truck.mp3",
+        "warning": "/audio/error/transport/w-car-transporter-truck.mp3"
       }
     },
     {
-      "id": 13,
-      "name": "Jeep",
-      "image": "/images/transport/jeep.webp",
-      "description": "A jeep is a rugged vehicle often used for off-road travel.",
-      "audio": {
-        "itemAudio": "/audio/this/transport/jeep.mp3",
-        "question": "q-jeep.mp3",
-        "success": "c-jeep.mp3",
-        "error": "n-jeep.mp3",
-        "warning": "w-jeep.mp3"
-      }
-    },
-    {
-      "id": 14,
-      "name": "Microbus",
-      "image": "/images/transport/microbus.webp",
-      "description": "A microbus is a smaller bus designed for transporting fewer passengers.",
-      "audio": {
-        "itemAudio": "/audio/this/transport/microbus.mp3",
-        "question": "q-microbus.mp3",
-        "success": "c-microbus.mp3",
-        "error": "n-microbus.mp3",
-        "warning": "w-microbus.mp3"
-      }
-    },
-    {
-      "id": 15,
-      "name": "Speed Boat",
-      "image": "/images/transport/speed-boat.webp",
-      "description": "A speed boat is a small fast boat often used for recreation.",
-      "audio": {
-        "itemAudio": "/audio/this/transport/speed-boat.mp3",
-        "question": "q-speed-boat.mp3",
-        "success": "c-speed-boat.mp3",
-        "error": "n-speed-boat.mp3",
-        "warning": "w-speed-boat.mp3"
-      }
-    },
-    {
-      "id": 16,
+      "id": 7,
       "name": "Car",
       "image": "/images/transport/car.webp",
       "description": "A car is a four-wheeled motor vehicle for personal transport.",
       "audio": {
         "itemAudio": "/audio/this/transport/car.mp3",
-        "question": "q-car.mp3",
-        "success": "c-car.mp3",
-        "error": "n-car.mp3",
-        "warning": "w-car.mp3"
+        "question": "/audio/which/transport/q-car.mp3",
+        "success": "/audio/success/transport/c-car.mp3",
+        "error": "/audio/error/transport/n-car.mp3",
+        "warning": "/audio/error/transport/w-car.mp3"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Crane Truck",
+      "image": "/images/transport/crane-truck.webp",
+      "description": "A crane truck is a vehicle equipped with a crane for lifting heavy objects.",
+      "audio": {
+        "itemAudio": "/audio/this/transport/crane-truck.mp3",
+        "question": "/audio/which/transport/q-crane-truck.mp3",
+        "success": "/audio/success/transport/c-crane-truck.mp3",
+        "error": "/audio/error/transport/n-crane-truck.mp3",
+        "warning": "/audio/error/transport/w-crane-truck.mp3"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Cruise Ship",
+      "image": "/images/transport/cruiseline.webp",
+      "description": "A cruise ship is a large passenger ship used for pleasure voyages.",
+      "audio": {
+        "itemAudio": "/audio/this/transport/cruiseline.mp3",
+        "question": "/audio/which/transport/q-cruiseline.mp3",
+        "success": "/audio/success/transport/c-cruiseline.mp3",
+        "error": "/audio/error/transport/n-cruiseline.mp3",
+        "warning": "/audio/error/transport/w-cruiseline.mp3"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Firetruck",
+      "image": "/images/transport/firetruck.webp",
+      "description": "A firetruck is a vehicle designed to assist in fighting fires.",
+      "audio": {
+        "itemAudio": "/audio/this/transport/firetruck.mp3",
+        "question": "/audio/which/transport/q-firetruck.mp3",
+        "success": "/audio/success/transport/c-firetruck.mp3",
+        "error": "/audio/error/transport/n-firetruck.mp3",
+        "warning": "/audio/error/transport/w-firetruck.mp3"
+      }
+    },
+    {
+      "id": 11,
+      "name": "Foot Scooter",
+      "image": "/images/transport/foot-scooter.webp",
+      "description": "A foot scooter is a human-powered vehicle with a handlebar, deck, and wheels.",
+      "audio": {
+        "itemAudio": "/audio/this/transport/foot-scooter.mp3",
+        "question": "/audio/which/transport/q-foot-scooter.mp3",
+        "success": "/audio/success/transport/c-foot-scooter.mp3",
+        "error": "/audio/error/transport/n-foot-scooter.mp3",
+        "warning": "/audio/error/transport/w-foot-scooter.mp3"
+      }
+    },
+    {
+      "id": 12,
+      "name": "Helicopter",
+      "image": "/images/transport/helicopter.webp",
+      "description": "A helicopter is an aircraft with rotating blades that can take off and land vertically.",
+      "audio": {
+        "itemAudio": "/audio/this/transport/helicopter.mp3",
+        "question": "/audio/which/transport/q-helicopter.mp3",
+        "success": "/audio/success/transport/c-helicopter.mp3",
+        "error": "/audio/error/transport/n-helicopter.mp3",
+        "warning": "/audio/error/transport/w-helicopter.mp3"
+      }
+    },
+    {
+      "id": 13,
+      "name": "Horse",
+      "image": "/images/transport/horse.webp",
+      "description": "Horses have been used historically for transportation and pulling carriages.",
+      "audio": {
+        "itemAudio": "/audio/this/transport/horse.mp3",
+        "question": "/audio/which/transport/q-horse.mp3",
+        "success": "/audio/success/transport/c-horse.mp3",
+        "error": "/audio/error/transport/n-horse.mp3",
+        "warning": "/audio/error/transport/w-horse.mp3"
+      }
+    },
+    {
+      "id": 14,
+      "name": "Ice Cream Van",
+      "image": "/images/transport/icecream-van.webp",
+      "description": "An ice cream van is a vehicle used to sell ice cream.",
+      "audio": {
+        "itemAudio": "/audio/this/transport/icecream-van.mp3",
+        "question": "/audio/which/transport/q-icecream-van.mp3",
+        "success": "/audio/success/transport/c-icecream-van.mp3",
+        "error": "/audio/error/transport/n-icecream-van.mp3",
+        "warning": "/audio/error/transport/w-icecream-van.mp3"
+      }
+    },
+    {
+      "id": 15,
+      "name": "Jeep",
+      "image": "/images/transport/jeep.webp",
+      "description": "A jeep is a rugged vehicle often used for off-road travel.",
+      "audio": {
+        "itemAudio": "/audio/this/transport/jeep.mp3",
+        "question": "/audio/which/transport/q-jeep.mp3",
+        "success": "/audio/success/transport/c-jeep.mp3",
+        "error": "/audio/error/transport/n-jeep.mp3",
+        "warning": "/audio/error/transport/w-jeep.mp3"
+      }
+    },
+    {
+      "id": 16,
+      "name": "Jetski",
+      "image": "/images/transport/jetski.webp",
+      "description": "A jetski is a small, fast watercraft used for recreation.",
+      "audio": {
+        "itemAudio": "/audio/this/transport/jetski.mp3",
+        "question": "/audio/which/transport/q-jetski.mp3",
+        "success": "/audio/success/transport/c-jetski.mp3",
+        "error": "/audio/error/transport/n-jetski.mp3",
+        "warning": "/audio/error/transport/w-jetski.mp3"
       }
     },
     {
       "id": 17,
+      "name": "Minibus",
+      "image": "/images/transport/minibus.webp",
+      "description": "A minibus is a smaller bus designed for transporting fewer passengers.",
+      "audio": {
+        "itemAudio": "/audio/this/transport/minibus.mp3",
+        "question": "/audio/which/transport/q-minibus.mp3",
+        "success": "/audio/success/transport/c-minibus.mp3",
+        "error": "/audio/error/transport/n-minibus.mp3",
+        "warning": "/audio/error/transport/w-minibus.mp3"
+      }
+    },
+    {
+      "id": 18,
+      "name": "Mobile Camper",
+      "image": "/images/transport/mobile-camper.webp",
+      "description": "A mobile camper is a vehicle equipped with living quarters for travel and camping.",
+      "audio": {
+        "itemAudio": "/audio/this/transport/mobile-camper.mp3",
+        "question": "/audio/which/transport/q-mobile-camper.mp3",
+        "success": "/audio/success/transport/c-mobile-camper.mp3",
+        "error": "/audio/error/transport/n-mobile-camper.mp3",
+        "warning": "/audio/error/transport/w-mobile-camper.mp3"
+      }
+    },
+    {
+      "id": 19,
+      "name": "Motor Scooter",
+      "image": "/images/transport/motor-scooter.webp",
+      "description": "A motor scooter is a lightweight, two-wheeled motorized vehicle.",
+      "audio": {
+        "itemAudio": "/audio/this/transport/motor-scooter.mp3",
+        "question": "/audio/which/transport/q-motor-scooter.mp3",
+        "success": "/audio/success/transport/c-motor-scooter.mp3",
+        "error": "/audio/error/transport/n-motor-scooter.mp3",
+        "warning": "/audio/error/transport/w-motor-scooter.mp3"
+      }
+    },
+    {
+      "id": 20,
       "name": "Motorbike",
       "image": "/images/transport/motorbike.webp",
       "description": "A motorbike is a two-wheeled vehicle powered by an engine.",
       "audio": {
         "itemAudio": "/audio/this/transport/motorbike.mp3",
-        "question": "q-motorbike.mp3",
-        "success": "c-motorbike.mp3",
-        "error": "n-motorbike.mp3",
-        "warning": "w-motorbike.mp3"
+        "question": "/audio/which/transport/q-motorbike.mp3",
+        "success": "/audio/success/transport/c-motorbike.mp3",
+        "error": "/audio/error/transport/n-motorbike.mp3",
+        "warning": "/audio/error/transport/w-motorbike.mp3"
       }
     },
     {
-      "id": 18,
-      "name": "Pickup",
-      "image": "/images/transport/pickup.webp",
+      "id": 21,
+      "name": "One Wheeler",
+      "image": "/images/transport/one-wheeler.webp",
+      "description": "A one-wheeler is a single-wheeled motorized vehicle, often used for personal transport.",
+      "audio": {
+        "itemAudio": "/audio/this/transport/one-wheeler.mp3",
+        "question": "/audio/which/transport/q-one-wheeler.mp3",
+        "success": "/audio/success/transport/c-one-wheeler.mp3",
+        "error": "/audio/error/transport/n-one-wheeler.mp3",
+        "warning": "/audio/error/transport/w-one-wheeler.mp3"
+      }
+    },
+    {
+      "id": 22,
+      "name": "Pickup Truck",
+      "image": "/images/transport/pickup-truck.webp",
       "description": "A pickup truck is a light motor vehicle with an open rear cargo area.",
       "audio": {
-        "itemAudio": "/audio/this/transport/pickup.mp3",
-        "question": "q-pickup.mp3",
-        "success": "c-pickup.mp3",
-        "error": "n-pickup.mp3",
-        "warning": "w-pickup.mp3"
+        "itemAudio": "/audio/this/transport/pickup-truck.mp3",
+        "question": "/audio/which/transport/q-pickup-truck.mp3",
+        "success": "/audio/success/transport/c-pickup-truck.mp3",
+        "error": "/audio/error/transport/n-pickup-truck.mp3",
+        "warning": "/audio/error/transport/w-pickup-truck.mp3"
       }
     },
     {
-      "id": 19,
+      "id": 23,
       "name": "Police Car",
       "image": "/images/transport/police-car.webp",
       "description": "A police car is a vehicle used by law enforcement for patrol and response.",
       "audio": {
         "itemAudio": "/audio/this/transport/police-car.mp3",
-        "question": "q-police-car.mp3",
-        "success": "c-police-car.mp3",
-        "error": "n-police-car.mp3",
-        "warning": "w-police-car.mp3"
+        "question": "/audio/which/transport/q-police-car.mp3",
+        "success": "/audio/success/transport/c-police-car.mp3",
+        "error": "/audio/error/transport/n-police-car.mp3",
+        "warning": "/audio/error/transport/w-police-car.mp3"
       }
     },
     {
-      "id": 20,
-      "name": "Electric Wheelchair",
-      "image": "/images/transport/electric-wheel.webp",
-      "description": "An electric wheelchair is a motorized chair for individuals with mobility challenges.",
+      "id": 24,
+      "name": "Rickshaw",
+      "image": "/images/transport/rickshaw.webp",
+      "description": "A rickshaw is a three-wheeled vehicle, often pulled manually or motorized.",
       "audio": {
-        "itemAudio": "/audio/this/transport/electric-wheel.mp3",
-        "question": "q-electric-wheel.mp3",
-        "success": "c-electric-wheel.mp3",
-        "error": "n-electric-wheel.mp3",
-        "warning": "w-electric-wheel.mp3"
+        "itemAudio": "/audio/this/transport/rickshaw.mp3",
+        "question": "/audio/which/transport/q-rickshaw.mp3",
+        "success": "/audio/success/transport/c-rickshaw.mp3",
+        "error": "/audio/error/transport/n-rickshaw.mp3",
+        "warning": "/audio/error/transport/w-rickshaw.mp3"
+      }
+    },
+    {
+      "id": 25,
+      "name": "School Bus",
+      "image": "/images/transport/school-bus.webp",
+      "description": "A school bus is a vehicle used to transport students to and from school.",
+      "audio": {
+        "itemAudio": "/audio/this/transport/school-bus.mp3",
+        "question": "/audio/which/transport/q-school-bus.mp3",
+        "success": "/audio/success/transport/c-school-bus.mp3",
+        "error": "/audio/error/transport/n-school-bus.mp3",
+        "warning": "/audio/error/transport/w-school-bus.mp3"
+      }
+    },
+    {
+      "id": 26,
+      "name": "Three Wheel Taxi",
+      "image": "/images/transport/three-wheel-taxi.webp",
+      "description": "A three-wheel taxi is a small motorized vehicle used for public transport.",
+      "audio": {
+        "itemAudio": "/audio/this/transport/three-wheel-taxi.mp3",
+        "question": "/audio/which/transport/q-three-wheel-taxi.mp3",
+        "success": "/audio/success/transport/c-three-wheel-taxi.mp3",
+        "error": "/audio/error/transport/n-three-wheel-taxi.mp3",
+        "warning": "/audio/error/transport/w-three-wheel-taxi.mp3"
+      }
+    },
+    {
+      "id": 27,
+      "name": "Trailer Truck",
+      "image": "/images/transport/trailer-truck.webp",
+      "description": "A trailer truck is a large vehicle used for transporting goods over long distances.",
+      "audio": {
+        "itemAudio": "/audio/this/transport/trailer-truck.mp3",
+        "question": "/audio/which/transport/q-trailer-truck.mp3",
+        "success": "/audio/success/transport/c-trailer-truck.mp3",
+        "error": "/audio/error/transport/n-trailer-truck.mp3",
+        "warning": "/audio/error/transport/w-trailer-truck.mp3"
+      }
+    },
+    {
+      "id": 28,
+      "name": "Train",
+      "image": "/images/transport/train.webp",
+      "description": "A train is a series of connected vehicles that run on rails and transport passengers or goods.",
+      "audio": {
+        "itemAudio": "/audio/this/transport/train.mp3",
+        "question": "/audio/which/transport/q-train.mp3",
+        "success": "/audio/success/transport/c-train.mp3",
+        "error": "/audio/error/transport/n-train.mp3",
+        "warning": "/audio/error/transport/w-train.mp3"
+      }
+    },
+    {
+      "id": 29,
+      "name": "Van",
+      "image": "/images/transport/van.webp",
+      "description": "A van is a medium-sized motor vehicle used for transporting goods or people.",
+      "audio": {
+        "itemAudio": "/audio/this/transport/van.mp3",
+        "question": "/audio/which/transport/q-van.mp3",
+        "success": "/audio/success/transport/c-van.mp3",
+        "error": "/audio/error/transport/n-van.mp3",
+        "warning": "/audio/error/transport/w-van.mp3"
+      }
+    },
+    {
+      "id": 30,
+      "name": "Wheelchair",
+      "image": "/images/transport/wheel-chair.webp",
+      "description": "A wheelchair is a chair with wheels, used by people who have difficulty walking.",
+      "audio": {
+        "itemAudio": "/audio/this/transport/wheel-chair.mp3",
+        "question": "/audio/which/transport/q-wheel-chair.mp3",
+        "success": "/audio/success/transport/c-wheel-chair.mp3",
+        "error": "/audio/error/transport/n-wheel-chair.mp3",
+        "warning": "/audio/error/transport/w-wheel-chair.mp3"
       }
     }
   ],
@@ -1489,11 +1580,11 @@
       "image": "/images/fruits/apple.webp",
       "description": "An apple is an edible fruit produced by an apple tree.",
       "audio": {
-        "itemAudio": "/audio/this/apple.mp3",
-        "question": "q-apple.mp3",
-        "success": "c-apple.mp3",
-        "error": "n-apple.mp3",
-        "warning": "w-apple.mp3"
+        "itemAudio": "/audio/this/fruits/apples.mp3",
+        "question": "/audio/which/fruits/q-apple.mp3",
+        "success": "/audio/success/fruits/c-apple.mp3",
+        "error": "/audio/error/fruits/n-apple.mp3",
+        "warning": "/audio/error/fruits/w-apple.mp3"
       }
     },
     {
@@ -1502,11 +1593,11 @@
       "image": "/images/fruits/banana.webp",
       "description": "A banana is an elongated, edible fruit produced by several kinds of large herbaceous flowering plants.",
       "audio": {
-        "itemAudio": "/audio/this/banana.mp3",
-        "question": "q-banana.mp3",
-        "success": "c-banana.mp3",
-        "error": "n-banana.mp3",
-        "warning": "w-banana.mp3"
+        "itemAudio": "/audio/this/fruits/bananas.mp3",
+        "question": "/audio/which/fruits/q-banana.mp3",
+        "success": "/audio/success/fruits/c-banana.mp3",
+        "error": "/audio/error/fruits/n-banana.mp3",
+        "warning": "/audio/error/fruits/w-banana.mp3"
       }
     },
     {
@@ -1515,11 +1606,11 @@
       "image": "/images/fruits/orange.webp",
       "description": "An orange is a type of citrus fruit that is commonly eaten as food.",
       "audio": {
-        "itemAudio": "/audio/this/orange.mp3",
-        "question": "q-orange.mp3",
-        "success": "c-orange.mp3",
-        "error": "n-orange.mp3",
-        "warning": "w-orange.mp3"
+        "itemAudio": "/audio/this/fruits/orange.mp3",
+        "question": "/audio/which/fruits/q-orange.mp3",
+        "success": "/audio/success/fruits/c-orange.mp3",
+        "error": "/audio/error/fruits/n-orange.mp3",
+        "warning": "/audio/error/fruits/w-orange.mp3"
       }
     },
     {
@@ -1528,11 +1619,11 @@
       "image": "/images/fruits/strawberry.webp",
       "description": "A strawberry is a bright red, juicy, and sweet fruit with seeds on the outside.",
       "audio": {
-        "itemAudio": "/audio/this/strawberry.mp3",
-        "question": "q-strawberry.mp3",
-        "success": "c-strawberry.mp3",
-        "error": "n-strawberry.mp3",
-        "warning": "w-strawberry.mp3"
+        "itemAudio": "/audio/this/fruits/strawberry.mp3",
+        "question": "/audio/which/fruits/q-strawberry.mp3",
+        "success": "/audio/success/fruits/c-strawberry.mp3",
+        "error": "/audio/error/fruits/n-strawberry.mp3",
+        "warning": "/audio/error/fruits/w-strawberry.mp3"
       }
     },
     {
@@ -1541,349 +1632,180 @@
       "image": "/images/fruits/grapes.webp",
       "description": "Grapes are small, round fruits that grow in bunches and can be eaten fresh or used to make wine.",
       "audio": {
-        "itemAudio": "/audio/this/grapes.mp3",
-        "question": "q-grapes.mp3",
-        "success": "c-grapes.mp3",
-        "error": "n-grapes.mp3",
-        "warning": "w-grapes.mp3"
+        "itemAudio": "/audio/this/fruits/grapes.mp3",
+        "question": "/audio/which/fruits/q-grapes.mp3",
+        "success": "/audio/success/fruits/c-grapes.mp3",
+        "error": "/audio/error/fruits/n-grapes.mp3",
+        "warning": "/audio/error/fruits/w-grapes.mp3"
       }
     },
     {
       "id": 6,
-      "name": "Pineapple",
-      "image": "/images/fruits/pineapple.webp",
-      "description": "A pineapple is a tropical fruit with a tough, spiky exterior and sweet, yellow flesh inside.",
+      "name": "Mango",
+      "image": "/images/fruits/mango.webp",
+      "description": "A mango is a tropical stone fruit that has a sweet and tangy flavor.",
       "audio": {
-        "itemAudio": "/audio/this/pineapple.mp3",
-        "question": "q-pineapple.mp3",
-        "success": "c-pineapple.mp3",
-        "error": "n-pineapple.mp3",
-        "warning": "w-pineapple.mp3"
+        "itemAudio": "/audio/this/fruits/mango.mp3",
+        "question": "/audio/which/fruits/q-mango.mp3",
+        "success": "/audio/success/fruits/c-mango.mp3",
+        "error": "/audio/error/fruits/n-mango.mp3",
+        "warning": "/audio/error/fruits/w-mango.mp3"
       }
     },
     {
       "id": 7,
-      "name": "Blackberries",
-      "image": "/images/fruits/blackberries.webp",
-      "description": "Blackberries are small, dark purple fruits that are sweet and tart.",
+      "name": "Peach",
+      "image": "/images/fruits/peach.webp",
+      "description": "A peach is a soft, juicy fruit with a sweet, tangy flavor and a stone inside.",
       "audio": {
-        "itemAudio": "/audio/this/blackberries.mp3",
-        "question": "q-blackberries.mp3",
-        "success": "c-blackberries.mp3",
-        "error": "n-blackberries.mp3",
-        "warning": "w-blackberries.mp3"
+        "itemAudio": "/audio/this/fruits/peach.mp3",
+        "question": "/audio/which/fruits/q-peach.mp3",
+        "success": "/audio/success/fruits/c-peach.mp3",
+        "error": "/audio/error/fruits/n-peach.mp3",
+        "warning": "/audio/error/fruits/w-peach.mp3"
       }
     },
     {
       "id": 8,
-      "name": "Canary Melon",
-      "image": "/images/fruits/canary-melon.webp",
-      "description": "Canary melon is a large, bright yellow melon with a sweet, pale green to white flesh.",
+      "name": "Cherry",
+      "image": "/images/fruits/cherries.webp",
+      "description": "Cherries are small, round fruits that are typically red or black and have a pit in the center.",
       "audio": {
-        "itemAudio": "/audio/this/canary-melon.mp3",
-        "question": "q-canary-melon.mp3",
-        "success": "c-canary-melon.mp3",
-        "error": "n-canary-melon.mp3",
-        "warning": "w-canary-melon.mp3"
+        "itemAudio": "/audio/this/fruits/cherries.mp3",
+        "question": "/audio/which/fruits/q-cherry.mp3",
+        "success": "/audio/success/fruits/c-cherry.mp3",
+        "error": "/audio/error/fruits/n-cherry.mp3",
+        "warning": "/audio/error/fruits/w-cherry.mp3"
       }
     },
     {
       "id": 9,
-      "name": "Cherry",
-      "image": "/images/fruits/cherry.webp",
-      "description": "Cherries are small, round fruits that are typically red or black and have a pit in the center.",
-      "audio": {
-        "itemAudio": "/audio/this/cherry.mp3",
-        "question": "q-cherry.mp3",
-        "success": "c-cherry.mp3",
-        "error": "n-cherry.mp3",
-        "warning": "w-cherry.mp3"
-      }
-    },
-    {
-      "id": 10,
       "name": "Coconut",
       "image": "/images/fruits/coconut.webp",
       "description": "A coconut is a large, brown, hard-shelled fruit with a white, edible interior.",
       "audio": {
-        "itemAudio": "/audio/this/coconut.mp3",
-        "question": "q-coconut.mp3",
-        "success": "c-coconut.mp3",
-        "error": "n-coconut.mp3",
-        "warning": "w-coconut.mp3"
+        "itemAudio": "/audio/this/fruits/coconut.mp3",
+        "question": "/audio/which/fruits/q-coconut.mp3",
+        "success": "/audio/success/fruits/c-coconut.mp3",
+        "error": "/audio/error/fruits/n-coconut.mp3",
+        "warning": "/audio/error/fruits/w-coconut.mp3"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Kiwi",
+      "image": "/images/fruits/kiwi.webp",
+      "description": "Kiwi is a small, fuzzy fruit with green flesh and tiny black seeds.",
+      "audio": {
+        "itemAudio": "/audio/this/fruits/kiwi.mp3",
+        "question": "/audio/which/fruits/q-kiwi.mp3",
+        "success": "/audio/success/fruits/c-kiwi.mp3",
+        "error": "/audio/error/fruits/n-kiwi.mp3",
+        "warning": "/audio/error/fruits/w-kiwi.mp3"
       }
     },
     {
       "id": 11,
-      "name": "Fruit Mix",
-      "image": "/images/fruits/fruit01.webp",
-      "description": "A mix of various fruits, often used in salads or desserts.",
-      "audio": {
-        "itemAudio": "/audio/this/fruit01.mp3",
-        "question": "q-fruit01.mp3",
-        "success": "c-fruit01.mp3",
-        "error": "n-fruit01.mp3",
-        "warning": "w-fruit01.mp3"
-      }
-    },
-    {
-      "id": 12,
       "name": "Granadilla",
       "image": "/images/fruits/granadilla.webp",
       "description": "Granadilla is a type of passion fruit with a sweet, tangy flavor.",
       "audio": {
-        "itemAudio": "/audio/this/granadilla.mp3",
-        "question": "q-granadilla.mp3",
-        "success": "c-granadilla.mp3",
-        "error": "n-granadilla.mp3",
-        "warning": "w-granadilla.mp3"
+        "itemAudio": "/audio/this/fruits/granadilla.mp3",
+        "question": "/audio/which/fruits/q-granadilla.mp3",
+        "success": "/audio/success/fruits/c-granadilla.mp3",
+        "error": "/audio/error/fruits/n-granadilla.mp3",
+        "warning": "/audio/error/fruits/w-granadilla.mp3"
+      }
+    },
+    {
+      "id": 12,
+      "name": "Watermelon",
+      "image": "/images/fruits/watermelon.webp",
+      "description": "A watermelon is a large fruit with a green rind and sweet, juicy red flesh.",
+      "audio": {
+        "itemAudio": "/audio/this/fruits/watermelon.mp3",
+        "question": "/audio/which/fruits/q-watermelon.mp3",
+        "success": "/audio/success/fruits/c-watermelon.mp3",
+        "error": "/audio/error/fruits/n-watermelon.mp3",
+        "warning": "/audio/error/fruits/w-watermelon.mp3"
       }
     },
     {
       "id": 13,
-      "name": "Grapefruit",
-      "image": "/images/fruits/grapefruit.webp",
-      "description": "Grapefruit is a large, tart citrus fruit with a thick rind.",
+      "name": "Nectarine",
+      "image": "/images/fruits/nectarine.webp",
+      "description": "A nectarine is a smooth-skinned peach with a sweet and juicy flavor.",
       "audio": {
-        "itemAudio": "/audio/this/grapefruit.mp3",
-        "question": "q-grapefruit.mp3",
-        "success": "c-grapefruit.mp3",
-        "error": "n-grapefruit.mp3",
-        "warning": "w-grapefruit.mp3"
+        "itemAudio": "/audio/this/fruits/nectarine.mp3",
+        "question": "/audio/which/fruits/q-nectarine.mp3",
+        "success": "/audio/success/fruits/c-nectarine.mp3",
+        "error": "/audio/error/fruits/n-nectarine.mp3",
+        "warning": "/audio/error/fruits/w-nectarine.mp3"
       }
     },
     {
       "id": 14,
-      "name": "Green Apple",
-      "image": "/images/fruits/green-apple.webp",
-      "description": "Green apples are tart and crisp, often used in baking and cooking.",
+      "name": "Tenderings",
+      "image": "/images/fruits/tenderings.webp",
+      "description": "Tenderings are soft and sweet fruits, often enjoyed fresh or in cooking.",
       "audio": {
-        "itemAudio": "/audio/this/green-apple.mp3",
-        "question": "q-green-apple.mp3",
-        "success": "c-green-apple.mp3",
-        "error": "n-green-apple.mp3",
-        "warning": "w-green-apple.mp3"
+        "itemAudio": "/audio/this/fruits/tenderings.mp3",
+        "question": "/audio/which/fruits/q-tenderings.mp3",
+        "success": "/audio/success/fruits/c-tenderings.mp3",
+        "error": "/audio/error/fruits/n-tenderings.mp3",
+        "warning": "/audio/error/fruits/w-tenderings.mp3"
       }
     },
     {
       "id": 15,
-      "name": "Green Pear",
-      "image": "/images/fruits/green-pear.webp",
-      "description": "Green pears are sweet and juicy, often eaten fresh or used in desserts.",
+      "name": "Guava",
+      "image": "/images/fruits/guava.webp",
+      "description": "Guava is a tropical fruit with a strong aroma and a sweet, tangy flavor.",
       "audio": {
-        "itemAudio": "/audio/this/green-pear.mp3",
-        "question": "q-green-pear.mp3",
-        "success": "c-green-pear.mp3",
-        "error": "n-green-pear.mp3",
-        "warning": "w-green-pear.mp3"
+        "itemAudio": "/audio/this/fruits/guava.mp3",
+        "question": "/audio/which/fruits/q-guava.mp3",
+        "success": "/audio/success/fruits/c-guava.mp3",
+        "error": "/audio/error/fruits/n-guava.mp3",
+        "warning": "/audio/error/fruits/w-guava.mp3"
       }
     },
     {
       "id": 16,
-      "name": "Guava",
-      "image": "/images/fruits/guava.webp",
-      "description": "Guava is a tropical fruit with a sweet, fragrant flavor.",
+      "name": "Naartjie",
+      "image": "/images/fruits/naartjie.webp",
+      "description": "Naartjie is a small citrus fruit, similar to a mandarin or tangerine.",
       "audio": {
-        "itemAudio": "/audio/this/guava.mp3",
-        "question": "q-guava.mp3",
-        "success": "c-guava.mp3",
-        "error": "n-guava.mp3",
-        "warning": "w-guava.mp3"
+        "itemAudio": "/audio/this/fruits/naartjie.mp3",
+        "question": "/audio/which/fruits/q-naartjie.mp3",
+        "success": "/audio/success/fruits/c-naartjie.mp3",
+        "error": "/audio/error/fruits/n-naartjie.mp3",
+        "warning": "/audio/error/fruits/w-naartjie.mp3"
       }
     },
     {
       "id": 17,
-      "name": "Guava (Variety)",
-      "image": "/images/fruits/guava01.webp",
-      "description": "A variety of guava with a slightly different flavor and appearance.",
+      "name": "Pear",
+      "image": "/images/fruits/pear.webp",
+      "description": "A pear is a fruit with a rounded base and tapering top, typically sweet and juicy.",
       "audio": {
-        "itemAudio": "/audio/this/guava01.mp3",
-        "question": "q-guava01.mp3",
-        "success": "c-guava01.mp3",
-        "error": "n-guava01.mp3",
-        "warning": "w-guava01.mp3"
+        "itemAudio": "/audio/this/fruits/pear.mp3",
+        "question": "/audio/which/fruits/q-pear.mp3",
+        "success": "/audio/success/fruits/c-pear.mp3",
+        "error": "/audio/error/fruits/n-pear.mp3",
+        "warning": "/audio/error/fruits/w-pear.mp3"
       }
     },
     {
       "id": 18,
-      "name": "Lemon",
-      "image": "/images/fruits/lemon.webp",
-      "description": "Lemons are bright yellow citrus fruits known for their tart flavor.",
-      "audio": {
-        "itemAudio": "/audio/this/lemon.mp3",
-        "question": "q-lemon.mp3",
-        "success": "c-lemon.mp3",
-        "error": "n-lemon.mp3",
-        "warning": "w-lemon.mp3"
-      }
-    },
-    {
-      "id": 19,
-      "name": "Lichee",
-      "image": "/images/fruits/lichee.webp",
-      "description": "Lichee is a tropical fruit with a rough, red skin and sweet, white flesh.",
-      "audio": {
-        "itemAudio": "/audio/this/lichee.mp3",
-        "question": "q-lichee.mp3",
-        "success": "c-lichee.mp3",
-        "error": "n-lichee.mp3",
-        "warning": "w-lichee.mp3"
-      }
-    },
-    {
-      "id": 20,
-      "name": "Mango",
-      "image": "/images/fruits/mango.webp",
-      "description": "Mango is a tropical fruit with a sweet, juicy flesh and a large pit.",
-      "audio": {
-        "itemAudio": "/audio/this/mango.mp3",
-        "question": "q-mango.mp3",
-        "success": "c-mango.mp3",
-        "error": "n-mango.mp3",
-        "warning": "w-mango.mp3"
-      }
-    },
-    {
-      "id": 21,
-      "name": "Naartjie",
-      "image": "/images/fruits/naartjie.webp",
-      "description": "Naartjie is a type of citrus fruit similar to a mandarin or tangerine.",
-      "audio": {
-        "itemAudio": "/audio/this/naartjie.mp3",
-        "question": "q-naartjie.mp3",
-        "success": "c-naartjie.mp3",
-        "error": "n-naartjie.mp3",
-        "warning": "w-naartjie.mp3"
-      }
-    },
-    {
-      "id": 22,
-      "name": "Nectarine",
-      "image": "/images/fruits/nectarine.webp",
-      "description": "Nectarines are smooth-skinned fruits similar to peaches, with a sweet and juicy flesh.",
-      "audio": {
-        "itemAudio": "/audio/this/nectarine.mp3",
-        "question": "q-nectarine.mp3",
-        "success": "c-nectarine.mp3",
-        "error": "n-nectarine.mp3",
-        "warning": "w-nectarine.mp3"
-      }
-    },
-    {
-      "id": 23,
-      "name": "Orange (Variety)",
-      "image": "/images/fruits/orange02.webp",
-      "description": "A variety of orange with a slightly different flavor and appearance.",
-      "audio": {
-        "itemAudio": "/audio/this/orange02.mp3",
-        "question": "q-orange02.mp3",
-        "success": "c-orange02.mp3",
-        "error": "n-orange02.mp3",
-        "warning": "w-orange02.mp3"
-      }
-    },
-    {
-      "id": 24,
-      "name": "Pawpaw",
-      "image": "/images/fruits/pawpaw.webp",
-      "description": "Pawpaw is a tropical fruit with a sweet, custard-like flavor.",
-      "audio": {
-        "itemAudio": "/audio/this/pawpaw.mp3",
-        "question": "q-pawpaw.mp3",
-        "success": "c-pawpaw.mp3",
-        "error": "n-pawpaw.mp3",
-        "warning": "w-pawpaw.mp3"
-      }
-    },
-    {
-      "id": 25,
-      "name": "Peach",
-      "image": "/images/fruits/peach.webp",
-      "description": "Peaches are juicy, sweet fruits with a fuzzy skin and a large pit.",
-      "audio": {
-        "itemAudio": "/audio/this/peach.mp3",
-        "question": "q-peach.mp3",
-        "success": "c-peach.mp3",
-        "error": "n-peach.mp3",
-        "warning": "w-peach.mp3"
-      }
-    },
-    {
-      "id": 26,
       "name": "Pineapple",
       "image": "/images/fruits/pineapple.webp",
-      "description": "A pineapple is a tropical fruit with a tough, spiky exterior and sweet, yellow flesh inside.",
+      "description": "Pineapple is a tropical fruit with a tough outer rind and sweet, tangy flesh.",
       "audio": {
-        "itemAudio": "/audio/this/pineapple.mp3",
-        "question": "q-pineapple.mp3",
-        "success": "c-pineapple.mp3",
-        "error": "n-pineapple.mp3",
-        "warning": "w-pineapple.mp3"
-      }
-    },
-    {
-      "id": 27,
-      "name": "Pomegranate",
-      "image": "/images/fruits/pomegranate.webp",
-      "description": "Pomegranates are round, red fruits with a tough outer skin and sweet, juicy seeds inside.",
-      "audio": {
-        "itemAudio": "/audio/this/pomegranate.mp3",
-        "question": "q-pomegranate.mp3",
-        "success": "c-pomegranate.mp3",
-        "error": "n-pomegranate.mp3",
-        "warning": "w-pomegranate.mp3"
-      }
-    },
-    {
-      "id": 28,
-      "name": "Red Apple",
-      "image": "/images/fruits/red-apple.webp",
-      "description": "Red apples are sweet and crisp, often eaten fresh or used in desserts.",
-      "audio": {
-        "itemAudio": "/audio/this/red-apple.mp3",
-        "question": "q-red-apple.mp3",
-        "success": "c-red-apple.mp3",
-        "error": "n-red-apple.mp3",
-        "warning": "w-red-apple.mp3"
-      }
-    },
-    {
-      "id": 29,
-      "name": "Ripe Bananas",
-      "image": "/images/fruits/ripe-bananas.webp",
-      "description": "Ripe bananas are sweet and soft, often eaten fresh or used in baking.",
-      "audio": {
-        "itemAudio": "/audio/this/ripe-bananas.mp3",
-        "question": "q-ripe-bananas.mp3",
-        "success": "c-ripe-bananas.mp3",
-        "error": "n-ripe-bananas.mp3",
-        "warning": "w-ripe-bananas.mp3"
-      }
-    },
-    {
-      "id": 30,
-      "name": "Ripe Whole Kiwi",
-      "image": "/images/fruits/ripe-whole-kiwi.webp",
-      "description": "Ripe whole kiwi is a small, brown, fuzzy fruit with a bright green, sweet, and tangy flesh.",
-      "audio": {
-        "itemAudio": "/audio/this/ripe-whole-kiwi.mp3",
-        "question": "q-ripe-whole-kiwi.mp3",
-        "success": "c-ripe-whole-kiwi.mp3",
-        "error": "n-ripe-whole-kiwi.mp3",
-        "warning": "w-ripe-whole-kiwi.mp3"
-      }
-    },
-    {
-      "id": 31,
-      "name": "Watermelon",
-      "image": "/images/fruits/watermelon.webp",
-      "description": "Watermelon is a large, green fruit with a sweet, juicy, red interior.",
-      "audio": {
-        "itemAudio": "/audio/this/watermelon.mp3",
-        "question": "q-watermelon.mp3",
-        "success": "c-watermelon.mp3",
-        "error": "n-watermelon.mp3",
-        "warning": "w-watermelon.mp3"
+        "itemAudio": "/audio/this/fruits/pineapple.mp3",
+        "question": "/audio/which/fruits/q-pineapple.mp3",
+        "success": "/audio/success/fruits/c-pineapple.mp3",
+        "error": "/audio/error/fruits/n-pineapple.mp3",
+        "warning": "/audio/error/fruits/w-pineapple.mp3"
       }
     }
   ],
