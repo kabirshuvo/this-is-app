@@ -16,8 +16,6 @@ import PrevButton from "@/components/pagination/PrevButton";
 import NextButton from "@/components/pagination/NextButton";
 import { motion } from "framer-motion";
 
-const ITEMS_PER_PAGE = window.innerWidth < 1024 ? 6 : 12;
-
 const Home: React.FC = () => {
   const locale = useLocale();
   const categories = useCategories();
@@ -30,11 +28,12 @@ const Home: React.FC = () => {
   const [gridPositions, setGridPositions] = useState<
     { x: number; y: number }[]
   >([]);
+  const [itemsPerPage, setItemsPerPage] = useState(12); // Default value
 
   // Calculate total pages
   const totalPagesCalculated = useMemo(
-    () => Math.ceil(categories.length / ITEMS_PER_PAGE),
-    [categories.length]
+    () => Math.ceil(categories.length / itemsPerPage),
+    [categories.length, itemsPerPage]
   );
 
   useEffect(() => {
@@ -48,10 +47,10 @@ const Home: React.FC = () => {
   const paginatedCategories = useMemo(
     () =>
       categories.slice(
-        (currentPage - 1) * ITEMS_PER_PAGE,
-        currentPage * ITEMS_PER_PAGE
+        (currentPage - 1) * itemsPerPage,
+        currentPage * itemsPerPage
       ),
-    [categories, currentPage]
+    [categories, currentPage, itemsPerPage]
   );
 
   useEffect(() => {
@@ -60,8 +59,7 @@ const Home: React.FC = () => {
     const calculateGridPositions = () => {
       const positions: { x: number; y: number }[] = [];
       const count = categories.length;
-      const cols =
-        window.innerWidth < 640 ? 2 : window.innerWidth > 1024 ? 6 : 3;
+      const cols = window.innerWidth < 640 ? 2 : window.innerWidth > 1024 ? 6 : 3;
       const gap = 20;
       const cardWidth =
         window.innerWidth < 1024 ? 140 : window.innerWidth < 1920 ? 160 : 200;
@@ -94,8 +92,30 @@ const Home: React.FC = () => {
 
     calculateGridPositions();
 
-    return () => clearTimeout(timer);
+    // Recalculate on window resize
+    window.addEventListener("resize", calculateGridPositions);
+
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener("resize", calculateGridPositions);
+    };
   }, [categories.length, paginatedCategories]);
+
+  useEffect(() => {
+    // Set ITEMS_PER_PAGE based on window width
+    const handleResize = () => {
+      setItemsPerPage(window.innerWidth < 1024 ? 6 : 12);
+    };
+
+    // Set initial value
+    handleResize();
+
+    // Add event listener for window resize
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <div className="flex flex-col justify-between items-center w-full h-full mt-16 xl:mt-0 2xl:mt-12 px-4 gap-4">
