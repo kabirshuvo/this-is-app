@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import ClientProvider from "@/app/context/ReduxProvider";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
 import HeaderOne from "@/components/shared/header/headerOne";
 import Footer from "@/components/shared/Footer";
-import "./globals.css";
+import "../../globals.css";
+import NotFound from "./not-found";
 
 const merkerFelt = localFont({
-  src: "./fonts/Marker_felt_wide_bold.ttf",
+  src: "../../fonts/Marker_felt_wide_bold.ttf",
   variable: "--font-marker-felt",
   weight: "100 900",
 });
@@ -20,20 +20,30 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({
   children,
-  params: { locale },
+  params,
 }: {
   children: React.ReactNode;
   params: { locale: string };
 }) {
-  const messages = await getMessages();
+  // Destructure `locale` from `params`
+  const { locale } = params;
+
+  let messages;
+  try {
+    // Dynamically import the messages for the given locale
+    messages = (await import(`../../../messages/${locale}.json`)).default;
+  } catch (error) {
+    // If the locale file doesn't exist, render the `NotFound` page
+    return <NotFound />;
+  }
 
   return (
-    <NextIntlClientProvider messages={messages}>
-      <ClientProvider>
-        <html lang={locale}>
-          <body
-            className={` ${merkerFelt.variable} antialiased bg-tjblue-500 text-tjyellow-500 min-h-screen flex flex-col justify-between `}
-          >
+    <html lang={locale}>
+      <body
+        className={`${merkerFelt.variable} antialiased bg-tjblue-500 text-tjyellow-500 min-h-screen flex flex-col justify-between`}
+      >
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          <ClientProvider>
             <div className="-mt-6">
               <HeaderOne />
             </div>
@@ -41,9 +51,9 @@ export default async function RootLayout({
               {children}
             </main>
             <Footer />
-          </body>
-        </html>
-      </ClientProvider>
-    </NextIntlClientProvider>
+          </ClientProvider>
+        </NextIntlClientProvider>
+      </body>
+    </html>
   );
 }

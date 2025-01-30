@@ -1,6 +1,5 @@
 {
-  "Index": {
-    "title": "Startseite",
-    "description": "Willkommen auf der Startseite"
+  "Footer": {
+    "message": "Dies ist die Fußzeile."
   }
 }

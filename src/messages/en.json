@@ -1,6 +1,29 @@
 {
-  "Index": {
-    "title": "Home",
-    "description": "Welcome to the home page"
+  "HeaderOne": {
+    "title": {
+      "default": "Learn words game",
+      "animals": "Animals",
+      "transport": "Transport",
+      "clothing": "Clothing",
+      "fun-things": "Fun Things",
+      "vegetables": "Vegetables",
+      "fruits": "Fruits",
+      "tools": "Tools",
+      "toys": "Toys",
+      "nature": "Nature",
+      "activities": "Activities",
+      "treats-and-food": "Treats and Food",
+      "nuts": "Nuts",
+      "home": "Home"
+    },
+    "menu": {
+      "home": "Home",
+      "aboutUs": "About Us",
+      "settings": "Settings",
+      "help": "Help"
+    }
+  },
+  "Footer": {
+    "message": "This is the footer."
   }
 }

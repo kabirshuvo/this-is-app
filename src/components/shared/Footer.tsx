@@ -1,7 +1,6 @@
 "use client";
 
-import { useRouter } from "next/navigation";
-import { usePathname } from "next/navigation";
+import { useRouter, usePathname } from 'next/navigation';
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -11,17 +10,28 @@ export default function Footer() {
   const pathname = usePathname();
   const [currentLang, setCurrentLang] = useState("en");
 
+  // Function to handle locale change
+  const handleLocaleChange = (locale: string) => {
+    // Update the current language state
+    setCurrentLang(locale);
+
+    // Store the selected language in localStorage
+    localStorage.setItem("language", locale);
+
+    // Split the pathname by `/` and replace the current locale
+    const pathSegments = pathname.split('/');
+    pathSegments[1] = locale; // Replace the current locale
+    const newPathname = pathSegments.join('/'); // Rejoin the segments
+
+    // Navigate to the new path
+    router.push(newPathname);
+  };
+
+  // Set the initial language from localStorage
   useEffect(() => {
     const storedLang = localStorage.getItem("language") || "en";
     setCurrentLang(storedLang);
   }, []);
-
-  const changeLanguage = (lang: string) => {
-    setCurrentLang(lang);
-    localStorage.setItem("language", lang);
-    const newPath = pathname.replace(/^\/[a-z]{2}/, `/${lang}`);
-    router.push(newPath);
-  };
 
   return (
     <footer className="py-1 flex items-center justify-around md:justify-between bg-[#049c2c] text-white px-4 md:px-12 gap-2 mt-8">
@@ -50,7 +60,7 @@ export default function Footer() {
         {/* Language selector for English */}
         <div
           className="relative flex cursor-pointer"
-          onClick={() => changeLanguage("en")}
+          onClick={() => handleLocaleChange('en')}
         >
           <Image
             src={
@@ -78,9 +88,9 @@ export default function Footer() {
         {/* Language selector for Zulu */}
         <div
           className="relative flex cursor-pointer"
-          // onClick={() => changeLanguage("zu")}
+          onClick={() => handleLocaleChange('zu')}
         >
-          {/* <Image
+          <Image
             src={
               currentLang === "zu"
                 ? "/footerAssets/ZuluWithRightTickMark.svg"
@@ -92,16 +102,7 @@ export default function Footer() {
             className={`w-40 h-8 md:w-32 md:h-12 hover:scale-110 transform transition duration-200 ${
               currentLang === "zu" ? "" : "mt-1"
             }`}
-          /> */}
-          <Link href="/en/under-construction">
-            <Image
-              src="/footerAssets/ZuluWithNoRightTickMark.svg"
-              alt="ZuluWithNoRightTickMark"
-              width={200}
-              height={200}
-              className={`w-40 h-8 md:w-32 md:h-12 hover:scale-110 transform transition duration-200 `}
-            />
-          </Link>
+          />
         </div>
       </div>
 

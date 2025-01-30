@@ -23,8 +23,8 @@ export default function Pagination() {
         <Image
           src="/images/arrow.png"
           alt="Previous page"
-          width={24}
-          height={24}
+          width={10}
+          height={10}
           className="rotate-180"
         />
       </button>
@@ -35,10 +35,10 @@ export default function Pagination() {
           key={page}
           onClick={() => dispatch(setPage(page))}
           className={cn(
-            "w-8 h-8 rounded-full text-xl font-bold transition-colors",
+            "w-6 h-6 rounded-full text-xl font-bold transition-colors",
             currentPage === page
-              ? "bg-blue-600 text-white"
-              : "bg-white text-blue-600 hover:bg-blue-100"
+              ? "bg-tjblue-500 text-tjyellow-500"
+              : "bg-tjyellow-100 text-blue-600 hover:bg-tjyellow-200"
           )}
           aria-label={`Page ${page}`}
           aria-current={currentPage === page ? "page" : undefined}
@@ -54,7 +54,7 @@ export default function Pagination() {
         className="p-2 text-white rounded disabled:opacity-50 hover:opacity-80 transition-opacity"
         aria-label="Next page"
       >
-        <Image src="/images/arrow.png" alt="Next page" width={24} height={24} />
+        <Image src="/images/arrow.png" alt="Next page" width={10} height={10} />
       </button>
     </div>
   );

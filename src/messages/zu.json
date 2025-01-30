@@ -1,6 +1,29 @@
 {
-  "Index": {
-    "title": "Ikhaya",
-    "description": "Siyakwamukela ekhasini lasekhaya"
+  "HeaderOne": {
+    "title": {
+      "default": "Yidlala yokufunda amagama",
+      "animals": "Izilwane",
+      "transport": "Ezokuthutha",
+      "clothing": "Izingubo",
+      "fun-things": "Izinto Zokuzijabulisa",
+      "vegetables": "Imifino",
+      "fruits": "Izithelo",
+      "tools": "Amathuluzi",
+      "toys": "Izinto Zokudlala",
+      "nature": "Imvelo",
+      "activities": "Imisebenzi",
+      "treats-and-food": "Ama-Treats Nokudla",
+      "nuts": "Amantongomane",
+      "home": "Ikhaya"
+    },
+    "menu": {
+      "home": "Ikhaya",
+      "aboutUs": "Mayelana Nathi",
+      "settings": "Izilungiselelo",
+      "help": "Usizo"
+    }
+  },
+  "Footer": {
+    "message": "Lena yibhodi."
   }
 }

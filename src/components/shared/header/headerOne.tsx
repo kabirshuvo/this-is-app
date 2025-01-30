@@ -15,6 +15,7 @@ import {
 import PencilAnimation from "./PencilAnimation";
 import localFont from "next/font/local";
 import Pagination from "@/components/pagination/Pagination";
+import { useTranslations } from "next-intl";
 
 const kabelu = localFont({
   src: "./KABELU.ttf",
@@ -25,17 +26,38 @@ const kabelu = localFont({
 export default function HeaderOne() {
   const locale = useLocale();
   const pathname = usePathname();
-  const [category, setCategory] = useState("LEARN WORD GAMES");
+  const t = useTranslations("HeaderOne"); // Hook to access translations
+  const [category, setCategory] = useState("");
 
   useEffect(() => {
+    // Log pathname to ensure it's accessible
+    console.log("Current Pathname:", pathname);
+
+    // Split the pathname into parts
     const pathParts = pathname.split("/");
-    const currentCategory = pathParts[pathParts.length - 1];
-    setCategory(
-      currentCategory !== locale && currentCategory !== ""
-        ? decodeURIComponent(currentCategory).toUpperCase()
-        : "LEARN WORDS GAME"
-    );
-  }, [pathname, locale]);
+
+    // Check if the pathname is the home page (e.g., `/en` or `/zu`)
+    const isHomePage = pathParts.length === 2 && (pathParts[1] === "en" || pathParts[1] === "zu");
+
+    if (isHomePage) {
+      // Use the default title for the home page
+      const defaultTitle = t("title.default");
+      setCategory(defaultTitle.toUpperCase());
+      console.log("Home page detected. Category set to:", defaultTitle);
+    } else {
+      // Get the last part of the path as the category
+      const currentCategory = pathParts[pathParts.length - 1];
+
+      // Translate the category
+      const translatedCategory = t(`title.${currentCategory.toLowerCase()}`, {
+        fallback: t("title.default"), // Fallback to default title if translation key doesn't exist
+      });
+
+      // Set the category and log the final category for debugging
+      setCategory(translatedCategory.toUpperCase());
+      console.log("Category set to:", translatedCategory);
+    }
+  }, [pathname, locale, t]);
 
   const categoryLetters = category.split("");
   const letterVariants = {
@@ -52,10 +74,10 @@ export default function HeaderOne() {
   const animatedKey = `${category}-${pathname}`;
 
   const navItems = [
-    { label: "Home", href: `/${locale}` },
-    { label: "About Us", href: `/${locale}/about` },
-    { label: "Settings", href: `/${locale}/settings` },
-    { label: "Help", href: `/${locale}/help` },
+    { label: t("menu.home"), href: `/${locale}` },
+    { label: t("menu.aboutUs"), href: `/${locale}/about` },
+    { label: t("menu.settings"), href: `/${locale}/settings` },
+    { label: t("menu.help"), href: `/${locale}/help` },
   ];
 
   return (
@@ -83,21 +105,21 @@ export default function HeaderOne() {
       {/* Magnifying Glass and Text in the middle */}
       <div className="flex justify-between items-center 2xl:py-4 py-2 md:ml-16 mb-16 gap-6 md:gap-8">
         <PencilAnimation animatedKey={animatedKey} />
-
-        <h1
-          className={`${kabelu.variable} kabelu-font text-md md:text-4xl lg:text-5xl 2xl:text-7xl pb-6 mt-20 md:mt-4 flex`}
+        <div className="flex flex-col justify-center items-center">
+          <h1
+          className={`${kabelu.variable} kabelu-font text-md md:text-4xl lg:text-5xl 2xl:text-7xl pb-1 mt-20 md:mt-4 flex`}
           style={{
             textShadow: `
-      1.5px 1.5px 0 #228B22,
-      -1.5px -1.5px 0 #228B22,
-      1.5px -1.5px 0 #228B22,
-      -1.5px 1.5px 0 #228B22,
-      1.5px 0px 0 #228B22,
-      -1.5px 0px 0 #228B22,
-      0px 1.5px 0 #228B22,
-      0px -1.5px 0 #228B22,
-       3px 3px 5px rgba(0, 0, 0, 0.3)
-    `,
+              1.5px 1.5px 0 #228B22,
+              -1.5px -1.5px 0 #228B22,
+              1.5px -1.5px 0 #228B22,
+              -1.5px 1.5px 0 #228B22,
+              1.5px 0px 0 #228B22,
+              -1.5px 0px 0 #228B22,
+              0px 1.5px 0 #228B22,
+              0px -1.5px 0 #228B22,
+              3px 3px 5px rgba(0, 0, 0, 0.3)
+            `,
           }}
         >
           {categoryLetters.map((letter, index) => (
@@ -116,6 +138,9 @@ export default function HeaderOne() {
         </h1>
 
         <Pagination />
+        </div>
+
+        
       </div>
 
       <Dialog>
