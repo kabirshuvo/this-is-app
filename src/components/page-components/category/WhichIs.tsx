@@ -11,7 +11,6 @@ import Image from "next/image";
 import { Category } from "@/types/category";
 import { Volume2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-// import useItemAudio from "@/app/hooks/useItemAudio";
 import useItemQueryAudio from "@/app/hooks/useItemQueryAudio";
 import useErrorAudio from "@/app/hooks/useErrorAudio";
 import useItemData from "@/app/hooks/useItemData";
@@ -36,6 +35,7 @@ const WhichIs: React.FC<WhichIsProps> = ({ relatedData, params }) => {
   const [randomItemName, setRandomItemName] = useState<string>("");
   const [shakeItemId, setShakeItemId] = useState<number | null>(null);
   const errorAudioRef = useRef<HTMLAudioElement | null>(null);
+  const successAudioRef = useRef<HTMLAudioElement | null>(null);
   const page = useAppSelector((state) => state.pagination.currentPage - 1);
 
   const clickedItemData = useItemData({
@@ -43,31 +43,13 @@ const WhichIs: React.FC<WhichIsProps> = ({ relatedData, params }) => {
     category: params.category,
   });
 
-  useEffect(() => {
-    if (clickedItemData) {
-      const matchedItem = relatedData.find(
-        (item) => item.id === clickedItemData.id
-      );
-      if (!matchedItem) {
-        console.log("No matching item found in relatedData");
-      }
-    }
-  }, [clickedItemData, relatedData]);
-
-  // const itemAudio = useItemAudio(randomItemName ?? "");
-  const playWhichAudio = useItemQueryAudio(
-    randomItemName ? randomItemName.toLowerCase() : "",
+  const audioHandler = useItemQueryAudio(
+    randomItemName.toLowerCase().replace(/\s+/g, "-"),
     "q",
     params.category
   );
-  
-  const playSuccessAudio = useItemQueryAudio(
-    randomItemName ? randomItemName.toLowerCase() : "",
-    "c", 
-    params.category
-  );
-  
-  useErrorAudio(clickedItemData?.name.toLowerCase() ?? "");
+
+  useErrorAudio(clickedItemData?.name.toLowerCase().replace(/\s+/g, "-") ?? "");
 
   const shuffleArray = (array: Category[]) => {
     return array.sort(() => Math.random() - 0.5);
@@ -94,8 +76,11 @@ const WhichIs: React.FC<WhichIsProps> = ({ relatedData, params }) => {
 
     if (typeof window !== "undefined") {
       whichOneAudio = new Audio("/audio/whichone.mp3");
-      questionAudio = new Audio(`/audio/which/${params.category}/q-${randomItemName.toLowerCase()}.mp3`);
-      console.log("Quuestion Audio", `/audio/which/${params.category}/q-${randomItemName.toLowerCase()}.mp3`)
+      questionAudio = new Audio(
+        `/audio/which/${params.category}/q-${randomItemName
+          .toLowerCase()
+          .replace(/\s+/g, "-")}.mp3`
+      );
 
       whichOneAudio.preload = "auto";
       questionAudio.preload = "auto";
@@ -105,32 +90,48 @@ const WhichIs: React.FC<WhichIsProps> = ({ relatedData, params }) => {
       });
 
       return () => {
-        whichOneAudio?.removeEventListener("ended", () => {
-          questionAudio?.play();
-        });
+        if (whichOneAudio) {
+          whichOneAudio.pause();
+          whichOneAudio = null;
+        }
+        if (questionAudio) {
+          questionAudio.pause();
+          questionAudio = null;
+        }
       };
     }
   }, [params.category, randomItemName]);
 
   const speakText = useCallback(() => {
-    playWhichAudio();
-  }, [playWhichAudio]);
+    audioHandler();
+  }, [audioHandler]);
 
   const handleCardClick = useCallback(
     (itemId: number, itemName: string, itemSrc: string) => {
       if (itemName === randomItemName) {
-        playSuccessAudio();
+        if (successAudioRef.current) {
+          successAudioRef.current.pause();
+          successAudioRef.current = null;
+        }
+
+        successAudioRef.current = new Audio(
+          `/audio/correct/${params.category}/c-${itemName
+            .toLowerCase()
+            .replace(/\s+/g, "-")}.mp3`
+        );
+        successAudioRef.current.play();
 
         if (errorAudioRef.current) {
           errorAudioRef.current.pause();
           errorAudioRef.current.currentTime = 0;
         }
 
-        const url = `${
-          params.category
-        }/${itemName.toLowerCase()}?src=${encodeURIComponent(
+        const url = `${params.category}/${itemName
+          .toLowerCase()
+          .replace(/\s+/g, "-")}?src=${encodeURIComponent(
           itemSrc
         )}&name=${encodeURIComponent(itemName)}`;
+
         router.push(url);
 
         if (relatedData.length > 0) {
@@ -142,7 +143,7 @@ const WhichIs: React.FC<WhichIsProps> = ({ relatedData, params }) => {
         setTimeout(() => setShakeItemId(null), 500);
       }
     },
-    [randomItemName, relatedData, playSuccessAudio, params.category, router]
+    [randomItemName, relatedData, params.category, router]
   );
 
   return (
