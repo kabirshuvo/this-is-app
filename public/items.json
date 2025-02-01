@@ -7,10 +7,10 @@
       "description": "Aardvarks are nocturnal mammals native to Africa, known for their burrowing habits.",
       "audio": {
         "itemAudio": "/audio/this/animals/aardvark.mp3",
-        "question": "q-aardvark.mp3",
-        "success": "c-aardvark.mp3",
-        "error": "n-aardvark.mp3",
-        "warning": "w-aardvark.mp3"
+        "question": "/audio/which/animals/q-aardvark.mp3",
+        "success": "/audio/correct/animals/c-aardvark.mp3",
+        "error": "/audio/error/animals/n-aardvark.mp3",
+        "warning": "/audio/error/animals/w-aardvark.mp3"
       }
     },
     {
@@ -20,10 +20,10 @@
       "description": "Elephants are large mammals with trunks and tusks, known for their intelligence.",
       "audio": {
         "itemAudio": "/audio/this/animals/elephant.mp3",
-        "question": "q-elephant.mp3",
-        "success": "c-elephant.mp3",
-        "error": "n-elephant.mp3",
-        "warning": "w-elephant.mp3"
+        "question": "/audio/which/animals/q-elephant.mp3",
+        "success": "/audio/correct/animals/c-elephant.mp3",
+        "error": "/audio/error/animals/n-elephant.mp3",
+        "warning": "/audio/error/animals/w-elephant.mp3"
       }
     },
     {
@@ -33,10 +33,10 @@
       "description": "Monkeys are primates known for their agility and playful nature.",
       "audio": {
         "itemAudio": "/audio/this/animals/monkey.mp3",
-        "question": "q-monkey.mp3",
-        "success": "c-monkey.mp3",
-        "error": "n-monkey.mp3",
-        "warning": "w-monkey.mp3"
+        "question": "/audio/which/animals/q-monkey.mp3",
+        "success": "/audio/correct/animals/c-monkey.mp3",
+        "error": "/audio/error/animals/n-monkey.mp3",
+        "warning": "/audio/error/animals/w-monkey.mp3"
       }
     },
     {
@@ -46,10 +46,10 @@
       "description": "Seals are marine mammals known for their streamlined bodies and aquatic abilities.",
       "audio": {
         "itemAudio": "/audio/this/animals/seal.mp3",
-        "question": "q-seal.mp3",
-        "success": "c-seal.mp3",
-        "error": "n-seal.mp3",
-        "warning": "w-seal.mp3"
+        "question": "/audio/which/animals/q-seal.mp3",
+        "success": "/audio/correct/animals/c-seal.mp3",
+        "error": "/audio/error/animals/n-seal.mp3",
+        "warning": "/audio/error/animals/w-seal.mp3"
       }
     },
     {
@@ -59,10 +59,10 @@
       "description": "Black jaguars are big cats with a distinctive dark coat.",
       "audio": {
         "itemAudio": "/audio/this/animals/black-jaguar.mp3",
-        "question": "q-black-jaguar.mp3",
-        "success": "c-black-jaguar.mp3",
-        "error": "n-black-jaguar.mp3",
-        "warning": "w-black-jaguar.mp3"
+        "question": "/audio/which/animals/q-black-jaguar.mp3",
+        "success": "/audio/correct/animals/c-black-jaguar.mp3",
+        "error": "/audio/error/animals/n-black-jaguar.mp3",
+        "warning": "/audio/error/animals/w-black-jaguar.mp3"
       }
     },
     {
@@ -72,23 +72,10 @@
       "description": "Giraffes are the tallest terrestrial animals with long necks and legs.",
       "audio": {
         "itemAudio": "/audio/this/animals/giraffe.mp3",
-        "question": "q-giraffe.mp3",
-        "success": "c-giraffe.mp3",
-        "error": "n-giraffe.mp3",
-        "warning": "w-giraffe.mp3"
-      }
-    },
-    {
-      "id": 7,
-      "name": "Monkey (Variant)",
-      "image": "/images/animals/monkey01.webp",
-      "description": "A variant of the monkey species known for its playful behavior.",
-      "audio": {
-        "itemAudio": "/audio/this/animals/monkey01.mp3",
-        "question": "q-monkey01.mp3",
-        "success": "c-monkey01.mp3",
-        "error": "n-monkey01.mp3",
-        "warning": "w-monkey01.mp3"
+        "question": "/audio/which/animals/q-giraffe.mp3",
+        "success": "/audio/correct/animals/c-giraffe.mp3",
+        "error": "/audio/error/animals/n-giraffe.mp3",
+        "warning": "/audio/error/animals/w-giraffe.mp3"
       }
     },
     {
@@ -98,10 +85,10 @@
       "description": "Snakes are legless reptiles with elongated bodies.",
       "audio": {
         "itemAudio": "/audio/this/animals/snake.mp3",
-        "question": "q-snake.mp3",
-        "success": "c-snake.mp3",
-        "error": "n-snake.mp3",
-        "warning": "w-snake.mp3"
+        "question": "/audio/which/animals/q-snake.mp3",
+        "success": "/audio/correct/animals/c-snake.mp3",
+        "error": "/audio/error/animals/n-snake.mp3",
+        "warning": "/audio/error/animals/w-snake.mp3"
       }
     },
     {
@@ -111,10 +98,10 @@
       "description": "Butterflies are insects with colorful wings, known for their metamorphosis.",
       "audio": {
         "itemAudio": "/audio/this/animals/butterfly.mp3",
-        "question": "q-butterfly.mp3",
-        "success": "c-butterfly.mp3",
-        "error": "n-butterfly.mp3",
-        "warning": "w-butterfly.mp3"
+        "question": "/audio/which/animals/q-butterfly.mp3",
+        "success": "/audio/correct/animals/c-butterfly.mp3",
+        "error": "/audio/error/animals/n-butterfly.mp3",
+        "warning": "/audio/error/animals/w-butterfly.mp3"
       }
     },
     {
@@ -124,10 +111,10 @@
       "description": "Gorillas are large primates known for their strength and intelligence.",
       "audio": {
         "itemAudio": "/audio/this/animals/gorilla.mp3",
-        "question": "q-gorilla.mp3",
-        "success": "c-gorilla.mp3",
-        "error": "n-gorilla.mp3",
-        "warning": "w-gorilla.mp3"
+        "question": "/audio/which/animals/q-gorilla.mp3",
+        "success": "/audio/correct/animals/c-gorilla.mp3",
+        "error": "/audio/error/animals/n-gorilla.mp3",
+        "warning": "/audio/error/animals/w-gorilla.mp3"
       }
     },
     {
@@ -137,10 +124,10 @@
       "description": "Mice are small rodents with a pointed snout and long tail.",
       "audio": {
         "itemAudio": "/audio/this/animals/mouse.mp3",
-        "question": "q-mouse.mp3",
-        "success": "c-mouse.mp3",
-        "error": "n-mouse.mp3",
-        "warning": "w-mouse.mp3"
+        "question": "/audio/which/animals/q-mouse.mp3",
+        "success": "/audio/correct/animals/c-mouse.mp3",
+        "error": "/audio/error/animals/n-mouse.mp3",
+        "warning": "/audio/error/animals/w-mouse.mp3"
       }
     },
     {
@@ -150,10 +137,10 @@
       "description": "Springboks are antelopes known for their leaping behavior.",
       "audio": {
         "itemAudio": "/audio/this/animals/springbok.mp3",
-        "question": "q-springbok.mp3",
-        "success": "c-springbok.mp3",
-        "error": "n-springbok.mp3",
-        "warning": "w-springbok.mp3"
+        "question": "/audio/which/animals/q-springbok.mp3",
+        "success": "/audio/correct/animals/c-springbok.mp3",
+        "error": "/audio/error/animals/n-springbok.mp3",
+        "warning": "/audio/error/animals/w-springbok.mp3"
       }
     },
     {
@@ -163,10 +150,10 @@
       "description": "Camels are desert animals with humps for storing fat.",
       "audio": {
         "itemAudio": "/audio/this/animals/camel.mp3",
-        "question": "q-camel.mp3",
-        "success": "c-camel.mp3",
-        "error": "n-camel.mp3",
-        "warning": "w-camel.mp3"
+        "question": "/audio/which/animals/q-camel.mp3",
+        "success": "/audio/correct/animals/c-camel.mp3",
+        "error": "/audio/error/animals/n-camel.mp3",
+        "warning": "/audio/error/animals/w-camel.mp3"
       }
     },
     {
@@ -176,10 +163,10 @@
       "description": "Hippos are large, semi-aquatic mammals known for their aggressive nature.",
       "audio": {
         "itemAudio": "/audio/this/animals/hippo.mp3",
-        "question": "q-hippo.mp3",
-        "success": "c-hippo.mp3",
-        "error": "n-hippo.mp3",
-        "warning": "w-hippo.mp3"
+        "question": "/audio/which/animals/q-hippo.mp3",
+        "success": "/audio/correct/animals/c-hippo.mp3",
+        "error": "/audio/error/animals/n-hippo.mp3",
+        "warning": "/audio/error/animals/w-hippo.mp3"
       }
     },
     {
@@ -189,10 +176,10 @@
       "description": "Pandas are bears native to China, known for their black-and-white fur.",
       "audio": {
         "itemAudio": "/audio/this/animals/panda-bear.mp3",
-        "question": "q-panda-bear.mp3",
-        "success": "c-panda-bear.mp3",
-        "error": "n-panda-bear.mp3",
-        "warning": "w-panda-bear.mp3"
+        "question": "/audio/which/animals/q-panda-bear.mp3",
+        "success": "/audio/correct/animals/c-panda-bear.mp3",
+        "error": "/audio/error/animals/n-panda-bear.mp3",
+        "warning": "/audio/error/animals/w-panda-bear.mp3"
       }
     },
     {
@@ -202,10 +189,10 @@
       "description": "Squirrels are rodents known for their bushy tails and agility.",
       "audio": {
         "itemAudio": "/audio/this/animals/squarrel.mp3",
-        "question": "q-squarrel.mp3",
-        "success": "c-squarrel.mp3",
-        "error": "n-squarrel.mp3",
-        "warning": "w-squarrel.mp3"
+        "question": "/audio/which/animals/q-squarrel.mp3",
+        "success": "/audio/correct/animals/c-squarrel.mp3",
+        "error": "/audio/error/animals/n-squarrel.mp3",
+        "warning": "/audio/error/animals/w-squarrel.mp3"
       }
     },
     {
@@ -215,10 +202,10 @@
       "description": "Cats are small domesticated mammals known for their agility.",
       "audio": {
         "itemAudio": "/audio/this/animals/cat.mp3",
-        "question": "q-cat.mp3",
-        "success": "c-cat.mp3",
-        "error": "n-cat.mp3",
-        "warning": "w-cat.mp3"
+        "question": "/audio/which/animals/q-cat.mp3",
+        "success": "/audio/correct/animals/c-cat.mp3",
+        "error": "/audio/error/animals/n-cat.mp3",
+        "warning": "/audio/error/animals/w-cat.mp3"
       }
     },
     {
@@ -228,10 +215,10 @@
       "description": "Horses are strong animals often used for riding and transport.",
       "audio": {
         "itemAudio": "/audio/this/animals/horse.mp3",
-        "question": "q-horse.mp3",
-        "success": "c-horse.mp3",
-        "error": "n-horse.mp3",
-        "warning": "w-horse.mp3"
+        "question": "/audio/which/animals/q-horse.mp3",
+        "success": "/audio/correct/animals/c-horse.mp3",
+        "error": "/audio/error/animals/n-horse.mp3",
+        "warning": "/audio/error/animals/w-horse.mp3"
       }
     },
     {
@@ -241,10 +228,10 @@
       "description": "Penguins are flightless birds known for their black-and-white plumage.",
       "audio": {
         "itemAudio": "/audio/this/animals/penguin.mp3",
-        "question": "q-penguin.mp3",
-        "success": "c-penguin.mp3",
-        "error": "n-penguin.mp3",
-        "warning": "w-penguin.mp3"
+        "question": "/audio/which/animals/q-penguin.mp3",
+        "success": "/audio/correct/animals/c-penguin.mp3",
+        "error": "/audio/error/animals/n-penguin.mp3",
+        "warning": "/audio/error/animals/w-penguin.mp3"
       }
     },
     {
@@ -254,10 +241,10 @@
       "description": "Tortoises are land-dwelling reptiles with a hard shell for protection.",
       "audio": {
         "itemAudio": "/audio/this/animals/tortoise.mp3",
-        "question": "q-tortoise.mp3",
-        "success": "c-tortoise.mp3",
-        "error": "n-tortoise.mp3",
-        "warning": "w-tortoise.mp3"
+        "question": "/audio/which/animals/q-tortoise.mp3",
+        "success": "/audio/correct/animals/c-tortoise.mp3",
+        "error": "/audio/error/animals/n-tortoise.mp3",
+        "warning": "/audio/error/animals/w-tortoise.mp3"
       }
     },
     {
@@ -267,10 +254,10 @@
       "description": "Cheetahs are the fastest land animals, known for their speed and agility.",
       "audio": {
         "itemAudio": "/audio/this/animals/cheetah.mp3",
-        "question": "q-cheetah.mp3",
-        "success": "c-cheetah.mp3",
-        "error": "n-cheetah.mp3",
-        "warning": "w-cheetah.mp3"
+        "question": "/audio/which/animals/q-cheetah.mp3",
+        "success": "/audio/correct/animals/c-cheetah.mp3",
+        "error": "/audio/error/animals/n-cheetah.mp3",
+        "warning": "/audio/error/animals/w-cheetah.mp3"
       }
     },
     {
@@ -280,10 +267,10 @@
       "description": "Kangaroos are marsupials native to Australia, known for their hopping movement.",
       "audio": {
         "itemAudio": "/audio/this/animals/cangaroo.mp3",
-        "question": "q-cangaroo.mp3",
-        "success": "c-cangaroo.mp3",
-        "error": "n-cangaroo.mp3",
-        "warning": "w-cangaroo.mp3"
+        "question": "/audio/which/animals/q-cangaroo.mp3",
+        "success": "/audio/correct/animals/c-cangaroo.mp3",
+        "error": "/audio/error/animals/n-cangaroo.mp3",
+        "warning": "/audio/error/animals/w-cangaroo.mp3"
       }
     },
     {
@@ -293,10 +280,10 @@
       "description": "Pigs are domesticated animals known for their intelligence and adaptability.",
       "audio": {
         "itemAudio": "/audio/this/animals/pig.mp3",
-        "question": "q-pig.mp3",
-        "success": "c-pig.mp3",
-        "error": "n-pig.mp3",
-        "warning": "w-pig.mp3"
+        "question": "/audio/which/animals/q-pig.mp3",
+        "success": "/audio/correct/animals/c-pig.mp3",
+        "error": "/audio/error/animals/n-pig.mp3",
+        "warning": "/audio/error/animals/w-pig.mp3"
       }
     },
     {
@@ -306,10 +293,10 @@
       "description": "Warthogs are wild pigs with distinctive tusks and rugged features.",
       "audio": {
         "itemAudio": "/audio/this/animals/warthog.mp3",
-        "question": "q-warthog.mp3",
-        "success": "c-warthog.mp3",
-        "error": "n-warthog.mp3",
-        "warning": "w-warthog.mp3"
+        "question": "/audio/which/animals/q-warthog.mp3",
+        "success": "/audio/correct/animals/c-warthog.mp3",
+        "error": "/audio/error/animals/n-warthog.mp3",
+        "warning": "/audio/error/animals/w-warthog.mp3"
       }
     },
     {
@@ -319,10 +306,10 @@
       "description": "Koalas are marsupials native to Australia, known for their eucalyptus diet.",
       "audio": {
         "itemAudio": "/audio/this/animals/koalabear-and-baby-koalabear.mp3",
-        "question": "q-koalabear-and-baby-koalabear.mp3",
-        "success": "c-koalabear-and-baby-koalabear.mp3",
-        "error": "n-koalabear-and-baby-koalabear.mp3",
-        "warning": "w-koalabear-and-baby-koalabear.mp3"
+        "question": "/audio/which/animals/q-koalabear-and-baby-koalabear.mp3",
+        "success": "/audio/correct/animals/c-koalabear-and-baby-koalabear.mp3",
+        "error": "/audio/error/animals/n-koalabear-and-baby-koalabear.mp3",
+        "warning": "/audio/error/animals/w-koalabear-and-baby-koalabear.mp3"
       }
     },
     {
@@ -332,10 +319,10 @@
       "description": "Polar bears are large carnivorous bears native to the Arctic.",
       "audio": {
         "itemAudio": "/audio/this/animals/polar-bear.mp3",
-        "question": "q-polar-bear.mp3",
-        "success": "c-polar-bear.mp3",
-        "error": "n-polar-bear.mp3",
-        "warning": "w-polar-bear.mp3"
+        "question": "/audio/which/animals/q-polar-bear.mp3",
+        "success": "/audio/correct/animals/c-polar-bear.mp3",
+        "error": "/audio/error/animals/n-polar-bear.mp3",
+        "warning": "/audio/error/animals/w-polar-bear.mp3"
       }
     },
     {
@@ -345,10 +332,10 @@
       "description": "Cows are domesticated mammals raised for milk and meat.",
       "audio": {
         "itemAudio": "/audio/this/animals/cow.mp3",
-        "question": "q-cow.mp3",
-        "success": "c-cow.mp3",
-        "error": "n-cow.mp3",
-        "warning": "w-cow.mp3"
+        "question": "/audio/which/animals/q-cow.mp3",
+        "success": "/audio/correct/animals/c-cow.mp3",
+        "error": "/audio/error/animals/n-cow.mp3",
+        "warning": "/audio/error/animals/w-cow.mp3"
       }
     },
     {
@@ -358,10 +345,10 @@
       "description": "Lions are big cats known as the king of the jungle.",
       "audio": {
         "itemAudio": "/audio/this/animals/lion.mp3",
-        "question": "q-lion.mp3",
-        "success": "c-lion.mp3",
-        "error": "n-lion.mp3",
-        "warning": "w-lion.mp3"
+        "question": "/audio/which/animals/q-lion.mp3",
+        "success": "/audio/success/animals/c-lion.mp3",
+        "error": "/audio/error/animals/n-lion.mp3",
+        "warning": "/audio/error/animals/w-lion.mp3"
       }
     },
     {
@@ -371,10 +358,10 @@
       "description": "Porcupines are rodents with a coat of sharp quills for defense.",
       "audio": {
         "itemAudio": "/audio/this/animals/porcupine.mp3",
-        "question": "q-porcupine.mp3",
-        "success": "c-porcupine.mp3",
-        "error": "n-porcupine.mp3",
-        "warning": "w-porcupine.mp3"
+        "question": "/audio/which/animals/q-porcupine.mp3",
+        "success": "/audio/success/animals/c-porcupine.mp3",
+        "error": "/audio/error/animals/n-porcupine.mp3",
+        "warning": "/audio/error/animals/w-porcupine.mp3"
       }
     },
     {
@@ -384,10 +371,10 @@
       "description": "Crocodiles are large aquatic reptiles known for their powerful jaws.",
       "audio": {
         "itemAudio": "/audio/this/animals/crocodile.mp3",
-        "question": "q-crocodile.mp3",
-        "success": "c-crocodile.mp3",
-        "error": "n-crocodile.mp3",
-        "warning": "w-crocodile.mp3"
+        "question": "/audio/which/animals/q-crocodile.mp3",
+        "success": "/audio/success/animals/c-crocodile.mp3",
+        "error": "/audio/error/animals/n-crocodile.mp3",
+        "warning": "/audio/error/animals/w-crocodile.mp3"
       }
     },
     {
@@ -396,11 +383,11 @@
       "image": "/images/animals/lizard.webp",
       "description": "Lizards are reptiles with scaly skin, commonly found in various habitats.",
       "audio": {
-        "itemAudio": "/audio/this/animals/lezard.mp3",
-        "question": "q-lezard.mp3",
-        "success": "c-lezard.mp3",
-        "error": "n-lezard.mp3",
-        "warning": "w-lezard.mp3"
+        "itemAudio": "/audio/this/animals/lizard.mp3",
+        "question": "/audio/which/animals/q-lizard.mp3",
+        "success": "/audio/success/animals/c-lizard.mp3",
+        "error": "/audio/error/animals/n-lizard.mp3",
+        "warning": "/audio/error/animals/w-lizard.mp3"
       }
     },
     {
@@ -410,10 +397,10 @@
       "description": "Rabbits are small mammals known for their long ears and quick reproduction.",
       "audio": {
         "itemAudio": "/audio/this/animals/rabbit.mp3",
-        "question": "q-rabbit.mp3",
-        "success": "c-rabbit.mp3",
-        "error": "n-rabbit.mp3",
-        "warning": "w-rabbit.mp3"
+        "question": "/audio/which/animals/q-rabbit.mp3",
+        "success": "/audio/success/animals/c-rabbit.mp3",
+        "error": "/audio/error/animals/n-rabbit.mp3",
+        "warning": "/audio/error/animals/w-rabbit.mp3"
       }
     }
   ],
