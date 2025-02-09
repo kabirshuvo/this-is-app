@@ -27,6 +27,8 @@ export default function HeaderOne() {
   const pathname = usePathname();
   const [category, setCategory] = useState("LEARN WORD GAMES");
 
+  const isHomePage = pathname === `/${locale}` || pathname === "/";
+
   useEffect(() => {
     const pathParts = pathname.split("/");
     const currentCategory = pathParts[pathParts.length - 1];
@@ -115,7 +117,7 @@ export default function HeaderOne() {
           ))}
         </h1>
 
-        <Pagination />
+        {!isHomePage && <Pagination />}
       </div>
 
       <Dialog>

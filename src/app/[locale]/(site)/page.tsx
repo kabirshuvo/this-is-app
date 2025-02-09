@@ -52,7 +52,7 @@ const Home: React.FC = () => {
   return (
     <div className="flex flex-col justify-between items-center w-full h-full mt-12 px-4 gap-4">
       <div className="flex gap-10 items-center w-full">
-        <PrevButton size={100} />
+        {categories.length > ITEMS_PER_PAGE && <PrevButton size={100} />}
 
         {/* Categories */}
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-4 h-full grid-rows-2">
@@ -71,30 +71,31 @@ const Home: React.FC = () => {
             )
           )}
         </div>
-
-        <NextButton size={100} />
+        {categories.length > ITEMS_PER_PAGE && <NextButton size={100} />}
       </div>
 
       {/* Pagination Bar */}
-      <Pagination>
-        <PaginationContent>
-          {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
-            <PaginationItem key={page}>
-              <PaginationLink
-                href="#"
-                isActive={currentPage === page}
-                onClick={(e) => {
-                  e.preventDefault();
-                  dispatch(setPage(page));
-                }}
-                className={`w-6 h-2 rounded-full ${
-                  currentPage === page ? "" : "bg-gray-300 opacity-50"
-                }`}
-              ></PaginationLink>
-            </PaginationItem>
-          ))}
-        </PaginationContent>
-      </Pagination>
+      {categories.length > ITEMS_PER_PAGE && (
+        <Pagination>
+          <PaginationContent>
+            {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+              <PaginationItem key={page}>
+                <PaginationLink
+                  href="#"
+                  isActive={currentPage === page}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    dispatch(setPage(page));
+                  }}
+                  className={`w-6 h-2 rounded-full ${
+                    currentPage === page ? "" : "bg-gray-300 opacity-50"
+                  }`}
+                ></PaginationLink>
+              </PaginationItem>
+            ))}
+          </PaginationContent>
+        </Pagination>
+      )}
     </div>
   );
 };
