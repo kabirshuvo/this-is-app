@@ -10,5 +10,6 @@
   { "id": 8, "name": "Toys", "image": "/images/categories/toys.webp" },
   { "id": 13, "name": "Home", "image": "/images/categories/home.webp" },
   { "id": 7, "name": "Tools", "image": "/images/categories/tools.webp" },
-  { "id": 16, "name": "Fun Activities", "image": "/images/categories/fun-activities.webp" }
+  { "id": 16, "name": "Fun Activities", "image": "/images/categories/fun-activities.webp" },
+  { "id": 12, "name": "Nuts", "image": "/images/categories/nuts.jpg" }
 ]
