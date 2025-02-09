@@ -2137,67 +2137,67 @@
   "toys": [
     {
       "id": 1,
-      "name": "Doll",
-      "image": "/images/toys/doll.webp",
-      "description": "A doll is a model of a human figure, typically of a baby or girl, used as a child's toy.",
-      "audio": {
-        "itemAudio": "/audio/this/doll.mp3",
-        "question": "q-doll.mp3",
-        "success": "c-doll.mp3",
-        "error": "n-doll.mp3",
-        "warning": "w-doll.mp3"
-      }
-    },
-    {
-      "id": 2,
-      "name": "Building Blocks",
-      "image": "/images/toys/building-blocks.webp",
-      "description": "Building blocks are toy components that can be assembled to build various structures.",
-      "audio": {
-        "itemAudio": "/audio/this/building-blocks.mp3",
-        "question": "q-building-blocks.mp3",
-        "success": "c-building-blocks.mp3",
-        "error": "n-building-blocks.mp3",
-        "warning": "w-building-blocks.mp3"
-      }
-    },
-    {
-      "id": 3,
-      "name": "Dolls Set",
-      "image": "/images/toys/dolls01.webp",
-      "description": "A set of dolls representing various characters.",
-      "audio": {
-        "itemAudio": "/audio/this/dolls01.mp3",
-        "question": "q-dolls01.mp3",
-        "success": "c-dolls01.mp3",
-        "error": "n-dolls01.mp3",
-        "warning": "w-dolls01.mp3"
-      }
-    },
-    {
-      "id": 4,
       "name": "Teddy Bear",
       "image": "/images/toys/teddy.webp",
       "description": "A teddy bear is a soft toy in the form of a bear, often used for cuddling.",
       "audio": {
-        "itemAudio": "/audio/this/teddy.mp3",
-        "question": "q-teddy.mp3",
-        "success": "c-teddy.mp3",
-        "error": "n-teddy.mp3",
-        "warning": "w-teddy.mp3"
+        "itemAudio": "/audio/this/toys/teddy.mp3",
+        "question": "/audio/which/toys/q-teddy.mp3",
+        "success": "/audio/success/toys/c-teddy.mp3",
+        "error": "/audio/error/toys/n-teddy.mp3",
+        "warning": "/audio/error/toys/w-teddy.mp3"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Doll",
+      "image": "/images/toys/doll.webp",
+      "description": "A doll is a model of a human figure, typically of a baby or girl, used as a child's toy.",
+      "audio": {
+        "itemAudio": "/audio/this/toys/doll.mp3",
+        "question": "/audio/which/toys/q-doll.mp3",
+        "success": "/audio/success/toys/c-doll.mp3",
+        "error": "/audio/error/toys/n-doll.mp3",
+        "warning": "/audio/error/toys/w-doll.mp3"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Beach Bucket and Spade",
+      "image": "/images/toys/beach-bucket-and-spade.webp",
+      "description": "A beach bucket and spade set is used for playing in the sand, often at the beach.",
+      "audio": {
+        "itemAudio": "/audio/this/toys/beach-bucket-and-spade.mp3",
+        "question": "/audio/which/toys/q-beach-bucket-and-spade.mp3",
+        "success": "/audio/success/toys/c-beach-bucket-and-spade.mp3",
+        "error": "/audio/error/toys/n-beach-bucket-and-spade.mp3",
+        "warning": "/audio/error/toys/w-beach-bucket-and-spade.mp3"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Toy Truck",
+      "image": "/images/toys/toy-truck.webp",
+      "description": "A toy truck is a small model vehicle, typically for children to play with.",
+      "audio": {
+        "itemAudio": "/audio/this/toys/toy-truck.mp3",
+        "question": "/audio/which/toys/q-toy-truck.mp3",
+        "success": "/audio/success/toys/c-toy-truck.mp3",
+        "error": "/audio/error/toys/n-toy-truck.mp3",
+        "warning": "/audio/error/toys/w-toy-truck.mp3"
       }
     },
     {
       "id": 5,
-      "name": "Truck",
-      "image": "/images/toys/truck.webp",
-      "description": "A toy truck is a small model vehicle, typically for children to play with.",
+      "name": "Lego",
+      "image": "/images/toys/lego.webp",
+      "description": "Lego is a construction toy consisting of interlocking plastic bricks.",
       "audio": {
-        "itemAudio": "/audio/this/truck.mp3",
-        "question": "q-truck.mp3",
-        "success": "c-truck.mp3",
-        "error": "n-truck.mp3",
-        "warning": "w-truck.mp3"
+        "itemAudio": "/audio/this/toys/lego.mp3",
+        "question": "/audio/which/toys/q-lego.mp3",
+        "success": "/audio/success/toys/c-lego.mp3",
+        "error": "/audio/error/toys/n-lego.mp3",
+        "warning": "/audio/error/toys/w-lego.mp3"
       }
     },
     {
@@ -2206,11 +2206,11 @@
       "image": "/images/toys/crayons.webp",
       "description": "Crayons are sticks of colored wax used for drawing and coloring.",
       "audio": {
-        "itemAudio": "/audio/this/crayons.mp3",
-        "question": "q-crayons.mp3",
-        "success": "c-crayons.mp3",
-        "error": "n-crayons.mp3",
-        "warning": "w-crayons.mp3"
+        "itemAudio": "/audio/this/toys/crayons.mp3",
+        "question": "/audio/which/toys/q-crayons.mp3",
+        "success": "/audio/success/toys/c-crayons.mp3",
+        "error": "/audio/error/toys/n-crayons.mp3",
+        "warning": "/audio/error/toys/w-crayons.mp3"
       }
     },
     {
@@ -2219,234 +2219,234 @@
       "image": "/images/toys/jumping-ball.webp",
       "description": "A jumping ball is a large, inflatable ball used for bouncing and jumping.",
       "audio": {
-        "itemAudio": "/audio/this/jumping-ball.mp3",
-        "question": "q-jumping-ball.mp3",
-        "success": "c-jumping-ball.mp3",
-        "error": "n-jumping-ball.mp3",
-        "warning": "w-jumping-ball.mp3"
+        "itemAudio": "/audio/this/toys/jumping-ball.mp3",
+        "question": "/audio/which/toys/q-jumping-ball.mp3",
+        "success": "/audio/success/toys/c-jumping-ball.mp3",
+        "error": "/audio/error/toys/n-jumping-ball.mp3",
+        "warning": "/audio/error/toys/w-jumping-ball.mp3"
       }
     },
     {
       "id": 8,
-      "name": "Toy Rainbow",
-      "image": "/images/toys/toy-rainbow.webp",
-      "description": "A toy rainbow is a colorful toy that represents a rainbow.",
+      "name": "Stuffed Animals",
+      "image": "/images/toys/stuffed-animals.webp",
+      "description": "Stuffed animals are soft toys shaped like animals, often used for cuddling.",
       "audio": {
-        "itemAudio": "/audio/this/toy-rainbow.mp3",
-        "question": "q-toy-rainbow.mp3",
-        "success": "c-toy-rainbow.mp3",
-        "error": "n-toy-rainbow.mp3",
-        "warning": "w-toy-rainbow.mp3"
+        "itemAudio": "/audio/this/toys/stuffed-animals.mp3",
+        "question": "/audio/which/toys/q-stuffed-animals.mp3",
+        "success": "/audio/success/toys/c-stuffed-animals.mp3",
+        "error": "/audio/error/toys/n-stuffed-animals.mp3",
+        "warning": "/audio/error/toys/w-stuffed-animals.mp3"
       }
     },
     {
       "id": 9,
-      "name": "Wooden Car",
-      "image": "/images/toys/woode-car.webp",
-      "description": "A wooden car is a toy car made of wood.",
+      "name": "Rings",
+      "image": "/images/toys/rings.webp",
+      "description": "Rings are circular toys that can be used for various games and activities.",
       "audio": {
-        "itemAudio": "/audio/this/woode-car.mp3",
-        "question": "q-woode-car.mp3",
-        "success": "c-woode-car.mp3",
-        "error": "n-woode-car.mp3",
-        "warning": "w-woode-car.mp3"
+        "itemAudio": "/audio/this/toys/rings.mp3",
+        "question": "/audio/which/toys/q-rings.mp3",
+        "success": "/audio/success/toys/c-rings.mp3",
+        "error": "/audio/error/toys/n-rings.mp3",
+        "warning": "/audio/error/toys/w-rings.mp3"
       }
     },
     {
       "id": 10,
-      "name": "Sand Toys",
-      "image": "/images/toys/sand-toys.webp",
-      "description": "Sand toys are toys used for playing in the sand, such as buckets and shovels.",
+      "name": "Dumpster Truck",
+      "image": "/images/toys/dumpster-truck.webp",
+      "description": "A dumpster truck is a toy truck designed to simulate a real dumpster truck.",
       "audio": {
-        "itemAudio": "/audio/this/sand-toys.mp3",
-        "question": "q-sand-toys.mp3",
-        "success": "c-sand-toys.mp3",
-        "error": "n-sand-toys.mp3",
-        "warning": "w-sand-toys.mp3"
+        "itemAudio": "/audio/this/toys/dumpster-truck.mp3",
+        "question": "/audio/which/toys/q-dumpster-truck.mp3",
+        "success": "/audio/success/toys/c-dumpster-truck.mp3",
+        "error": "/audio/error/toys/n-dumpster-truck.mp3",
+        "warning": "/audio/error/toys/w-dumpster-truck.mp3"
       }
     },
     {
       "id": 11,
-      "name": "Toy Truck",
-      "image": "/images/toys/toy-truck.webp",
-      "description": "A toy truck is a small model vehicle, typically for children to play with.",
+      "name": "Toy Rainbow",
+      "image": "/images/toys/toy-rainbow.webp",
+      "description": "A toy rainbow is a colorful toy that represents a rainbow.",
       "audio": {
-        "itemAudio": "/audio/this/toy-truck.mp3",
-        "question": "q-toy-truck.mp3",
-        "success": "c-toy-truck.mp3",
-        "error": "n-toy-truck.mp3",
-        "warning": "w-toy-truck.mp3"
+        "itemAudio": "/audio/this/toys/toy-rainbow.mp3",
+        "question": "/audio/which/toys/q-toy-rainbow.mp3",
+        "success": "/audio/success/toys/c-toy-rainbow.mp3",
+        "error": "/audio/error/toys/n-toy-rainbow.mp3",
+        "warning": "/audio/error/toys/w-toy-rainbow.mp3"
       }
     },
     {
       "id": 12,
-      "name": "Wooden Pyramid",
-      "image": "/images/toys/wooden-pyramid.webp",
-      "description": "A wooden pyramid is a toy made of wooden pieces that can be stacked to form a pyramid.",
+      "name": "Train Engine",
+      "image": "/images/toys/train-engine.webp",
+      "description": "A train engine is a toy that simulates a real train engine.",
       "audio": {
-        "itemAudio": "/audio/this/wooden-pyramid.mp3",
-        "question": "q-wooden-pyramid.mp3",
-        "success": "c-wooden-pyramid.mp3",
-        "error": "n-wooden-pyramid.mp3",
-        "warning": "w-wooden-pyramid.mp3"
+        "itemAudio": "/audio/this/toys/train-engine.mp3",
+        "question": "/audio/which/toys/q-train-engine.mp3",
+        "success": "/audio/success/toys/c-train-engine.mp3",
+        "error": "/audio/error/toys/n-train-engine.mp3",
+        "warning": "/audio/error/toys/w-train-engine.mp3"
       }
     }
   ],
   "home": [
     {
       "id": 1,
-      "name": "Bed Room",
-      "image": "/images/home/bed-room.webp",
-      "description": "A bed room is a space used for sleeping and resting.",
+      "name": "House",
+      "image": "/images/home/house.webp",
+      "description": "A complete family home",
       "audio": {
-        "itemAudio": "/audio/this/home/bed-room.mp3",
-        "question": "q-bed-room.mp3",
-        "success": "c-bed-room.mp3",
-        "error": "n-bed-room.mp3",
-        "warning": "w-bed-room.mp3"
+        "itemAudio": "/audio/home/house.mp3",
+        "question": "/audio/home/q-house.mp3",
+        "success": "/audio/home/s-house.mp3",
+        "error": "/audio/home/e-house.mp3",
+        "warning": "/audio/home/w-house.mp3"
       }
     },
     {
       "id": 2,
-      "name": "Fridge",
-      "image": "/images/home/fridge.webp",
-      "description": "A fridge is an appliance used to keep food and drinks cool and fresh.",
+      "name": "Kid's Bedroom",
+      "image": "/images/home/kids-bedroom.webp",
+      "description": "A room for children",
       "audio": {
-        "itemAudio": "/audio/this/home/fridge.mp3",
-        "question": "q-fridge.mp3",
-        "success": "c-fridge.mp3",
-        "error": "n-fridge.mp3",
-        "warning": "w-fridge.mp3"
+        "itemAudio": "/audio/home/kids-bedroom.mp3",
+        "question": "/audio/home/q-kids-bedroom.mp3",
+        "success": "/audio/home/s-kids-bedroom.mp3",
+        "error": "/audio/home/e-kids-bedroom.mp3",
+        "warning": "/audio/home/w-kids-bedroom.mp3"
       }
     },
     {
       "id": 3,
-      "name": "Kitchen",
-      "image": "/images/home/kitchen.webp",
-      "description": "A kitchen is a room used for cooking and food preparation.",
+      "name": "Parents Bedroom",
+      "image": "/images/home/parents-bedroom.webp",
+      "description": "A room for parents",
       "audio": {
-        "itemAudio": "/audio/this/home/kitchen.mp3",
-        "question": "q-kitchen.mp3",
-        "success": "c-kitchen.mp3",
-        "error": "n-kitchen.mp3",
-        "warning": "w-kitchen.mp3"
+        "itemAudio": "/audio/home/parents-bedroom.mp3",
+        "question": "/audio/home/q-parents-bedroom.mp3",
+        "success": "/audio/home/s-parents-bedroom.mp3",
+        "error": "/audio/home/e-parents-bedroom.mp3",
+        "warning": "/audio/home/w-parents-bedroom.mp3"
       }
     },
     {
       "id": 4,
-      "name": "Vacuum Cleaner",
-      "image": "/images/home/vacuum-cleaner.webp",
-      "description": "A vacuum cleaner is an appliance that removes dust and dirt from floors and carpets.",
+      "name": "Kitchen",
+      "image": "/images/home/kitchen.webp",
+      "description": "A room for cooking",
       "audio": {
-        "itemAudio": "/audio/this/home/vacuum-cleaner.mp3",
-        "question": "q-vacuum-cleaner.mp3",
-        "success": "c-vacuum-cleaner.mp3",
-        "error": "n-vacuum-cleaner.mp3",
-        "warning": "w-vacuum-cleaner.mp3"
+        "itemAudio": "/audio/home/kitchen.mp3",
+        "question": "/audio/home/q-kitchen.mp3",
+        "success": "/audio/home/s-kitchen.mp3",
+        "error": "/audio/home/e-kitchen.mp3",
+        "warning": "/audio/home/w-kitchen.mp3"
       }
     },
     {
       "id": 5,
-      "name": "Child Room",
-      "image": "/images/home/child-room.webp",
-      "description": "A child room is a bedroom designed for children.",
+      "name": "Bathroom",
+      "image": "/images/home/bathroom.webp",
+      "description": "A room for personal care",
       "audio": {
-        "itemAudio": "/audio/this/home/child-room.mp3",
-        "question": "q-child-room.mp3",
-        "success": "c-child-room.mp3",
-        "error": "n-child-room.mp3",
-        "warning": "w-child-room.mp3"
+        "itemAudio": "/audio/home/bathroom.mp3",
+        "question": "/audio/home/q-bathroom.mp3",
+        "success": "/audio/home/s-bathroom.mp3",
+        "error": "/audio/home/e-bathroom.mp3",
+        "warning": "/audio/home/w-bathroom.mp3"
       }
     },
     {
       "id": 6,
-      "name": "House",
-      "image": "/images/home/house.webp",
-      "description": "A house is a building for people to live in.",
+      "name": "Family",
+      "image": "/images/home/family.webp",
+      "description": "People living together",
       "audio": {
-        "itemAudio": "/audio/this/home/house.mp3",
-        "question": "q-house.mp3",
-        "success": "c-house.mp3",
-        "error": "n-house.mp3",
-        "warning": "w-house.mp3"
+        "itemAudio": "/audio/home/family.mp3",
+        "question": "/audio/home/q-family.mp3",
+        "success": "/audio/home/s-family.mp3",
+        "error": "/audio/home/e-family.mp3",
+        "warning": "/audio/home/w-family.mp3"
       }
     },
     {
       "id": 7,
-      "name": "Oven",
-      "image": "/images/home/oven.webp",
-      "description": "An oven is a kitchen appliance used for baking or roasting food.",
+      "name": "Toaster",
+      "image": "/images/home/toaster.webp",
+      "description": "Appliance for making toast",
       "audio": {
-        "itemAudio": "/audio/this/home/oven.mp3",
-        "question": "q-oven.mp3",
-        "success": "c-oven.mp3",
-        "error": "n-oven.mp3",
-        "warning": "w-oven.mp3"
+        "itemAudio": "/audio/home/toaster.mp3",
+        "question": "/audio/home/q-toaster.mp3",
+        "success": "/audio/home/s-toaster.mp3",
+        "error": "/audio/home/e-toaster.mp3",
+        "warning": "/audio/home/w-toaster.mp3"
       }
     },
     {
       "id": 8,
-      "name": "Washing Machine",
-      "image": "/images/home/washing-machine.webp",
-      "description": "A washing machine is an appliance for cleaning laundry.",
+      "name": "Electric Kettle",
+      "image": "/images/home/electric-kettle.webp",
+      "description": "Appliance for boiling water",
       "audio": {
-        "itemAudio": "/audio/this/home/washing-machine.mp3",
-        "question": "q-washing-machine.mp3",
-        "success": "c-washing-machine.mp3",
-        "error": "n-washing-machine.mp3",
-        "warning": "w-washing-machine.mp3"
+        "itemAudio": "/audio/home/electric-kettle.mp3",
+        "question": "/audio/home/q-electric-kettle.mp3",
+        "success": "/audio/home/s-electric-kettle.mp3",
+        "error": "/audio/home/e-electric-kettle.mp3",
+        "warning": "/audio/home/w-electric-kettle.mp3"
       }
     },
     {
       "id": 9,
-      "name": "Family Room",
-      "image": "/images/home/family.webp",
-      "description": "A family room is a space in a house for relaxation and entertainment.",
+      "name": "Vacuum Cleaner",
+      "image": "/images/home/vacuum-cleaner.webp",
+      "description": "Appliance for cleaning floors",
       "audio": {
-        "itemAudio": "/audio/this/home/family.mp3",
-        "question": "q-family.mp3",
-        "success": "c-family.mp3",
-        "error": "n-family.mp3",
-        "warning": "w-family.mp3"
+        "itemAudio": "/audio/home/vacuum-cleaner.mp3",
+        "question": "/audio/home/q-vacuum-cleaner.mp3",
+        "success": "/audio/home/s-vacuum-cleaner.mp3",
+        "error": "/audio/home/e-vacuum-cleaner.mp3",
+        "warning": "/audio/home/w-vacuum-cleaner.mp3"
       }
     },
     {
       "id": 10,
-      "name": "Kettle",
-      "image": "/images/home/kettle.webp",
-      "description": "A kettle is a container used to heat water, often for tea or coffee.",
+      "name": "Washer and Dryer",
+      "image": "/images/home/washer-and-dryer.webp",
+      "description": "Appliances for cleaning clothes",
       "audio": {
-        "itemAudio": "/audio/this/home/kettle.mp3",
-        "question": "q-kettle.mp3",
-        "success": "c-kettle.mp3",
-        "error": "n-kettle.mp3",
-        "warning": "w-kettle.mp3"
+        "itemAudio": "/audio/home/washer-and-dryer.mp3",
+        "question": "/audio/home/q-washer-and-dryer.mp3",
+        "success": "/audio/home/s-washer-and-dryer.mp3",
+        "error": "/audio/home/e-washer-and-dryer.mp3",
+        "warning": "/audio/home/w-washer-and-dryer.mp3"
       }
     },
     {
       "id": 11,
-      "name": "Toaster",
-      "image": "/images/home/toaster.webp",
-      "description": "A toaster is a small appliance used to brown slices of bread.",
+      "name": "Fridge",
+      "image": "/images/home/fridge.webp",
+      "description": "Appliance for keeping food cold",
       "audio": {
-        "itemAudio": "/audio/this/home/toaster.mp3",
-        "question": "q-toaster.mp3",
-        "success": "c-toaster.mp3",
-        "error": "n-toaster.mp3",
-        "warning": "w-toaster.mp3"
+        "itemAudio": "/audio/home/fridge.mp3",
+        "question": "/audio/home/q-fridge.mp3",
+        "success": "/audio/home/s-fridge.mp3",
+        "error": "/audio/home/e-fridge.mp3",
+        "warning": "/audio/home/w-fridge.mp3"
       }
     },
     {
       "id": 12,
-      "name": "Washroom",
-      "image": "/images/home/washroom.webp",
-      "description": "A washroom is a room equipped with a toilet and a sink.",
+      "name": "Stove",
+      "image": "/images/home/stove.webp",
+      "description": "Appliance for cooking food",
       "audio": {
-        "itemAudio": "/audio/this/home/washroom.mp3",
-        "question": "q-washroom.mp3",
-        "success": "c-washroom.mp3",
-        "error": "n-washroom.mp3",
-        "warning": "w-washroom.mp3"
+        "itemAudio": "/audio/home/stove.mp3",
+        "question": "/audio/home/q-stove.mp3",
+        "success": "/audio/home/s-stove.mp3",
+        "error": "/audio/home/e-stove.mp3",
+        "warning": "/audio/home/w-stove.mp3"
       }
     }
   ],
@@ -2454,224 +2454,315 @@
     {
       "id": 1,
       "name": "Hammer",
-      "image": "/images/tools/hammer.jpg",
-      "description": "A hammer is a tool consisting of a heavy 'head' fixed to a long handle, used for jobs such as breaking things or driving in nails.",
+      "image": "/images/tools/hammer.webp",
+      "description": "Tool for striking and pounding",
       "audio": {
-        "itemAudio": "/audio/this/hammer.mp3",
-        "question": "q-hammer.mp3",
-        "success": "c-hammer.mp3",
-        "error": "n-hammer.mp3",
-        "warning": "w-hammer.mp3"
+        "itemAudio": "/audio/tools/hammer.mp3",
+        "question": "/audio/tools/q-hammer.mp3",
+        "success": "/audio/tools/s-hammer.mp3",
+        "error": "/audio/tools/e-hammer.mp3",
+        "warning": "/audio/tools/w-hammer.mp3"
       }
     },
     {
       "id": 2,
-      "name": "Screwdriver",
-      "image": "/images/tools/screw-drivers.jpg",
-      "description": "A screwdriver is a tool used to turn screws.",
+      "name": "Pliers",
+      "image": "/images/tools/pliers.webp",
+      "description": "Tool for gripping and bending",
       "audio": {
-        "itemAudio": "/audio/this/screwdriver.mp3",
-        "question": "q-screwdriver.mp3",
-        "success": "c-screwdriver.mp3",
-        "error": "n-screwdriver.mp3",
-        "warning": "w-screwdriver.mp3"
+        "itemAudio": "/audio/tools/pliers.mp3",
+        "question": "/audio/tools/q-pliers.mp3",
+        "success": "/audio/tools/s-pliers.mp3",
+        "error": "/audio/tools/e-pliers.mp3",
+        "warning": "/audio/tools/w-pliers.mp3"
       }
     },
     {
       "id": 3,
-      "name": "Wrench",
-      "image": "/images/tools/wrench.jpg",
-      "description": "A wrench is a tool used for gripping and turning objects.",
+      "name": "Drill",
+      "image": "/images/tools/drill.webp",
+      "description": "Tool for making holes",
       "audio": {
-        "itemAudio": "/audio/this/wrench.mp3",
-        "question": "q-wrench.mp3",
-        "success": "c-wrench.mp3",
-        "error": "n-wrench.mp3",
-        "warning": "w-wrench.mp3"
+        "itemAudio": "/audio/tools/drill.mp3",
+        "question": "/audio/tools/q-drill.mp3",
+        "success": "/audio/tools/s-drill.mp3",
+        "error": "/audio/tools/e-drill.mp3",
+        "warning": "/audio/tools/w-drill.mp3"
       }
     },
     {
       "id": 4,
-      "name": "Chainsaw",
-      "image": "/images/tools/chainsaw.jpg",
-      "description": "A chainsaw is a power tool used for cutting trees and wood.",
+      "name": "Screwdrivers",
+      "image": "/images/tools/screwdrivers.webp",
+      "description": "Tools for turning screws",
       "audio": {
-        "itemAudio": "/audio/this/chainsaw.mp3",
-        "question": "q-chainsaw.mp3",
-        "success": "c-chainsaw.mp3",
-        "error": "n-chainsaw.mp3",
-        "warning": "w-chainsaw.mp3"
+        "itemAudio": "/audio/tools/screwdrivers.mp3",
+        "question": "/audio/tools/q-screwdrivers.mp3",
+        "success": "/audio/tools/s-screwdrivers.mp3",
+        "error": "/audio/tools/e-screwdrivers.mp3",
+        "warning": "/audio/tools/w-screwdrivers.mp3"
       }
     },
     {
       "id": 5,
-      "name": "Electric Screw Drill",
-      "image": "/images/tools/electric-screw-drill.jpg",
-      "description": "An electric screw drill is a tool used for driving screws and drilling holes.",
+      "name": "Spanners",
+      "image": "/images/tools/spanners.webp",
+      "description": "Tools for tightening nuts and bolts",
       "audio": {
-        "itemAudio": "/audio/this/electric-screw-drill.mp3",
-        "question": "q-electric-screw-drill.mp3",
-        "success": "c-electric-screw-drill.mp3",
-        "error": "n-electric-screw-drill.mp3",
-        "warning": "w-electric-screw-drill.mp3"
+        "itemAudio": "/audio/tools/spanners.mp3",
+        "question": "/audio/tools/q-spanners.mp3",
+        "success": "/audio/tools/s-spanners.mp3",
+        "error": "/audio/tools/e-spanners.mp3",
+        "warning": "/audio/tools/w-spanners.mp3"
       }
     },
     {
       "id": 6,
-      "name": "Helmet",
-      "image": "/images/tools/helmet.jpg",
-      "description": "A helmet is a form of protective gear to safeguard the head.",
+      "name": "Tape Measure",
+      "image": "/images/tools/tape-measure.webp",
+      "description": "Tool for measuring length",
       "audio": {
-        "itemAudio": "/audio/this/helmet.mp3",
-        "question": "q-helmet.mp3",
-        "success": "c-helmet.mp3",
-        "error": "n-helmet.mp3",
-        "warning": "w-helmet.mp3"
+        "itemAudio": "/audio/tools/tape-measure.mp3",
+        "question": "/audio/tools/q-tape-measure.mp3",
+        "success": "/audio/tools/s-tape-measure.mp3",
+        "error": "/audio/tools/e-tape-measure.mp3",
+        "warning": "/audio/tools/w-tape-measure.mp3"
       }
     },
     {
       "id": 7,
-      "name": "Measurement Tape",
-      "image": "/images/tools/measurement-tape.jpg",
-      "description": "A measurement tape is used to measure size or distance.",
+      "name": "Tool Belt",
+      "image": "/images/tools/tool-belt.webp",
+      "description": "Belt for carrying tools",
       "audio": {
-        "itemAudio": "/audio/this/measurement-tape.mp3",
-        "question": "q-measurement-tape.mp3",
-        "success": "c-measurement-tape.mp3",
-        "error": "n-measurement-tape.mp3",
-        "warning": "w-measurement-tape.mp3"
+        "itemAudio": "/audio/tools/tool-belt.mp3",
+        "question": "/audio/tools/q-tool-belt.mp3",
+        "success": "/audio/tools/s-tool-belt.mp3",
+        "error": "/audio/tools/e-tool-belt.mp3",
+        "warning": "/audio/tools/w-tool-belt.mp3"
       }
     },
     {
       "id": 8,
-      "name": "Toolbelt",
-      "image": "/images/tools/toolbelt.jpg",
-      "description": "A toolbelt is used to carry tools conveniently while working.",
+      "name": "Hard Hat",
+      "image": "/images/tools/hard-hat.webp",
+      "description": "Safety helmet for protection",
       "audio": {
-        "itemAudio": "/audio/this/toolbelt.mp3",
-        "question": "q-toolbelt.mp3",
-        "success": "c-toolbelt.mp3",
-        "error": "n-toolbelt.mp3",
-        "warning": "w-toolbelt.mp3"
+        "itemAudio": "/audio/tools/hard-hat.mp3",
+        "question": "/audio/tools/q-hard-hat.mp3",
+        "success": "/audio/tools/s-hard-hat.mp3",
+        "error": "/audio/tools/e-hard-hat.mp3",
+        "warning": "/audio/tools/w-hard-hat.mp3"
       }
     },
     {
       "id": 9,
-      "name": "Toolbox",
-      "image": "/images/tools/toolbox.jpg",
-      "description": "A toolbox is a container to organize and transport tools.",
+      "name": "Tool Box",
+      "image": "/images/tools/tool-box.webp",
+      "description": "Container for storing tools",
       "audio": {
-        "itemAudio": "/audio/this/toolbox.mp3",
-        "question": "q-toolbox.mp3",
-        "success": "c-toolbox.mp3",
-        "error": "n-toolbox.mp3",
-        "warning": "w-toolbox.mp3"
+        "itemAudio": "/audio/tools/tool-box.mp3",
+        "question": "/audio/tools/q-tool-box.mp3",
+        "success": "/audio/tools/s-tool-box.mp3",
+        "error": "/audio/tools/e-tool-box.mp3",
+        "warning": "/audio/tools/w-tool-box.mp3"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Saw",
+      "image": "/images/tools/saw.webp",
+      "description": "Tool for cutting materials",
+      "audio": {
+        "itemAudio": "/audio/tools/saw.mp3",
+        "question": "/audio/tools/q-saw.mp3",
+        "success": "/audio/tools/s-saw.mp3",
+        "error": "/audio/tools/e-saw.mp3",
+        "warning": "/audio/tools/w-saw.mp3"
+      }
+    },
+    {
+      "id": 11,
+      "name": "Chainsaw",
+      "image": "/images/tools/chainsaw.webp",
+      "description": "Powered saw for cutting wood",
+      "audio": {
+        "itemAudio": "/audio/tools/chainsaw.mp3",
+        "question": "/audio/tools/q-chainsaw.mp3",
+        "success": "/audio/tools/s-chainsaw.mp3",
+        "error": "/audio/tools/e-chainsaw.mp3",
+        "warning": "/audio/tools/w-chainsaw.mp3"
+      }
+    },
+    {
+      "id": 12,
+      "name": "Electric Saw",
+      "image": "/images/tools/electric-saw.webp",
+      "description": "Powered saw for precise cutting",
+      "audio": {
+        "itemAudio": "/audio/tools/electric-saw.mp3",
+        "question": "/audio/tools/q-electric-saw.mp3",
+        "success": "/audio/tools/s-electric-saw.mp3",
+        "error": "/audio/tools/e-electric-saw.mp3",
+        "warning": "/audio/tools/w-electric-saw.mp3"
       }
     }
   ],
-  "activities": [
+  "fun-activities": [
     {
       "id": 1,
-      "name": "Cycling",
-      "image": "/images/activities/cycling.webp",
-      "description": "Cycling is an outdoor activity that strengthens the body and helps explore nature.",
+      "name": "Hoola Hooping",
+      "image": "/images/fun-activities/hoola-hooping.webp",
+      "description": "Spinning a hoop around the waist",
       "audio": {
-        "itemAudio": "/audio/this/cycling.mp3",
-        "question": "q-cycling.mp3",
-        "success": "c-cycling.mp3",
-        "error": "n-cycling.mp3",
-        "warning": "w-cycling.mp3"
+        "itemAudio": "/audio/fun-activities/hoola-hooping.mp3",
+        "question": "/audio/fun-activities/q-hoola-hooping.mp3",
+        "success": "/audio/fun-activities/s-hoola-hooping.mp3",
+        "error": "/audio/fun-activities/e-hoola-hooping.mp3",
+        "warning": "/audio/fun-activities/w-hoola-hooping.mp3"
       }
     },
     {
       "id": 2,
-      "name": "Painting",
-      "image": "/images/activities/painting.webp",
-      "description": "Painting is a fun activity that allows you to express creativity through colors and strokes.",
+      "name": "Swimming",
+      "image": "/images/fun-activities/swimming.webp",
+      "description": "Moving through water",
       "audio": {
-        "itemAudio": "/audio/this/painting.mp3",
-        "question": "q-painting.mp3",
-        "success": "c-painting.mp3",
-        "error": "n-painting.mp3",
-        "warning": "w-painting.mp3"
+        "itemAudio": "/audio/fun-activities/swimming.mp3",
+        "question": "/audio/fun-activities/q-swimming.mp3",
+        "success": "/audio/fun-activities/s-swimming.mp3",
+        "error": "/audio/fun-activities/e-swimming.mp3",
+        "warning": "/audio/fun-activities/w-swimming.mp3"
       }
     },
     {
       "id": 3,
-      "name": "Skating",
-      "image": "/images/activities/skating.webp",
-      "description": "Skating is a fun activity that involves gliding on ice or a smooth surface using skates.",
+      "name": "Water Sliding",
+      "image": "/images/fun-activities/water-sliding.webp",
+      "description": "Sliding down a water slide",
       "audio": {
-        "itemAudio": "/audio/this/skating.mp3",
-        "question": "q-skating.mp3",
-        "success": "c-skating.mp3",
-        "error": "n-skating.mp3",
-        "warning": "w-skating.mp3"
+        "itemAudio": "/audio/fun-activities/water-sliding.mp3",
+        "question": "/audio/fun-activities/q-water-sliding.mp3",
+        "success": "/audio/fun-activities/s-water-sliding.mp3",
+        "error": "/audio/fun-activities/e-water-sliding.mp3",
+        "warning": "/audio/fun-activities/w-water-sliding.mp3"
       }
     },
     {
       "id": 4,
-      "name": "Teeter Totter",
-      "image": "/images/activities/teeter-totter.webp",
-      "description": "A teeter totter is a playground activity where children balance and rock back and forth.",
+      "name": "Hand Painting",
+      "image": "/images/fun-activities/hand-painting.webp",
+      "description": "Painting with hands",
       "audio": {
-        "itemAudio": "/audio/this/teeter-totter.mp3",
-        "question": "q-teeter-totter.mp3",
-        "success": "c-teeter-totter.mp3",
-        "error": "n-teeter-totter.mp3",
-        "warning": "w-teeter-totter.mp3"
+        "itemAudio": "/audio/fun-activities/hand-painting.mp3",
+        "question": "/audio/fun-activities/q-hand-painting.mp3",
+        "success": "/audio/fun-activities/s-hand-painting.mp3",
+        "error": "/audio/fun-activities/e-hand-painting.mp3",
+        "warning": "/audio/fun-activities/w-hand-painting.mp3"
       }
     },
     {
       "id": 5,
-      "name": "Hula Hoop",
-      "image": "/images/activities/hula-hoop.webp",
-      "description": "Hula hooping is a fun activity that involves spinning a hoop around the waist, limbs, or neck.",
+      "name": "Skipping",
+      "image": "/images/fun-activities/skipping.webp",
+      "description": "Jumping over a rope",
       "audio": {
-        "itemAudio": "/audio/this/hula-hoop.mp3",
-        "question": "q-hula-hoop.mp3",
-        "success": "c-hula-hoop.mp3",
-        "error": "n-hula-hoop.mp3",
-        "warning": "w-hula-hoop.mp3"
+        "itemAudio": "/audio/fun-activities/skipping.mp3",
+        "question": "/audio/fun-activities/q-skipping.mp3",
+        "success": "/audio/fun-activities/s-skipping.mp3",
+        "error": "/audio/fun-activities/e-skipping.mp3",
+        "warning": "/audio/fun-activities/w-skipping.mp3"
       }
     },
     {
       "id": 6,
-      "name": "Skateboarding",
-      "image": "/images/activities/skate-boy.webp",
-      "description": "Skateboarding is an activity that involves riding and performing tricks on a skateboard.",
+      "name": "Playing Guitar",
+      "image": "/images/fun-activities/playing-guitar.webp",
+      "description": "Playing music on a guitar",
       "audio": {
-        "itemAudio": "/audio/this/skate-boy.mp3",
-        "question": "q-skate-boy.mp3",
-        "success": "c-skate-boy.mp3",
-        "error": "n-skate-boy.mp3",
-        "warning": "w-skate-boy.mp3"
+        "itemAudio": "/audio/fun-activities/playing-guitar.mp3",
+        "question": "/audio/fun-activities/q-playing-guitar.mp3",
+        "success": "/audio/fun-activities/s-playing-guitar.mp3",
+        "error": "/audio/fun-activities/e-playing-guitar.mp3",
+        "warning": "/audio/fun-activities/w-playing-guitar.mp3"
       }
     },
     {
       "id": 7,
-      "name": "Swing",
-      "image": "/images/activities/swing.webp",
-      "description": "Swinging is a playground activity where children sit on a seat and swing back and forth.",
+      "name": "Trampolining",
+      "image": "/images/fun-activities/trampolining.webp",
+      "description": "Jumping on a trampoline",
       "audio": {
-        "itemAudio": "/audio/this/swing.mp3",
-        "question": "q-swing.mp3",
-        "success": "c-swing.mp3",
-        "error": "n-swing.mp3",
-        "warning": "w-swing.mp3"
+        "itemAudio": "/audio/fun-activities/trampolining.mp3",
+        "question": "/audio/fun-activities/q-trampolining.mp3",
+        "success": "/audio/fun-activities/s-trampolining.mp3",
+        "error": "/audio/fun-activities/e-trampolining.mp3",
+        "warning": "/audio/fun-activities/w-trampolining.mp3"
       }
     },
     {
       "id": 8,
-      "name": "Trampoline",
-      "image": "/images/activities/trampoline.webp",
-      "description": "Trampolining is a fun activity that involves jumping on a trampoline.",
+      "name": "Bicycling",
+      "image": "/images/fun-activities/bicycling.webp",
+      "description": "Riding a bicycle",
       "audio": {
-        "itemAudio": "/audio/this/trampoline.mp3",
-        "question": "q-trampoline.mp3",
-        "success": "c-trampoline.mp3",
-        "error": "n-trampoline.mp3",
-        "warning": "w-trampoline.mp3"
+        "itemAudio": "/audio/fun-activities/bicycling.mp3",
+        "question": "/audio/fun-activities/q-bicycling.mp3",
+        "success": "/audio/fun-activities/s-bicycling.mp3",
+        "error": "/audio/fun-activities/e-bicycling.mp3",
+        "warning": "/audio/fun-activities/w-bicycling.mp3"
+      }
+    },
+    {
+      "id": 9,
+      "name": "See Sawing",
+      "image": "/images/fun-activities/see-sawing.webp",
+      "description": "Playing on a see saw",
+      "audio": {
+        "itemAudio": "/audio/fun-activities/see-sawing.mp3",
+        "question": "/audio/fun-activities/q-see-sawing.mp3",
+        "success": "/audio/fun-activities/s-see-sawing.mp3",
+        "error": "/audio/fun-activities/e-see-sawing.mp3",
+        "warning": "/audio/fun-activities/w-see-sawing.mp3"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Skateboarding",
+      "image": "/images/fun-activities/skateboarding.webp",
+      "description": "Riding a skateboard",
+      "audio": {
+        "itemAudio": "/audio/fun-activities/skateboarding.mp3",
+        "question": "/audio/fun-activities/q-skateboarding.mp3",
+        "success": "/audio/fun-activities/s-skateboarding.mp3",
+        "error": "/audio/fun-activities/e-skateboarding.mp3",
+        "warning": "/audio/fun-activities/w-skateboarding.mp3"
+      }
+    },
+    {
+      "id": 11,
+      "name": "Foot Scootering",
+      "image": "/images/fun-activities/foot-scootering.webp",
+      "description": "Riding a foot scooter",
+      "audio": {
+        "itemAudio": "/audio/fun-activities/foot-scootering.mp3",
+        "question": "/audio/fun-activities/q-foot-scootering.mp3",
+        "success": "/audio/fun-activities/s-foot-scootering.mp3",
+        "error": "/audio/fun-activities/e-foot-scootering.mp3",
+        "warning": "/audio/fun-activities/w-foot-scootering.mp3"
+      }
+    },
+    {
+      "id": 12,
+      "name": "Swinging",
+      "image": "/images/fun-activities/swinging.webp",
+      "description": "Moving back and forth on a swing",
+      "audio": {
+        "itemAudio": "/audio/fun-activities/swinging.mp3",
+        "question": "/audio/fun-activities/q-swinging.mp3",
+        "success": "/audio/fun-activities/s-swinging.mp3",
+        "error": "/audio/fun-activities/e-swinging.mp3",
+        "warning": "/audio/fun-activities/w-swinging.mp3"
       }
     }
   ],
