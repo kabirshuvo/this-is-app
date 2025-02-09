@@ -1,7 +1,7 @@
 {
   "animals": [
     {
-      "id": 33,
+      "id": 1,
       "name": "Zebra",
       "image": "/images/animals/zebra.webp",
       "description": "Zebras are African equids known for their distinctive black-and-white striped coats.",
@@ -14,7 +14,7 @@
       }
     },
     {
-      "id": 11,
+      "id": 2,
       "name": "Mouse",
       "image": "/images/animals/mouse.webp",
       "description": "Mice are small rodents with a pointed snout and long tail.",
@@ -27,7 +27,7 @@
       }
     },
     {
-      "id": 31,
+      "id": 3,
       "name": "Lizard",
       "image": "/images/animals/lizard.webp",
       "description": "Lizards are reptiles with scaly skin, commonly found in various habitats.",
@@ -40,7 +40,7 @@
       }
     },
     {
-      "id": 34,
+      "id": 4,
       "name": "Dog",
       "image": "/images/animals/dog.webp",
       "description": "Dogs are domesticated mammals known for their loyalty and companionship.",
@@ -53,7 +53,7 @@
       }
     },
     {
-      "id": 2,
+      "id": 5,
       "name": "Elephant",
       "image": "/images/animals/elephant.webp",
       "description": "Elephants are large mammals with trunks and tusks, known for their intelligence.",
@@ -66,7 +66,7 @@
       }
     },
     {
-      "id": 28,
+      "id": 6,
       "name": "Lion",
       "image": "/images/animals/lion.webp",
       "description": "Lions are big cats known as the king of the jungle.",
@@ -79,7 +79,7 @@
       }
     },
     {
-      "id": 16,
+      "id": 7,
       "name": "Squirrel",
       "image": "/images/animals/squirrel.webp",
       "description": "Squirrels are rodents known for their bushy tails and agility.",
@@ -92,7 +92,7 @@
       }
     },
     {
-      "id": 27,
+      "id": 8,
       "name": "Cow",
       "image": "/images/animals/cow.webp",
       "description": "Cows are domesticated mammals raised for milk and meat.",
@@ -105,7 +105,7 @@
       }
     },
     {
-      "id": 4,
+      "id": 9,
       "name": "Seal",
       "image": "/images/animals/seal.webp",
       "description": "Seals are marine mammals known for their streamlined bodies and aquatic abilities.",
@@ -118,7 +118,7 @@
       }
     },
     {
-      "id": 29,
+      "id": 10,
       "name": "Porcupine",
       "image": "/images/animals/porcupine.webp",
       "description": "Porcupines are rodents with a coat of sharp quills for defense.",
@@ -131,7 +131,7 @@
       }
     },
     {
-      "id": 17,
+      "id": 11,
       "name": "Cat",
       "image": "/images/animals/cat.webp",
       "description": "Cats are small domesticated mammals known for their agility.",
@@ -144,7 +144,7 @@
       }
     },
     {
-      "id": 30,
+      "id": 12,
       "name": "Crocodile",
       "image": "/images/animals/crocodile.webp",
       "description": "Crocodiles are large aquatic reptiles known for their powerful jaws.",
@@ -157,7 +157,7 @@
       }
     },
     {
-      "id": 6,
+      "id": 13,
       "name": "Giraffe",
       "image": "/images/animals/giraffe.webp",
       "description": "Giraffes are the tallest terrestrial animals with long necks and legs.",
@@ -170,7 +170,7 @@
       }
     },
     {
-      "id": 25,
+      "id": 14,
       "name": "Koala Bear and Baby Koala Bear",
       "image": "/images/animals/koala.webp",
       "description": "Koalas are marsupials native to Australia, known for their eucalyptus diet.",
@@ -182,27 +182,26 @@
         "warning": "/audio/error/animals/w-koalabear-and-baby-koalabear.mp3"
       }
     },
-
     {
-      "id": 5,
-      "name": "Black Jaguar",
-      "image": "/images/animals/black-jaguar.webp",
-      "description": "Black jaguars are big cats with a distinctive dark coat.",
+      "id": 15,
+      "name": "Jaguar",
+      "image": "/images/animals/jaguar.webp",
+      "description": "Jaguars are big cats with a distinctive coat.",
       "audio": {
-        "itemAudio": "/audio/this/animals/black-jaguar.mp3",
-        "question": "/audio/which/animals/q-black-jaguar.mp3",
-        "success": "/audio/correct/animals/c-black-jaguar.mp3",
-        "error": "/audio/error/animals/n-black-jaguar.mp3",
-        "warning": "/audio/error/animals/w-black-jaguar.mp3"
+        "itemAudio": "/audio/this/animals/jaguar.mp3",
+        "question": "/audio/which/animals/q-jaguar.mp3",
+        "success": "/audio/correct/animals/c-jaguar.mp3",
+        "error": "/audio/error/animals/n-jaguar.mp3",
+        "warning": "/audio/error/animals/w-jaguar.mp3"
       }
     },
     {
-      "id": 22,
+      "id": 16,
       "name": "Kangaroo and Baby Kangaroo",
       "image": "/images/animals/kangaroo.webp",
       "description": "Kangaroos are marsupials native to Australia, known for their hopping movement.",
       "audio": {
-        "itemAudio": "/audio/this/animals/cangaroo.mp3",
+        "itemAudio": "/audio/this/animals/cangaroo-and-baby-cangaroo.mp3",
         "question": "/audio/which/animals/q-cangaroo.mp3",
         "success": "/audio/correct/animals/c-cangaroo.mp3",
         "error": "/audio/error/animals/n-cangaroo.mp3",
@@ -210,7 +209,7 @@
       }
     },
     {
-      "id": 14,
+      "id": 17,
       "name": "Hippopotamus",
       "image": "/images/animals/hippo.webp",
       "description": "Hippos are large, semi-aquatic mammals known for their aggressive nature.",
@@ -223,7 +222,7 @@
       }
     },
     {
-      "id": 35,
+      "id": 18,
       "name": "Rhino",
       "image": "/images/animals/rhino.webp",
       "description": "Rhinos are large herbivorous mammals known for their thick skin and horns.",
@@ -236,169 +235,7 @@
       }
     },
     {
-      "id": 1,
-      "name": "--------------------------------------------------------------------------------------------------------------------Aardvark--------------------------------------------------------------------------------------------------------------------",
-      "image": "/images/animals/aardvark.webp",
-      "description": "Aardvarks are nocturnal mammals native to Africa, known for their burrowing habits.",
-      "audio": {
-        "itemAudio": "/audio/this/animals/aardvark.mp3",
-        "question": "/audio/which/animals/q-aardvark.mp3",
-        "success": "/audio/correct/animals/c-aardvark.mp3",
-        "error": "/audio/error/animals/n-aardvark.mp3",
-        "warning": "/audio/error/animals/w-aardvark.mp3"
-      }
-    },
-
-    {
-      "id": 3,
-      "name": "Monkey",
-      "image": "/images/animals/monkey.webp",
-      "description": "Monkeys are primates known for their agility and playful nature.",
-      "audio": {
-        "itemAudio": "/audio/this/animals/monkey.mp3",
-        "question": "/audio/which/animals/q-monkey.mp3",
-        "success": "/audio/correct/animals/c-monkey.mp3",
-        "error": "/audio/error/animals/n-monkey.mp3",
-        "warning": "/audio/error/animals/w-monkey.mp3"
-      }
-    },
-
-    {
-      "id": 8,
-      "name": "Snake",
-      "image": "/images/animals/snake.webp",
-      "description": "Snakes are legless reptiles with elongated bodies.",
-      "audio": {
-        "itemAudio": "/audio/this/animals/snake.mp3",
-        "question": "/audio/which/animals/q-snake.mp3",
-        "success": "/audio/correct/animals/c-snake.mp3",
-        "error": "/audio/error/animals/n-snake.mp3",
-        "warning": "/audio/error/animals/w-snake.mp3"
-      }
-    },
-    {
-      "id": 9,
-      "name": "Butterfly",
-      "image": "/images/animals/butterfly.webp",
-      "description": "Butterflies are insects with colorful wings, known for their metamorphosis.",
-      "audio": {
-        "itemAudio": "/audio/this/animals/butterfly.mp3",
-        "question": "/audio/which/animals/q-butterfly.mp3",
-        "success": "/audio/correct/animals/c-butterfly.mp3",
-        "error": "/audio/error/animals/n-butterfly.mp3",
-        "warning": "/audio/error/animals/w-butterfly.mp3"
-      }
-    },
-    {
-      "id": 10,
-      "name": "Gorilla",
-      "image": "/images/animals/gorilla.webp",
-      "description": "Gorillas are large primates known for their strength and intelligence.",
-      "audio": {
-        "itemAudio": "/audio/this/animals/gorilla.mp3",
-        "question": "/audio/which/animals/q-gorilla.mp3",
-        "success": "/audio/correct/animals/c-gorilla.mp3",
-        "error": "/audio/error/animals/n-gorilla.mp3",
-        "warning": "/audio/error/animals/w-gorilla.mp3"
-      }
-    },
-
-    {
-      "id": 12,
-      "name": "Springbok",
-      "image": "/images/animals/springbok.webp",
-      "description": "Springboks are antelopes known for their leaping behavior.",
-      "audio": {
-        "itemAudio": "/audio/this/animals/springbok.mp3",
-        "question": "/audio/which/animals/q-springbok.mp3",
-        "success": "/audio/correct/animals/c-springbok.mp3",
-        "error": "/audio/error/animals/n-springbok.mp3",
-        "warning": "/audio/error/animals/w-springbok.mp3"
-      }
-    },
-    {
-      "id": 13,
-      "name": "Camel",
-      "image": "/images/animals/camel.webp",
-      "description": "Camels are desert animals with humps for storing fat.",
-      "audio": {
-        "itemAudio": "/audio/this/animals/camel.mp3",
-        "question": "/audio/which/animals/q-camel.mp3",
-        "success": "/audio/correct/animals/c-camel.mp3",
-        "error": "/audio/error/animals/n-camel.mp3",
-        "warning": "/audio/error/animals/w-camel.mp3"
-      }
-    },
-
-    {
-      "id": 15,
-      "name": "Panda",
-      "image": "/images/animals/panda.webp",
-      "description": "Pandas are bears native to China, known for their black-and-white fur.",
-      "audio": {
-        "itemAudio": "/audio/this/animals/panda-bear.mp3",
-        "question": "/audio/which/animals/q-panda-bear.mp3",
-        "success": "/audio/correct/animals/c-panda-bear.mp3",
-        "error": "/audio/error/animals/n-panda-bear.mp3",
-        "warning": "/audio/error/animals/w-panda-bear.mp3"
-      }
-    },
-
-    {
-      "id": 18,
-      "name": "Horse",
-      "image": "/images/animals/horse.webp",
-      "description": "Horses are strong animals often used for riding and transport.",
-      "audio": {
-        "itemAudio": "/audio/this/animals/horse.mp3",
-        "question": "/audio/which/animals/q-horse.mp3",
-        "success": "/audio/correct/animals/c-horse.mp3",
-        "error": "/audio/error/animals/n-horse.mp3",
-        "warning": "/audio/error/animals/w-horse.mp3"
-      }
-    },
-    {
       "id": 19,
-      "name": "Penguin",
-      "image": "/images/animals/penguin.webp",
-      "description": "Penguins are flightless birds known for their black-and-white plumage.",
-      "audio": {
-        "itemAudio": "/audio/this/animals/penguin.mp3",
-        "question": "/audio/which/animals/q-penguin.mp3",
-        "success": "/audio/correct/animals/c-penguin.mp3",
-        "error": "/audio/error/animals/n-penguin.mp3",
-        "warning": "/audio/error/animals/w-penguin.mp3"
-      }
-    },
-    {
-      "id": 20,
-      "name": "Tortoise",
-      "image": "/images/animals/tortoise.webp",
-      "description": "Tortoises are land-dwelling reptiles with a hard shell for protection.",
-      "audio": {
-        "itemAudio": "/audio/this/animals/tortoise.mp3",
-        "question": "/audio/which/animals/q-tortoise.mp3",
-        "success": "/audio/correct/animals/c-tortoise.mp3",
-        "error": "/audio/error/animals/n-tortoise.mp3",
-        "warning": "/audio/error/animals/w-tortoise.mp3"
-      }
-    },
-    {
-      "id": 21,
-      "name": "Cheetah",
-      "image": "/images/animals/cheetah.webp",
-      "description": "Cheetahs are the fastest land animals, known for their speed and agility.",
-      "audio": {
-        "itemAudio": "/audio/this/animals/cheetah.mp3",
-        "question": "/audio/which/animals/q-cheetah.mp3",
-        "success": "/audio/correct/animals/c-cheetah.mp3",
-        "error": "/audio/error/animals/n-cheetah.mp3",
-        "warning": "/audio/error/animals/w-cheetah.mp3"
-      }
-    },
-
-    {
-      "id": 23,
       "name": "Pig",
       "image": "/images/animals/pig.webp",
       "description": "Pigs are domesticated animals known for their intelligence and adaptability.",
@@ -411,33 +248,124 @@
       }
     },
     {
-      "id": 24,
-      "name": "Warthog",
-      "image": "/images/animals/warthog.webp",
-      "description": "Warthogs are wild pigs with distinctive tusks and rugged features.",
+      "id": 20,
+      "name": "Meerkat",
+      "image": "/images/animals/meerkat.webp",
+      "description": "Meerkats are small mammals belonging to the mongoose family, known for their upright posture.",
       "audio": {
-        "itemAudio": "/audio/this/animals/warthog.mp3",
-        "question": "/audio/which/animals/q-warthog.mp3",
-        "success": "/audio/correct/animals/c-warthog.mp3",
-        "error": "/audio/error/animals/n-warthog.mp3",
-        "warning": "/audio/error/animals/w-warthog.mp3"
+        "itemAudio": "/audio/this/animals/meerkat.mp3",
+        "question": "/audio/which/animals/q-meerkat.mp3",
+        "success": "/audio/correct/animals/c-meerkat.mp3",
+        "error": "/audio/error/animals/n-meerkat.mp3",
+        "warning": "/audio/error/animals/w-meerkat.mp3"
+      }
+    },
+    {
+      "id": 21,
+      "name": "Tortoise",
+      "image": "/images/animals/tortoise.webp",
+      "description": "Tortoises are land-dwelling reptiles with a hard shell for protection.",
+      "audio": {
+        "itemAudio": "/audio/this/animals/tortoise.mp3",
+        "question": "/audio/which/animals/q-tortoise.mp3",
+        "success": "/audio/correct/animals/c-tortoise.mp3",
+        "error": "/audio/error/animals/n-tortoise.mp3",
+        "warning": "/audio/error/animals/w-tortoise.mp3"
+      }
+    },
+    {
+      "id": 22,
+      "name": "Horse",
+      "image": "/images/animals/horse.webp",
+      "description": "Horses are strong animals often used for riding and transport.",
+      "audio": {
+        "itemAudio": "/audio/this/animals/horse.mp3",
+        "question": "/audio/which/animals/q-horse.mp3",
+        "success": "/audio/correct/animals/c-horse.mp3",
+        "error": "/audio/error/animals/n-horse.mp3",
+        "warning": "/audio/error/animals/w-horse.mp3"
+      }
+    },
+    {
+      "id": 23,
+      "name": "Rabbit",
+      "image": "/images/animals/rabbit.webp",
+      "description": "Rabbits are small mammals known for their long ears and quick reproduction.",
+      "audio": {
+        "itemAudio": "/audio/this/animals/rabbit.mp3",
+        "question": "/audio/which/animals/q-rabbit.mp3",
+        "success": "/audio/success/animals/c-rabbit.mp3",
+        "error": "/audio/error/animals/n-rabbit.mp3",
+        "warning": "/audio/error/animals/w-rabbit.mp3"
+      }
+    },
+    {
+      "id": 24,
+      "name": "Panda Bear",
+      "image": "/images/animals/panda.webp",
+      "description": "Pandas are bears native to China, known for their black-and-white fur.",
+      "audio": {
+        "itemAudio": "/audio/this/animals/panda-bear.mp3",
+        "question": "/audio/which/animals/q-panda-bear.mp3",
+        "success": "/audio/correct/animals/c-panda-bear.mp3",
+        "error": "/audio/error/animals/n-panda-bear.mp3",
+        "warning": "/audio/error/animals/w-panda-bear.mp3"
       }
     },
     {
       "id": 25,
-      "name": "Koala",
-      "image": "/images/animals/koala.webp",
-      "description": "Koalas are marsupials native to Australia, known for their eucalyptus diet.",
+      "name": "Black Jaguar",
+      "image": "/images/animals/black-jaguar.webp",
+      "description": "Black jaguars are a melanistic variant of jaguars, known for their dark fur and powerful build.",
       "audio": {
-        "itemAudio": "/audio/this/animals/koalabear-and-baby-koalabear.mp3",
-        "question": "/audio/which/animals/q-koalabear-and-baby-koalabear.mp3",
-        "success": "/audio/correct/animals/c-koalabear-and-baby-koalabear.mp3",
-        "error": "/audio/error/animals/n-koalabear-and-baby-koalabear.mp3",
-        "warning": "/audio/error/animals/w-koalabear-and-baby-koalabear.mp3"
+        "itemAudio": "/audio/this/animals/black-jaguar.mp3",
+        "question": "/audio/which/animals/q-black-jaguar.mp3",
+        "success": "/audio/correct/animals/c-black-jaguar.mp3",
+        "error": "/audio/error/animals/n-black-jaguar.mp3",
+        "warning": "/audio/error/animals/w-black-jaguar.mp3"
       }
     },
     {
       "id": 26,
+      "name": "Cheetah",
+      "image": "/images/animals/cheetah.webp",
+      "description": "Cheetahs are the fastest land animals, known for their speed and agility.",
+      "audio": {
+        "itemAudio": "/audio/this/animals/cheetah.mp3",
+        "question": "/audio/which/animals/q-cheetah.mp3",
+        "success": "/audio/correct/animals/c-cheetah.mp3",
+        "error": "/audio/error/animals/n-cheetah.mp3",
+        "warning": "/audio/error/animals/w-cheetah.mp3"
+      }
+    },
+    {
+      "id": 27,
+      "name": "Gorilla",
+      "image": "/images/animals/gorilla.webp",
+      "description": "Gorillas are large primates known for their strength and intelligence.",
+      "audio": {
+        "itemAudio": "/audio/this/animals/gorilla.mp3",
+        "question": "/audio/which/animals/q-gorilla.mp3",
+        "success": "/audio/correct/animals/c-gorilla.mp3",
+        "error": "/audio/error/animals/n-gorilla.mp3",
+        "warning": "/audio/error/animals/w-gorilla.mp3"
+      }
+    },
+    {
+      "id": 28,
+      "name": "Monkey",
+      "image": "/images/animals/monkey.webp",
+      "description": "Monkeys are primates known for their agility and playful nature.",
+      "audio": {
+        "itemAudio": "/audio/this/animals/monkey.mp3",
+        "question": "/audio/which/animals/q-monkey.mp3",
+        "success": "/audio/correct/animals/c-monkey.mp3",
+        "error": "/audio/error/animals/n-monkey.mp3",
+        "warning": "/audio/error/animals/w-monkey.mp3"
+      }
+    },
+    {
+      "id": 29,
       "name": "Polar Bear",
       "image": "/images/animals/polar-bear.webp",
       "description": "Polar bears are large carnivorous bears native to the Arctic.",
@@ -449,102 +377,36 @@
         "warning": "/audio/error/animals/w-polar-bear.mp3"
       }
     },
-
     {
-      "id": 32,
-      "name": "Rabbit",
-      "image": "/images/animals/rabbit.webp",
-      "description": "Rabbits are small mammals known for their long ears and quick reproduction.",
+      "id": 30,
+      "name": "Springbok",
+      "image": "/images/animals/springbok.webp",
+      "description": "Springboks are antelopes known for their leaping behavior.",
       "audio": {
-        "itemAudio": "/audio/this/animals/rabbit.mp3",
-        "question": "/audio/which/animals/q-rabbit.mp3",
-        "success": "/audio/success/animals/c-rabbit.mp3",
-        "error": "/audio/error/animals/n-rabbit.mp3",
-        "warning": "/audio/error/animals/w-rabbit.mp3"
+        "itemAudio": "/audio/this/animals/springbok.mp3",
+        "question": "/audio/which/animals/q-springbok.mp3",
+        "success": "/audio/correct/animals/c-springbok.mp3",
+        "error": "/audio/error/animals/n-springbok.mp3",
+        "warning": "/audio/error/animals/w-springbok.mp3"
       }
     }
   ],
   "transport": [
     {
       "id": 1,
-      "name": "Airplane",
-      "image": "/images/transport/airplane.webp",
-      "description": "An airplane is a powered flying vehicle with fixed wings and a weight greater than that of the air it displaces.",
+      "name": "Train",
+      "image": "/images/transport/train.webp",
+      "description": "A train is a series of connected vehicles that run on rails and transport passengers or goods.",
       "audio": {
-        "itemAudio": "/audio/this/transport/airplane.mp3",
-        "question": "/audio/which/transport/q-airplane.mp3",
-        "success": "/audio/correct/transport/c-airplane.mp3",
-        "error": "/audio/error/transport/n-airplane.mp3",
-        "warning": "/audio/error/transport/w-airplane.mp3"
+        "itemAudio": "/audio/this/transport/train.mp3",
+        "question": "/audio/which/transport/q-train.mp3",
+        "success": "/audio/correct/transport/c-train.mp3",
+        "error": "/audio/error/transport/n-train.mp3",
+        "warning": "/audio/error/transport/w-train.mp3"
       }
     },
     {
       "id": 2,
-      "name": "Ambulance",
-      "image": "/images/transport/ambulance.webp",
-      "description": "An ambulance is a vehicle equipped to transport sick or injured people to medical facilities.",
-      "audio": {
-        "itemAudio": "/audio/this/transport/ambulance.mp3",
-        "question": "/audio/which/transport/q-ambulance.mp3",
-        "success": "/audio/correct/transport/c-ambulance.mp3",
-        "error": "/audio/error/transport/n-ambulance.mp3",
-        "warning": "/audio/error/transport/w-ambulance.mp3"
-      }
-    },
-    {
-      "id": 3,
-      "name": "Bicycle",
-      "image": "/images/transport/bicycle.webp",
-      "description": "A bicycle is a human-powered vehicle with two wheels, used for transportation or recreation.",
-      "audio": {
-        "itemAudio": "/audio/this/transport/bicycle.mp3",
-        "question": "/audio/which/transport/q-bicycle.mp3",
-        "success": "/audio/correct/transport/c-bicycle.mp3",
-        "error": "/audio/error/transport/n-bicycle.mp3",
-        "warning": "/audio/error/transport/w-bicycle.mp3"
-      }
-    },
-    {
-      "id": 4,
-      "name": "Boat",
-      "image": "/images/transport/boat.webp",
-      "description": "A boat is a watercraft used for transportation, fishing, or recreation.",
-      "audio": {
-        "itemAudio": "/audio/this/transport/boat.mp3",
-        "question": "/audio/which/transport/q-boat.mp3",
-        "success": "/audio/correct/transport/c-boat.mp3",
-        "error": "/audio/error/transport/n-boat.mp3",
-        "warning": "/audio/error/transport/w-boat.mp3"
-      }
-    },
-    {
-      "id": 5,
-      "name": "Bus",
-      "image": "/images/transport/bus.webp",
-      "description": "A bus is a large vehicle used for public transport of passengers.",
-      "audio": {
-        "itemAudio": "/audio/this/transport/bus.mp3",
-        "question": "/audio/which/transport/q-bus.mp3",
-        "success": "/audio/correct/transport/c-bus.mp3",
-        "error": "/audio/error/transport/n-bus.mp3",
-        "warning": "/audio/error/transport/w-bus.mp3"
-      }
-    },
-    {
-      "id": 6,
-      "name": "Car Transporter Truck",
-      "image": "/images/transport/car-transporter-truck.webp",
-      "description": "A truck designed for carrying multiple cars.",
-      "audio": {
-        "itemAudio": "/audio/this/transport/car-transporter-truck.mp3",
-        "question": "/audio/which/transport/q-car-transporter-truck.mp3",
-        "success": "/audio/correct/transport/c-car-transporter-truck.mp3",
-        "error": "/audio/error/transport/n-car-transporter-truck.mp3",
-        "warning": "/audio/error/transport/w-car-transporter-truck.mp3"
-      }
-    },
-    {
-      "id": 7,
       "name": "Car",
       "image": "/images/transport/car.webp",
       "description": "A car is a four-wheeled motor vehicle for personal transport.",
@@ -557,163 +419,7 @@
       }
     },
     {
-      "id": 8,
-      "name": "Crane Truck",
-      "image": "/images/transport/crane-truck.webp",
-      "description": "A crane truck is a vehicle equipped with a crane for lifting heavy objects.",
-      "audio": {
-        "itemAudio": "/audio/this/transport/crane-truck.mp3",
-        "question": "/audio/which/transport/q-crane-truck.mp3",
-        "success": "/audio/correct/transport/c-crane-truck.mp3",
-        "error": "/audio/error/transport/n-crane-truck.mp3",
-        "warning": "/audio/error/transport/w-crane-truck.mp3"
-      }
-    },
-    {
-      "id": 9,
-      "name": "Cruise Ship",
-      "image": "/images/transport/cruiseline.webp",
-      "description": "A cruise ship is a large passenger ship used for pleasure voyages.",
-      "audio": {
-        "itemAudio": "/audio/this/transport/cruiseline.mp3",
-        "question": "/audio/which/transport/q-cruiseline.mp3",
-        "success": "/audio/correct/transport/c-cruiseline.mp3",
-        "error": "/audio/error/transport/n-cruiseline.mp3",
-        "warning": "/audio/error/transport/w-cruiseline.mp3"
-      }
-    },
-    {
-      "id": 10,
-      "name": "Firetruck",
-      "image": "/images/transport/firetruck.webp",
-      "description": "A firetruck is a vehicle designed to assist in fighting fires.",
-      "audio": {
-        "itemAudio": "/audio/this/transport/firetruck.mp3",
-        "question": "/audio/which/transport/q-firetruck.mp3",
-        "success": "/audio/correct/transport/c-firetruck.mp3",
-        "error": "/audio/error/transport/n-firetruck.mp3",
-        "warning": "/audio/error/transport/w-firetruck.mp3"
-      }
-    },
-    {
-      "id": 11,
-      "name": "Foot Scooter",
-      "image": "/images/transport/foot-scooter.webp",
-      "description": "A foot scooter is a human-powered vehicle with a handlebar, deck, and wheels.",
-      "audio": {
-        "itemAudio": "/audio/this/transport/foot-scooter.mp3",
-        "question": "/audio/which/transport/q-foot-scooter.mp3",
-        "success": "/audio/correct/transport/c-foot-scooter.mp3",
-        "error": "/audio/error/transport/n-foot-scooter.mp3",
-        "warning": "/audio/error/transport/w-foot-scooter.mp3"
-      }
-    },
-    {
-      "id": 12,
-      "name": "Helicopter",
-      "image": "/images/transport/helicopter.webp",
-      "description": "A helicopter is an aircraft with rotating blades that can take off and land vertically.",
-      "audio": {
-        "itemAudio": "/audio/this/transport/helicopter.mp3",
-        "question": "/audio/which/transport/q-helicopter.mp3",
-        "success": "/audio/correct/transport/c-helicopter.mp3",
-        "error": "/audio/error/transport/n-helicopter.mp3",
-        "warning": "/audio/error/transport/w-helicopter.mp3"
-      }
-    },
-    {
-      "id": 13,
-      "name": "Horse",
-      "image": "/images/transport/horse.webp",
-      "description": "Horses have been used historically for transportation and pulling carriages.",
-      "audio": {
-        "itemAudio": "/audio/this/transport/horse.mp3",
-        "question": "/audio/which/transport/q-horse.mp3",
-        "success": "/audio/correct/transport/c-horse.mp3",
-        "error": "/audio/error/transport/n-horse.mp3",
-        "warning": "/audio/error/transport/w-horse.mp3"
-      }
-    },
-    {
-      "id": 14,
-      "name": "Ice Cream Van",
-      "image": "/images/transport/icecream-van.webp",
-      "description": "An ice cream van is a vehicle used to sell ice cream.",
-      "audio": {
-        "itemAudio": "/audio/this/transport/icecream-van.mp3",
-        "question": "/audio/which/transport/q-icecream-van.mp3",
-        "success": "/audio/correct/transport/c-icecream-van.mp3",
-        "error": "/audio/error/transport/n-icecream-van.mp3",
-        "warning": "/audio/error/transport/w-icecream-van.mp3"
-      }
-    },
-    {
-      "id": 15,
-      "name": "Jeep",
-      "image": "/images/transport/jeep.webp",
-      "description": "A jeep is a rugged vehicle often used for off-road travel.",
-      "audio": {
-        "itemAudio": "/audio/this/transport/jeep.mp3",
-        "question": "/audio/which/transport/q-jeep.mp3",
-        "success": "/audio/correct/transport/c-jeep.mp3",
-        "error": "/audio/error/transport/n-jeep.mp3",
-        "warning": "/audio/error/transport/w-jeep.mp3"
-      }
-    },
-    {
-      "id": 16,
-      "name": "Jetski",
-      "image": "/images/transport/jetski.webp",
-      "description": "A jetski is a small, fast watercraft used for recreation.",
-      "audio": {
-        "itemAudio": "/audio/this/transport/jetski.mp3",
-        "question": "/audio/which/transport/q-jetski.mp3",
-        "success": "/audio/correct/transport/c-jetski.mp3",
-        "error": "/audio/error/transport/n-jetski.mp3",
-        "warning": "/audio/error/transport/w-jetski.mp3"
-      }
-    },
-    {
-      "id": 17,
-      "name": "Minibus",
-      "image": "/images/transport/minibus.webp",
-      "description": "A minibus is a smaller bus designed for transporting fewer passengers.",
-      "audio": {
-        "itemAudio": "/audio/this/transport/minibus.mp3",
-        "question": "/audio/which/transport/q-minibus.mp3",
-        "success": "/audio/correct/transport/c-minibus.mp3",
-        "error": "/audio/error/transport/n-minibus.mp3",
-        "warning": "/audio/error/transport/w-minibus.mp3"
-      }
-    },
-    {
-      "id": 18,
-      "name": "Mobile Camper",
-      "image": "/images/transport/mobile-camper.webp",
-      "description": "A mobile camper is a vehicle equipped with living quarters for travel and camping.",
-      "audio": {
-        "itemAudio": "/audio/this/transport/mobile-camper.mp3",
-        "question": "/audio/which/transport/q-mobile-camper.mp3",
-        "success": "/audio/correct/transport/c-mobile-camper.mp3",
-        "error": "/audio/error/transport/n-mobile-camper.mp3",
-        "warning": "/audio/error/transport/w-mobile-camper.mp3"
-      }
-    },
-    {
-      "id": 19,
-      "name": "Motor Scooter",
-      "image": "/images/transport/motor-scooter.webp",
-      "description": "A motor scooter is a lightweight, two-wheeled motorized vehicle.",
-      "audio": {
-        "itemAudio": "/audio/this/transport/motor-scooter.mp3",
-        "question": "/audio/which/transport/q-motor-scooter.mp3",
-        "success": "/audio/correct/transport/c-motor-scooter.mp3",
-        "error": "/audio/error/transport/n-motor-scooter.mp3",
-        "warning": "/audio/error/transport/w-motor-scooter.mp3"
-      }
-    },
-    {
-      "id": 20,
+      "id": 3,
       "name": "Motorbike",
       "image": "/images/transport/motorbike.webp",
       "description": "A motorbike is a two-wheeled vehicle powered by an engine.",
@@ -726,59 +432,85 @@
       }
     },
     {
-      "id": 21,
-      "name": "One Wheeler",
-      "image": "/images/transport/one-wheeler.webp",
-      "description": "A one-wheeler is a single-wheeled motorized vehicle, often used for personal transport.",
+      "id": 4,
+      "name": "Van",
+      "image": "/images/transport/van.webp",
+      "description": "A van is a medium-sized motor vehicle used for transporting goods or people.",
       "audio": {
-        "itemAudio": "/audio/this/transport/one-wheeler.mp3",
-        "question": "/audio/which/transport/q-one-wheeler.mp3",
-        "success": "/audio/correct/transport/c-one-wheeler.mp3",
-        "error": "/audio/error/transport/n-one-wheeler.mp3",
-        "warning": "/audio/error/transport/w-one-wheeler.mp3"
+        "itemAudio": "/audio/this/transport/van.mp3",
+        "question": "/audio/which/transport/q-van.mp3",
+        "success": "/audio/correct/transport/c-van.mp3",
+        "error": "/audio/error/transport/n-van.mp3",
+        "warning": "/audio/error/transport/w-van.mp3"
       }
     },
     {
-      "id": 22,
-      "name": "Pickup Truck",
-      "image": "/images/transport/pickup-truck.webp",
-      "description": "A pickup truck is a light motor vehicle with an open rear cargo area.",
+      "id": 5,
+      "name": "Ambulance",
+      "image": "/images/transport/ambulance.webp",
+      "description": "An ambulance is a vehicle equipped to transport sick or injured people to medical facilities.",
       "audio": {
-        "itemAudio": "/audio/this/transport/pickup-truck.mp3",
-        "question": "/audio/which/transport/q-pickup-truck.mp3",
-        "success": "/audio/correct/transport/c-pickup-truck.mp3",
-        "error": "/audio/error/transport/n-pickup-truck.mp3",
-        "warning": "/audio/error/transport/w-pickup-truck.mp3"
+        "itemAudio": "/audio/this/transport/ambulance.mp3",
+        "question": "/audio/which/transport/q-ambulance.mp3",
+        "success": "/audio/correct/transport/c-ambulance.mp3",
+        "error": "/audio/error/transport/n-ambulance.mp3",
+        "warning": "/audio/error/transport/w-ambulance.mp3"
       }
     },
     {
-      "id": 23,
-      "name": "Police Car",
-      "image": "/images/transport/police-car.webp",
-      "description": "A police car is a vehicle used by law enforcement for patrol and response.",
+      "id": 6,
+      "name": "Helicopter",
+      "image": "/images/transport/helicopter.webp",
+      "description": "A helicopter is an aircraft with rotating blades that can take off and land vertically.",
       "audio": {
-        "itemAudio": "/audio/this/transport/police-car.mp3",
-        "question": "/audio/which/transport/q-police-car.mp3",
-        "success": "/audio/correct/transport/c-police-car.mp3",
-        "error": "/audio/error/transport/n-police-car.mp3",
-        "warning": "/audio/error/transport/w-police-car.mp3"
+        "itemAudio": "/audio/this/transport/helicopter.mp3",
+        "question": "/audio/which/transport/q-helicopter.mp3",
+        "success": "/audio/correct/transport/c-helicopter.mp3",
+        "error": "/audio/error/transport/n-helicopter.mp3",
+        "warning": "/audio/error/transport/w-helicopter.mp3"
       }
     },
     {
-      "id": 24,
-      "name": "Rickshaw",
-      "image": "/images/transport/rickshaw.webp",
-      "description": "A rickshaw is a three-wheeled vehicle, often pulled manually or motorized.",
+      "id": 7,
+      "name": "Mini Bus",
+      "image": "/images/transport/minibus.webp",
+      "description": "A minibus is a smaller bus designed for transporting fewer passengers.",
       "audio": {
-        "itemAudio": "/audio/this/transport/rickshaw.mp3",
-        "question": "/audio/which/transport/q-rickshaw.mp3",
-        "success": "/audio/correct/transport/c-rickshaw.mp3",
-        "error": "/audio/error/transport/n-rickshaw.mp3",
-        "warning": "/audio/error/transport/w-rickshaw.mp3"
+        "itemAudio": "/audio/this/transport/minibus.mp3",
+        "question": "/audio/which/transport/q-minibus.mp3",
+        "success": "/audio/correct/transport/c-minibus.mp3",
+        "error": "/audio/error/transport/n-minibus.mp3",
+        "warning": "/audio/error/transport/w-minibus.mp3"
       }
     },
     {
-      "id": 25,
+      "id": 8,
+      "name": "Bus",
+      "image": "/images/transport/bus.webp",
+      "description": "A bus is a large vehicle used for public transport of passengers.",
+      "audio": {
+        "itemAudio": "/audio/this/transport/bus.mp3",
+        "question": "/audio/which/transport/q-bus.mp3",
+        "success": "/audio/correct/transport/c-bus.mp3",
+        "error": "/audio/error/transport/n-bus.mp3",
+        "warning": "/audio/error/transport/w-bus.mp3"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Boat",
+      "image": "/images/transport/boat.webp",
+      "description": "A boat is a watercraft used for transportation, fishing, or recreation.",
+      "audio": {
+        "itemAudio": "/audio/this/transport/boat.mp3",
+        "question": "/audio/which/transport/q-boat.mp3",
+        "success": "/audio/correct/transport/c-boat.mp3",
+        "error": "/audio/error/transport/n-boat.mp3",
+        "warning": "/audio/error/transport/w-boat.mp3"
+      }
+    },
+    {
+      "id": 10,
       "name": "School Bus",
       "image": "/images/transport/school-bus.webp",
       "description": "A school bus is a vehicle used to transport students to and from school.",
@@ -791,7 +523,124 @@
       }
     },
     {
-      "id": 26,
+      "id": 11,
+      "name": "Fire Truck",
+      "image": "/images/transport/firetruck.webp",
+      "description": "A firetruck is a vehicle designed to assist in fighting fires.",
+      "audio": {
+        "itemAudio": "/audio/this/transport/firetruck.mp3",
+        "question": "/audio/which/transport/q-firetruck.mp3",
+        "success": "/audio/correct/transport/c-firetruck.mp3",
+        "error": "/audio/error/transport/n-firetruck.mp3",
+        "warning": "/audio/error/transport/w-firetruck.mp3"
+      }
+    },
+    {
+      "id": 12,
+      "name": "Pick-Up Truck",
+      "image": "/images/transport/pickup-truck.webp",
+      "description": "A pickup truck is a light motor vehicle with an open rear cargo area.",
+      "audio": {
+        "itemAudio": "/audio/this/transport/pickup-truck.mp3",
+        "question": "/audio/which/transport/q-pickup-truck.mp3",
+        "success": "/audio/correct/transport/c-pickup-truck.mp3",
+        "error": "/audio/error/transport/n-pickup-truck.mp3",
+        "warning": "/audio/error/transport/w-pickup-truck.mp3"
+      }
+    },
+    {
+      "id": 13,
+      "name": "Wheel Chair",
+      "image": "/images/transport/wheel-chair.webp",
+      "description": "A wheelchair is a chair with wheels, used by people who have difficulty walking.",
+      "audio": {
+        "itemAudio": "/audio/this/transport/wheel-chair.mp3",
+        "question": "/audio/which/transport/q-wheel-chair.mp3",
+        "success": "/audio/correct/transport/c-wheel-chair.mp3",
+        "error": "/audio/error/transport/n-wheel-chair.mp3",
+        "warning": "/audio/error/transport/w-wheel-chair.mp3"
+      }
+    },
+    {
+      "id": 14,
+      "name": "Jeep",
+      "image": "/images/transport/jeep.webp",
+      "description": "A jeep is a rugged vehicle often used for off-road travel.",
+      "audio": {
+        "itemAudio": "/audio/this/transport/jeep.mp3",
+        "question": "/audio/which/transport/q-jeep.mp3",
+        "success": "/audio/correct/transport/c-jeep.mp3",
+        "error": "/audio/error/transport/n-jeep.mp3",
+        "warning": "/audio/error/transport/w-jeep.mp3"
+      }
+    },
+    {
+      "id": 15,
+      "name": "Jetski",
+      "image": "/images/transport/jetski.webp",
+      "description": "A jetski is a small, fast watercraft used for recreation.",
+      "audio": {
+        "itemAudio": "/audio/this/transport/jetski.mp3",
+        "question": "/audio/which/transport/q-jetski.mp3",
+        "success": "/audio/correct/transport/c-jetski.mp3",
+        "error": "/audio/error/transport/n-jetski.mp3",
+        "warning": "/audio/error/transport/w-jetski.mp3"
+      }
+    },
+    {
+      "id": 16,
+      "name": "One Wheeler",
+      "image": "/images/transport/one-wheeler.webp",
+      "description": "A one-wheeler is a single-wheeled motorized vehicle, often used for personal transport.",
+      "audio": {
+        "itemAudio": "/audio/this/transport/one-wheeler.mp3",
+        "question": "/audio/which/transport/q-one-wheeler.mp3",
+        "success": "/audio/correct/transport/c-one-wheeler.mp3",
+        "error": "/audio/error/transport/n-one-wheeler.mp3",
+        "warning": "/audio/error/transport/w-one-wheeler.mp3"
+      }
+    },
+    {
+      "id": 17,
+      "name": "Cruise Liner",
+      "image": "/images/transport/cruiseline.webp",
+      "description": "A cruise ship is a large passenger ship used for pleasure voyages.",
+      "audio": {
+        "itemAudio": "/audio/this/transport/cruiseline.mp3",
+        "question": "/audio/which/transport/q-cruiseline.mp3",
+        "success": "/audio/correct/transport/c-cruiseline.mp3",
+        "error": "/audio/error/transport/n-cruiseline.mp3",
+        "warning": "/audio/error/transport/w-cruiseline.mp3"
+      }
+    },
+    {
+      "id": 18,
+      "name": "Police Car",
+      "image": "/images/transport/police-car.webp",
+      "description": "A police car is a vehicle used by law enforcement for patrol and response.",
+      "audio": {
+        "itemAudio": "/audio/this/transport/police-car.mp3",
+        "question": "/audio/which/transport/q-police-car.mp3",
+        "success": "/audio/correct/transport/c-police-car.mp3",
+        "error": "/audio/error/transport/n-police-car.mp3",
+        "warning": "/audio/error/transport/w-police-car.mp3"
+      }
+    },
+    {
+      "id": 19,
+      "name": "Foot Scooter",
+      "image": "/images/transport/foot-scooter.webp",
+      "description": "A foot scooter is a human-powered vehicle with a handlebar, deck, and wheels.",
+      "audio": {
+        "itemAudio": "/audio/this/transport/foot-scooter.mp3",
+        "question": "/audio/which/transport/q-foot-scooter.mp3",
+        "success": "/audio/correct/transport/c-foot-scooter.mp3",
+        "error": "/audio/error/transport/n-foot-scooter.mp3",
+        "warning": "/audio/error/transport/w-foot-scooter.mp3"
+      }
+    },
+    {
+      "id": 20,
       "name": "Three Wheel Taxi",
       "image": "/images/transport/three-wheel-taxi.webp",
       "description": "A three-wheel taxi is a small motorized vehicle used for public transport.",
@@ -801,6 +650,84 @@
         "success": "/audio/correct/transport/c-three-wheel-taxi.mp3",
         "error": "/audio/error/transport/n-three-wheel-taxi.mp3",
         "warning": "/audio/error/transport/w-three-wheel-taxi.mp3"
+      }
+    },
+    {
+      "id": 21,
+      "name": "Airplane",
+      "image": "/images/transport/airplane.webp",
+      "description": "An airplane is a powered flying vehicle with fixed wings and a weight greater than that of the air it displaces.",
+      "audio": {
+        "itemAudio": "/audio/this/transport/airplane.mp3",
+        "question": "/audio/which/transport/q-airplane.mp3",
+        "success": "/audio/correct/transport/c-airplane.mp3",
+        "error": "/audio/error/transport/n-airplane.mp3",
+        "warning": "/audio/error/transport/w-airplane.mp3"
+      }
+    },
+    {
+      "id": 22,
+      "name": "Bicycle",
+      "image": "/images/transport/bicycle.webp",
+      "description": "A bicycle is a human-powered vehicle with two wheels, used for transportation or recreation.",
+      "audio": {
+        "itemAudio": "/audio/this/transport/bicycle.mp3",
+        "question": "/audio/which/transport/q-bicycle.mp3",
+        "success": "/audio/correct/transport/c-bicycle.mp3",
+        "error": "/audio/error/transport/n-bicycle.mp3",
+        "warning": "/audio/error/transport/w-bicycle.mp3"
+      }
+    },
+    {
+      "id": 23,
+      "name": "Rickshaw",
+      "image": "/images/transport/rickshaw.webp",
+      "description": "A rickshaw is a three-wheeled vehicle, often pulled manually or motorized.",
+      "audio": {
+        "itemAudio": "/audio/this/transport/rickshaw.mp3",
+        "question": "/audio/which/transport/q-rickshaw.mp3",
+        "success": "/audio/correct/transport/c-rickshaw.mp3",
+        "error": "/audio/error/transport/n-rickshaw.mp3",
+        "warning": "/audio/error/transport/w-rickshaw.mp3"
+      }
+    },
+    {
+      "id": 24,
+      "name": "Motor Scooter",
+      "image": "/images/transport/motor-scooter.webp",
+      "description": "A motor scooter is a lightweight, two-wheeled motorized vehicle.",
+      "audio": {
+        "itemAudio": "/audio/this/transport/motor-scooter.mp3",
+        "question": "/audio/which/transport/q-motor-scooter.mp3",
+        "success": "/audio/correct/transport/c-motor-scooter.mp3",
+        "error": "/audio/error/transport/n-motor-scooter.mp3",
+        "warning": "/audio/error/transport/w-motor-scooter.mp3"
+      }
+    },
+    {
+      "id": 25,
+      "name": "Crane Truck",
+      "image": "/images/transport/crane-truck.webp",
+      "description": "A crane truck is a vehicle equipped with a crane for lifting heavy objects.",
+      "audio": {
+        "itemAudio": "/audio/this/transport/crane-truck.mp3",
+        "question": "/audio/which/transport/q-crane-truck.mp3",
+        "success": "/audio/correct/transport/c-crane-truck.mp3",
+        "error": "/audio/error/transport/n-crane-truck.mp3",
+        "warning": "/audio/error/transport/w-crane-truck.mp3"
+      }
+    },
+    {
+      "id": 26,
+      "name": "Ice Cream Van",
+      "image": "/images/transport/icecream-van.webp",
+      "description": "An ice cream van is a vehicle used to sell ice cream.",
+      "audio": {
+        "itemAudio": "/audio/this/transport/icecream-van.mp3",
+        "question": "/audio/which/transport/q-icecream-van.mp3",
+        "success": "/audio/correct/transport/c-icecream-van.mp3",
+        "error": "/audio/error/transport/n-icecream-van.mp3",
+        "warning": "/audio/error/transport/w-icecream-van.mp3"
       }
     },
     {
@@ -818,41 +745,41 @@
     },
     {
       "id": 28,
-      "name": "Train",
-      "image": "/images/transport/train.webp",
-      "description": "A train is a series of connected vehicles that run on rails and transport passengers or goods.",
+      "name": "Horse",
+      "image": "/images/transport/horse.webp",
+      "description": "Horses have been used historically for transportation and pulling carriages.",
       "audio": {
-        "itemAudio": "/audio/this/transport/train.mp3",
-        "question": "/audio/which/transport/q-train.mp3",
-        "success": "/audio/correct/transport/c-train.mp3",
-        "error": "/audio/error/transport/n-train.mp3",
-        "warning": "/audio/error/transport/w-train.mp3"
+        "itemAudio": "/audio/this/transport/horse.mp3",
+        "question": "/audio/which/transport/q-horse.mp3",
+        "success": "/audio/correct/transport/c-horse.mp3",
+        "error": "/audio/error/transport/n-horse.mp3",
+        "warning": "/audio/error/transport/w-horse.mp3"
       }
     },
     {
       "id": 29,
-      "name": "Van",
-      "image": "/images/transport/van.webp",
-      "description": "A van is a medium-sized motor vehicle used for transporting goods or people.",
+      "name": "Mobile Camper",
+      "image": "/images/transport/mobile-camper.webp",
+      "description": "A mobile camper is a vehicle equipped with living quarters for travel and camping.",
       "audio": {
-        "itemAudio": "/audio/this/transport/van.mp3",
-        "question": "/audio/which/transport/q-van.mp3",
-        "success": "/audio/correct/transport/c-van.mp3",
-        "error": "/audio/error/transport/n-van.mp3",
-        "warning": "/audio/error/transport/w-van.mp3"
+        "itemAudio": "/audio/this/transport/mobile-camper.mp3",
+        "question": "/audio/which/transport/q-mobile-camper.mp3",
+        "success": "/audio/correct/transport/c-mobile-camper.mp3",
+        "error": "/audio/error/transport/n-mobile-camper.mp3",
+        "warning": "/audio/error/transport/w-mobile-camper.mp3"
       }
     },
     {
       "id": 30,
-      "name": "Wheelchair",
-      "image": "/images/transport/wheel-chair.webp",
-      "description": "A wheelchair is a chair with wheels, used by people who have difficulty walking.",
+      "name": "Car Transporter Truck",
+      "image": "/images/transport/car-transporter-truck.webp",
+      "description": "A truck designed for carrying multiple cars.",
       "audio": {
-        "itemAudio": "/audio/this/transport/wheel-chair.mp3",
-        "question": "/audio/which/transport/q-wheel-chair.mp3",
-        "success": "/audio/correct/transport/c-wheel-chair.mp3",
-        "error": "/audio/error/transport/n-wheel-chair.mp3",
-        "warning": "/audio/error/transport/w-wheel-chair.mp3"
+        "itemAudio": "/audio/this/transport/car-transporter-truck.mp3",
+        "question": "/audio/which/transport/q-car-transporter-truck.mp3",
+        "success": "/audio/correct/transport/c-car-transporter-truck.mp3",
+        "error": "/audio/error/transport/n-car-transporter-truck.mp3",
+        "warning": "/audio/error/transport/w-car-transporter-truck.mp3"
       }
     }
   ],
@@ -872,58 +799,32 @@
     },
     {
       "id": 2,
-      "name": "Hoodie",
-      "image": "/images/clothing/hoodie.webp",
-      "description": "A hoodie is a sweatshirt with a hood, popular for casual wear.",
+      "name": "Socks",
+      "image": "/images/clothing/sock.webp",
+      "description": "A sock is a piece of clothing worn on the feet, often under shoes.",
       "audio": {
-        "itemAudio": "/audio/this/clothings/hoodie.mp3",
-        "question": "q-hoodie.mp3",
-        "success": "c-hoodie.mp3",
-        "error": "n-hoodie.mp3",
-        "warning": "w-hoodie.mp3"
+        "itemAudio": "/audio/this/clothings/sock.mp3",
+        "question": "q-sock.mp3",
+        "success": "c-sock.mp3",
+        "error": "n-sock.mp3",
+        "warning": "w-sock.mp3"
       }
     },
     {
       "id": 3,
-      "name": "Shirt",
-      "image": "/images/clothing/shirt.webp",
-      "description": "A shirt is a garment for the upper body, typically with a collar and buttons.",
+      "name": "Shoes",
+      "image": "/images/clothing/shoe.webp",
+      "description": "A shoe is a type of footwear worn to protect and comfort the foot.",
       "audio": {
-        "itemAudio": "/audio/this/clothings/shirt.mp3",
-        "question": "q-shirt.mp3",
-        "success": "c-shirt.mp3",
-        "error": "n-shirt.mp3",
-        "warning": "w-shirt.mp3"
+        "itemAudio": "/audio/this/clothings/shoe.mp3",
+        "question": "q-shoe.mp3",
+        "success": "c-shoe.mp3",
+        "error": "n-shoe.mp3",
+        "warning": "w-shoe.mp3"
       }
     },
     {
       "id": 4,
-      "name": "Sweater",
-      "image": "/images/clothing/sweater.webp",
-      "description": "A sweater is a knitted garment for the upper body, often worn in cold weather.",
-      "audio": {
-        "itemAudio": "/audio/this/clothings/sweater.mp3",
-        "question": "q-sweater.mp3",
-        "success": "c-sweater.mp3",
-        "error": "n-sweater.mp3",
-        "warning": "w-sweater.mp3"
-      }
-    },
-    {
-      "id": 5,
-      "name": "Converse",
-      "image": "/images/clothing/converse.webp",
-      "description": "Converse are popular sneakers often used for casual wear.",
-      "audio": {
-        "itemAudio": "/audio/this/clothings/converse.mp3",
-        "question": "q-converse.mp3",
-        "success": "c-converse.mp3",
-        "error": "n-converse.mp3",
-        "warning": "w-converse.mp3"
-      }
-    },
-    {
-      "id": 6,
       "name": "Jacket",
       "image": "/images/clothing/jacket.webp",
       "description": "A jacket is a garment for the upper body, designed for warmth or style.",
@@ -936,16 +837,42 @@
       }
     },
     {
-      "id": 7,
-      "name": "Shoe",
-      "image": "/images/clothing/shoe.webp",
-      "description": "A shoe is a type of footwear worn to protect and comfort the foot.",
+      "id": 5,
+      "name": "Underpants",
+      "image": "/images/clothing/underpants.webp",
+      "description": "Underpants are garments worn under clothing to cover the lower body.",
       "audio": {
-        "itemAudio": "/audio/this/clothings/shoe.mp3",
-        "question": "q-shoe.mp3",
-        "success": "c-shoe.mp3",
-        "error": "n-shoe.mp3",
-        "warning": "w-shoe.mp3"
+        "itemAudio": "/audio/this/clothings/underpants.mp3",
+        "question": "q-underpants.mp3",
+        "success": "c-underpants.mp3",
+        "error": "n-underpants.mp3",
+        "warning": "w-underpants.mp3"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Sweater",
+      "image": "/images/clothing/sweater.webp",
+      "description": "A sweater is a knitted garment for the upper body, often worn in cold weather.",
+      "audio": {
+        "itemAudio": "/audio/this/clothings/sweater.mp3",
+        "question": "q-sweater.mp3",
+        "success": "c-sweater.mp3",
+        "error": "n-sweater.mp3",
+        "warning": "w-sweater.mp3"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Sneakers",
+      "image": "/images/clothing/sneakers.webp",
+      "description": "Sneakers are comfortable shoes designed for sports and casual wear.",
+      "audio": {
+        "itemAudio": "/audio/this/clothings/sneakers.mp3",
+        "question": "q-sneakers.mp3",
+        "success": "c-sneakers.mp3",
+        "error": "n-sneakers.mp3",
+        "warning": "w-sneakers.mp3"
       }
     },
     {
@@ -989,86 +916,34 @@
     },
     {
       "id": 11,
-      "name": "Sock",
-      "image": "/images/clothing/sock.webp",
-      "description": "A sock is a piece of clothing worn on the feet, often under shoes.",
+      "name": "Hoodie",
+      "image": "/images/clothing/hoodie.webp",
+      "description": "A hoodie is a sweatshirt with a hood, popular for casual wear.",
       "audio": {
-        "itemAudio": "/audio/this/clothings/sock.mp3",
-        "question": "q-sock.mp3",
-        "success": "c-sock.mp3",
-        "error": "n-sock.mp3",
-        "warning": "w-sock.mp3"
+        "itemAudio": "/audio/this/clothings/hoodie.mp3",
+        "question": "q-hoodie.mp3",
+        "success": "c-hoodie.mp3",
+        "error": "n-hoodie.mp3",
+        "warning": "w-hoodie.mp3"
       }
     },
     {
       "id": 12,
-      "name": "Underpants",
-      "image": "/images/clothing/underpants.webp",
-      "description": "Underpants are garments worn under clothing to cover the lower body.",
+      "name": "Shirt",
+      "image": "/images/clothing/shirt.webp",
+      "description": "A shirt is a garment for the upper body, typically with a collar and buttons.",
       "audio": {
-        "itemAudio": "/audio/this/clothings/underpants.mp3",
-        "question": "q-underpants.mp3",
-        "success": "c-underpants.mp3",
-        "error": "n-underpants.mp3",
-        "warning": "w-underpants.mp3"
+        "itemAudio": "/audio/this/clothings/shirt.mp3",
+        "question": "q-shirt.mp3",
+        "success": "c-shirt.mp3",
+        "error": "n-shirt.mp3",
+        "warning": "w-shirt.mp3"
       }
     }
   ],
   "food": [
     {
       "id": 1,
-      "name": "Tacos",
-      "image": "/images/tacos.png",
-      "description": "Tacos are a traditional Mexican dish consisting of a folded or rolled tortilla filled with various ingredients like meat, beans, and vegetables.",
-      "audio": {
-        "itemAudio": "/audio/this/tacos.mp3",
-        "question": "q-tacos.mp3",
-        "success": "c-tacos.mp3",
-        "error": "n-tacos.mp3",
-        "warning": "w-tacos.mp3"
-      }
-    },
-    {
-      "id": 2,
-      "name": "Salad",
-      "image": "/images/salad.png",
-      "description": "Salad is a dish consisting of a mixture of various ingredients such as vegetables, fruits, nuts, and dressings, often served cold.",
-      "audio": {
-        "itemAudio": "/audio/this/salad.mp3",
-        "question": "q-salad.mp3",
-        "success": "c-salad.mp3",
-        "error": "n-salad.mp3",
-        "warning": "w-salad.mp3"
-      }
-    },
-    {
-      "id": 3,
-      "name": "Noodles",
-      "image": "/images/noodles.png",
-      "description": "Noodles are a type of staple food made from unleavened dough, often boiled or stir-fried, and can be served in a variety of dishes.",
-      "audio": {
-        "itemAudio": "/audio/this/noodles.mp3",
-        "question": "q-noodles.mp3",
-        "success": "c-noodles.mp3",
-        "error": "n-noodles.mp3",
-        "warning": "w-noodles.mp3"
-      }
-    },
-    {
-      "id": 4,
-      "name": "Burger",
-      "image": "/images/burger.png",
-      "description": "A hamburger is a sandwich consisting of a cooked patty of ground meat, usually beef, placed inside a sliced bread roll or bun.",
-      "audio": {
-        "itemAudio": "/audio/this/burger.mp3",
-        "question": "q-burger.mp3",
-        "success": "c-burger.mp3",
-        "error": "n-burger.mp3",
-        "warning": "w-burger.mp3"
-      }
-    },
-    {
-      "id": 5,
       "name": "Pizza",
       "image": "/images/pizza.png",
       "description": "Pizza is an Italian dish consisting of a usually round, flat base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients.",
@@ -1081,62 +956,127 @@
       }
     },
     {
-      "id": 6,
-      "name": "Sushi",
-      "image": "/images/sushi.png",
-      "description": "Sushi is a Japanese dish consisting of vinegared rice accompanied by various ingredients, such as seafood, vegetables, and sometimes tropical fruits.",
+      "id": 2,
+      "name": "Sandwich",
+      "image": "/images/food/sandwich.png",
+      "description": "A sandwich is a food typically consisting of vegetables, sliced cheese or meat, placed on or between slices of bread.",
       "audio": {
-        "itemAudio": "/audio/this/sushi.mp3",
-        "question": "q-sushi.mp3",
-        "success": "c-sushi.mp3",
-        "error": "n-sushi.mp3",
-        "warning": "w-sushi.mp3"
+        "itemAudio": "/audio/this/food/sandwich.mp3",
+        "question": "q-sandwich.mp3",
+        "success": "c-sandwich.mp3",
+        "error": "n-sandwich.mp3",
+        "warning": "w-sandwich.mp3"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Hamburger",
+      "image": "/images/food/hamburger.png",
+      "description": "A hamburger is a sandwich consisting of a cooked patty of ground meat, usually beef, placed inside a sliced bread roll or bun.",
+      "audio": {
+        "itemAudio": "/audio/this/food/hamburger.mp3",
+        "question": "q-hamburger.mp3",
+        "success": "c-hamburger.mp3",
+        "error": "n-hamburger.mp3",
+        "warning": "w-hamburger.mp3"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Chicken",
+      "image": "/images/food/chicken.png",
+      "description": "Chicken is a type of poultry that is commonly consumed as a source of protein.",
+      "audio": {
+        "itemAudio": "/audio/this/food/chicken.mp3",
+        "question": "q-chicken.mp3",
+        "success": "c-chicken.mp3",
+        "error": "n-chicken.mp3",
+        "warning": "w-chicken.mp3"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Soup",
+      "image": "/images/food/soup.png",
+      "description": "Soup is a liquid dish made with vegetables, meat, or fish, served hot or cold.",
+      "audio": {
+        "itemAudio": "/audio/this/food/soup.mp3",
+        "question": "q-soup.mp3",
+        "success": "c-soup.mp3",
+        "error": "n-soup.mp3",
+        "warning": "w-soup.mp3"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Tacos",
+      "image": "/images/tacos.png",
+      "description": "Tacos are a traditional Mexican dish consisting of a folded or rolled tortilla filled with various ingredients like meat, beans, and vegetables.",
+      "audio": {
+        "itemAudio": "/audio/this/tacos.mp3",
+        "question": "q-tacos.mp3",
+        "success": "c-tacos.mp3",
+        "error": "n-tacos.mp3",
+        "warning": "w-tacos.mp3"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Kebab",
+      "image": "/images/food/kebab.png",
+      "description": "Kebab is a dish consisting of pieces of meat, fish, or vegetables roasted or grilled on a skewer or spit.",
+      "audio": {
+        "itemAudio": "/audio/this/food/kebab.mp3",
+        "question": "q-kebab.mp3",
+        "success": "c-kebab.mp3",
+        "error": "n-kebab.mp3",
+        "warning": "w-kebab.mp3"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Fish and Chips",
+      "image": "/images/food/fish-and-chips.png",
+      "description": "Fish and chips is a popular dish consisting of fried fish and deep-fried potato slices.",
+      "audio": {
+        "itemAudio": "/audio/this/food/fish-and-chips.mp3",
+        "question": "q-fish-and-chips.mp3",
+        "success": "c-fish-and-chips.mp3",
+        "error": "n-fish-and-chips.mp3",
+        "warning": "w-fish-and-chips.mp3"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Spaghetti",
+      "image": "/images/food/spaghetti.png",
+      "description": "Spaghetti is a long, thin, cylindrical pasta of Italian origin, typically served with a sauce.",
+      "audio": {
+        "itemAudio": "/audio/this/food/spaghetti.mp3",
+        "question": "q-spaghetti.mp3",
+        "success": "c-spaghetti.mp3",
+        "error": "n-spaghetti.mp3",
+        "warning": "w-spaghetti.mp3"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Salad",
+      "image": "/images/salad.png",
+      "description": "Salad is a dish consisting of a mixture of various ingredients such as vegetables, fruits, nuts, and dressings, often served cold.",
+      "audio": {
+        "itemAudio": "/audio/this/salad.mp3",
+        "question": "q-salad.mp3",
+        "success": "c-salad.mp3",
+        "error": "n-salad.mp3",
+        "warning": "w-salad.mp3"
       }
     }
   ],
   "treats": [
     {
       "id": 1,
-      "name": "Chocolate",
-      "image": "/images/chocolate.png",
-      "description": "Chocolate is a sweet, brown food made from roasted and ground cacao seeds.",
-      "audio": {
-        "itemAudio": "/audio/this/chocolate.mp3",
-        "question": "q-chocolate.mp3",
-        "success": "c-chocolate.mp3",
-        "error": "n-chocolate.mp3",
-        "warning": "w-chocolate.mp3"
-      }
-    },
-    {
-      "id": 2,
-      "name": "Candy",
-      "image": "/images/candy.png",
-      "description": "Candy is a sweet treat made with sugar or other sweeteners.",
-      "audio": {
-        "itemAudio": "/audio/this/candy.mp3",
-        "question": "q-candy.mp3",
-        "success": "c-candy.mp3",
-        "error": "n-candy.mp3",
-        "warning": "w-candy.mp3"
-      }
-    },
-    {
-      "id": 3,
-      "name": "Cookies",
-      "image": "/images/cookies.png",
-      "description": "Cookies are small, sweet, baked treats often containing ingredients like chocolate chips, nuts, or dried fruit.",
-      "audio": {
-        "itemAudio": "/audio/this/cookies.mp3",
-        "question": "q-cookies.mp3",
-        "success": "c-cookies.mp3",
-        "error": "n-cookies.mp3",
-        "warning": "w-cookies.mp3"
-      }
-    },
-    {
-      "id": 4,
-      "name": "Waffle",
+      "name": "Waffles",
       "image": "/images/waffle.png",
       "description": "Waffle is a light, crisp, batter-based cake cooked between two patterned plates.",
       "audio": {
@@ -1148,7 +1088,20 @@
       }
     },
     {
-      "id": 5,
+      "id": 2,
+      "name": "Chocolates",
+      "image": "/images/treats/chocolates.png",
+      "description": "Chocolates are sweet treats made from roasted and ground cacao beans.",
+      "audio": {
+        "itemAudio": "/audio/this/treats/chocolates.mp3",
+        "question": "q-chocolates.mp3",
+        "success": "c-chocolates.mp3",
+        "error": "n-chocolates.mp3",
+        "warning": "w-chocolates.mp3"
+      }
+    },
+    {
+      "id": 3,
       "name": "Cake",
       "image": "/images/cake.png",
       "description": "Cake is a sweet baked dessert, usually made with flour, sugar, eggs, and butter.",
@@ -1161,494 +1114,715 @@
       }
     },
     {
-      "id": 6,
-      "name": "Ice Cream",
-      "image": "/images/icecream.png",
-      "description": "Ice cream is a frozen dessert made from dairy products and often flavored with fruits or other ingredients.",
+      "id": 4,
+      "name": "Ice Cream Cones",
+      "image": "/images/treats/ice-cream-cones.png",
+      "description": "Ice cream cones are a popular treat consisting of a scoop of ice cream served in a cone-shaped wafer.",
       "audio": {
-        "itemAudio": "/audio/this/icecream.mp3",
-        "question": "q-icecream.mp3",
-        "success": "c-icecream.mp3",
-        "error": "n-icecream.mp3",
-        "warning": "w-icecream.mp3"
+        "itemAudio": "/audio/this/treats/ice-cream-cones.mp3",
+        "question": "q-ice-cream-cones.mp3",
+        "success": "c-ice-cream-cones.mp3",
+        "error": "n-ice-cream-cones.mp3",
+        "warning": "w-ice-cream-cones.mp3"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Milk Shake",
+      "image": "/images/treats/milk-shake.png",
+      "description": "A milk shake is a sweet, cold beverage made from milk, ice cream, and flavorings or sweeteners.",
+      "audio": {
+        "itemAudio": "/audio/this/treats/milk-shake.mp3",
+        "question": "q-milk-shake.mp3",
+        "success": "c-milk-shake.mp3",
+        "error": "n-milk-shake.mp3",
+        "warning": "w-milk-shake.mp3"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Strawberry Ice Cream",
+      "image": "/images/treats/strawberry-ice-cream.png",
+      "description": "Strawberry ice cream is a frozen dessert made from sweetened milk or cream and flavored with strawberries.",
+      "audio": {
+        "itemAudio": "/audio/this/treats/strawberry-ice-cream.mp3",
+        "question": "q-strawberry-ice-cream.mp3",
+        "success": "c-strawberry-ice-cream.mp3",
+        "error": "n-strawberry-ice-cream.mp3",
+        "warning": "w-strawberry-ice-cream.mp3"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Cookies",
+      "image": "/images/cookies.png",
+      "description": "Cookies are small, sweet, baked treats often containing ingredients like chocolate chips, nuts, or dried fruit.",
+      "audio": {
+        "itemAudio": "/audio/this/cookies.mp3",
+        "question": "q-cookies.mp3",
+        "success": "c-cookies.mp3",
+        "error": "n-cookies.mp3",
+        "warning": "w-cookies.mp3"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Chocolate",
+      "image": "/images/chocolate.png",
+      "description": "Chocolate is a sweet, brown food made from roasted and ground cacao seeds.",
+      "audio": {
+        "itemAudio": "/audio/this/chocolate.mp3",
+        "question": "q-chocolate.mp3",
+        "success": "c-chocolate.mp3",
+        "error": "n-chocolate.mp3",
+        "warning": "w-chocolate.mp3"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Doughnuts",
+      "image": "/images/treats/doughnuts.png",
+      "description": "Doughnuts are fried dough confections, often sweet and round with a hole in the center.",
+      "audio": {
+        "itemAudio": "/audio/this/treats/doughnuts.mp3",
+        "question": "q-doughnuts.mp3",
+        "success": "c-doughnuts.mp3",
+        "error": "n-doughnuts.mp3",
+        "warning": "w-doughnuts.mp3"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Lollipops",
+      "image": "/images/treats/lollipops.png",
+      "description": "Lollipops are sweet candies on a stick, often enjoyed by children.",
+      "audio": {
+        "itemAudio": "/audio/this/treats/lollipops.mp3",
+        "question": "q-lollipops.mp3",
+        "success": "c-lollipops.mp3",
+        "error": "n-lollipops.mp3",
+        "warning": "w-lollipops.mp3"
+      }
+    },
+    {
+      "id": 11,
+      "name": "Cotton Candy",
+      "image": "/images/treats/cotton-candy.png",
+      "description": "Cotton candy is a fluffy, sweet treat made from spun sugar, often enjoyed at fairs and carnivals.",
+      "audio": {
+        "itemAudio": "/audio/this/treats/cotton-candy.mp3",
+        "question": "q-cotton-candy.mp3",
+        "success": "c-cotton-candy.mp3",
+        "error": "n-cotton-candy.mp3",
+        "warning": "w-cotton-candy.mp3"
+      }
+    },
+    {
+      "id": 12,
+      "name": "Sweets",
+      "image": "/images/treats/sweets.png",
+      "description": "Sweets are confections made with sugar or other sweeteners, often enjoyed as a treat.",
+      "audio": {
+        "itemAudio": "/audio/this/treats/sweets.mp3",
+        "question": "q-sweets.mp3",
+        "success": "c-sweets.mp3",
+        "error": "n-sweets.mp3",
+        "warning": "w-sweets.mp3"
       }
     }
   ],
   "fun-things": [
     {
       "id": 1,
-      "name": "Alphabet Blocks",
-      "image": "/images/fun-things/alphabet-blocks.webp",
-      "description": "Alphabet blocks are educational toys that help children learn letters and words.",
+      "name": "Balls",
+      "image": "/images/fun-things/balls.webp",
+      "description": "Balls are spherical objects used in various games and sports.",
       "audio": {
-        "itemAudio": "/audio/this/alphabet-blocks.mp3",
-        "question": "q-alphabet-blocks.mp3",
-        "success": "c-alphabet-blocks.mp3",
-        "error": "n-alphabet-blocks.mp3",
-        "warning": "w-alphabet-blocks.mp3"
+        "itemAudio": "/audio/this/fun-things/balls.mp3",
+        "question": "/audio/which/fun-things/q-balls.mp3",
+        "success": "/audio/correct/fun-things/c-balls.mp3",
+        "error": "/audio/error/fun-things/n-balls.mp3",
+        "warning": "/audio/error/fun-things/w-balls.mp3"
       }
     },
     {
       "id": 2,
-      "name": "Animal Toys",
-      "image": "/images/fun-things/animal-toys.webp",
-      "description": "Animal toys are small figures representing various animals, used for play and education.",
+      "name": "Kite",
+      "image": "/images/fun-things/kite.webp",
+      "description": "A kite is a lightweight frame covered with paper or cloth, flown in the wind at the end of a long string.",
       "audio": {
-        "itemAudio": "/audio/this/animal-toys.mp3",
-        "question": "q-animal-toys.mp3",
-        "success": "c-animal-toys.mp3",
-        "error": "n-animal-toys.mp3",
-        "warning": "w-animal-toys.mp3"
+        "itemAudio": "/audio/this/fun-things/kite.mp3",
+        "question": "/audio/which/fun-things/q-kite.mp3",
+        "success": "/audio/correct/fun-things/c-kite.mp3",
+        "error": "/audio/error/fun-things/n-kite.mp3",
+        "warning": "/audio/error/fun-things/w-kite.mp3"
       }
     },
     {
       "id": 3,
-      "name": "Balloons",
-      "image": "/images/fun-things/balloons.webp",
-      "description": "Balloons are inflatable decorations often used for parties and celebrations.",
+      "name": "Rubber Duck",
+      "image": "/images/fun-things/rubber-duck.webp",
+      "description": "A rubber duck is a toy shaped like a duck, typically used during bath time.",
       "audio": {
-        "itemAudio": "/audio/this/balloons.mp3",
-        "question": "q-balloons.mp3",
-        "success": "c-balloons.mp3",
-        "error": "n-balloons.mp3",
-        "warning": "w-balloons.mp3"
+        "itemAudio": "/audio/this/fun-things/rubber-duck.mp3",
+        "question": "/audio/which/fun-things/q-rubber-duck.mp3",
+        "success": "/audio/correct/fun-things/c-rubber-duck.mp3",
+        "error": "/audio/error/fun-things/n-rubber-duck.mp3",
+        "warning": "/audio/error/fun-things/w-rubber-duck.mp3"
       }
     },
     {
       "id": 4,
-      "name": "Blocks",
-      "image": "/images/fun-things/blocks.webp",
-      "description": "Blocks are solid pieces used for building and construction play.",
+      "name": "Tricycle",
+      "image": "/images/fun-things/tricycle.webp",
+      "description": "A tricycle is a three-wheeled vehicle, often used by young children.",
       "audio": {
-        "itemAudio": "/audio/this/blocks.mp3",
-        "question": "q-blocks.mp3",
-        "success": "c-blocks.mp3",
-        "error": "n-blocks.mp3",
-        "warning": "w-blocks.mp3"
+        "itemAudio": "/audio/this/fun-things/tricycle.mp3",
+        "question": "/audio/which/fun-things/q-tricycle.mp3",
+        "success": "/audio/correct/fun-things/c-tricycle.mp3",
+        "error": "/audio/error/fun-things/n-tricycle.mp3",
+        "warning": "/audio/error/fun-things/w-tricycle.mp3"
       }
     },
     {
       "id": 5,
-      "name": "Children Playing Chess",
-      "image": "/images/fun-things/children-playing-chess.webp",
-      "description": "Children playing chess is an image depicting kids engaged in a game of chess.",
+      "name": "Top",
+      "image": "/images/fun-things/top.webp",
+      "description": "A top is a toy that can be spun on an axis, balancing on a point.",
       "audio": {
-        "itemAudio": "/audio/this/children-playing-chess.mp3",
-        "question": "q-children-playing-chess.mp3",
-        "success": "c-children-playing-chess.mp3",
-        "error": "n-children-playing-chess.mp3",
-        "warning": "w-children-playing-chess.mp3"
+        "itemAudio": "/audio/this/fun-things/top.mp3",
+        "question": "/audio/which/fun-things/q-top.mp3",
+        "success": "/audio/correct/fun-things/c-top.mp3",
+        "error": "/audio/error/fun-things/n-top.mp3",
+        "warning": "/audio/error/fun-things/w-top.mp3"
       }
     },
     {
       "id": 6,
-      "name": "Dominoes",
-      "image": "/images/fun-things/dominoes.webp",
-      "description": "Dominoes are small rectangular tiles used in various games.",
+      "name": "Books",
+      "image": "/images/fun-things/books.webp",
+      "description": "Books are collections of written or printed pages bound together, used for reading and learning.",
       "audio": {
-        "itemAudio": "/audio/this/dominoes.mp3",
-        "question": "q-dominoes.mp3",
-        "success": "c-dominoes.mp3",
-        "error": "n-dominoes.mp3",
-        "warning": "w-dominoes.mp3"
+        "itemAudio": "/audio/this/fun-things/books.mp3",
+        "question": "/audio/which/fun-things/q-books.mp3",
+        "success": "/audio/correct/fun-things/c-books.mp3",
+        "error": "/audio/error/fun-things/n-books.mp3",
+        "warning": "/audio/error/fun-things/w-books.mp3"
       }
     },
     {
       "id": 7,
-      "name": "Dominoes Set",
-      "image": "/images/fun-things/dominoes01.webp",
-      "description": "A set of dominoes used for playing the classic tile game.",
+      "name": "Paints and Paint Brushes",
+      "image": "/images/fun-things/paints-and-paint-brushes.webp",
+      "description": "Paints and paint brushes are used for creating art and expressing creativity.",
       "audio": {
-        "itemAudio": "/audio/this/dominoes01.mp3",
-        "question": "q-dominoes01.mp3",
-        "success": "c-dominoes01.mp3",
-        "error": "n-dominoes01.mp3",
-        "warning": "w-dominoes01.mp3"
+        "itemAudio": "/audio/this/fun-things/paints-and-paint-brushes.mp3",
+        "question": "/audio/which/fun-things/q-paints-and-paint-brushes.mp3",
+        "success": "/audio/correct/fun-things/c-paints-and-paint-brushes.mp3",
+        "error": "/audio/error/fun-things/n-paints-and-paint-brushes.mp3",
+        "warning": "/audio/error/fun-things/w-paints-and-paint-brushes.mp3"
       }
     },
     {
       "id": 8,
-      "name": "Duck Toy",
-      "image": "/images/fun-things/duck-toy.webp",
-      "description": "A duck toy is a small figure representing a duck, often used for play.",
+      "name": "Balloons",
+      "image": "/images/fun-things/balloons.webp",
+      "description": "Balloons are inflatable decorations often used for parties and celebrations.",
       "audio": {
-        "itemAudio": "/audio/this/duck-toy.mp3",
-        "question": "q-duck-toy.mp3",
-        "success": "c-duck-toy.mp3",
-        "error": "n-duck-toy.mp3",
-        "warning": "w-duck-toy.mp3"
+        "itemAudio": "/audio/this/fun-things/balloons.mp3",
+        "question": "/audio/which/fun-things/q-balloons.mp3",
+        "success": "/audio/correct/fun-things/c-balloons.mp3",
+        "error": "/audio/error/fun-things/n-balloons.mp3",
+        "warning": "/audio/error/fun-things/w-balloons.mp3"
       }
     },
     {
       "id": 9,
-      "name": "Guitar",
-      "image": "/images/fun-things/guitar.webp",
-      "description": "A guitar is a musical instrument with strings, played by strumming or plucking.",
+      "name": "ABC Blocks",
+      "image": "/images/fun-things/abc-blocks.webp",
+      "description": "ABC blocks are educational toys that help children learn letters and words.",
       "audio": {
-        "itemAudio": "/audio/this/guitar.mp3",
-        "question": "q-guitar.mp3",
-        "success": "c-guitar.mp3",
-        "error": "n-guitar.mp3",
-        "warning": "w-guitar.mp3"
+        "itemAudio": "/audio/this/fun-things/abc-blocks.mp3",
+        "question": "/audio/which/fun-things/q-abc-blocks.mp3",
+        "success": "/audio/correct/fun-things/c-abc-blocks.mp3",
+        "error": "/audio/error/fun-things/n-abc-blocks.mp3",
+        "warning": "/audio/error/fun-things/w-abc-blocks.mp3"
       }
     },
     {
       "id": 10,
-      "name": "Marbles",
-      "image": "/images/fun-things/marbles.webp",
-      "description": "Marbles are small spherical objects used in various games.",
+      "name": "Kid's Car",
+      "image": "/images/fun-things/kids-car.webp",
+      "description": "A kid's car is a small model vehicle, typically for children to play with.",
       "audio": {
-        "itemAudio": "/audio/this/marbles.mp3",
-        "question": "q-marbles.mp3",
-        "success": "c-marbles.mp3",
-        "error": "n-marbles.mp3",
-        "warning": "w-marbles.mp3"
+        "itemAudio": "/audio/this/fun-things/kids-car.mp3",
+        "question": "/audio/which/fun-things/q-kids-car.mp3",
+        "success": "/audio/correct/fun-things/c-kids-car.mp3",
+        "error": "/audio/error/fun-things/n-kids-car.mp3",
+        "warning": "/audio/error/fun-things/w-kids-car.mp3"
       }
     },
     {
       "id": 11,
-      "name": "Paints",
-      "image": "/images/fun-things/paints.webp",
-      "description": "Paints are colored substances used for creating art.",
+      "name": "Jigsaw Puzzle",
+      "image": "/images/fun-things/jigsaw-puzzle.webp",
+      "description": "A jigsaw puzzle is a game, toy, or problem designed to test ingenuity or knowledge.",
       "audio": {
-        "itemAudio": "/audio/this/paints.mp3",
-        "question": "q-paints.mp3",
-        "success": "c-paints.mp3",
-        "error": "n-paints.mp3",
-        "warning": "w-paints.mp3"
+        "itemAudio": "/audio/this/fun-things/jigsaw-puzzle.mp3",
+        "question": "/audio/which/fun-things/q-jigsaw-puzzle.mp3",
+        "success": "/audio/correct/fun-things/c-jigsaw-puzzle.mp3",
+        "error": "/audio/error/fun-things/n-jigsaw-puzzle.mp3",
+        "warning": "/audio/error/fun-things/w-jigsaw-puzzle.mp3"
       }
     },
     {
       "id": 12,
-      "name": "Puzzle",
-      "image": "/images/fun-things/puzzle.webp",
-      "description": "A puzzle is a game, toy, or problem designed to test ingenuity or knowledge.",
+      "name": "Guitar",
+      "image": "/images/fun-things/guitar.webp",
+      "description": "A guitar is a musical instrument with strings, played by strumming or plucking.",
       "audio": {
-        "itemAudio": "/audio/this/puzzle.mp3",
-        "question": "q-puzzle.mp3",
-        "success": "c-puzzle.mp3",
-        "error": "n-puzzle.mp3",
-        "warning": "w-puzzle.mp3"
+        "itemAudio": "/audio/this/fun-things/guitar.mp3",
+        "question": "/audio/which/fun-things/q-guitar.mp3",
+        "success": "/audio/correct/fun-things/c-guitar.mp3",
+        "error": "/audio/error/fun-things/n-guitar.mp3",
+        "warning": "/audio/error/fun-things/w-guitar.mp3"
       }
     },
     {
       "id": 13,
-      "name": "Roller Blades",
-      "image": "/images/fun-things/roller-blades.webp",
-      "description": "Roller blades are shoes with wheels attached for skating.",
+      "name": "Chess",
+      "image": "/images/fun-things/chess.webp",
+      "description": "Chess is a strategic board game played between two players.",
       "audio": {
-        "itemAudio": "/audio/this/roller-blades.mp3",
-        "question": "q-roller-blades.mp3",
-        "success": "c-roller-blades.mp3",
-        "error": "n-roller-blades.mp3",
-        "warning": "w-roller-blades.mp3"
+        "itemAudio": "/audio/this/fun-things/chess.mp3",
+        "question": "/audio/which/fun-things/q-chess.mp3",
+        "success": "/audio/correct/fun-things/c-chess.mp3",
+        "error": "/audio/error/fun-things/n-chess.mp3",
+        "warning": "/audio/error/fun-things/w-chess.mp3"
       }
     },
     {
       "id": 14,
-      "name": "Toy Car",
-      "image": "/images/fun-things/toy-car.webp",
-      "description": "A toy car is a small model vehicle, typically for children to play with.",
+      "name": "Lego",
+      "image": "/images/fun-things/lego.webp",
+      "description": "Lego is a construction toy consisting of interlocking plastic bricks.",
       "audio": {
-        "itemAudio": "/audio/this/toy-car.mp3",
-        "question": "q-toy-car.mp3",
-        "success": "c-toy-car.mp3",
-        "error": "n-toy-car.mp3",
-        "warning": "w-toy-car.mp3"
+        "itemAudio": "/audio/this/fun-things/lego.mp3",
+        "question": "/audio/which/fun-things/q-lego.mp3",
+        "success": "/audio/correct/fun-things/c-lego.mp3",
+        "error": "/audio/error/fun-things/n-lego.mp3",
+        "warning": "/audio/error/fun-things/w-lego.mp3"
       }
     },
     {
       "id": 15,
-      "name": "Tricycle",
-      "image": "/images/fun-things/tricycle.webp",
-      "description": "A tricycle is a three-wheeled vehicle for children.",
+      "name": "Dominoes",
+      "image": "/images/fun-things/dominoes.webp",
+      "description": "Dominoes are small rectangular tiles used in various games.",
       "audio": {
-        "itemAudio": "/audio/this/tricycle.mp3",
-        "question": "q-tricycle.mp3",
-        "success": "c-tricycle.mp3",
-        "error": "n-tricycle.mp3",
-        "warning": "w-tricycle.mp3"
+        "itemAudio": "/audio/this/fun-things/dominoes.mp3",
+        "question": "/audio/which/fun-things/q-dominoes.mp3",
+        "success": "/audio/correct/fun-things/c-dominoes.mp3",
+        "error": "/audio/error/fun-things/n-dominoes.mp3",
+        "warning": "/audio/error/fun-things/w-dominoes.mp3"
       }
     },
     {
       "id": 16,
-      "name": "Wooden Blocks",
-      "image": "/images/fun-things/wooden-blocks.webp",
-      "description": "Wooden blocks are solid pieces used for building and construction play.",
+      "name": "Marbles",
+      "image": "/images/fun-things/marbles.webp",
+      "description": "Marbles are small spherical objects used in various games.",
       "audio": {
-        "itemAudio": "/audio/this/wooden-blocks.mp3",
-        "question": "q-wooden-blocks.mp3",
-        "success": "c-wooden-blocks.mp3",
-        "error": "n-wooden-blocks.mp3",
-        "warning": "w-wooden-blocks.mp3"
+        "itemAudio": "/audio/this/fun-things/marbles.mp3",
+        "question": "/audio/which/fun-things/q-marbles.mp3",
+        "success": "/audio/correct/fun-things/c-marbles.mp3",
+        "error": "/audio/error/fun-things/n-marbles.mp3",
+        "warning": "/audio/error/fun-things/w-marbles.mp3"
       }
     },
     {
       "id": 17,
-      "name": "Wooden Toy Block",
-      "image": "/images/fun-things/wooden-toy-block.webp",
-      "description": "A wooden toy block is a solid piece used for building and construction play.",
+      "name": "Roller Skates",
+      "image": "/images/fun-things/roller-skates.webp",
+      "description": "Roller skates are shoes with wheels attached for skating.",
       "audio": {
-        "itemAudio": "/audio/this/wooden-toy-block.mp3",
-        "question": "q-wooden-toy-block.mp3",
-        "success": "c-wooden-toy-block.mp3",
-        "error": "n-wooden-toy-block.mp3",
-        "warning": "w-wooden-toy-block.mp3"
+        "itemAudio": "/audio/this/fun-things/roller-skates.mp3",
+        "question": "/audio/which/fun-things/q-roller-skates.mp3",
+        "success": "/audio/correct/fun-things/c-roller-skates.mp3",
+        "error": "/audio/error/fun-things/n-roller-skates.mp3",
+        "warning": "/audio/error/fun-things/w-roller-skates.mp3"
+      }
+    },
+    {
+      "id": 18,
+      "name": "Building Blocks",
+      "image": "/images/fun-things/building-blocks.webp",
+      "description": "Building blocks are toy components that can be assembled to build various structures.",
+      "audio": {
+        "itemAudio": "/audio/this/fun-things/building-blocks.mp3",
+        "question": "/audio/which/fun-things/q-building-blocks.mp3",
+        "success": "/audio/correct/fun-things/c-building-blocks.mp3",
+        "error": "/audio/error/fun-things/n-building-blocks.mp3",
+        "warning": "/audio/error/fun-things/w-building-blocks.mp3"
       }
     }
   ],
   "vegetables": [
     {
       "id": 1,
-      "name": "Asparagus",
-      "image": "/images/vegetables/asparagus.webp",
-      "description": "Asparagus is a spring vegetable known for its slender spears.",
+      "name": "Tomatoes",
+      "image": "/images/vegetables/tomatoes.webp",
+      "description": "Tomatoes are a red, edible fruit commonly used in cooking.",
       "audio": {
-        "itemAudio": "/audio/this/asparagus.mp3",
-        "question": "q-asparagus.mp3",
-        "success": "c-asparagus.mp3",
-        "error": "n-asparagus.mp3",
-        "warning": "w-asparagus.mp3"
+        "itemAudio": "/audio/this/vegetables/tomatoes.mp3",
+        "question": "/audio/which/vegetables/q-tomatoes.mp3",
+        "success": "/audio/correct/vegetables/c-tomatoes.mp3",
+        "error": "/audio/error/vegetables/n-tomatoes.mp3",
+        "warning": "/audio/error/vegetables/w-tomatoes.mp3"
       }
     },
     {
       "id": 2,
-      "name": "Carrot",
-      "image": "/images/vegetables/carrot.webp",
-      "description": "The carrot is a root vegetable often claimed to be the perfect health food.",
+      "name": "Lettuce",
+      "image": "/images/vegetables/lettuce.webp",
+      "description": "Lettuce is a leafy green vegetable commonly used in salads.",
       "audio": {
-        "itemAudio": "/audio/this/carrot.mp3",
-        "question": "q-carrot.mp3",
-        "success": "c-carrot.mp3",
-        "error": "n-carrot.mp3",
-        "warning": "w-carrot.mp3"
+        "itemAudio": "/audio/this/vegetables/lettuce.mp3",
+        "question": "/audio/which/vegetables/q-lettuce.mp3",
+        "success": "/audio/correct/vegetables/c-lettuce.mp3",
+        "error": "/audio/error/vegetables/n-lettuce.mp3",
+        "warning": "/audio/error/vegetables/w-lettuce.mp3"
       }
     },
     {
       "id": 3,
-      "name": "Brussels Sprouts",
-      "image": "/images/vegetables/brussels-sprouts.webp",
-      "description": "Brussels sprouts are small, leafy green buds that resemble miniature cabbages.",
+      "name": "Red Onions",
+      "image": "/images/vegetables/red-onions.webp",
+      "description": "Red onions are a type of onion with a mild, sweet flavor.",
       "audio": {
-        "itemAudio": "/audio/this/brussels-sprouts.mp3",
-        "question": "q-brussels-sprouts.mp3",
-        "success": "c-brussels-sprouts.mp3",
-        "error": "n-brussels-sprouts.mp3",
-        "warning": "w-brussels-sprouts.mp3"
+        "itemAudio": "/audio/this/vegetables/red-onions.mp3",
+        "question": "/audio/which/vegetables/q-red-onions.mp3",
+        "success": "/audio/correct/vegetables/c-red-onions.mp3",
+        "error": "/audio/error/vegetables/n-red-onions.mp3",
+        "warning": "/audio/error/vegetables/w-red-onions.mp3"
       }
     },
     {
       "id": 4,
-      "name": "Butternut Squash",
-      "image": "/images/vegetables/butternut.webp",
-      "description": "Butternut squash is a type of winter squash with a sweet, nutty taste.",
+      "name": "Avocado",
+      "image": "/images/vegetables/avocado.webp",
+      "description": "Avocado is a creamy, green fruit often used in salads and spreads.",
       "audio": {
-        "itemAudio": "/audio/this/butternut.mp3",
-        "question": "q-butternut.mp3",
-        "success": "c-butternut.mp3",
-        "error": "n-butternut.mp3",
-        "warning": "w-butternut.mp3"
+        "itemAudio": "/audio/this/vegetables/avocado.mp3",
+        "question": "/audio/which/vegetables/q-avocado.mp3",
+        "success": "/audio/correct/vegetables/c-avocado.mp3",
+        "error": "/audio/error/vegetables/n-avocado.mp3",
+        "warning": "/audio/error/vegetables/w-avocado.mp3"
       }
     },
     {
       "id": 5,
-      "name": "Cabbage",
-      "image": "/images/vegetables/cabbage.webp",
-      "description": "Cabbage is a leafy green, red, or white biennial plant grown as an annual vegetable crop.",
+      "name": "Bell Peppers",
+      "image": "/images/vegetables/bell-peppers.webp",
+      "description": "Bell peppers are a type of sweet pepper available in various colors.",
       "audio": {
-        "itemAudio": "/audio/this/cabbage.mp3",
-        "question": "q-cabbage.mp3",
-        "success": "c-cabbage.mp3",
-        "error": "n-cabbage.mp3",
-        "warning": "w-cabbage.mp3"
+        "itemAudio": "/audio/this/vegetables/bell-peppers.mp3",
+        "question": "/audio/which/vegetables/q-bell-peppers.mp3",
+        "success": "/audio/correct/vegetables/c-bell-peppers.mp3",
+        "error": "/audio/error/vegetables/n-bell-peppers.mp3",
+        "warning": "/audio/error/vegetables/w-bell-peppers.mp3"
       }
     },
     {
       "id": 6,
-      "name": "Kohlrabi",
-      "image": "/images/vegetables/cabbage-kohlrabi.webp",
-      "description": "Kohlrabi is a biennial vegetable, a low, stout cultivar of wild cabbage.",
+      "name": "Cucumbers",
+      "image": "/images/vegetables/cucumbers.webp",
+      "description": "Cucumbers are a refreshing, green vegetable often used in salads.",
       "audio": {
-        "itemAudio": "/audio/this/cabbage-kohlrabi.mp3",
-        "question": "q-cabbage-kohlrabi.mp3",
-        "success": "c-cabbage-kohlrabi.mp3",
-        "error": "n-cabbage-kohlrabi.mp3",
-        "warning": "w-cabbage-kohlrabi.mp3"
+        "itemAudio": "/audio/this/vegetables/cucumbers.mp3",
+        "question": "/audio/which/vegetables/q-cucumbers.mp3",
+        "success": "/audio/correct/vegetables/c-cucumbers.mp3",
+        "error": "/audio/error/vegetables/n-cucumbers.mp3",
+        "warning": "/audio/error/vegetables/w-cucumbers.mp3"
       }
     },
     {
       "id": 7,
-      "name": "Chickpeas",
-      "image": "/images/vegetables/chick-peas.webp",
-      "description": "Chickpeas are a type of legume, also known as garbanzo beans.",
+      "name": "Potatoes",
+      "image": "/images/vegetables/potatoes.webp",
+      "description": "Potatoes are a starchy tuber used in a variety of dishes.",
       "audio": {
-        "itemAudio": "/audio/this/chick-peas.mp3",
-        "question": "q-chick-peas.mp3",
-        "success": "c-chick-peas.mp3",
-        "error": "n-chick-peas.mp3",
-        "warning": "w-chick-peas.mp3"
+        "itemAudio": "/audio/this/vegetables/potatoes.mp3",
+        "question": "/audio/which/vegetables/q-potatoes.mp3",
+        "success": "/audio/correct/vegetables/c-potatoes.mp3",
+        "error": "/audio/error/vegetables/n-potatoes.mp3",
+        "warning": "/audio/error/vegetables/w-potatoes.mp3"
       }
     },
     {
       "id": 8,
-      "name": "Eggplants",
-      "image": "/images/vegetables/eggplants.webp",
-      "description": "Eggplants, also known as aubergines, are a species of nightshade grown for their edible fruit.",
+      "name": "Cabbage",
+      "image": "/images/vegetables/cabbage.webp",
+      "description": "Cabbage is a leafy green, red, or white vegetable used in many dishes.",
       "audio": {
-        "itemAudio": "/audio/this/eggplants.mp3",
-        "question": "q-eggplants.mp3",
-        "success": "c-eggplants.mp3",
-        "error": "n-eggplants.mp3",
-        "warning": "w-eggplants.mp3"
+        "itemAudio": "/audio/this/vegetables/cabbage.mp3",
+        "question": "/audio/which/vegetables/q-cabbage.mp3",
+        "success": "/audio/correct/vegetables/c-cabbage.mp3",
+        "error": "/audio/error/vegetables/n-cabbage.mp3",
+        "warning": "/audio/error/vegetables/w-cabbage.mp3"
       }
     },
     {
       "id": 9,
-      "name": "Garlic",
-      "image": "/images/vegetables/garlic.webp",
-      "description": "Garlic is a species in the onion genus, Allium.",
+      "name": "Peas",
+      "image": "/images/vegetables/peas.webp",
+      "description": "Peas are small, round green seeds used in cooking.",
       "audio": {
-        "itemAudio": "/audio/this/garlic.mp3",
-        "question": "q-garlic.mp3",
-        "success": "c-garlic.mp3",
-        "error": "n-garlic.mp3",
-        "warning": "w-garlic.mp3"
+        "itemAudio": "/audio/this/vegetables/peas.mp3",
+        "question": "/audio/which/vegetables/q-peas.mp3",
+        "success": "/audio/correct/vegetables/c-peas.mp3",
+        "error": "/audio/error/vegetables/n-peas.mp3",
+        "warning": "/audio/error/vegetables/w-peas.mp3"
       }
     },
     {
       "id": 10,
-      "name": "Green Beans",
-      "image": "/images/vegetables/green-beans.webp",
-      "description": "Green beans are the unripe, young fruit of various cultivars of the common bean.",
+      "name": "Carrots",
+      "image": "/images/vegetables/carrots.webp",
+      "description": "Carrots are a root vegetable often claimed to be the perfect health food.",
       "audio": {
-        "itemAudio": "/audio/this/green-beans.mp3",
-        "question": "q-green-beans.mp3",
-        "success": "c-green-beans.mp3",
-        "error": "n-green-beans.mp3",
-        "warning": "w-green-beans.mp3"
+        "itemAudio": "/audio/this/vegetables/carrots.mp3",
+        "question": "/audio/which/vegetables/q-carrots.mp3",
+        "success": "/audio/correct/vegetables/c-carrots.mp3",
+        "error": "/audio/error/vegetables/n-carrots.mp3",
+        "warning": "/audio/error/vegetables/w-carrots.mp3"
       }
     },
     {
       "id": 11,
-      "name": "Legumes",
-      "image": "/images/vegetables/legumes.webp",
-      "description": "Legumes are a class of vegetables that include beans, peas, and lentils.",
+      "name": "Pumpkin",
+      "image": "/images/vegetables/pumpkin.webp",
+      "description": "Pumpkin is a cultivar of winter squash that is round with smooth, slightly ribbed skin.",
       "audio": {
-        "itemAudio": "/audio/this/legumes.mp3",
-        "question": "q-legumes.mp3",
-        "success": "c-legumes.mp3",
-        "error": "n-legumes.mp3",
-        "warning": "w-legumes.mp3"
+        "itemAudio": "/audio/this/vegetables/pumpkin.mp3",
+        "question": "/audio/which/vegetables/q-pumpkin.mp3",
+        "success": "/audio/correct/vegetables/c-pumpkin.mp3",
+        "error": "/audio/error/vegetables/n-pumpkin.mp3",
+        "warning": "/audio/error/vegetables/w-pumpkin.mp3"
       }
     },
     {
       "id": 12,
-      "name": "Onion",
-      "image": "/images/vegetables/onion.webp",
-      "description": "Onions are a type of vegetable known for their pungent flavor and aroma.",
+      "name": "Regular Onions",
+      "image": "/images/vegetables/regular-onions.webp",
+      "description": "Regular onions are a type of vegetable known for their pungent flavor and aroma.",
       "audio": {
-        "itemAudio": "/audio/this/onion.mp3",
-        "question": "q-onion.mp3",
-        "success": "c-onion.mp3",
-        "error": "n-onion.mp3",
-        "warning": "w-onion.mp3"
+        "itemAudio": "/audio/this/vegetables/regular-onions.mp3",
+        "question": "/audio/which/vegetables/q-regular-onions.mp3",
+        "success": "/audio/correct/vegetables/c-regular-onions.mp3",
+        "error": "/audio/error/vegetables/n-regular-onions.mp3",
+        "warning": "/audio/error/vegetables/w-regular-onions.mp3"
       }
     },
     {
       "id": 13,
-      "name": "Peas",
-      "image": "/images/vegetables/peas.webp",
-      "description": "Peas are small, spherical seeds or the seed-pod of the pod fruit Pisum sativum.",
+      "name": "Broccoli",
+      "image": "/images/vegetables/broccoli.webp",
+      "description": "Broccoli is an edible green plant in the cabbage family.",
       "audio": {
-        "itemAudio": "/audio/this/peas.mp3",
-        "question": "q-peas.mp3",
-        "success": "c-peas.mp3",
-        "error": "n-peas.mp3",
-        "warning": "w-peas.mp3"
+        "itemAudio": "/audio/this/vegetables/broccoli.mp3",
+        "question": "/audio/which/vegetables/q-broccoli.mp3",
+        "success": "/audio/correct/vegetables/c-broccoli.mp3",
+        "error": "/audio/error/vegetables/n-broccoli.mp3",
+        "warning": "/audio/error/vegetables/w-broccoli.mp3"
       }
     },
     {
       "id": 14,
-      "name": "Potato",
-      "image": "/images/vegetables/potato.webp",
-      "description": "The potato is a starchy tuber of the plant Solanum tuberosum.",
+      "name": "Radishes",
+      "image": "/images/vegetables/radishes.webp",
+      "description": "Radishes are edible root vegetables with a peppery flavor.",
       "audio": {
-        "itemAudio": "/audio/this/potato.mp3",
-        "question": "q-potato.mp3",
-        "success": "c-potato.mp3",
-        "error": "n-potato.mp3",
-        "warning": "w-potato.mp3"
+        "itemAudio": "/audio/this/vegetables/radishes.mp3",
+        "question": "/audio/which/vegetables/q-radishes.mp3",
+        "success": "/audio/correct/vegetables/c-radishes.mp3",
+        "error": "/audio/error/vegetables/n-radishes.mp3",
+        "warning": "/audio/error/vegetables/w-radishes.mp3"
       }
     },
     {
       "id": 15,
-      "name": "Pumpkin",
-      "image": "/images/vegetables/pumpkin.webp",
-      "description": "A pumpkin is a cultivar of winter squash that is round with smooth, slightly ribbed skin.",
+      "name": "Corn/Mielie",
+      "image": "/images/vegetables/corn-mielie.webp",
+      "description": "Corn, also known as mielie, is a cereal grain first domesticated by indigenous peoples in southern Mexico.",
       "audio": {
-        "itemAudio": "/audio/this/pumpkin.mp3",
-        "question": "q-pumpkin.mp3",
-        "success": "c-pumpkin.mp3",
-        "error": "n-pumpkin.mp3",
-        "warning": "w-pumpkin.mp3"
+        "itemAudio": "/audio/this/vegetables/corn-mielie.mp3",
+        "question": "/audio/which/vegetables/q-corn-mielie.mp3",
+        "success": "/audio/correct/vegetables/c-corn-mielie.mp3",
+        "error": "/audio/error/vegetables/n-corn-mielie.mp3",
+        "warning": "/audio/error/vegetables/w-corn-mielie.mp3"
       }
     },
     {
       "id": 16,
-      "name": "Red Chili",
-      "image": "/images/vegetables/red-chili.webp",
-      "description": "Red chili peppers are the ripe, dried pods of the chili pepper plant.",
+      "name": "Mushrooms",
+      "image": "/images/vegetables/mushrooms.webp",
+      "description": "Mushrooms are a type of fungi that are commonly used in cooking.",
       "audio": {
-        "itemAudio": "/audio/this/red-chili.mp3",
-        "question": "q-red-chili.mp3",
-        "success": "c-red-chili.mp3",
-        "error": "n-red-chili.mp3",
-        "warning": "w-red-chili.mp3"
+        "itemAudio": "/audio/this/vegetables/mushrooms.mp3",
+        "question": "/audio/which/vegetables/q-mushrooms.mp3",
+        "success": "/audio/correct/vegetables/c-mushrooms.mp3",
+        "error": "/audio/error/vegetables/n-mushrooms.mp3",
+        "warning": "/audio/error/vegetables/w-mushrooms.mp3"
       }
     },
     {
       "id": 17,
+      "name": "Beets/Beetroot",
+      "image": "/images/vegetables/beets-beetroot.webp",
+      "description": "Beets, also known as beetroot, are a root vegetable known for their deep red color.",
+      "audio": {
+        "itemAudio": "/audio/this/vegetables/beets-beetroot.mp3",
+        "question": "/audio/which/vegetables/q-beets-beetroot.mp3",
+        "success": "/audio/correct/vegetables/c-beets-beetroot.mp3",
+        "error": "/audio/error/vegetables/n-beets-beetroot.mp3",
+        "warning": "/audio/error/vegetables/w-beets-beetroot.mp3"
+      }
+    },
+    {
+      "id": 18,
+      "name": "Cauliflower",
+      "image": "/images/vegetables/cauliflower.webp",
+      "description": "Cauliflower is a vegetable that belongs to the same family as broccoli.",
+      "audio": {
+        "itemAudio": "/audio/this/vegetables/cauliflower.mp3",
+        "question": "/audio/which/vegetables/q-cauliflower.mp3",
+        "success": "/audio/correct/vegetables/c-cauliflower.mp3",
+        "error": "/audio/error/vegetables/n-cauliflower.mp3",
+        "warning": "/audio/error/vegetables/w-cauliflower.mp3"
+      }
+    },
+    {
+      "id": 19,
       "name": "Rice",
       "image": "/images/vegetables/rice.webp",
       "description": "Rice is the seed of the grass species Oryza sativa or Oryza glaberrima.",
       "audio": {
-        "itemAudio": "/audio/this/rice.mp3",
-        "question": "q-rice.mp3",
-        "success": "c-rice.mp3",
-        "error": "n-rice.mp3",
-        "warning": "w-rice.mp3"
+        "itemAudio": "/audio/this/vegetables/rice.mp3",
+        "question": "/audio/which/vegetables/q-rice.mp3",
+        "success": "/audio/correct/vegetables/c-rice.mp3",
+        "error": "/audio/error/vegetables/n-rice.mp3",
+        "warning": "/audio/error/vegetables/w-rice.mp3"
+      }
+    },
+    {
+      "id": 20,
+      "name": "Pumpkin",
+      "image": "/images/vegetables/pumpkin.webp",
+      "description": "Pumpkin is a cultivar of winter squash that is round with smooth, slightly ribbed skin.",
+      "audio": {
+        "itemAudio": "/audio/this/vegetables/pumpkin.mp3",
+        "question": "/audio/which/vegetables/q-pumpkin.mp3",
+        "success": "/audio/correct/vegetables/c-pumpkin.mp3",
+        "error": "/audio/error/vegetables/n-pumpkin.mp3",
+        "warning": "/audio/error/vegetables/w-pumpkin.mp3"
+      }
+    },
+    {
+      "id": 21,
+      "name": "Kohlrabi",
+      "image": "/images/vegetables/kohlrabi.webp",
+      "description": "Kohlrabi is a biennial vegetable, a low, stout cultivar of wild cabbage.",
+      "audio": {
+        "itemAudio": "/audio/this/vegetables/kohlrabi.mp3",
+        "question": "/audio/which/vegetables/q-kohlrabi.mp3",
+        "success": "/audio/correct/vegetables/c-kohlrabi.mp3",
+        "error": "/audio/error/vegetables/n-kohlrabi.mp3",
+        "warning": "/audio/error/vegetables/w-kohlrabi.mp3"
+      }
+    },
+    {
+      "id": 22,
+      "name": "Chickpeas",
+      "image": "/images/vegetables/chickpeas.webp",
+      "description": "Chickpeas are a type of legume, also known as garbanzo beans.",
+      "audio": {
+        "itemAudio": "/audio/this/vegetables/chickpeas.mp3",
+        "question": "/audio/which/vegetables/q-chickpeas.mp3",
+        "success": "/audio/correct/vegetables/c-chickpeas.mp3",
+        "error": "/audio/error/vegetables/n-chickpeas.mp3",
+        "warning": "/audio/error/vegetables/w-chickpeas.mp3"
+      }
+    },
+    {
+      "id": 23,
+      "name": "Garlic",
+      "image": "/images/vegetables/garlic.webp",
+      "description": "Garlic is a species in the onion genus, Allium.",
+      "audio": {
+        "itemAudio": "/audio/this/vegetables/garlic.mp3",
+        "question": "/audio/which/vegetables/q-garlic.mp3",
+        "success": "/audio/correct/vegetables/c-garlic.mp3",
+        "error": "/audio/error/vegetables/n-garlic.mp3",
+        "warning": "/audio/error/vegetables/w-garlic.mp3"
+      }
+    },
+    {
+      "id": 24,
+      "name": "Dry Beans",
+      "image": "/images/vegetables/dry-beans.webp",
+      "description": "Dry beans are mature beans that have been dried and can be stored for long periods.",
+      "audio": {
+        "itemAudio": "/audio/this/vegetables/dry-beans.mp3",
+        "question": "/audio/which/vegetables/q-dry-beans.mp3",
+        "success": "/audio/correct/vegetables/c-dry-beans.mp3",
+        "error": "/audio/error/vegetables/n-dry-beans.mp3",
+        "warning": "/audio/error/vegetables/w-dry-beans.mp3"
+      }
+    },
+    {
+      "id": 25,
+      "name": "Brussels Sprouts",
+      "image": "/images/vegetables/brussels-sprouts.webp",
+      "description": "Brussels sprouts are small, leafy green buds that resemble miniature cabbages.",
+      "audio": {
+        "itemAudio": "/audio/this/vegetables/brussels-sprouts.mp3",
+        "question": "/audio/which/vegetables/q-brussels-sprouts.mp3",
+        "success": "/audio/correct/vegetables/c-brussels-sprouts.mp3",
+        "error": "/audio/error/vegetables/n-brussels-sprouts.mp3",
+        "warning": "/audio/error/vegetables/w-brussels-sprouts.mp3"
+      }
+    },
+    {
+      "id": 26,
+      "name": "Green Beans",
+      "image": "/images/vegetables/green-beans.webp",
+      "description": "Green beans are the unripe, young fruit of various cultivars of the common bean.",
+      "audio": {
+        "itemAudio": "/audio/this/vegetables/green-beans.mp3",
+        "question": "/audio/which/vegetables/q-green-beans.mp3",
+        "success": "/audio/correct/vegetables/c-green-beans.mp3",
+        "error": "/audio/error/vegetables/n-green-beans.mp3",
+        "warning": "/audio/error/vegetables/w-green-beans.mp3"
+      }
+    },
+    {
+      "id": 27,
+      "name": "Chili Peppers",
+      "image": "/images/vegetables/chili-peppers.webp",
+      "description": "Chili peppers are the fruit of plants from the genus Capsicum, known for their spicy flavor.",
+      "audio": {
+        "itemAudio": "/audio/this/vegetables/chili-peppers.mp3",
+        "question": "/audio/which/vegetables/q-chili-peppers.mp3",
+        "success": "/audio/correct/vegetables/c-chili-peppers.mp3",
+        "error": "/audio/error/vegetables/n-chili-peppers.mp3",
+        "warning": "/audio/error/vegetables/w-chili-peppers.mp3"
       }
     }
   ],
   "fruits": [
     {
       "id": 1,
-      "name": "Apple",
-      "image": "/images/fruits/apple.webp",
-      "description": "An apple is an edible fruit produced by an apple tree.",
-      "audio": {
-        "itemAudio": "/audio/this/fruits/apples.mp3",
-        "question": "/audio/which/fruits/q-apple.mp3",
-        "success": "/audio/success/fruits/c-apple.mp3",
-        "error": "/audio/error/fruits/n-apple.mp3",
-        "warning": "/audio/error/fruits/w-apple.mp3"
-      }
-    },
-    {
-      "id": 2,
-      "name": "Banana",
-      "image": "/images/fruits/banana.webp",
-      "description": "A banana is an elongated, edible fruit produced by several kinds of large herbaceous flowering plants.",
-      "audio": {
-        "itemAudio": "/audio/this/fruits/bananas.mp3",
-        "question": "/audio/which/fruits/q-banana.mp3",
-        "success": "/audio/success/fruits/c-banana.mp3",
-        "error": "/audio/error/fruits/n-banana.mp3",
-        "warning": "/audio/error/fruits/w-banana.mp3"
-      }
-    },
-    {
-      "id": 3,
       "name": "Orange",
       "image": "/images/fruits/orange.webp",
       "description": "An orange is a type of citrus fruit that is commonly eaten as food.",
@@ -1661,176 +1835,20 @@
       }
     },
     {
-      "id": 4,
-      "name": "Strawberry",
-      "image": "/images/fruits/strawberry.webp",
-      "description": "A strawberry is a bright red, juicy, and sweet fruit with seeds on the outside.",
+      "id": 2,
+      "name": "Apples",
+      "image": "/images/fruits/apples.webp",
+      "description": "An apple is an edible fruit produced by an apple tree.",
       "audio": {
-        "itemAudio": "/audio/this/fruits/strawberry.mp3",
-        "question": "/audio/which/fruits/q-strawberry.mp3",
-        "success": "/audio/success/fruits/c-strawberry.mp3",
-        "error": "/audio/error/fruits/n-strawberry.mp3",
-        "warning": "/audio/error/fruits/w-strawberry.mp3"
+        "itemAudio": "/audio/this/fruits/apples.mp3",
+        "question": "/audio/which/fruits/q-apples.mp3",
+        "success": "/audio/success/fruits/c-apples.mp3",
+        "error": "/audio/error/fruits/n-apples.mp3",
+        "warning": "/audio/error/fruits/w-apples.mp3"
       }
     },
     {
-      "id": 5,
-      "name": "Grapes",
-      "image": "/images/fruits/grapes.webp",
-      "description": "Grapes are small, round fruits that grow in bunches and can be eaten fresh or used to make wine.",
-      "audio": {
-        "itemAudio": "/audio/this/fruits/grapes.mp3",
-        "question": "/audio/which/fruits/q-grapes.mp3",
-        "success": "/audio/success/fruits/c-grapes.mp3",
-        "error": "/audio/error/fruits/n-grapes.mp3",
-        "warning": "/audio/error/fruits/w-grapes.mp3"
-      }
-    },
-    {
-      "id": 6,
-      "name": "Mango",
-      "image": "/images/fruits/mango.webp",
-      "description": "A mango is a tropical stone fruit that has a sweet and tangy flavor.",
-      "audio": {
-        "itemAudio": "/audio/this/fruits/mango.mp3",
-        "question": "/audio/which/fruits/q-mango.mp3",
-        "success": "/audio/success/fruits/c-mango.mp3",
-        "error": "/audio/error/fruits/n-mango.mp3",
-        "warning": "/audio/error/fruits/w-mango.mp3"
-      }
-    },
-    {
-      "id": 7,
-      "name": "Peach",
-      "image": "/images/fruits/peach.webp",
-      "description": "A peach is a soft, juicy fruit with a sweet, tangy flavor and a stone inside.",
-      "audio": {
-        "itemAudio": "/audio/this/fruits/peach.mp3",
-        "question": "/audio/which/fruits/q-peach.mp3",
-        "success": "/audio/success/fruits/c-peach.mp3",
-        "error": "/audio/error/fruits/n-peach.mp3",
-        "warning": "/audio/error/fruits/w-peach.mp3"
-      }
-    },
-    {
-      "id": 8,
-      "name": "Cherry",
-      "image": "/images/fruits/cherries.webp",
-      "description": "Cherries are small, round fruits that are typically red or black and have a pit in the center.",
-      "audio": {
-        "itemAudio": "/audio/this/fruits/cherries.mp3",
-        "question": "/audio/which/fruits/q-cherry.mp3",
-        "success": "/audio/success/fruits/c-cherry.mp3",
-        "error": "/audio/error/fruits/n-cherry.mp3",
-        "warning": "/audio/error/fruits/w-cherry.mp3"
-      }
-    },
-    {
-      "id": 9,
-      "name": "Coconut",
-      "image": "/images/fruits/coconut.webp",
-      "description": "A coconut is a large, brown, hard-shelled fruit with a white, edible interior.",
-      "audio": {
-        "itemAudio": "/audio/this/fruits/coconut.mp3",
-        "question": "/audio/which/fruits/q-coconut.mp3",
-        "success": "/audio/success/fruits/c-coconut.mp3",
-        "error": "/audio/error/fruits/n-coconut.mp3",
-        "warning": "/audio/error/fruits/w-coconut.mp3"
-      }
-    },
-    {
-      "id": 10,
-      "name": "Kiwi",
-      "image": "/images/fruits/kiwi.webp",
-      "description": "Kiwi is a small, fuzzy fruit with green flesh and tiny black seeds.",
-      "audio": {
-        "itemAudio": "/audio/this/fruits/kiwi.mp3",
-        "question": "/audio/which/fruits/q-kiwi.mp3",
-        "success": "/audio/success/fruits/c-kiwi.mp3",
-        "error": "/audio/error/fruits/n-kiwi.mp3",
-        "warning": "/audio/error/fruits/w-kiwi.mp3"
-      }
-    },
-    {
-      "id": 11,
-      "name": "Granadilla",
-      "image": "/images/fruits/granadilla.webp",
-      "description": "Granadilla is a type of passion fruit with a sweet, tangy flavor.",
-      "audio": {
-        "itemAudio": "/audio/this/fruits/granadilla.mp3",
-        "question": "/audio/which/fruits/q-granadilla.mp3",
-        "success": "/audio/success/fruits/c-granadilla.mp3",
-        "error": "/audio/error/fruits/n-granadilla.mp3",
-        "warning": "/audio/error/fruits/w-granadilla.mp3"
-      }
-    },
-    {
-      "id": 12,
-      "name": "Watermelon",
-      "image": "/images/fruits/watermelon.webp",
-      "description": "A watermelon is a large fruit with a green rind and sweet, juicy red flesh.",
-      "audio": {
-        "itemAudio": "/audio/this/fruits/watermelon.mp3",
-        "question": "/audio/which/fruits/q-watermelon.mp3",
-        "success": "/audio/success/fruits/c-watermelon.mp3",
-        "error": "/audio/error/fruits/n-watermelon.mp3",
-        "warning": "/audio/error/fruits/w-watermelon.mp3"
-      }
-    },
-    {
-      "id": 13,
-      "name": "Nectarine",
-      "image": "/images/fruits/nectarine.webp",
-      "description": "A nectarine is a smooth-skinned peach with a sweet and juicy flavor.",
-      "audio": {
-        "itemAudio": "/audio/this/fruits/nectarine.mp3",
-        "question": "/audio/which/fruits/q-nectarine.mp3",
-        "success": "/audio/success/fruits/c-nectarine.mp3",
-        "error": "/audio/error/fruits/n-nectarine.mp3",
-        "warning": "/audio/error/fruits/w-nectarine.mp3"
-      }
-    },
-    {
-      "id": 14,
-      "name": "Tenderings",
-      "image": "/images/fruits/tenderings.webp",
-      "description": "Tenderings are soft and sweet fruits, often enjoyed fresh or in cooking.",
-      "audio": {
-        "itemAudio": "/audio/this/fruits/tenderings.mp3",
-        "question": "/audio/which/fruits/q-tenderings.mp3",
-        "success": "/audio/success/fruits/c-tenderings.mp3",
-        "error": "/audio/error/fruits/n-tenderings.mp3",
-        "warning": "/audio/error/fruits/w-tenderings.mp3"
-      }
-    },
-    {
-      "id": 15,
-      "name": "Guava",
-      "image": "/images/fruits/guava.webp",
-      "description": "Guava is a tropical fruit with a strong aroma and a sweet, tangy flavor.",
-      "audio": {
-        "itemAudio": "/audio/this/fruits/guava.mp3",
-        "question": "/audio/which/fruits/q-guava.mp3",
-        "success": "/audio/success/fruits/c-guava.mp3",
-        "error": "/audio/error/fruits/n-guava.mp3",
-        "warning": "/audio/error/fruits/w-guava.mp3"
-      }
-    },
-    {
-      "id": 16,
-      "name": "Naartjie",
-      "image": "/images/fruits/naartjie.webp",
-      "description": "Naartjie is a small citrus fruit, similar to a mandarin or tangerine.",
-      "audio": {
-        "itemAudio": "/audio/this/fruits/naartjie.mp3",
-        "question": "/audio/which/fruits/q-naartjie.mp3",
-        "success": "/audio/success/fruits/c-naartjie.mp3",
-        "error": "/audio/error/fruits/n-naartjie.mp3",
-        "warning": "/audio/error/fruits/w-naartjie.mp3"
-      }
-    },
-    {
-      "id": 17,
+      "id": 3,
       "name": "Pear",
       "image": "/images/fruits/pear.webp",
       "description": "A pear is a fruit with a rounded base and tapering top, typically sweet and juicy.",
@@ -1843,7 +1861,33 @@
       }
     },
     {
-      "id": 18,
+      "id": 4,
+      "name": "Banana",
+      "image": "/images/fruits/banana.webp",
+      "description": "A banana is an elongated, edible fruit produced by several kinds of large herbaceous flowering plants.",
+      "audio": {
+        "itemAudio": "/audio/this/fruits/banana.mp3",
+        "question": "/audio/which/fruits/q-banana.mp3",
+        "success": "/audio/success/fruits/c-banana.mp3",
+        "error": "/audio/error/fruits/n-banana.mp3",
+        "warning": "/audio/error/fruits/w-banana.mp3"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Guava",
+      "image": "/images/fruits/guava.webp",
+      "description": "Guava is a tropical fruit with a strong aroma and a sweet, tangy flavor.",
+      "audio": {
+        "itemAudio": "/audio/this/fruits/guava.mp3",
+        "question": "/audio/which/fruits/q-guava.mp3",
+        "success": "/audio/success/fruits/c-guava.mp3",
+        "error": "/audio/error/fruits/n-guava.mp3",
+        "warning": "/audio/error/fruits/w-guava.mp3"
+      }
+    },
+    {
+      "id": 6,
       "name": "Pineapple",
       "image": "/images/fruits/pineapple.webp",
       "description": "Pineapple is a tropical fruit with a tough outer rind and sweet, tangy flesh.",
@@ -1853,6 +1897,240 @@
         "success": "/audio/success/fruits/c-pineapple.mp3",
         "error": "/audio/error/fruits/n-pineapple.mp3",
         "warning": "/audio/error/fruits/w-pineapple.mp3"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Lychee",
+      "image": "/images/fruits/lychee.webp",
+      "description": "Lychee is a tropical fruit with a sweet, floral flavor and a rough, red skin.",
+      "audio": {
+        "itemAudio": "/audio/this/fruits/lychee.mp3",
+        "question": "/audio/which/fruits/q-lychee.mp3",
+        "success": "/audio/success/fruits/c-lychee.mp3",
+        "error": "/audio/error/fruits/n-lychee.mp3",
+        "warning": "/audio/error/fruits/w-lychee.mp3"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Watermelon",
+      "image": "/images/fruits/watermelon.webp",
+      "description": "A watermelon is a large fruit with a green rind and sweet, juicy red flesh.",
+      "audio": {
+        "itemAudio": "/audio/this/fruits/watermelon.mp3",
+        "question": "/audio/which/fruits/q-watermelon.mp3",
+        "success": "/audio/success/fruits/c-watermelon.mp3",
+        "error": "/audio/error/fruits/n-watermelon.mp3",
+        "warning": "/audio/error/fruits/w-watermelon.mp3"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Grapes",
+      "image": "/images/fruits/grapes.webp",
+      "description": "Grapes are small, round fruits that grow in bunches and can be eaten fresh or used to make wine.",
+      "audio": {
+        "itemAudio": "/audio/this/fruits/grapes.mp3",
+        "question": "/audio/which/fruits/q-grapes.mp3",
+        "success": "/audio/success/fruits/c-grapes.mp3",
+        "error": "/audio/error/fruits/n-grapes.mp3",
+        "warning": "/audio/error/fruits/w-grapes.mp3"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Mango",
+      "image": "/images/fruits/mango.webp",
+      "description": "A mango is a tropical stone fruit that has a sweet and tangy flavor.",
+      "audio": {
+        "itemAudio": "/audio/this/fruits/mango.mp3",
+        "question": "/audio/which/fruits/q-mango.mp3",
+        "success": "/audio/success/fruits/c-mango.mp3",
+        "error": "/audio/error/fruits/n-mango.mp3",
+        "warning": "/audio/error/fruits/w-mango.mp3"
+      }
+    },
+    {
+      "id": 11,
+      "name": "Strawberry",
+      "image": "/images/fruits/strawberry.webp",
+      "description": "A strawberry is a bright red, juicy, and sweet fruit with seeds on the outside.",
+      "audio": {
+        "itemAudio": "/audio/this/fruits/strawberry.mp3",
+        "question": "/audio/which/fruits/q-strawberry.mp3",
+        "success": "/audio/success/fruits/c-strawberry.mp3",
+        "error": "/audio/error/fruits/n-strawberry.mp3",
+        "warning": "/audio/error/fruits/w-strawberry.mp3"
+      }
+    },
+    {
+      "id": 12,
+      "name": "Tangerine/Naartjie",
+      "image": "/images/fruits/naartjie.webp",
+      "description": "Tangerine, also known as naartjie, is a small citrus fruit similar to a mandarin or tangerine.",
+      "audio": {
+        "itemAudio": "/audio/this/fruits/naartjie.mp3",
+        "question": "/audio/which/fruits/q-naartjie.mp3",
+        "success": "/audio/success/fruits/c-naartjie.mp3",
+        "error": "/audio/error/fruits/n-naartjie.mp3",
+        "warning": "/audio/error/fruits/w-naartjie.mp3"
+      }
+    },
+    {
+      "id": 13,
+      "name": "Peach",
+      "image": "/images/fruits/peach.webp",
+      "description": "A peach is a soft, juicy fruit with a sweet, tangy flavor and a stone inside.",
+      "audio": {
+        "itemAudio": "/audio/this/fruits/peach.mp3",
+        "question": "/audio/which/fruits/q-peach.mp3",
+        "success": "/audio/success/fruits/c-peach.mp3",
+        "error": "/audio/error/fruits/n-peach.mp3",
+        "warning": "/audio/error/fruits/w-peach.mp3"
+      }
+    },
+    {
+      "id": 14,
+      "name": "Cherry",
+      "image": "/images/fruits/cherry.webp",
+      "description": "Cherries are small, round fruits that are typically red or black and have a pit in the center.",
+      "audio": {
+        "itemAudio": "/audio/this/fruits/cherries.mp3",
+        "question": "/audio/which/fruits/q-cherry.mp3",
+        "success": "/audio/success/fruits/c-cherry.mp3",
+        "error": "/audio/error/fruits/n-cherry.mp3",
+        "warning": "/audio/error/fruits/w-cherry.mp3"
+      }
+    },
+    {
+      "id": 15,
+      "name": "Nectarine",
+      "image": "/images/fruits/nectarine.webp",
+      "description": "A nectarine is a smooth-skinned peach with a sweet and juicy flavor.",
+      "audio": {
+        "itemAudio": "/audio/this/fruits/nectarine.mp3",
+        "question": "/audio/which/fruits/q-nectarine.mp3",
+        "success": "/audio/success/fruits/c-nectarine.mp3",
+        "error": "/audio/error/fruits/n-nectarine.mp3",
+        "warning": "/audio/error/fruits/w-nectarine.mp3"
+      }
+    },
+    {
+      "id": 16,
+      "name": "Kiwi",
+      "image": "/images/fruits/kiwifruit.webp",
+      "description": "Kiwi is a small, fuzzy fruit with green flesh and tiny black seeds.",
+      "audio": {
+        "itemAudio": "/audio/this/fruits/kiwi.mp3",
+        "question": "/audio/which/fruits/q-kiwi.mp3",
+        "success": "/audio/success/fruits/c-kiwi.mp3",
+        "error": "/audio/error/fruits/n-kiwi.mp3",
+        "warning": "/audio/error/fruits/w-kiwi.mp3"
+      }
+    },
+    {
+      "id": 17,
+      "name": "Granadilla",
+      "image": "/images/fruits/granadilla.webp",
+      "description": "Granadilla is a type of passion fruit with a sweet, tangy flavor.",
+      "audio": {
+        "itemAudio": "/audio/this/fruits/granadilla.mp3",
+        "question": "/audio/which/fruits/q-granadilla.mp3",
+        "success": "/audio/success/fruits/c-granadilla.mp3",
+        "error": "/audio/error/fruits/n-granadilla.mp3",
+        "warning": "/audio/error/fruits/w-granadilla.mp3"
+      }
+    },
+    {
+      "id": 18,
+      "name": "Coconut",
+      "image": "/images/fruits/coconut.webp",
+      "description": "A coconut is a large, brown, hard-shelled fruit with a white, edible interior.",
+      "audio": {
+        "itemAudio": "/audio/this/fruits/coconut.mp3",
+        "question": "/audio/which/fruits/q-coconut.mp3",
+        "success": "/audio/success/fruits/c-coconut.mp3",
+        "error": "/audio/error/fruits/n-coconut.mp3",
+        "warning": "/audio/error/fruits/w-coconut.mp3"
+      }
+    },
+    {
+      "id": 19,
+      "name": "Pawpaw",
+      "image": "/images/fruits/pawpaw.webp",
+      "description": "Pawpaw is a tropical fruit with a sweet, musky flavor and a soft, butter-like consistency.",
+      "audio": {
+        "itemAudio": "/audio/this/fruits/pawpaw.mp3",
+        "question": "/audio/which/fruits/q-pawpaw.mp3",
+        "success": "/audio/success/fruits/c-pawpaw.mp3",
+        "error": "/audio/error/fruits/n-pawpaw.mp3",
+        "warning": "/audio/error/fruits/w-pawpaw.mp3"
+      }
+    },
+    {
+      "id": 20,
+      "name": "Lemon",
+      "image": "/images/fruits/lemon.webp",
+      "description": "Lemon is a yellow citrus fruit known for its sour taste and high vitamin C content.",
+      "audio": {
+        "itemAudio": "/audio/this/fruits/lemon.mp3",
+        "question": "/audio/which/fruits/q-lemon.mp3",
+        "success": "/audio/success/fruits/c-lemon.mp3",
+        "error": "/audio/error/fruits/n-lemon.mp3",
+        "warning": "/audio/error/fruits/w-lemon.mp3"
+      }
+    },
+    {
+      "id": 21,
+      "name": "Pomegranate",
+      "image": "/images/fruits/pomegranate.webp",
+      "description": "Pomegranate is a fruit with a tough outer rind and sweet, juicy seeds inside.",
+      "audio": {
+        "itemAudio": "/audio/this/fruits/pomegranate.mp3",
+        "question": "/audio/which/fruits/q-pomegranate.mp3",
+        "success": "/audio/success/fruits/c-pomegranate.mp3",
+        "error": "/audio/error/fruits/n-pomegranate.mp3",
+        "warning": "/audio/error/fruits/w-pomegranate.mp3"
+      }
+    },
+    {
+      "id": 22,
+      "name": "Blackberry",
+      "image": "/images/fruits/blackberry.webp",
+      "description": "Blackberries are small, dark purple fruits with a sweet and tart flavor.",
+      "audio": {
+        "itemAudio": "/audio/this/fruits/blackberry.mp3",
+        "question": "/audio/which/fruits/q-blackberry.mp3",
+        "success": "/audio/success/fruits/c-blackberry.mp3",
+        "error": "/audio/error/fruits/n-blackberry.mp3",
+        "warning": "/audio/error/fruits/w-blackberry.mp3"
+      }
+    },
+    {
+      "id": 23,
+      "name": "Sweet Melon",
+      "image": "/images/fruits/sweet-melon.webp",
+      "description": "Sweet melon is a type of melon with a sweet, juicy flesh.",
+      "audio": {
+        "itemAudio": "/audio/this/fruits/sweet-melon.mp3",
+        "question": "/audio/which/fruits/q-sweet-melon.mp3",
+        "success": "/audio/success/fruits/c-sweet-melon.mp3",
+        "error": "/audio/error/fruits/n-sweet-melon.mp3",
+        "warning": "/audio/error/fruits/w-sweet-melon.mp3"
+      }
+    },
+    {
+      "id": 24,
+      "name": "Grapefruit",
+      "image": "/images/fruits/grapefruit.webp",
+      "description": "Grapefruit is a large citrus fruit with a slightly bitter and tangy flavor.",
+      "audio": {
+        "itemAudio": "/audio/this/fruits/grapefruit.mp3",
+        "question": "/audio/which/fruits/q-grapefruit.mp3",
+        "success": "/audio/success/fruits/c-grapefruit.mp3",
+        "error": "/audio/error/fruits/n-grapefruit.mp3",
+        "warning": "/audio/error/fruits/w-grapefruit.mp3"
       }
     }
   ],
