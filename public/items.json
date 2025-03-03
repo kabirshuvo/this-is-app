@@ -790,37 +790,37 @@
       "image": "/images/clothing/cap.webp",
       "description": "A cap is a type of headwear with a visor, often worn for casual or sports purposes.",
       "audio": {
-        "itemAudio": "/audio/this/clothings/cap.mp3",
-        "question": "q-cap.mp3",
-        "success": "c-cap.mp3",
-        "error": "n-cap.mp3",
-        "warning": "w-cap.mp3"
+        "itemAudio": "/audio/this/clothing/cap.mp3",
+        "question": "/audio/which/clothing/q-cap.mp3",
+        "success": "/audio/correct/clothing/c-cap.mp3",
+        "error": "/audio/error/clothing/n-cap.mp3",
+        "warning": "/audio/error/clothing/w-cap.mp3"
       }
     },
     {
       "id": 2,
       "name": "Socks",
-      "image": "/images/clothing/sock.webp",
+      "image": "/images/clothing/socks.webp",
       "description": "A sock is a piece of clothing worn on the feet, often under shoes.",
       "audio": {
-        "itemAudio": "/audio/this/clothings/sock.mp3",
-        "question": "q-sock.mp3",
-        "success": "c-sock.mp3",
-        "error": "n-sock.mp3",
-        "warning": "w-sock.mp3"
+        "itemAudio": "/audio/this/clothing/socks.mp3",
+        "question": "/audio/which/clothing/q-socks.mp3",
+        "success": "/audio/correct/clothing/c-socks.mp3",
+        "error": "/audio/error/clothing/n-socks.mp3",
+        "warning": "/audio/error/clothing/w-socks.mp3"
       }
     },
     {
       "id": 3,
       "name": "Shoes",
-      "image": "/images/clothing/shoe.webp",
+      "image": "/images/clothing/shoes.webp",
       "description": "A shoe is a type of footwear worn to protect and comfort the foot.",
       "audio": {
-        "itemAudio": "/audio/this/clothings/shoe.mp3",
-        "question": "q-shoe.mp3",
-        "success": "c-shoe.mp3",
-        "error": "n-shoe.mp3",
-        "warning": "w-shoe.mp3"
+        "itemAudio": "/audio/this/clothing/shoes.mp3",
+        "question": "/audio/which/clothing/q-shoes.mp3",
+        "success": "/audio/correct/clothing/c-shoes.mp3",
+        "error": "/audio/error/clothing/n-shoes.mp3",
+        "warning": "/audio/error/clothing/w-shoes.mp3"
       }
     },
     {
@@ -829,11 +829,11 @@
       "image": "/images/clothing/jacket.webp",
       "description": "A jacket is a garment for the upper body, designed for warmth or style.",
       "audio": {
-        "itemAudio": "/audio/this/clothings/jacket.mp3",
-        "question": "q-jacket.mp3",
-        "success": "c-jacket.mp3",
-        "error": "n-jacket.mp3",
-        "warning": "w-jacket.mp3"
+        "itemAudio": "/audio/this/clothing/jacket.mp3",
+        "question": "/audio/which/clothing/q-jacket.mp3",
+        "success": "/audio/correct/clothing/c-jacket.mp3",
+        "error": "/audio/error/clothing/n-jacket.mp3",
+        "warning": "/audio/error/clothing/w-jacket.mp3"
       }
     },
     {
@@ -842,11 +842,11 @@
       "image": "/images/clothing/underpants.webp",
       "description": "Underpants are garments worn under clothing to cover the lower body.",
       "audio": {
-        "itemAudio": "/audio/this/clothings/underpants.mp3",
-        "question": "q-underpants.mp3",
-        "success": "c-underpants.mp3",
-        "error": "n-underpants.mp3",
-        "warning": "w-underpants.mp3"
+        "itemAudio": "/audio/this/clothing/underpants.mp3",
+        "question": "/audio/which/clothing/q-underpants.mp3",
+        "success": "/audio/correct/clothing/c-underpants.mp3",
+        "error": "/audio/error/clothing/n-underpants.mp3",
+        "warning": "/audio/error/clothing/w-underpants.mp3"
       }
     },
     {
@@ -855,11 +855,11 @@
       "image": "/images/clothing/sweater.webp",
       "description": "A sweater is a knitted garment for the upper body, often worn in cold weather.",
       "audio": {
-        "itemAudio": "/audio/this/clothings/sweater.mp3",
-        "question": "q-sweater.mp3",
-        "success": "c-sweater.mp3",
-        "error": "n-sweater.mp3",
-        "warning": "w-sweater.mp3"
+        "itemAudio": "/audio/this/clothing/sweater.mp3",
+        "question": "/audio/which/clothing/q-sweater.mp3",
+        "success": "/audio/correct/clothing/c-sweater.mp3",
+        "error": "/audio/error/clothing/n-sweater.mp3",
+        "warning": "/audio/error/clothing/w-sweater.mp3"
       }
     },
     {
@@ -868,11 +868,11 @@
       "image": "/images/clothing/sneakers.webp",
       "description": "Sneakers are comfortable shoes designed for sports and casual wear.",
       "audio": {
-        "itemAudio": "/audio/this/clothings/sneakers.mp3",
-        "question": "q-sneakers.mp3",
-        "success": "c-sneakers.mp3",
-        "error": "n-sneakers.mp3",
-        "warning": "w-sneakers.mp3"
+        "itemAudio": "/audio/this/clothing/sneakers.mp3",
+        "question": "/audio/which/clothing/q-sneakers.mp3",
+        "success": "/audio/correct/clothing/c-sneakers.mp3",
+        "error": "/audio/error/clothing/n-sneakers.mp3",
+        "warning": "/audio/error/clothing/w-sneakers.mp3"
       }
     },
     {
@@ -881,11 +881,11 @@
       "image": "/images/clothing/t-shirt.webp",
       "description": "A T-shirt is a lightweight, casual garment with short sleeves.",
       "audio": {
-        "itemAudio": "/audio/this/clothings/t-shirt.mp3",
-        "question": "q-t-shirt.mp3",
-        "success": "c-t-shirt.mp3",
-        "error": "n-t-shirt.mp3",
-        "warning": "w-t-shirt.mp3"
+        "itemAudio": "/audio/this/clothing/t-shirt.mp3",
+        "question": "/audio/which/clothing/q-t-shirt.mp3",
+        "success": "/audio/correct/clothing/c-t-shirt.mp3",
+        "error": "/audio/error/clothing/n-t-shirt.mp3",
+        "warning": "/audio/error/clothing/w-t-shirt.mp3"
       }
     },
     {
@@ -894,11 +894,11 @@
       "image": "/images/clothing/dress.webp",
       "description": "A dress is a one-piece garment worn by women or girls, covering the upper and lower body.",
       "audio": {
-        "itemAudio": "/audio/this/clothings/dress.mp3",
-        "question": "q-dress.mp3",
-        "success": "c-dress.mp3",
-        "error": "n-dress.mp3",
-        "warning": "w-dress.mp3"
+        "itemAudio": "/audio/this/clothing/dress.mp3",
+        "question": "/audio/which/clothing/q-dress.mp3",
+        "success": "/audio/correct/clothing/c-dress.mp3",
+        "error": "/audio/error/clothing/n-dress.mp3",
+        "warning": "/audio/error/clothing/w-dress.mp3"
       }
     },
     {
@@ -907,11 +907,11 @@
       "image": "/images/clothing/jeans.webp",
       "description": "Jeans are a type of pants made from denim, popular for casual wear.",
       "audio": {
-        "itemAudio": "/audio/this/clothings/jeans.mp3",
-        "question": "q-jeans.mp3",
-        "success": "c-jeans.mp3",
-        "error": "n-jeans.mp3",
-        "warning": "w-jeans.mp3"
+        "itemAudio": "/audio/this/clothing/jeans.mp3",
+        "question": "/audio/which/clothing/q-jeans.mp3",
+        "success": "/audio/correct/clothing/c-jeans.mp3",
+        "error": "/audio/error/clothing/n-jeans.mp3",
+        "warning": "/audio/error/clothing/w-jeans.mp3"
       }
     },
     {
@@ -920,11 +920,11 @@
       "image": "/images/clothing/hoodie.webp",
       "description": "A hoodie is a sweatshirt with a hood, popular for casual wear.",
       "audio": {
-        "itemAudio": "/audio/this/clothings/hoodie.mp3",
-        "question": "q-hoodie.mp3",
-        "success": "c-hoodie.mp3",
-        "error": "n-hoodie.mp3",
-        "warning": "w-hoodie.mp3"
+        "itemAudio": "/audio/this/clothing/hoodie.mp3",
+        "question": "/audio/which/clothing/q-hoodie.mp3",
+        "success": "/audio/correct/clothing/c-hoodie.mp3",
+        "error": "/audio/error/clothing/n-hoodie.mp3",
+        "warning": "/audio/error/clothing/w-hoodie.mp3"
       }
     },
     {
@@ -933,11 +933,11 @@
       "image": "/images/clothing/shirt.webp",
       "description": "A shirt is a garment for the upper body, typically with a collar and buttons.",
       "audio": {
-        "itemAudio": "/audio/this/clothings/shirt.mp3",
-        "question": "q-shirt.mp3",
-        "success": "c-shirt.mp3",
-        "error": "n-shirt.mp3",
-        "warning": "w-shirt.mp3"
+        "itemAudio": "/audio/this/clothing/shirt.mp3",
+        "question": "/audio/which/clothing/q-shirt.mp3",
+        "success": "/audio/correct/clothing/c-shirt.mp3",
+        "error": "/audio/error/clothing/n-shirt.mp3",
+        "warning": "/audio/error/clothing/w-shirt.mp3"
       }
     }
   ],
@@ -2164,14 +2164,14 @@
     {
       "id": 3,
       "name": "Beach Bucket and Spade",
-      "image": "/images/toys/beachbucket-and-spade.webp",
+      "image": "/images/toys/beach-bucket-and-spade.webp",
       "description": "A beach bucket and spade set is used for playing in the sand, often at the beach.",
       "audio": {
-        "itemAudio": "/audio/this/toys/beachbucket-and-spade.mp3",
-        "question": "/audio/which/toys/q-beachbucket-and-spade.mp3",
-        "success": "/audio/success/toys/c-beachbucket-and-spade.mp3",
-        "error": "/audio/error/toys/n-beachbucket-and-spade.mp3",
-        "warning": "/audio/error/toys/w-beachbucket-and-spade.mp3"
+        "itemAudio": "/audio/this/toys/beach-bucket-and-spade.mp3",
+        "question": "/audio/which/toys/q-beach-bucket-and-spade.mp3",
+        "success": "/audio/success/toys/c-beach-bucket-and-spade.mp3",
+        "error": "/audio/error/toys/n-beach-bucket-and-spade.mp3",
+        "warning": "/audio/error/toys/w-beach-bucket-and-spade.mp3"
       }
     },
     {
