@@ -39,7 +39,7 @@ This-Is-App is a learning application designed for toddlers, featuring interacti
    ```
 4. Run the application:
    ```sh
-   npm start
+   npm run dev
    ```
 
 ## Contributing
