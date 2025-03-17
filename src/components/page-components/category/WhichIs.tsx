@@ -82,7 +82,7 @@ const WhichIs: React.FC<WhichIsProps> = ({ relatedData, params }) => {
     let whichOneAudio: HTMLAudioElement | null = null;
     let questionAudio: HTMLAudioElement | null = null;
 
-    if (typeof window !== "undefined") {
+    if (typeof window !== "undefined" && randomItemName) {
       whichOneAudio = new Audio("/audio/whichone.mp3");
       questionAudio = new Audio(
         `/audio/which/${params.category}/q-${randomItemName
