@@ -6,6 +6,7 @@ import Image from "next/image";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Category } from "@/types/category";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 interface SwiperComponentProps {
   relatedData: Category[];
@@ -42,19 +43,19 @@ const SwiperComponent: React.FC<SwiperComponentProps> = ({
           <SwiperSlide
             key={item.id}
             onClick={() => handleCardClick(item.id, item.name, item.image)}
-            className={`h-full space-y-4 cursor-pointer transform transition duration-300 w-full mx-auto overflow-hidden border-4 border-transparent hover:border-4 hover:border-red-500 rounded ${shakeItemId === item.id ? "animate-shake" : ""
-              }`}
+            className={`h-full cursor-pointer transform transition duration-300 w-full mx-auto overflow-hidden border-4 border-transparent hover:border-4 hover:border-red-500 rounded ${
+              shakeItemId === item.id ? "animate-shake" : ""
+            }`}
           >
-            <div className="h-full flex items-center justify-center">
+            <AspectRatio ratio={10/9} className="w-full">
               <Image
                 src={item.image}
                 alt={item.name}
-                width={600}
-                height={600}
-                layout="responsive"
-                className="w-full h-full object-cover flex-grow flex-1 flex rounded"
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                className="object-cover"
               />
-            </div>
+            </AspectRatio>
           </SwiperSlide>
         ))}
       </Swiper>
