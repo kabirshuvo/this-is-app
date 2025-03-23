@@ -1652,15 +1652,15 @@
     },
     {
       "id": 16,
-      "name": "Mushroom",
-      "image": "/images/vegetables/mushroom.webp",
-      "description": "Mushroom is a type of fungi that is commonly used in cooking.",
+      "name": "Mushrooms",
+      "image": "/images/vegetables/mushrooms.webp",
+      "description": "Mushrooms are a type of fungi that is commonly used in cooking.",
       "audio": {
-        "itemAudio": "/audio/this/vegetables/mushroom.mp3",
-        "question": "/audio/which/vegetables/q-mushroom.mp3",
-        "success": "/audio/correct/vegetables/c-mushroom.mp3",
-        "error": "/audio/error/vegetables/n-mushroom.mp3",
-        "warning": "/audio/error/vegetables/w-mushroom.mp3"
+        "itemAudio": "/audio/this/vegetables/mushrooms.mp3",
+        "question": "/audio/which/vegetables/q-mushrooms.mp3",
+        "success": "/audio/correct/vegetables/c-mushrooms.mp3",
+        "error": "/audio/error/vegetables/n-mushrooms.mp3",
+        "warning": "/audio/error/vegetables/w-mushrooms.mp3"
       }
     },
     {
@@ -2638,7 +2638,7 @@
     {
       "id": 3,
       "name": "Water Sliding",
-      "image": "/images/fun-activities/watersliding.webp",
+      "image": "/images/fun-activities/water-sliding.webp",
       "description": "Sliding down a wet surface into water.",
       "audio": {
         "itemAudio": "/audio/this/fun-activities/water-sliding.mp3",
@@ -2729,7 +2729,7 @@
     {
       "id": 10,
       "name": "Skateboarding",
-      "image": "/images/fun-activities/skate-boy.webp",
+      "image": "/images/fun-activities/skateboarding.webp",
       "description": "Riding on a board with wheels.",
       "audio": {
         "itemAudio": "/audio/this/fun-activities/skateboarding.mp3",
