@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useRef } from "react";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 interface ResponsiveItemImageCardProps {
   src: string;
@@ -26,17 +27,18 @@ export default function ItemImageCard({
   return (
     <div
       onClick={() => playAudio(audio)}
-      className="duration-200 w-full flex justify-center items-center transform transition h-full overflow-hidden border-4 border-transparent hover:border-4 hover:border-red-500 bg-whit"
+      className="duration-200 w-full flex justify-center items-center transform transition overflow-hidden border-4 border-transparent hover:border-4 hover:border-red-500"
     >
-      <Image
-        src={src}
-        alt={alt}
-        width={400}
-        height={400}
-        priority
-        layout="responsive"
-        className="object-cover flex-grow flex-1 flex transform transition duration-200 h-full w-full"
-      />
+      <AspectRatio ratio={200/170} className="w-full">
+        <Image
+          src={src}
+          alt={alt}
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          priority
+          className="object-cover"
+        />
+      </AspectRatio>
     </div>
   );
 }
