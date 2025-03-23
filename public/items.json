@@ -852,7 +852,7 @@
     {
       "id": 7,
       "name": "Sneakers",
-      "image": "/images/clothing/shoes.webp",
+      "image": "/images/clothing/sneakers.webp",
       "description": "Sneakers are comfortable shoes designed for sports and casual wear.",
       "audio": {
         "itemAudio": "/audio/this/clothing/sneakers.mp3",
@@ -1129,7 +1129,7 @@
     {
       "id": 6,
       "name": "Strawberry Icecream",
-      "image": "/images/treats/strawberry-icecream.png",
+      "image": "/images/treats/strawberry-icecream.webp",
       "description": "Strawberry icecream is a frozen dessert made from sweetened milk or cream and flavored with strawberries.",
       "audio": {
         "itemAudio": "/audio/this/treats/strawberry-icecream.mp3",
@@ -1207,7 +1207,7 @@
     {
       "id": 12,
       "name": "Sweets",
-      "image": "/images/treats/sweets.png",
+      "image": "/images/treats/sweets.webp",
       "description": "Sweets are confections made with sugar or other sweeteners, often enjoyed as a treat.",
       "audio": {
         "itemAudio": "/audio/this/treats/sweets.mp3",
