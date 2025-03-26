@@ -201,11 +201,11 @@
       "image": "/images/animals/kangaroo.webp",
       "description": "Kangaroos are marsupials native to Australia, known for their hopping movement.",
       "audio": {
-        "itemAudio": "/audio/this/animals/cangaroo-and-baby-cangaroo.mp3",
-        "question": "/audio/which/animals/q-cangaroo.mp3",
-        "success": "/audio/correct/animals/c-cangaroo.mp3",
-        "error": "/audio/error/animals/n-cangaroo.mp3",
-        "warning": "/audio/error/animals/w-cangaroo.mp3"
+        "itemAudio": "/audio/this/animals/kangaroo-and-baby-kangaroo.mp3",
+        "question": "/audio/which/animals/q-kangaroo.mp3",
+        "success": "/audio/correct/animals/c-kangaroo.mp3",
+        "error": "/audio/error/animals/n-kangaroo.mp3",
+        "warning": "/audio/error/animals/w-kangaroo.mp3"
       }
     },
     {
