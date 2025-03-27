@@ -524,8 +524,8 @@
     },
     {
       "id": 12,
-      "name": "Pick-Up Truck",
-      "image": "/images/transport/car-transporter-truck.webp",
+      "name": "Pickup Truck",
+      "image": "/images/transport/pickup-truck.webp",
       "description": "A pickup truck is a light motor vehicle with an open rear cargo area.",
       "audio": {
         "itemAudio": "/audio/this/transport/pickup-truck.mp3",
@@ -593,11 +593,11 @@
       "image": "/images/transport/ship.webp",
       "description": "A cruise ship is a large passenger ship used for pleasure voyages.",
       "audio": {
-        "itemAudio": "/audio/this/transport/cruiseline.mp3",
-        "question": "/audio/which/transport/q-cruiseline.mp3",
-        "success": "/audio/correct/transport/c-cruiseline.mp3",
-        "error": "/audio/error/transport/n-cruiseline.mp3",
-        "warning": "/audio/error/transport/w-cruiseline.mp3"
+        "itemAudio": "/audio/this/transport/cruise-liner.mp3",
+        "question": "/audio/which/transport/q-cruise-liner.mp3",
+        "success": "/audio/correct/transport/c-cruise-liner.mp3",
+        "error": "/audio/error/transport/n-cruise-liner.mp3",
+        "warning": "/audio/error/transport/w-cruise-liner.mp3"
       }
     },
     {
@@ -1522,28 +1522,28 @@
     },
     {
       "id": 6,
-      "name": "Cucumber",
-      "image": "/images/vegetables/cucumber.webp",
-      "description": "Cucumber is a refreshing, green vegetable often used in salads.",
+      "name": "Cucumbers",
+      "image": "/images/vegetables/cucumbers.webp",
+      "description": "Cucumbers are a refreshing, green vegetable often used in salads.",
       "audio": {
-        "itemAudio": "/audio/this/vegetables/cucumber.mp3",
-        "question": "/audio/which/vegetables/q-cucumber.mp3",
-        "success": "/audio/correct/vegetables/c-cucumber.mp3",
-        "error": "/audio/error/vegetables/n-cucumber.mp3",
-        "warning": "/audio/error/vegetables/w-cucumber.mp3"
+        "itemAudio": "/audio/this/vegetables/cucumbers.mp3",
+        "question": "/audio/which/vegetables/q-cucumbers.mp3",
+        "success": "/audio/correct/vegetables/c-cucumbers.mp3",
+        "error": "/audio/error/vegetables/n-cucumbers.mp3",
+        "warning": "/audio/error/vegetables/w-cucumbers.mp3"
       }
     },
     {
       "id": 7,
-      "name": "Potato",
+      "name": "Potatoes",
       "image": "/images/vegetables/potatoes.webp",
-      "description": "Potato is a starchy tuber used in a variety of dishes.",
+      "description": "Potatoes are starchy tuber used in a variety of dishes.",
       "audio": {
-        "itemAudio": "/audio/this/vegetables/potato.mp3",
-        "question": "/audio/which/vegetables/q-potato.mp3",
-        "success": "/audio/correct/vegetables/c-potato.mp3",
-        "error": "/audio/error/vegetables/n-potato.mp3",
-        "warning": "/audio/error/vegetables/w-potato.mp3"
+        "itemAudio": "/audio/this/vegetables/potatoes.mp3",
+        "question": "/audio/which/vegetables/q-potatoes.mp3",
+        "success": "/audio/correct/vegetables/c-potatoes.mp3",
+        "error": "/audio/error/vegetables/n-potatoes.mp3",
+        "warning": "/audio/error/vegetables/w-potatoes.mp3"
       }
     },
     {
@@ -1626,15 +1626,15 @@
     },
     {
       "id": 14,
-      "name": "Radish",
+      "name": "Radishes",
       "image": "/images/vegetables/radishes.webp",
-      "description": "Radish is an edible root vegetable with a peppery flavor.",
+      "description": "Radishes are edible root vegetable with a peppery flavor.",
       "audio": {
-        "itemAudio": "/audio/this/vegetables/radish.mp3",
-        "question": "/audio/which/vegetables/q-radish.mp3",
-        "success": "/audio/correct/vegetables/c-radish.mp3",
-        "error": "/audio/error/vegetables/n-radish.mp3",
-        "warning": "/audio/error/vegetables/w-radish.mp3"
+        "itemAudio": "/audio/this/vegetables/radishes.mp3",
+        "question": "/audio/which/vegetables/q-radishes.mp3",
+        "success": "/audio/correct/vegetables/c-radishes.mp3",
+        "error": "/audio/error/vegetables/n-radishes.mp3",
+        "warning": "/audio/error/vegetables/w-radishes.mp3"
       }
     },
     {
