@@ -2,19 +2,24 @@ import { useEffect, useRef } from "react";
 
 type AudioType = "default" | "q" | "c" | "w";
 
-const useItemQueryAudio = (itemName: string, type: AudioType = "default", category: string) => {
+const useItemQueryAudio = (
+  itemName: string,
+  type: AudioType = "default",
+  category: string
+) => {
   const audioRef = useRef<HTMLAudioElement | null>(null);
-  const formattedName = itemName.replace(/\s+/g, '-');
 
   useEffect(() => {
     if (itemName) {
+      const formattedName = itemName.replace(/\s+/g, "-");
+
       let audioSrc = "";
       switch (type) {
         case "q":
           audioSrc = `/audio/which/${category}/q-${formattedName}.mp3`;
           break;
         case "c":
-          audioSrc = `/audio/success/${category}/c-${formattedName}.mp3`;
+          audioSrc = `/audio/correct/${category}/c-${formattedName}.mp3`;
           break;
         case "w":
           audioSrc = `/audio/warning/${category}/w-${formattedName}.mp3`;
@@ -30,8 +35,15 @@ const useItemQueryAudio = (itemName: string, type: AudioType = "default", catego
         console.error(`Failed to load audio: ${audioSrc}`);
         audioRef.current = null;
       };
+
+      return () => {
+        if (audioRef.current) {
+          audioRef.current.pause();
+          audioRef.current = null;
+        }
+      };
     }
-  }, [itemName, type, category, formattedName]);
+  }, [itemName, type, category]);
 
   const playAudio = () => {
     if (audioRef.current) {

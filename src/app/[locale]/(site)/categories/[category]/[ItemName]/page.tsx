@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import ConfettiComponent from '@/components/page-components/category/ConfettiComponent';
 import Link from 'next/link';
 import localFont from 'next/font/local';
+import { AspectRatio } from '@/components/ui/aspect-ratio';
 
 const helveticaNeue = localFont({
   src: "./HelveticaNeueBlack.otf",
@@ -54,14 +55,18 @@ export default function ItemPage() {
       </Link>
 
       <div className="max-w-xl flex items-center justify-center text-black bg-white px-5 pt-5 pb-2 md:px-10 md:pt-10 md:pb-5 rounded mx-auto">
-        <div className="text-center">
-          <Image
-            src={src}
-            alt={name || 'Image'}
-            width={600}
-            height={400}
-            className="object-contain mx-auto rounded"
-          />
+        <div className="text-center w-full">
+          <div className="w-full max-w-md mx-auto">
+            <AspectRatio ratio={10/9} className="bg-muted overflow-hidden rounded-md">
+              <Image
+                src={src}
+                alt={name || 'Image'}
+                fill
+                className="object-contain"
+                sizes="(max-width: 768px) 100vw, 600px"
+              />
+            </AspectRatio>
+          </div>
           <h2 className={`${helveticaNeue.variable} helevetica-neue-font text-3xl xl:text-5xl tracking-wide mt-4`}>
             {name && (
               <>
@@ -73,8 +78,6 @@ export default function ItemPage() {
         </div>
 
         {showConfetti && <ConfettiComponent showConfetti={showConfetti} />}
-
-
       </div>
 
       <Link

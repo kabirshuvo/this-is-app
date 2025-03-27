@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 
-const useErrorAudio = (errorItem: string | null) => {
+const useErrorAudio = (errorItem: string | null, category: string) => {
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
@@ -9,10 +9,15 @@ const useErrorAudio = (errorItem: string | null) => {
       audioRef.current.currentTime = 0;
     }
     if (errorItem) {
-      audioRef.current = new Audio(`/audio/error/n-${errorItem}.mp3`);
+      // Format the category to replace spaces with hyphens
+      const formattedCategory = category.replace(/\s+/g, "-");
+      console.log("FORMATTED CATEGORY:", formattedCategory);
 
+      // Include the formatted category in the error audio path
+      audioRef.current = new Audio(`/audio/error/${formattedCategory}/n-${errorItem}.mp3`);
+      
       audioRef.current.onerror = () => {
-        console.error(`Failed to load audio: ${errorItem}.mp3`);
+        console.error(`Failed to load audio: /audio/error/${formattedCategory}/n-${errorItem}.mp3`);
         audioRef.current = null;
       };
 
@@ -28,7 +33,7 @@ const useErrorAudio = (errorItem: string | null) => {
         audioRef.current = null;
       }
     };
-  }, [errorItem]);
+  }, [errorItem, category]);
 
   const playErrorAudio = (name: string | undefined) => {
     if (audioRef.current) {

@@ -29,31 +29,25 @@ export default function HeaderOne() {
   const t = useTranslations("HeaderOne"); // Hook to access translations
   const [category, setCategory] = useState("");
 
+  const isHomePage = pathname === `/${locale}` || pathname === "/";
+
   useEffect(() => {
-    // Log pathname to ensure it's accessible
     console.log("Current Pathname:", pathname);
 
-    // Split the pathname into parts
     const pathParts = pathname.split("/");
+    const isRootPage = pathParts.length === 2 && (pathParts[1] === "en" || pathParts[1] === "zu");
 
-    // Check if the pathname is the home page (e.g., `/en` or `/zu`)
-    const isHomePage = pathParts.length === 2 && (pathParts[1] === "en" || pathParts[1] === "zu");
-
-    if (isHomePage) {
-      // Use the default title for the home page
+    if (isRootPage) {
       const defaultTitle = t("title.default");
       setCategory(defaultTitle.toUpperCase());
       console.log("Home page detected. Category set to:", defaultTitle);
     } else {
-      // Get the last part of the path as the category
       const currentCategory = pathParts[pathParts.length - 1];
 
-      // Translate the category
       const translatedCategory = t(`title.${currentCategory.toLowerCase()}`, {
-        fallback: t("title.default"), // Fallback to default title if translation key doesn't exist
+        fallback: t("title.default"),
       });
 
-      // Set the category and log the final category for debugging
       setCategory(translatedCategory.toUpperCase());
       console.log("Category set to:", translatedCategory);
     }
@@ -89,7 +83,7 @@ export default function HeaderOne() {
         backgroundPosition: "center",
       }}
     >
-      {/* TJ&PALS Logo */}
+      {/* Logo */}
       <div className="flex justify-start flex-1">
         <Link href="/" className="h-fit">
           <Image
@@ -102,47 +96,46 @@ export default function HeaderOne() {
         </Link>
       </div>
 
-      {/* Magnifying Glass and Text in the middle */}
+      {/* Animated Title */}
       <div className="flex justify-between items-center 2xl:py-4 py-2 md:ml-16 mb-16 gap-6 md:gap-8">
         <PencilAnimation animatedKey={animatedKey} />
         <div className="flex flex-col justify-center items-center">
           <h1
-          className={`${kabelu.variable} kabelu-font text-md md:text-4xl lg:text-5xl 2xl:text-7xl pb-1 mt-20 md:mt-4 flex`}
-          style={{
-            textShadow: `
-              1.5px 1.5px 0 #228B22,
-              -1.5px -1.5px 0 #228B22,
-              1.5px -1.5px 0 #228B22,
-              -1.5px 1.5px 0 #228B22,
-              1.5px 0px 0 #228B22,
-              -1.5px 0px 0 #228B22,
-              0px 1.5px 0 #228B22,
-              0px -1.5px 0 #228B22,
-              3px 3px 5px rgba(0, 0, 0, 0.3)
-            `,
-          }}
-        >
-          {categoryLetters.map((letter, index) => (
-            <motion.span
-              key={`${animatedKey}-${index}`}
-              custom={index}
-              initial="hidden"
-              animate="visible"
-              variants={letterVariants}
-              className="inline-block"
-              style={{ whiteSpace: letter === " " ? "pre" : "normal" }}
-            >
-              {letter}
-            </motion.span>
-          ))}
-        </h1>
+            className={`${kabelu.variable} kabelu-font text-md md:text-4xl lg:text-5xl 2xl:text-7xl pb-1 mt-20 md:mt-4 flex`}
+            style={{
+              textShadow: `
+                1.5px 1.5px 0 #228B22,
+                -1.5px -1.5px 0 #228B22,
+                1.5px -1.5px 0 #228B22,
+                -1.5px 1.5px 0 #228B22,
+                1.5px 0px 0 #228B22,
+                -1.5px 0px 0 #228B22,
+                0px 1.5px 0 #228B22,
+                0px -1.5px 0 #228B22,
+                3px 3px 5px rgba(0, 0, 0, 0.3)
+              `,
+            }}
+          >
+            {categoryLetters.map((letter, index) => (
+              <motion.span
+                key={`${animatedKey}-${index}`}
+                custom={index}
+                initial="hidden"
+                animate="visible"
+                variants={letterVariants}
+                className="inline-block"
+                style={{ whiteSpace: letter === " " ? "pre" : "normal" }}
+              >
+                {letter}
+              </motion.span>
+            ))}
+          </h1>
 
-        <Pagination />
+          {!isHomePage && <Pagination />}
         </div>
-
-        
       </div>
 
+      {/* Navigation Menu */}
       <Dialog>
         <div className="flex flex-1 justify-end md:mb-6 -mt-6 md:-mt-8">
           <DialogTrigger asChild>
