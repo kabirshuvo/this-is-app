@@ -11,7 +11,6 @@ import Image from "next/image";
 import { Category } from "@/types/category";
 import { Volume2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-// import useItemAudio from "@/app/hooks/useItemAudio";
 import useItemQueryAudio from "@/app/hooks/useItemQueryAudio";
 import useErrorAudio from "@/app/hooks/useErrorAudio";
 import useItemData from "@/app/hooks/useItemData";
@@ -32,6 +31,8 @@ interface WhichIsProps {
 const ITEMS_PER_PAGE = 6;
 
 const WhichIs: React.FC<WhichIsProps> = ({ relatedData, params }) => {
+  const { category } = params; // Directly use the unwrapped params
+
   const router = useRouter();
   const [randomItemName, setRandomItemName] = useState<string>("");
   const [shakeItemId, setShakeItemId] = useState<number | null>(null);
@@ -40,7 +41,7 @@ const WhichIs: React.FC<WhichIsProps> = ({ relatedData, params }) => {
 
   const clickedItemData = useItemData({
     itemId: shakeItemId,
-    category: params.category,
+    category: category, // Use the unwrapped `category`
   });
 
   useEffect(() => {
@@ -54,19 +55,18 @@ const WhichIs: React.FC<WhichIsProps> = ({ relatedData, params }) => {
     }
   }, [clickedItemData, relatedData]);
 
-  // const itemAudio = useItemAudio(randomItemName ?? "");
   const playWhichAudio = useItemQueryAudio(
     randomItemName ? randomItemName.toLowerCase() : "",
     "q",
-    params.category
+    category // Use the unwrapped `category`
   );
-  
+
   const playSuccessAudio = useItemQueryAudio(
     randomItemName ? randomItemName.toLowerCase() : "",
-    "c", 
-    params.category
+    "c",
+    category // Use the unwrapped `category`
   );
-  
+
   useErrorAudio(clickedItemData?.name.toLowerCase() ?? "");
 
   const shuffleArray = (array: Category[]) => {
@@ -94,8 +94,13 @@ const WhichIs: React.FC<WhichIsProps> = ({ relatedData, params }) => {
 
     if (typeof window !== "undefined") {
       whichOneAudio = new Audio("/audio/whichone.mp3");
-      questionAudio = new Audio(`/audio/which/${params.category}/q-${randomItemName.toLowerCase()}.mp3`);
-      console.log("Quuestion Audio", `/audio/which/${params.category}/q-${randomItemName.toLowerCase()}.mp3`)
+      questionAudio = new Audio(
+        `/audio/which/${category}/q-${randomItemName.toLowerCase()}.mp3`
+      );
+      console.log(
+        "Question Audio",
+        `/audio/which/${category}/q-${randomItemName.toLowerCase()}.mp3`
+      );
 
       whichOneAudio.preload = "auto";
       questionAudio.preload = "auto";
@@ -110,7 +115,7 @@ const WhichIs: React.FC<WhichIsProps> = ({ relatedData, params }) => {
         });
       };
     }
-  }, [params.category, randomItemName]);
+  }, [category, randomItemName]);
 
   const speakText = useCallback(() => {
     playWhichAudio();
@@ -126,9 +131,7 @@ const WhichIs: React.FC<WhichIsProps> = ({ relatedData, params }) => {
           errorAudioRef.current.currentTime = 0;
         }
 
-        const url = `${
-          params.category
-        }/${itemName.toLowerCase()}?src=${encodeURIComponent(
+        const url = `${category}/${itemName.toLowerCase()}?src=${encodeURIComponent(
           itemSrc
         )}&name=${encodeURIComponent(itemName)}`;
         router.push(url);
@@ -142,7 +145,7 @@ const WhichIs: React.FC<WhichIsProps> = ({ relatedData, params }) => {
         setTimeout(() => setShakeItemId(null), 500);
       }
     },
-    [randomItemName, relatedData, playSuccessAudio, params.category, router]
+    [randomItemName, relatedData, playSuccessAudio, category, router]
   );
 
   return (

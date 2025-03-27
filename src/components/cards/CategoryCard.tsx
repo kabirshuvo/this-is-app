@@ -12,8 +12,7 @@ interface CategoryCardProps {
   className?: string;
 }
 
-export const CategoryCard: React.FC<CategoryCardProps> = React.memo(
-  ({ category, locale, className }) => (
+export const CategoryCard: React.FC<CategoryCardProps> = ({ category, locale, className }) => (
     <Link href={`${locale}/categories/${category.name.toLowerCase()}`} passHref>
       <div className={`h-full flex flex-col gap-1 ${className}`}>
         <div className="flex-1">
@@ -34,7 +33,6 @@ export const CategoryCard: React.FC<CategoryCardProps> = React.memo(
         </div>
       </div>
     </Link>
-  )
-);
+  );
 
 CategoryCard.displayName = "CategoryCard";

@@ -6,6 +6,7 @@ import HeaderOne from "@/components/shared/header/headerOne";
 import Footer from "@/components/shared/Footer";
 import "../../globals.css";
 import NotFound from "./not-found";
+import { ReactNode } from "react";
 
 const merkerFelt = localFont({
   src: "../../fonts/Marker_felt_wide_bold.ttf",
@@ -18,17 +19,25 @@ export const metadata: Metadata = {
   description: "Learn word games",
 };
 
+// Define the type for the component props
+type RootLayoutProps = {
+  children: ReactNode;
+  params: { locale: string };
+};
+
+// Generate static paths for all supported locales
+export async function generateStaticParams() {
+  return [{ locale: "en" }, { locale: "zu" }]; // Add all supported locales
+}
+
 export default async function RootLayout({
   children,
   params,
-}: {
-  children: React.ReactNode;
-  params: { locale: string };
-}) {
+}: RootLayoutProps) {
   // Destructure `locale` from `params`
   const { locale } = params;
 
-  let messages;
+  let messages: Record<string, string>;
   try {
     // Dynamically import the messages for the given locale
     messages = (await import(`../../../messages/${locale}.json`)).default;
