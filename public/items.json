@@ -1634,7 +1634,7 @@
         "question": "/audio/which/vegetables/q-radishes.mp3",
         "success": "/audio/correct/vegetables/c-radishes.mp3",
         "error": "/audio/error/vegetables/n-radishes.mp3",
-        "warning": "/audio/error/vegetables/w-radish.mp3"
+        "warning": "/audio/error/vegetables/w-radishes.mp3"
       }
     },
     {
