@@ -944,15 +944,15 @@
     },
     {
       "id": 2,
-      "name": "Sandwitch",
-      "image": "/images/food/sandwitch.png",
-      "description": "A sandwitch is a food typically consisting of vegetables, sliced cheese or meat, placed on or between slices of bread.",
+      "name": "Sandwich",
+      "image": "/images/food/sandwich.png",
+      "description": "A sandwich is a food typically consisting of vegetables, sliced cheese or meat, placed on or between slices of bread.",
       "audio": {
-        "itemAudio": "/audio/this/food/sandwitch.mp3",
-        "question": "/audio/which/food/q-sandwitch.mp3",
-        "success": "/audio/correct/food/c-sandwitch.mp3",
-        "error": "/audio/error/food/n-sandwitch.mp3",
-        "warning": "/audio/error/food/w-sandwitch.mp3"
+        "itemAudio": "/audio/this/food/sandwich.mp3",
+        "question": "/audio/which/food/q-sandwich.mp3",
+        "success": "/audio/correct/food/c-sandwich.mp3",
+        "error": "/audio/error/food/n-sandwich.mp3",
+        "warning": "/audio/error/food/w-sandwich.mp3"
       }
     },
     {

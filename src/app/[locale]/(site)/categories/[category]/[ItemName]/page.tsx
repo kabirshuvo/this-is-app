@@ -19,7 +19,8 @@ export default function ItemPage() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const src = searchParams.get("src");
-  const name = searchParams.get("name")?.toLowerCase();
+  const name = searchParams.get("name");
+
   const [showConfetti, setShowConfetti] = useState(false);
 
   const t = useTranslations("items");
@@ -40,8 +41,12 @@ export default function ItemPage() {
 
   if (!src) return null;
 
-  // Translate item name with fallback to original name if not found
-  const translatedName = name ? t(name, { fallback: name }) : "";
+  // Normalize the name to match translation keys
+  const normalizeName = (name: string) =>
+    name.toLowerCase().trim().replace(/\s+/g, "-");
+
+  const translationKey = name ? normalizeName(name) : "";
+  const translatedName = translationKey ? t(translationKey, { fallback: name }) : "";
 
   return (
     <div className="flex items-end mx-auto justify-around space-x-6">
