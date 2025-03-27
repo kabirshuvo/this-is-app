@@ -15,19 +15,23 @@ export default function CategoryPage({
 }: {
   params: Promise<{ category: string }>;
 }) {
-  const { category } = use(params); // ✅ Unwrap params properly
+  const { category } = use(params); // Unwrap promise
+
+  // Decode category name (fixes fun%20things issue)
+  const decodedCategory = decodeURIComponent(category).replace(/-/g, " ");
+
   const [relatedData, setRelatedData] = useState<Category[]>([]);
   const dispatch = useAppDispatch();
 
   const loadRelatedData = useCallback(async () => {
     try {
-      const data = await fetchRelatedData(category);
+      const data = await fetchRelatedData(decodedCategory);
       setRelatedData(data);
       dispatch(setTotalPages(Math.ceil(data.length / ITEMS_PER_PAGE)));
     } catch (error) {
       console.error("Failed to load related data:", error);
     }
-  }, [category, dispatch]);
+  }, [decodedCategory, dispatch]);
 
   useEffect(() => {
     loadRelatedData();
@@ -36,7 +40,7 @@ export default function CategoryPage({
   return (
     <div className="md:container mx-auto xl:px-2 lg:space-y-6 xl:space-y-10">
       <ThisIs relatedData={relatedData} />
-      <WhichIs relatedData={relatedData} params={{ category }} />
+      <WhichIs relatedData={relatedData} params={{ category: decodedCategory }} />
     </div>
   );
 }

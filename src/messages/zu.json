@@ -1,20 +1,50 @@
 {
   "HeaderOne": {
     "title": {
-      "default": "Yidlala yokufunda amagama",
+      "default": "Umdlalo wokufunda amagama",
       "animals": "Izilwane",
       "transport": "Ezokuthutha",
-      "clothing": "Izingubo",
-      "fun-things": "Izinto Zokuzijabulisa",
+      "clothing": "Izimpahla",
+      "food": "Ukudla",
+      "treats": "Izibiliboco",
+      "fun-things": "Izinto Ezihlekisayo",
       "vegetables": "Imifino",
       "fruits": "Izithelo",
+      "toys": "Amathoyizi",
+      "home": "Ikhaya",
       "tools": "Amathuluzi",
-      "toys": "Izinto Zokudlala",
-      "nature": "Imvelo",
-      "activities": "Imisebenzi",
-      "treats-and-food": "Ama-Treats Nokudla",
-      "nuts": "Amantongomane",
-      "home": "Ikhaya"
+      "fun-activities": "Imisebenzi Yokuzijabulisa",
+      
+      "zebra": "Idube",
+      "mouse": "Igundane",
+      "lizard": "Uxamu",
+      "dog": "Inja",
+      "elephant": "Indlovu",
+      "lion": "Ibhubesi",
+      "squirrel": "Ingwejeje",
+      "cow": "Inkomo",
+      "seal": "Inkawu yasolwandle",
+      "porcupine": "Ingungumbane",
+      "cat": "Ikati",
+      "crocodile": "Ingwenya",
+      "giraffe": "Indlulamithi",
+      "springbok": "Insephe",
+      "jaguar": "Ihlosi",
+      "kangaroo": "Ikhangaru",
+      "baby-kangaroo": "Ikhangaru elincane",
+      "hippo": "Imvubu",
+      "rhino": "Ubhejane",
+      "pig": "Ihagu",
+      "meerkat": "Insingizi",
+      "tortoise": "Ufudu",
+      "horse": "Ihhashi",
+      "rabbit": "Unogwaja",
+      "panda-bear": "Ipanda",
+      "black-jaguar": "Ihlosi emnyama",
+      "cheetah": "Ihlosi elibomvu",
+      "gorilla": "Gorila",
+      "monkey": "Inkawu",
+      "polar-bear": "Ibhere yaseNorth Pole"
     },
     "menu": {
       "home": "Ikhaya",
@@ -23,7 +53,59 @@
       "help": "Usizo"
     }
   },
+  "categories": {
+    "animals": "Izilwane",
+      "transport": "Ezokuthutha",
+      "clothing": "Izimpahla",
+      "food": "Ukudla",
+      "treats": "Izibiliboco",
+      "fun-things": "Izinto Ezihlekisayo",
+      "vegetables": "Imifino",
+      "fruits": "Izithelo",
+      "toys": "Amathoyizi",
+      "home": "Ikhaya",
+      "tools": "Amathuluzi",
+      "fun-activities": "Imisebenzi Yokuzijabulisa"
+  },
+  "WhichIs": {
+    "question": "Yikuphi {item}?"
+  },
+  "ThisIs": {
+    "title": "Lena yiyo!"
+  },
+ "items": {
+      "zebra": "Idube",
+      "mouse": "Igundane",
+      "lizard": "Uxamu",
+      "dog": "Inja",
+      "elephant": "Indlovu",
+      "lion": "Ibhubesi",
+      "squirrel": "Ingwejeje",
+      "cow": "Inkomo",
+      "seal": "Inkawu yasolwandle",
+      "porcupine": "Ingungumbane",
+      "cat": "Ikati",
+      "crocodile": "Ingwenya",
+      "giraffe": "Indlulamithi",
+      "springbok": "Insephe",
+      "jaguar": "Ihlosi",
+      "kangaroo": "Ikhangaru",
+      "baby-kangaroo": "Ikhangaru elincane",
+      "hippo": "Imvubu",
+      "rhino": "Ubhejane",
+      "pig": "Ihagu",
+      "meerkat": "Insingizi",
+      "tortoise": "Ufudu",
+      "horse": "Ihhashi",
+      "rabbit": "Unogwaja",
+      "panda-bear": "Ipanda",
+      "black-jaguar": "Ihlosi emnyama",
+      "cheetah": "Ihlosi elibomvu",
+      "gorilla": "Gorila",
+      "monkey": "Inkawu",
+      "polar-bear": "Ibhere yaseNorth Pole"
+    },
   "Footer": {
-    "message": "Lena yibhodi."
+    "message": "Lena ingxenye engezansi."
   }
 }

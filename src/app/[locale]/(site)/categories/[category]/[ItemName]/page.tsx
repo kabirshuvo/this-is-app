@@ -1,12 +1,13 @@
-'use client'
+"use client";
 
-import { useRouter, useSearchParams } from 'next/navigation';
-import Image from 'next/image';
-import { useEffect, useState } from 'react';
-import ConfettiComponent from '@/components/page-components/category/ConfettiComponent';
-import Link from 'next/link';
-import localFont from 'next/font/local';
-import { AspectRatio } from '@/components/ui/aspect-ratio';
+import { useRouter, useSearchParams } from "next/navigation";
+import Image from "next/image";
+import { useEffect, useState } from "react";
+import ConfettiComponent from "@/components/page-components/category/ConfettiComponent";
+import Link from "next/link";
+import localFont from "next/font/local";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { useTranslations } from "next-intl";
 
 const helveticaNeue = localFont({
   src: "./HelveticaNeueBlack.otf",
@@ -17,10 +18,11 @@ const helveticaNeue = localFont({
 export default function ItemPage() {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const src = searchParams.get('src');
-  const name = searchParams.get('name')?.toLocaleLowerCase();
+  const src = searchParams.get("src");
+  const name = searchParams.get("name")?.toLowerCase();
   const [showConfetti, setShowConfetti] = useState(false);
 
+  const t = useTranslations("items");
 
   useEffect(() => {
     if (src && name) {
@@ -38,8 +40,11 @@ export default function ItemPage() {
 
   if (!src) return null;
 
+  // Translate item name with fallback to original name if not found
+  const translatedName = name ? t(name, { fallback: name }) : "";
+
   return (
-    <div className='flex items-end mx-auto justify-around space-x-6'>
+    <div className="flex items-end mx-auto justify-around space-x-6">
       <Link
         href="/"
         className="p-1 rounded-full mb-10"
@@ -57,10 +62,10 @@ export default function ItemPage() {
       <div className="max-w-xl flex items-center justify-center text-black bg-white px-5 pt-5 pb-2 md:px-10 md:pt-10 md:pb-5 rounded mx-auto">
         <div className="text-center w-full">
           <div className="w-full max-w-md mx-auto">
-            <AspectRatio ratio={10/9} className="bg-muted overflow-hidden rounded-md">
+            <AspectRatio ratio={10 / 9} className="bg-muted overflow-hidden rounded-md">
               <Image
                 src={src}
-                alt={name || 'Image'}
+                alt={translatedName || "Image"}
                 fill
                 className="object-contain"
                 sizes="(max-width: 768px) 100vw, 600px"
@@ -68,10 +73,10 @@ export default function ItemPage() {
             </AspectRatio>
           </div>
           <h2 className={`${helveticaNeue.variable} helevetica-neue-font text-3xl xl:text-5xl tracking-wide mt-4`}>
-            {name && (
+            {translatedName && (
               <>
-                <span className="text-red-500">{name.charAt(0)}</span>
-                {name.slice(1)}
+                <span className="text-red-500">{translatedName.charAt(0)}</span>
+                {translatedName.slice(1)}
               </>
             )}
           </h2>

@@ -42,14 +42,31 @@ export default function HeaderOne() {
       setCategory(defaultTitle.toUpperCase());
       console.log("Home page detected. Category set to:", defaultTitle);
     } else {
-      const currentCategory = pathParts[pathParts.length - 1];
+      const categoryIndex = pathParts.findIndex((part) => part === "categories");
+      let translatedTitle = "";
 
-      const translatedCategory = t(`title.${currentCategory.toLowerCase()}`, {
-        fallback: t("title.default"),
-      });
+      if (categoryIndex !== -1 && categoryIndex + 1 < pathParts.length) {
+        // Get the category name
+        const categoryName = pathParts[categoryIndex + 1];
+        const translatedCategory = t(`title.${categoryName.toLowerCase()}`, {
+          fallback: t("title.default"),
+        });
 
-      setCategory(translatedCategory.toUpperCase());
-      console.log("Category set to:", translatedCategory);
+        translatedTitle = translatedCategory;
+
+        // Check if there is an item in the URL (e.g., "lion")
+        if (categoryIndex + 2 < pathParts.length) {
+          const itemName = pathParts[categoryIndex + 2];
+          const translatedItem = t(`title.${itemName.toLowerCase()}`, {
+            fallback: itemName,
+          });
+
+          translatedTitle += ` - ${translatedItem}`;
+        }
+      }
+
+      setCategory(translatedTitle.toUpperCase());
+      console.log("Title set to:", translatedTitle);
     }
   }, [pathname, locale, t]);
 

@@ -18,6 +18,8 @@ import SwiperComponent from "./SwiperComponent";
 import { useRouter } from "next/navigation";
 import WhichIsCard from "@/components/cards/WhichIsCard";
 import { useAppSelector } from "@/store/hooks";
+import { useTranslations } from "next-intl";
+
 
 interface Params {
   category: string;
@@ -54,6 +56,8 @@ const WhichIs: React.FC<WhichIsProps> = ({ relatedData, params }) => {
     "q",
     formattedCategory
   );
+  const t = useTranslations("WhichIs"); 
+
 
   // useErrorAudio(clickedItemData?.name.toLowerCase().replace(/\s+/g, "-") ?? "");
   useErrorAudio(
@@ -158,7 +162,7 @@ const WhichIs: React.FC<WhichIsProps> = ({ relatedData, params }) => {
     <div className="mt-4">
       <div className="flex items-center justify-center gap-3 lg:gap-4 mt-4">
         <h3 className="md:text-2xl xl:text-3xl text-center uppercase mt-1">
-          Which is the {randomItemName}?
+        {t("question", { item: randomItemName })}
         </h3>
         <div>
           <Volume2 size={28} />
