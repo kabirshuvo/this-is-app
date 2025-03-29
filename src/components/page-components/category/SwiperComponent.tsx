@@ -37,7 +37,7 @@ const SwiperComponent: React.FC<SwiperComponentProps> = ({
         onBeforeInit={(swiper) => {
           swiperRef.current = swiper;
         }}
-        className={`w-[80%] mx-auto ${className}`}
+        className={`w-[66%] mx-auto ${className}`}
       >
         {relatedData.map((item) => (
           <SwiperSlide

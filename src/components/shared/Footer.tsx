@@ -1,14 +1,12 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
   const router = useRouter();
-  const pathname = usePathname();
   const [currentLang, setCurrentLang] = useState("en");
 
   useEffect(() => {
@@ -17,10 +15,28 @@ export default function Footer() {
   }, []);
 
   const changeLanguage = (lang: string) => {
+    // Don't do anything if clicking the same language
+    if (lang === currentLang) return;
+
     setCurrentLang(lang);
     localStorage.setItem("language", lang);
-    const newPath = pathname.replace(/^\/[a-z]{2}/, `/${lang}`);
-    router.push(newPath);
+
+    if (lang === "en") {
+      // For English, always go to English home page
+      router.push("/en");
+    } else {
+      // For Zulu, the middleware will handle redirection
+      router.push("/zu");
+    }
+  };
+
+  // Function to handle PALS Club logo click
+  const English = () => {
+    if (currentLang === "zu") {
+      router.push("/zu");
+    } else {
+      router.push("/en");
+    }
   };
 
   return (
@@ -78,9 +94,9 @@ export default function Footer() {
         {/* Language selector for Zulu */}
         <div
           className="relative flex cursor-pointer"
-          // onClick={() => changeLanguage("zu")}
+          onClick={() => changeLanguage("zu")}
         >
-          {/* <Image
+          <Image
             src={
               currentLang === "zu"
                 ? "/footerAssets/ZuluWithRightTickMark.svg"
@@ -90,23 +106,14 @@ export default function Footer() {
             width={200}
             height={200}
             className={`w-40 h-8 md:w-32 md:h-12 hover:scale-110 transform transition duration-200 ${
-              currentLang === "zu" ? "" : "mt-1"
+              currentLang === "zu" ? "" : "mt-1.5"
             }`}
-          /> */}
-          <Link href="/en/under-construction">
-            <Image
-              src="/footerAssets/ZuluWithNoRightTickMark.svg"
-              alt="ZuluWithNoRightTickMark"
-              width={200}
-              height={200}
-              className={`w-40 h-8 md:w-32 md:h-12 hover:scale-110 transform transition duration-200 `}
-            />
-          </Link>
+          />
         </div>
       </div>
 
       <div className="h-full flex items-center lg:mr-28">
-        <Link href="/en/under-construction">
+        <div className="cursor-pointer" onClick={English}>
           <Image
             src="/footerAssets/palsClubLogo.svg"
             alt="TJ Logo"
@@ -114,7 +121,7 @@ export default function Footer() {
             height={200}
             className="w-40 h-8 md:w-160 md:h-12 max-w-full max-h-full hover:scale-110 transform transition duration-200"
           />
-        </Link>
+        </div>
       </div>
     </footer>
   );

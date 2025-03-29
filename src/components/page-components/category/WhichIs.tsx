@@ -76,7 +76,7 @@ const WhichIs: React.FC<WhichIsProps> = ({ relatedData, params }) => {
       const randomIndex = Math.floor(Math.random() * paginatedData.length);
       setRandomItemName(paginatedData[randomIndex].name);
     }
-  }, [paginatedData]);
+  }, [paginatedData, params.category]);
 
   useEffect(() => {
     let whichOneAudio: HTMLAudioElement | null = null;
