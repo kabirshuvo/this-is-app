@@ -46,7 +46,7 @@ const WhichIs: React.FC<WhichIsProps> = ({ relatedData, params }) => {
 
   // Format the category to replace spaces with hyphens
   const formattedCategory = decodedCategory.replace(/\s+/g, "-");
-  
+
   const audioHandler = useItemQueryAudio(
     randomItemName.toLowerCase().replace(/\s+/g, "-"),
     "q",
@@ -117,29 +117,29 @@ const WhichIs: React.FC<WhichIsProps> = ({ relatedData, params }) => {
   const handleCardClick = useCallback(
     (itemId: number, itemName: string, itemSrc: string) => {
       const formattedItemName = itemName.toLowerCase().replace(/\s+/g, "-");
-  
+
       if (itemName === randomItemName) {
         if (successAudioRef.current) {
           successAudioRef.current.pause();
           successAudioRef.current = null;
         }
-  
+
         successAudioRef.current = new Audio(
           `/audio/correct/${formattedCategory}/c-${formattedItemName}.mp3`
         );
         successAudioRef.current.play();
-  
+
         if (errorAudioRef.current) {
           errorAudioRef.current.pause();
           errorAudioRef.current.currentTime = 0;
         }
-  
+
         const url = `${formattedCategory}/${formattedItemName}?src=${encodeURIComponent(
           itemSrc
-        )}&name=${encodeURIComponent(itemName)}`;
-  
+        )}&name=${encodeURIComponent(itemName)}&noNumber=true`;
+
         router.push(url);
-  
+
         if (relatedData.length > 0) {
           const randomIndex = Math.floor(Math.random() * relatedData.length);
           setRandomItemName(relatedData[randomIndex].name);

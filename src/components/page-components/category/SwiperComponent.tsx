@@ -37,7 +37,7 @@ const SwiperComponent: React.FC<SwiperComponentProps> = ({
         onBeforeInit={(swiper) => {
           swiperRef.current = swiper;
         }}
-        className={`w-[66%] mx-auto ${className}`}
+        className={`w-[80%] mx-auto ${className}`}
       >
         {relatedData.map((item) => (
           <SwiperSlide
@@ -47,7 +47,7 @@ const SwiperComponent: React.FC<SwiperComponentProps> = ({
               shakeItemId === item.id ? "animate-shake" : ""
             }`}
           >
-            <AspectRatio ratio={10/9} className="w-full">
+            <AspectRatio ratio={4 / 3} className="w-full">
               <Image
                 src={item.image}
                 alt={item.name}
