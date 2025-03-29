@@ -1,14 +1,12 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
   const router = useRouter();
-  const pathname = usePathname();
   const [currentLang, setCurrentLang] = useState("en");
 
   useEffect(() => {
