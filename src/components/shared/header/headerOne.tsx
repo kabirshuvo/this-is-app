@@ -28,6 +28,9 @@ export default function HeaderOne() {
   const [category, setCategory] = useState("LEARN WORD GAMES");
 
   const isHomePage = pathname === `/${locale}` || pathname === "/";
+  // Check if we're on an item details page (URL pattern: /categories/[category]/[ItemName])
+  const isItemPage =
+    pathname.split("/").length > 4 && pathname.includes("/categories/");
 
   useEffect(() => {
     const pathParts = pathname.split("/");
@@ -117,7 +120,7 @@ export default function HeaderOne() {
           ))}
         </h1>
 
-        {!isHomePage && <Pagination />}
+        {!isHomePage && !isItemPage && <Pagination />}
       </div>
 
       <Dialog>
