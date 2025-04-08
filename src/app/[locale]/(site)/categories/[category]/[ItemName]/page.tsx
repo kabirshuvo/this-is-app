@@ -38,7 +38,7 @@ export default function ItemPage() {
   if (!src) return null;
 
   return (
-    <div className="flex items-end mx-auto justify-around space-x-6">
+    <div className="flex items-end mx-auto min-h-[calc(100vh-20rem)] w-full max-w-lg justify-around space-x-6">
       <Link
         href="/"
         className="p-1 rounded-full mb-10"
@@ -53,9 +53,7 @@ export default function ItemPage() {
         />
       </Link>
 
-      <div className="w-full max-w-4xl flex items-center justify-center text-black bg-white px-5 pt-5 pb-2 md:px-10 md:pt-10 md:pb-5 rounded mx-auto">
-        <div className="text-center">
-          <div className="">
+      <div className="w-full h-full flex flex-col items-center justify-center text-black bg-white px-5 pt-5 pb-2 md:px-10 md:pt-10 md:pb-5 rounded mx-auto">
             <AspectRatio ratio={1 / 1} className="overflow-hidden rounded-md">
               <Image
                 src={src}
@@ -65,7 +63,6 @@ export default function ItemPage() {
                 sizes="(max-width: 768px) 100vw, 600px"
               />
             </AspectRatio>
-          </div>
           <h2
             className={`${helveticaNeue.variable} helevetica-neue-font text-3xl xl:text-5xl tracking-wide mt-4`}
           >
@@ -76,7 +73,6 @@ export default function ItemPage() {
               </>
             )}
           </h2>
-        </div>
 
         {showConfetti && <ConfettiComponent showConfetti={showConfetti} />}
       </div>
