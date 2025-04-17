@@ -31,7 +31,7 @@ const WhichIsCard: React.FC<WhichIsCardProps> = ({
     <div
       key={src}
       onClick={() => handleCardClick(id, alt, src, alt)}
-      className={`w-full transform transition duration-200 border-4 border-transparent hover:border-4 hover:border-red-500 overflow-hidden ${
+      className={`w-[100px] md:w-[180px] 2xl:w-[240px] transform transition duration-200 border-4 border-transparent hover:border-4 hover:border-red-500 overflow-hidden ${
         shakeItemId === id ? "animate-shake" : ""
       } ${className}`}
     >

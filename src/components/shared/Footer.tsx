@@ -1,46 +1,40 @@
 "use client";
 
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from 'next/navigation';
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
   const router = useRouter();
+  const pathname = usePathname();
   const [currentLang, setCurrentLang] = useState("en");
 
+  // Function to handle locale change
+  const handleLocaleChange = (locale: string) => {
+    // Update the current language state
+    setCurrentLang(locale);
+
+    // Store the selected language in localStorage
+    localStorage.setItem("language", locale);
+
+    // Split the pathname by `/` and replace the current locale
+    const pathSegments = pathname.split('/');
+    pathSegments[1] = locale; // Replace the current locale
+    const newPathname = pathSegments.join('/'); // Rejoin the segments
+
+    // Navigate to the new path
+    router.push(newPathname);
+  };
+
+  // Set the initial language from localStorage
   useEffect(() => {
     const storedLang = localStorage.getItem("language") || "en";
     setCurrentLang(storedLang);
   }, []);
 
-  const changeLanguage = (lang: string) => {
-    // Don't do anything if clicking the same language
-    if (lang === currentLang) return;
-
-    setCurrentLang(lang);
-    localStorage.setItem("language", lang);
-
-    if (lang === "en") {
-      // For English, always go to English home page
-      router.push("/en");
-    } else {
-      // For Zulu, the middleware will handle redirection
-      router.push("/zu");
-    }
-  };
-
-  // Function to handle PALS Club logo click
-  const English = () => {
-    if (currentLang === "zu") {
-      router.push("/zu");
-    } else {
-      router.push("/en");
-    }
-  };
-
   return (
-    <footer className="py-1 flex items-center justify-around md:justify-between bg-[#049c2c] text-white px-4 md:px-12 gap-2 mt-8">
+    <footer className="w-full flex items-center justify-around md:justify-between bg-[#049c2c] text-white px-4 md:px-12 gap-2 z-50 fixed bottom-0">
       <div className="flex items-center justify-center gap-2 md:gap-6 lg:gap-10 lg:ml-28">
         <Link href="/" onClick={() => router.back()}>
           <Image
@@ -62,11 +56,11 @@ export default function Footer() {
         </Link>
       </div>
 
-      <div className="flex items-center justify-center gap-2 sm:gap-4 lg:gap-16 xl:gap-24 relative">
+      <div className="flex items-center justify-center gap-2 sm:gap-4 lg:gap-12 xl:gap-24 relative">
         {/* Language selector for English */}
         <div
           className="relative flex cursor-pointer"
-          onClick={() => changeLanguage("en")}
+          onClick={() => handleLocaleChange('en')}
         >
           <Image
             src={
@@ -94,7 +88,7 @@ export default function Footer() {
         {/* Language selector for Zulu */}
         <div
           className="relative flex cursor-pointer"
-          onClick={() => changeLanguage("zu")}
+          onClick={() => handleLocaleChange('zu')}
         >
           <Image
             src={
@@ -106,14 +100,14 @@ export default function Footer() {
             width={200}
             height={200}
             className={`w-40 h-8 md:w-32 md:h-12 hover:scale-110 transform transition duration-200 ${
-              currentLang === "zu" ? "" : "mt-1.5"
+              currentLang === "zu" ? "" : "mt-1"
             }`}
           />
         </div>
       </div>
 
       <div className="h-full flex items-center lg:mr-28">
-        <div className="cursor-pointer" onClick={English}>
+        <Link href="/en/under-construction">
           <Image
             src="/footerAssets/palsClubLogo.svg"
             alt="TJ Logo"
@@ -121,7 +115,7 @@ export default function Footer() {
             height={200}
             className="w-40 h-8 md:w-160 md:h-12 max-w-full max-h-full hover:scale-110 transform transition duration-200"
           />
-        </div>
+        </Link>
       </div>
     </footer>
   );

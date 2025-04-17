@@ -7,6 +7,7 @@ import ConfettiComponent from "@/components/page-components/category/ConfettiCom
 import Link from "next/link";
 import localFont from "next/font/local";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { useTranslations } from "next-intl";
 
 const helveticaNeue = localFont({
   src: "./HelveticaNeueBlack.otf",
@@ -18,8 +19,11 @@ export default function ItemPage() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const src = searchParams.get("src");
-  const name = searchParams.get("name")?.toLocaleLowerCase();
+  const name = searchParams.get("name");
+
   const [showConfetti, setShowConfetti] = useState(false);
+
+  const t = useTranslations("items");
 
   useEffect(() => {
     if (src && name) {
@@ -36,6 +40,13 @@ export default function ItemPage() {
   }, [src, name]);
 
   if (!src) return null;
+
+  // Normalize the name to match translation keys
+  const normalizeName = (name: string) =>
+    name.toLowerCase().trim().replace(/\s+/g, "-");
+
+  const translationKey = name ? normalizeName(name) : "";
+  const translatedName = translationKey ? t(translationKey, { fallback: name }) : "";
 
   return (
     <div className="flex items-end mx-auto min-h-[calc(100vh-20rem)] w-full max-w-lg justify-around space-x-6">
@@ -68,8 +79,8 @@ export default function ItemPage() {
           >
             {name && (
               <>
-                <span className="text-red-500">{name.charAt(0)}</span>
-                {name.slice(1)}
+                <span className="text-red-500">{translatedName.charAt(0)}</span>
+                {translatedName.slice(1)}
               </>
             )}
           </h2>

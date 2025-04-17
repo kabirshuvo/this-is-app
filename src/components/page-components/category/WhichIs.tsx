@@ -7,10 +7,8 @@ import React, {
   useRef,
   useState,
 } from "react";
-import Image from "next/image";
 import { Category } from "@/types/category";
 import { Volume2 } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import useItemQueryAudio from "@/app/hooks/useItemQueryAudio";
 import useErrorAudio from "@/app/hooks/useErrorAudio";
 import useItemData from "@/app/hooks/useItemData";
@@ -18,6 +16,8 @@ import SwiperComponent from "./SwiperComponent";
 import { useRouter } from "next/navigation";
 import WhichIsCard from "@/components/cards/WhichIsCard";
 import { useAppSelector } from "@/store/hooks";
+import { useTranslations } from "next-intl";
+
 
 interface Params {
   category: string;
@@ -31,6 +31,8 @@ interface WhichIsProps {
 const ITEMS_PER_PAGE = 6;
 
 const WhichIs: React.FC<WhichIsProps> = ({ relatedData, params }) => {
+  const { category } = params; // Directly use the unwrapped params
+
   const router = useRouter();
   const [randomItemName, setRandomItemName] = useState<string>("");
   const [shakeItemId, setShakeItemId] = useState<number | null>(null);
@@ -40,7 +42,7 @@ const WhichIs: React.FC<WhichIsProps> = ({ relatedData, params }) => {
 
   const clickedItemData = useItemData({
     itemId: shakeItemId,
-    category: params.category,
+    category: category, // Use the unwrapped `category`
   });
   const decodedCategory = decodeURIComponent(params.category);
 
@@ -52,8 +54,9 @@ const WhichIs: React.FC<WhichIsProps> = ({ relatedData, params }) => {
     "q",
     formattedCategory
   );
+  const t = useTranslations("WhichIs"); 
 
-  // useErrorAudio(clickedItemData?.name.toLowerCase().replace(/\s+/g, "-") ?? "");
+
   useErrorAudio(
     clickedItemData?.name.toLowerCase().replace(/\s+/g, "-") ?? "",
     formattedCategory
@@ -156,20 +159,12 @@ const WhichIs: React.FC<WhichIsProps> = ({ relatedData, params }) => {
     <div className="mt-4">
       <div className="flex items-center justify-center gap-3 lg:gap-4 mt-4">
         <h3 className="md:text-2xl xl:text-3xl text-center uppercase mt-1">
-          Which is the {randomItemName}?
+        {t("question", { item: randomItemName })}
         </h3>
         <div>
-          <Volume2 size={28} />
+          <Volume2 size={28} onClick={speakText} />
         </div>
-        <Button variant="ghost" size="icon" onClick={speakText} title="Speak">
-          <Image
-            src="/svg/arrow.svg"
-            alt="home"
-            width={50}
-            height={50}
-            className="w-5 h-5 md:w-6 md:h-6"
-          />
-        </Button>
+         
       </div>
 
       <section>

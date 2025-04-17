@@ -15,6 +15,7 @@ import {
 import PencilAnimation from "./PencilAnimation";
 import localFont from "next/font/local";
 import Pagination from "@/components/pagination/Pagination";
+import { useTranslations } from "next-intl";
 
 const kabelu = localFont({
   src: "./KABELU.ttf",
@@ -25,22 +26,49 @@ const kabelu = localFont({
 export default function HeaderOne() {
   const locale = useLocale();
   const pathname = usePathname();
-  const [category, setCategory] = useState("LEARN WORD GAMES");
+  const t = useTranslations("HeaderOne"); // Hook to access translations
+  const [category, setCategory] = useState("");
 
   const isHomePage = pathname === `/${locale}` || pathname === "/";
-  // Check if we're on an item details page (URL pattern: /categories/[category]/[ItemName])
-  const isItemPage =
-    pathname.split("/").length > 4 && pathname.includes("/categories/");
 
   useEffect(() => {
+    console.log("Current Pathname:", pathname);
+  
     const pathParts = pathname.split("/");
-    const currentCategory = pathParts[pathParts.length - 1];
-    setCategory(
-      currentCategory !== locale && currentCategory !== ""
-        ? decodeURIComponent(currentCategory).toUpperCase()
-        : "LEARN WORDS GAME"
-    );
-  }, [pathname, locale]);
+    const isRootPage = pathParts.length === 2 && (pathParts[1] === "en" || pathParts[1] === "zu");
+  
+    if (isRootPage) {
+      const defaultTitle = t("title.default");
+      setCategory(defaultTitle.toUpperCase());
+      console.log("Home page detected. Category set to:", defaultTitle);
+    } else {
+      const categoryIndex = pathParts.findIndex((part) => part === "categories");
+  
+      if (categoryIndex !== -1 && categoryIndex + 1 < pathParts.length) {
+        // Get the category name
+        const categoryName = pathParts[categoryIndex + 1];
+  
+        // Check if there is an item in the URL (e.g., "lion")
+        if (categoryIndex + 2 < pathParts.length) {
+          const itemName = pathParts[categoryIndex + 2];
+          const translatedItem = t(`title.${itemName.toLowerCase()}`, {
+            fallback: itemName,
+          });
+  
+          setCategory(translatedItem.toUpperCase()); // Only set the item name
+          console.log("Item detected. Title set to:", translatedItem);
+        } else {
+          const translatedCategory = t(`title.${categoryName.toLowerCase()}`, {
+            fallback: t("title.default"),
+          });
+  
+          setCategory(translatedCategory.toUpperCase()); // Only set the category name
+          console.log("Category detected. Title set to:", translatedCategory);
+        }
+      }
+    }
+  }, [pathname, locale, t]);
+  
 
   const categoryLetters = category.split("");
   const letterVariants = {
@@ -57,10 +85,10 @@ export default function HeaderOne() {
   const animatedKey = `${category}-${pathname}`;
 
   const navItems = [
-    { label: "Home", href: `/${locale}` },
-    { label: "About Us", href: `/${locale}/about` },
-    { label: "Settings", href: `/${locale}/settings` },
-    { label: "Help", href: `/${locale}/help` },
+    { label: t("menu.home"), href: `/${locale}` },
+    { label: t("menu.aboutUs"), href: `/${locale}/about` },
+    { label: t("menu.settings"), href: `/${locale}/settings` },
+    { label: t("menu.help"), href: `/${locale}/help` },
   ];
 
   return (
@@ -72,7 +100,7 @@ export default function HeaderOne() {
         backgroundPosition: "center",
       }}
     >
-      {/* TJ&PALS Logo */}
+      {/* Logo */}
       <div className="flex justify-start flex-1">
         <Link href="/" className="h-fit">
           <Image
@@ -85,44 +113,46 @@ export default function HeaderOne() {
         </Link>
       </div>
 
-      {/* Magnifying Glass and Text in the middle */}
+      {/* Animated Title */}
       <div className="flex justify-between items-center 2xl:py-4 py-2 md:ml-16 mb-16 gap-6 md:gap-8">
         <PencilAnimation animatedKey={animatedKey} />
+        <div className="flex flex-col justify-center items-center">
+          <h1
+            className={`${kabelu.variable} kabelu-font text-md md:text-4xl lg:text-5xl 2xl:text-7xl pb-1 mt-20 md:mt-4 flex`}
+            style={{
+              textShadow: `
+                1.5px 1.5px 0 #228B22,
+                -1.5px -1.5px 0 #228B22,
+                1.5px -1.5px 0 #228B22,
+                -1.5px 1.5px 0 #228B22,
+                1.5px 0px 0 #228B22,
+                -1.5px 0px 0 #228B22,
+                0px 1.5px 0 #228B22,
+                0px -1.5px 0 #228B22,
+                3px 3px 5px rgba(0, 0, 0, 0.3)
+              `,
+            }}
+          >
+            {categoryLetters.map((letter, index) => (
+              <motion.span
+                key={`${animatedKey}-${index}`}
+                custom={index}
+                initial="hidden"
+                animate="visible"
+                variants={letterVariants}
+                className="inline-block"
+                style={{ whiteSpace: letter === " " ? "pre" : "normal" }}
+              >
+                {letter}
+              </motion.span>
+            ))}
+          </h1>
 
-        <h1
-          className={`${kabelu.variable} kabelu-font text-md md:text-4xl lg:text-5xl 2xl:text-7xl pb-6 mt-20 md:mt-4 flex`}
-          style={{
-            textShadow: `
-      1.5px 1.5px 0 #228B22,
-      -1.5px -1.5px 0 #228B22,
-      1.5px -1.5px 0 #228B22,
-      -1.5px 1.5px 0 #228B22,
-      1.5px 0px 0 #228B22,
-      -1.5px 0px 0 #228B22,
-      0px 1.5px 0 #228B22,
-      0px -1.5px 0 #228B22,
-       3px 3px 5px rgba(0, 0, 0, 0.3)
-    `,
-          }}
-        >
-          {categoryLetters.map((letter, index) => (
-            <motion.span
-              key={`${animatedKey}-${index}`}
-              custom={index}
-              initial="hidden"
-              animate="visible"
-              variants={letterVariants}
-              className="inline-block"
-              style={{ whiteSpace: letter === " " ? "pre" : "normal" }}
-            >
-              {letter}
-            </motion.span>
-          ))}
-        </h1>
-
-        {!isHomePage && !isItemPage && <Pagination />}
+          {!isHomePage && <Pagination />}
+        </div>
       </div>
 
+      {/* Navigation Menu */}
       <Dialog>
         <div className="flex flex-1 justify-end md:mb-6 -mt-6 md:-mt-8">
           <DialogTrigger asChild>
