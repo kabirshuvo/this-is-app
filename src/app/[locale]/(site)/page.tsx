@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import { useAppDispatch, useAppSelector } from "@/store/hooks";
 import { setPage, setTotalPages } from "@/store/pagination-slice";
 import { useLocale } from "next-intl";
@@ -29,6 +29,7 @@ const Home: React.FC = () => {
     { x: number; y: number }[]
   >([]);
   const [itemsPerPage, setItemsPerPage] = useState(12);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   const totalPagesCalculated = useMemo(
     () => Math.ceil(categories.length / itemsPerPage),
@@ -51,32 +52,33 @@ const Home: React.FC = () => {
     [categories, currentPage, itemsPerPage]
   );
 
+  const calculateGridPositions = () => {
+    const count = paginatedCategories.length;
+
+    const cols = window.innerWidth < 640 ? 2 : window.innerWidth > 1024 ? 6 : 3;
+    const gap = 20;
+    const cardWidth =
+      window.innerWidth < 1024 ? 140 : window.innerWidth < 1920 ? 160 : 200;
+    const cardHeight =
+      window.innerWidth < 1024 ? 160 : window.innerWidth < 1920 ? 180 : 220;
+
+    const containerWidth = containerRef.current?.offsetWidth || window.innerWidth;
+    const totalGridWidth = cols * cardWidth + (cols - 1) * gap;
+    const offsetX = (containerWidth - totalGridWidth) / 2;
+
+    const positions = Array.from({ length: count }).map((_, i) => {
+      const row = Math.floor(i / cols);
+      const col = i % cols;
+      const x = offsetX + col * (cardWidth + gap);
+      const y = row * (cardHeight + gap);
+      return { x, y };
+    });
+
+    setGridPositions(positions);
+  };
+
   useEffect(() => {
     const timer = setTimeout(() => setIsLoaded(true), 500);
-
-    const calculateGridPositions = () => {
-      const count = paginatedCategories.length;
-
-      const cols = window.innerWidth < 640 ? 2 : window.innerWidth > 1024 ? 6 : 3;
-      const gap = 20;
-      const cardWidth =
-        window.innerWidth < 1024 ? 140 : window.innerWidth < 1920 ? 160 : 200;
-      const cardHeight =
-        window.innerWidth < 1024 ? 160 : window.innerWidth < 1920 ? 180 : 220;
-
-      const totalWidth = cols * cardWidth + (cols - 1) * gap;
-      const offsetX = (window.innerWidth - totalWidth) / 2;
-
-      const positions = Array.from({ length: count }).map((_, i) => {
-        const row = Math.floor(i / cols);
-        const col = i % cols;
-        const x = offsetX + col * (cardWidth + gap);
-        const y = row * (cardHeight + gap);
-        return { x, y };
-      });
-
-      setGridPositions(positions);
-    };
 
     calculateGridPositions();
     window.addEventListener("resize", calculateGridPositions);
@@ -98,14 +100,13 @@ const Home: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex flex-col justify-between items-center w-full h-full mt-16 xl:mt-0 2xl:mt-12 px-4 gap-4 relative">
-      {/* Optional: Visual center line for testing */}
-      {/* <div className="absolute left-1/2 top-0 h-full w-[1px] bg-red-500 pointer-events-none z-50" /> */}
-
+    <div className="flex flex-col justify-between items-center w-full h-full mt-16 xl:mt-0 2xl:mt-12 px-4 gap-4">
       <div className="flex gap-10 items-center w-full">
         {categories.length > itemsPerPage && <PrevButton size={50} />}
 
+        {/* Container with ref */}
         <div
+          ref={containerRef}
           className="relative w-full overflow-visible"
           style={{ height: `calc(100vh - 160px)` }}
         >
