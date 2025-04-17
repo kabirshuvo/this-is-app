@@ -28,9 +28,8 @@ const Home: React.FC = () => {
   const [gridPositions, setGridPositions] = useState<
     { x: number; y: number }[]
   >([]);
-  const [itemsPerPage, setItemsPerPage] = useState(12); // Default value
+  const [itemsPerPage, setItemsPerPage] = useState(12);
 
-  // Calculate total pages
   const totalPagesCalculated = useMemo(
     () => Math.ceil(categories.length / itemsPerPage),
     [categories.length, itemsPerPage]
@@ -43,7 +42,6 @@ const Home: React.FC = () => {
     }
   }, [categories.length, totalPagesCalculated, currentPage, dispatch]);
 
-  // Paginated categories
   const paginatedCategories = useMemo(
     () =>
       categories.slice(
@@ -57,42 +55,30 @@ const Home: React.FC = () => {
     const timer = setTimeout(() => setIsLoaded(true), 500);
 
     const calculateGridPositions = () => {
-      const positions: { x: number; y: number }[] = [];
-      const count = categories.length;
+      const count = paginatedCategories.length;
+
       const cols = window.innerWidth < 640 ? 2 : window.innerWidth > 1024 ? 6 : 3;
       const gap = 20;
       const cardWidth =
         window.innerWidth < 1024 ? 140 : window.innerWidth < 1920 ? 160 : 200;
       const cardHeight =
         window.innerWidth < 1024 ? 160 : window.innerWidth < 1920 ? 180 : 220;
+
       const totalWidth = cols * cardWidth + (cols - 1) * gap;
       const offsetX = (window.innerWidth - totalWidth) / 2;
-      for (let i = 0; i < count; i++) {
+
+      const positions = Array.from({ length: count }).map((_, i) => {
         const row = Math.floor(i / cols);
         const col = i % cols;
-        const xPosition =
-          offsetX + col * (cardWidth + gap) - (cardWidth - 2 * gap);
-        const yPosition = row * (cardHeight + gap);
-
-        if (xPosition >= window.innerWidth || yPosition >= window.innerHeight) {
-          console.warn("Position out of bounds: ", {
-            x: xPosition,
-            y: yPosition,
-          });
-        }
-
-        positions.push({
-          x: xPosition,
-          y: yPosition,
-        });
-      }
+        const x = offsetX + col * (cardWidth + gap);
+        const y = row * (cardHeight + gap);
+        return { x, y };
+      });
 
       setGridPositions(positions);
     };
 
     calculateGridPositions();
-
-    // Recalculate on window resize
     window.addEventListener("resize", calculateGridPositions);
 
     return () => {
@@ -102,37 +88,31 @@ const Home: React.FC = () => {
   }, [categories.length, paginatedCategories]);
 
   useEffect(() => {
-    // Set ITEMS_PER_PAGE based on window width
     const handleResize = () => {
       setItemsPerPage(window.innerWidth < 1024 ? 6 : 12);
     };
 
-    // Set initial value
     handleResize();
-
-    // Add event listener for window resize
     window.addEventListener("resize", handleResize);
-
-    // Cleanup
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
-    <div className="flex flex-col justify-between items-center w-full h-full mt-16 xl:mt-0 2xl:mt-12 px-4 gap-4">
-      <div className="flex gap-10 items-center w-full">
-      {categories.length > itemsPerPage && <PrevButton size={50} />}
+    <div className="flex flex-col justify-between items-center w-full h-full mt-16 xl:mt-0 2xl:mt-12 px-4 gap-4 relative">
+      {/* Optional: Visual center line for testing */}
+      {/* <div className="absolute left-1/2 top-0 h-full w-[1px] bg-red-500 pointer-events-none z-50" /> */}
 
-        {/* Categories */}
+      <div className="flex gap-10 items-center w-full">
+        {categories.length > itemsPerPage && <PrevButton size={50} />}
+
         <div
           className="relative w-full overflow-visible"
-          style={{
-            height: `calc(100vh - 160px)`,
-          }}
+          style={{ height: `calc(100vh - 160px)` }}
         >
           {paginatedCategories.map((category, index) => (
             <motion.div
               key={category.id}
-              initial={{ x: 100, y: 0, opacity: 0 }} // Start slightly to the left of the container
+              initial={{ x: 100, y: 0, opacity: 0 }}
               animate={
                 isLoaded
                   ? {
@@ -156,7 +136,6 @@ const Home: React.FC = () => {
         {categories.length > itemsPerPage && <NextButton size={50} />}
       </div>
 
-      {/* Pagination Bar */}
       {categories.length > itemsPerPage && (
         <Pagination>
           <PaginationContent>
@@ -172,7 +151,7 @@ const Home: React.FC = () => {
                   className={`w-6 h-2 rounded-full ${
                     currentPage === page ? "" : "bg-gray-300 opacity-50"
                   }`}
-                ></PaginationLink>
+                />
               </PaginationItem>
             ))}
           </PaginationContent>
