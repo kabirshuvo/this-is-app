@@ -87,6 +87,7 @@ const Home: React.FC = () => {
       clearTimeout(timer);
       window.removeEventListener("resize", calculateGridPositions);
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [categories.length, paginatedCategories]);
 
   useEffect(() => {

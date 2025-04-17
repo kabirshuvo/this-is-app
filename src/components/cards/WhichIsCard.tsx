@@ -35,7 +35,7 @@ const WhichIsCard: React.FC<WhichIsCardProps> = ({
         shakeItemId === id ? "animate-shake" : ""
       } ${className}`}
     >
-      <AspectRatio ratio={10/9} className="w-full">
+      <AspectRatio ratio={4 / 3} className="w-full">
         <Image
           src={src}
           alt={alt}

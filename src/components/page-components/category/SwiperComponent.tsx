@@ -47,7 +47,7 @@ const SwiperComponent: React.FC<SwiperComponentProps> = ({
               shakeItemId === item.id ? "animate-shake" : ""
             }`}
           >
-            <AspectRatio ratio={10/9} className="w-full">
+            <AspectRatio ratio={4 / 3} className="w-full">
               <Image
                 src={item.image}
                 alt={item.name}
