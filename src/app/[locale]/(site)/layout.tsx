@@ -58,8 +58,11 @@ export default async function RootLayout({
             </div>
             <main className="flex items-center gap-4 py-2 -mt-24 md:-mt-8 container mx-auto">
               {children}
-            </main>
-            <Footer />
+            </main> 
+            <div className="mt-24">
+              <Footer />
+            </div>
+            
           </ClientProvider>
         </NextIntlClientProvider>
       </body>

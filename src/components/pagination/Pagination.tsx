@@ -37,7 +37,7 @@ export default function Pagination() {
           className={cn(
             "w-6 h-6 rounded-full text-xl font-bold transition-colors",
             currentPage === page
-              ? "bg-tjblue-500 text-tjyellow-500"
+              ? "bg-tjblue-500 text-tjyellow-500 border border-tjyellow-500"
               : "bg-tjyellow-100 text-blue-600 hover:bg-tjyellow-200"
           )}
           aria-label={`Page ${page}`}
