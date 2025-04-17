@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState, useRef } from "react";
 import { Category } from "@/types/category";
 import ItemImageCard from "@/components/cards/ItemImageCard";
 import { useAppSelector } from "@/store/hooks";
@@ -18,6 +18,7 @@ const ITEMS_PER_PAGE = 6;
 const ThisIs: React.FC<ThisIsProps> = ({ relatedData }) => {
   const page = useAppSelector((state) => state.pagination.currentPage - 1);
   const t = useTranslations("ThisIs");
+  const containerRef = useRef<HTMLDivElement>(null);
 
   const paginatedData = useMemo(
     () => relatedData.slice(page * ITEMS_PER_PAGE, (page + 1) * ITEMS_PER_PAGE),
@@ -31,17 +32,18 @@ const ThisIs: React.FC<ThisIsProps> = ({ relatedData }) => {
     const timer = setTimeout(() => setIsLoaded(true), 400);
 
     const calculateGridPositions = () => {
+      if (!containerRef.current) return;
+      
       const positions: { x: number; y: number }[] = [];
       const count = paginatedData.length;
       const cols = window.innerWidth > 1024 ? 6 : 3;
       const gap = 16;
-      const cardWidth =
-        window.innerWidth < 1024 ? 100 : window.innerWidth < 1920 ? 180 : 200;
-      const cardHeight =
-        window.innerWidth < 1024 ? 100 : window.innerWidth < 1920 ? 180 : 200;
+      const cardWidth = window.innerWidth < 1024 ? 100 : window.innerWidth < 1920 ? 180 : 240;
+      const cardHeight = window.innerWidth < 1024 ? 100 : window.innerWidth < 1920 ? 180 : 240;
 
+      const containerWidth = containerRef.current.offsetWidth;
       const totalWidth = cols * cardWidth + (cols - 1) * gap;
-      const offsetX = (window.innerWidth - totalWidth) / 2;
+      const offsetX = (containerWidth - totalWidth) / 2;
 
       for (let i = 0; i < count; i++) {
         const row = Math.floor(i / cols);
@@ -74,7 +76,9 @@ const ThisIs: React.FC<ThisIsProps> = ({ relatedData }) => {
         <NextButton size={20} />
       </div>
 
+      {/* Container with ref for accurate width measurement */}
       <div
+        ref={containerRef}
         className="relative w-full overflow-visible mt-4"
         style={{ height: "260px" }} // adjust based on card height if needed
       >
@@ -95,7 +99,13 @@ const ThisIs: React.FC<ThisIsProps> = ({ relatedData }) => {
                   }
                 : {}
             }
-            className="absolute w-[100px] h-[100px] md:w-[180px] md:h-[180px] 2xl:w-[200px] 2xl:h-[200px]"
+            className="absolute"
+            style={{
+              width: window.innerWidth < 1024 ? '100px' : 
+                    window.innerWidth < 1920 ? '180px' : '240px',
+              height: window.innerWidth < 1024 ? '100px' : 
+                     window.innerWidth < 1920 ? '180px' : '240px'
+            }}
           >
             <ItemImageCard
               src={item.image}
