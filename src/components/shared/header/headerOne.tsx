@@ -33,42 +33,42 @@ export default function HeaderOne() {
 
   useEffect(() => {
     console.log("Current Pathname:", pathname);
-
+  
     const pathParts = pathname.split("/");
     const isRootPage = pathParts.length === 2 && (pathParts[1] === "en" || pathParts[1] === "zu");
-
+  
     if (isRootPage) {
       const defaultTitle = t("title.default");
       setCategory(defaultTitle.toUpperCase());
       console.log("Home page detected. Category set to:", defaultTitle);
     } else {
       const categoryIndex = pathParts.findIndex((part) => part === "categories");
-      let translatedTitle = "";
-
+  
       if (categoryIndex !== -1 && categoryIndex + 1 < pathParts.length) {
         // Get the category name
         const categoryName = pathParts[categoryIndex + 1];
-        const translatedCategory = t(`title.${categoryName.toLowerCase()}`, {
-          fallback: t("title.default"),
-        });
-
-        translatedTitle = translatedCategory;
-
+  
         // Check if there is an item in the URL (e.g., "lion")
         if (categoryIndex + 2 < pathParts.length) {
           const itemName = pathParts[categoryIndex + 2];
           const translatedItem = t(`title.${itemName.toLowerCase()}`, {
             fallback: itemName,
           });
-
-          translatedTitle += ` - ${translatedItem}`;
+  
+          setCategory(translatedItem.toUpperCase()); // Only set the item name
+          console.log("Item detected. Title set to:", translatedItem);
+        } else {
+          const translatedCategory = t(`title.${categoryName.toLowerCase()}`, {
+            fallback: t("title.default"),
+          });
+  
+          setCategory(translatedCategory.toUpperCase()); // Only set the category name
+          console.log("Category detected. Title set to:", translatedCategory);
         }
       }
-
-      setCategory(translatedTitle.toUpperCase());
-      console.log("Title set to:", translatedTitle);
     }
   }, [pathname, locale, t]);
+  
 
   const categoryLetters = category.split("");
   const letterVariants = {

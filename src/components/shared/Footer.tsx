@@ -56,7 +56,7 @@ export default function Footer() {
         </Link>
       </div>
 
-      <div className="flex items-center justify-center gap-2 sm:gap-4 lg:gap-16 xl:gap-24 relative">
+      <div className="flex items-center justify-center gap-2 sm:gap-4 lg:gap-12 xl:gap-24 relative">
         {/* Language selector for English */}
         <div
           className="relative flex cursor-pointer"

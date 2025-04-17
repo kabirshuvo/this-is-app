@@ -120,7 +120,7 @@ const Home: React.FC = () => {
   return (
     <div className="flex flex-col justify-between items-center w-full h-full mt-16 xl:mt-0 2xl:mt-12 px-4 gap-4">
       <div className="flex gap-10 items-center w-full">
-        <PrevButton size={50} />
+      {categories.length > itemsPerPage && <PrevButton size={50} />}
 
         {/* Categories */}
         <div
@@ -153,29 +153,31 @@ const Home: React.FC = () => {
           ))}
         </div>
 
-        <NextButton size={50} />
+        {categories.length > itemsPerPage && <NextButton size={50} />}
       </div>
 
       {/* Pagination Bar */}
-      <Pagination>
-        <PaginationContent>
-          {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
-            <PaginationItem key={page}>
-              <PaginationLink
-                href="#"
-                isActive={currentPage === page}
-                onClick={(e) => {
-                  e.preventDefault();
-                  dispatch(setPage(page));
-                }}
-                className={`w-6 h-2 rounded-full ${
-                  currentPage === page ? "" : "bg-gray-300 opacity-50"
-                }`}
-              ></PaginationLink>
-            </PaginationItem>
-          ))}
-        </PaginationContent>
-      </Pagination>
+      {categories.length > itemsPerPage && (
+        <Pagination>
+          <PaginationContent>
+            {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+              <PaginationItem key={page}>
+                <PaginationLink
+                  href="#"
+                  isActive={currentPage === page}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    dispatch(setPage(page));
+                  }}
+                  className={`w-6 h-2 rounded-full ${
+                    currentPage === page ? "" : "bg-gray-300 opacity-50"
+                  }`}
+                ></PaginationLink>
+              </PaginationItem>
+            ))}
+          </PaginationContent>
+        </Pagination>
+      )}
     </div>
   );
 };
