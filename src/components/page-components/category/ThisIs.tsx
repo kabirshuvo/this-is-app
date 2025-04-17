@@ -27,29 +27,34 @@ const ThisIs: React.FC<ThisIsProps> = ({ relatedData }) => {
 
   const [gridPositions, setGridPositions] = useState<{ x: number; y: number }[]>([]);
   const [isLoaded, setIsLoaded] = useState(false);
+  const [cardSize, setCardSize] = useState({ width: 100, height: 100 });
 
   useEffect(() => {
     const timer = setTimeout(() => setIsLoaded(true), 400);
 
     const calculateGridPositions = () => {
       if (!containerRef.current) return;
-      
+
       const positions: { x: number; y: number }[] = [];
       const count = paginatedData.length;
       const cols = window.innerWidth > 1024 ? 6 : 3;
       const gap = 16;
-      const cardWidth = window.innerWidth < 1024 ? 100 : window.innerWidth < 1920 ? 180 : 240;
-      const cardHeight = window.innerWidth < 1024 ? 100 : window.innerWidth < 1920 ? 180 : 240;
+
+      // Determine size based on screen width
+      const width = window.innerWidth < 1024 ? 100 : window.innerWidth < 1920 ? 180 : 240;
+      const height = window.innerWidth < 1024 ? 100 : window.innerWidth < 1920 ? 180 : 240;
+
+      setCardSize({ width, height });
 
       const containerWidth = containerRef.current.offsetWidth;
-      const totalWidth = cols * cardWidth + (cols - 1) * gap;
+      const totalWidth = cols * width + (cols - 1) * gap;
       const offsetX = (containerWidth - totalWidth) / 2;
 
       for (let i = 0; i < count; i++) {
         const row = Math.floor(i / cols);
         const col = i % cols;
-        const xPosition = offsetX + col * (cardWidth + gap);
-        const yPosition = row * (cardHeight + gap);
+        const xPosition = offsetX + col * (width + gap);
+        const yPosition = row * (height + gap);
 
         positions.push({ x: xPosition, y: yPosition });
       }
@@ -76,11 +81,10 @@ const ThisIs: React.FC<ThisIsProps> = ({ relatedData }) => {
         <NextButton size={20} />
       </div>
 
-      {/* Container with ref for accurate width measurement */}
       <div
         ref={containerRef}
         className="relative w-full overflow-visible mt-4"
-        style={{ height: "260px" }} // adjust based on card height if needed
+        style={{ height: "240px" }} // Optional: adjust based on max card height
       >
         {paginatedData.map((item, index) => (
           <motion.div
@@ -101,10 +105,8 @@ const ThisIs: React.FC<ThisIsProps> = ({ relatedData }) => {
             }
             className="absolute"
             style={{
-              width: window.innerWidth < 1024 ? '100px' : 
-                    window.innerWidth < 1920 ? '180px' : '240px',
-              height: window.innerWidth < 1024 ? '100px' : 
-                     window.innerWidth < 1920 ? '180px' : '240px'
+              width: `${cardSize.width}px`,
+              height: `${cardSize.height}px`,
             }}
           >
             <ItemImageCard
