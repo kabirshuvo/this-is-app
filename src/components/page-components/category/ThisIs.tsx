@@ -36,9 +36,9 @@ const ThisIs: React.FC<ThisIsProps> = ({ relatedData }) => {
       const cols = window.innerWidth > 1024 ? 6 : 3;
       const gap = 16;
       const cardWidth =
-        window.innerWidth < 1024 ? 150 : window.innerWidth < 1920 ? 180 : 200;
+        window.innerWidth < 1024 ? 100 : window.innerWidth < 1920 ? 180 : 200;
       const cardHeight =
-        window.innerWidth < 1024 ? 150 : window.innerWidth < 1920 ? 180 : 200;
+        window.innerWidth < 1024 ? 100 : window.innerWidth < 1920 ? 180 : 200;
 
       const totalWidth = cols * cardWidth + (cols - 1) * gap;
       const offsetX = (window.innerWidth - totalWidth) / 2;
@@ -95,7 +95,7 @@ const ThisIs: React.FC<ThisIsProps> = ({ relatedData }) => {
                   }
                 : {}
             }
-            className="absolute w-[150px] h-[150px] md:w-[180px] md:h-[180px] 2xl:w-[200px] 2xl:h-[200px]"
+            className="absolute w-[100px] h-[100px] md:w-[180px] md:h-[180px] 2xl:w-[200px] 2xl:h-[200px]"
           >
             <ItemImageCard
               src={item.image}
