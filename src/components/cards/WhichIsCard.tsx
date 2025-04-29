@@ -35,12 +35,11 @@ const WhichIsCard: React.FC<WhichIsCardProps> = ({
         shakeItemId === id ? "animate-shake" : ""
       } ${className}`}
     >
-      <AspectRatio ratio={4 / 3} className="w-full">
+      <AspectRatio ratio={16 / 9} className="w-full">
         <Image
           src={src}
           alt={alt}
           fill
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           priority
           className="object-cover"
         />

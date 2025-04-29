@@ -2479,7 +2479,7 @@
     },
     {
       "id": 3,
-      "name": "Drill",
+      "name": "Electric Drill",
       "image": "/images/tools/electric-drill.webp",
       "description": "Tool for making holes",
       "audio": {
