@@ -212,7 +212,7 @@
 
       "hammer": "Hammer",
       "pliers": "Pliers",
-      "drill": "Drill",
+      "electric-drill": "Electric Drill",
       "screwdrivers": "Screwdrivers",
       "spanners": "Spanners",
       "tape-measure": "Tape Measure",
@@ -461,7 +461,7 @@
 
     "hammer": "Hammer",
     "pliers": "Pliers",
-    "drill": "Drill",
+    "electric-drill": "Electric Drill",
     "screwdrivers": "Screwdrivers",
     "spanners": "Spanners",
     "tape-measure": "Tape Measure",

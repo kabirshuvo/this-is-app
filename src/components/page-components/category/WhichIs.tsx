@@ -54,7 +54,8 @@ const WhichIs: React.FC<WhichIsProps> = ({ relatedData, params }) => {
     "q",
     formattedCategory
   );
-  const t = useTranslations("WhichIs"); 
+  const t = useTranslations("WhichIs");
+  const itemsT = useTranslations("items");
 
 
   useErrorAudio(
@@ -159,7 +160,7 @@ const WhichIs: React.FC<WhichIsProps> = ({ relatedData, params }) => {
     <div className="mt-4">
       <div className="flex items-center justify-center gap-3 lg:gap-4 mt-4">
         <h3 className="md:text-2xl xl:text-3xl text-center uppercase mt-1">
-        {t("question", { item: randomItemName })}
+          {t("question", { item: itemsT(randomItemName.toLowerCase().replace(/\s+/g, "-")) })}
         </h3>
         <div>
           <Volume2 size={28} onClick={speakText} />

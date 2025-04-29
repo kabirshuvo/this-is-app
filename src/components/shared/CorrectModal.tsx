@@ -18,6 +18,11 @@ const CorrectModal: React.FC<CorrectModalProps> = ({
 }) => {
   if (!isOpen) return null;
 
+  const cleanItemName = (name: string | null) => {
+    if (!name) return "";
+    return name.replace(/^items\./, "");
+  };
+
   return (
     <Dialog open={isOpen}>
       <DialogContent className="w-fit rounded-xl bg-tjgreen-600 text-tjyellow-500 border-none p-10">
@@ -26,7 +31,7 @@ const CorrectModal: React.FC<CorrectModalProps> = ({
             Congratulations!
           </DialogTitle>
           <DialogDescription className="text-2xl font-light text-tjyellow-500 text-center">
-            You correctly identified the {randomItemName}!
+            You correctly identified the {cleanItemName(randomItemName)}!
           </DialogDescription>
         </DialogHeader>
       </DialogContent>

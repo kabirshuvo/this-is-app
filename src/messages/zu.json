@@ -212,7 +212,7 @@
 
       "hammer": "Isando",
       "pliers": "Amaphayiza",
-      "drill": "Umshini wokubhola",
+      "electric-drill": "Idrili kagesi",
       "screwdrivers": "Amaskurudrayiva",
       "spanners": "Ama-spana",
       "tape-measure": "Isilinganiso setheyiphu",
@@ -461,7 +461,7 @@
 
     "hammer": "Isando",
     "pliers": "Amaphayiza",
-    "drill": "Umshini wokubhola",
+    "electric-drill": "Idrili kagesi",
     "screwdrivers": "Amaskurudrayiva",
     "spanners": "Ama-spana",
     "tape-measure": "Isilinganiso setheyiphu",
