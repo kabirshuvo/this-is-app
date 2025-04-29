@@ -83,8 +83,7 @@ const ThisIs: React.FC<ThisIsProps> = ({ relatedData }) => {
 
       <div
         ref={containerRef}
-        className="relative w-full overflow-visible mt-4"
-        style={{ height: "240px" }} // Optional: adjust based on max card height
+        className="relative w-full overflow-visible mt-4 h-40"
       >
         {paginatedData.map((item, index) => (
           <motion.div

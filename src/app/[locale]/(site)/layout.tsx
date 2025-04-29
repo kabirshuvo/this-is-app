@@ -19,35 +19,30 @@ export const metadata: Metadata = {
   description: "Learn word games",
 };
 
-// Define the type for the component props
 type RootLayoutProps = {
   children: ReactNode;
   params: { locale: string };
 };
 
-// Generate static paths for all supported locales
 export async function generateStaticParams() {
-  return [{ locale: "en" }, { locale: "zu" }]; // Add all supported locales
+  return [{ locale: "en" }, { locale: "zu" }];
 }
 
 export default async function RootLayout({
   children,
   params,
 }: RootLayoutProps) {
-  // Destructure `locale` from `params`
   const { locale } = params;
 
   let messages: Record<string, string>;
   try {
-    // Dynamically import the messages for the given locale
     messages = (await import(`../../../messages/${locale}.json`)).default;
   } catch (error) {
-    // If the locale file doesn't exist, render the `NotFound` page
     return <NotFound />;
   }
 
   return (
-    <html lang={locale}>
+    <html lang={locale} suppressHydrationWarning>
       <body
         className={`${merkerFelt.variable} antialiased bg-tjblue-500 text-tjyellow-500 min-h-screen flex flex-col justify-between`}
       >
@@ -58,11 +53,10 @@ export default async function RootLayout({
             </div>
             <main className="flex items-center gap-4 py-2 -mt-24 md:-mt-8 container mx-auto">
               {children}
-            </main> 
+            </main>
             <div className="mt-24">
               <Footer />
             </div>
-            
           </ClientProvider>
         </NextIntlClientProvider>
       </body>
